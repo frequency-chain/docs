@@ -1,0 +1,55 @@
+name: Frequency Docs MDBook CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Get npm cache directory
+        id: npm-cache-dir
+        run: |
+          echo "::set-output name=dir::$(npm config get cache)"
+      - uses: actions/cache@v3
+        with:
+          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Use Node.js 🐰
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install 💾
+        run: npm install
+
+      - name: Lint and Spellcheck 🧶
+        run: npm run lint
+
+      - name: Setup mdbook and build Frequency Docs book 📚
+        uses: drmingdrmer/mdbook-full@main
+
+      - name: Build Frequency Docs book 📚
+        run: mdbook build
+
+      - name: Create tarball 📦
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: tar -cvf frequency-docs_mdbook.tar ./book
+
+      - name: Create mdbook build artifact 📦
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: frequency-docs_mdbook-${{ github.sha }}
+          path: frequency-docs_mdbook.tar
+

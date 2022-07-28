@@ -1,0 +1,39 @@
+{
+    "name": "frequency-docs",
+    "version": "0.0.1",
+    "description": "Detailed documentation for Frequency",
+    "license": "CC-BY-SA-4.0",
+    "files": [
+        "src/",
+        "pages/",
+        "tsconfig.json",
+        "package.json"
+    ],
+    "scripts": {
+        "build": "mdbook build -o",
+        "serve": "mdbook serve -o",
+        "watch": "mdbook watch -o",
+        "spellcheck": "yaspeller .",
+        "lint-md": "remark --frail ./pages/**/*.md ./pages/*.md",
+        "lint": "npm run lint-md && npm run spellcheck"
+    },
+    "devDependencies": {
+        "remark": "^14.0.2",
+        "remark-cli": "^11.0.0",
+        "remark-lint": "^9.1.1",
+        "remark-preset-lint-recommended": "^6.1.2",
+        "yaspeller": "^8.0.1"
+    },
+    "engines": {
+        "node": ">=16.14.0 <17"
+    },
+    "remarkConfig": {
+        "plugins": [
+            "remark-preset-lint-recommended",
+            [
+                "remark-lint-list-item-indent",
+                false
+            ]
+        ]
+    }
+}

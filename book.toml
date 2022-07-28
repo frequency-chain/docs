@@ -1,0 +1,23 @@
+[book]
+authors = ["Frequency"]
+language = "en"
+multilingual = false
+src = "pages"
+title = "Frequency Documentation"
+
+[output.html]
+no-section-label = true
+copy-fonts = false # Switched to custom fonts
+site-url = "/pages/"
+git-repository-url = "https://github.com/LibertyDSNP/frequency-docs"
+edit-url-template = "https://github.com/LibertyDSNP/frequency-docs/blob/main/{path}"
+preferred-dark-theme = "coal"
+
+# https://github.com/Michael-F-Bryan/mdbook-linkcheck
+[output.linkcheck]
+follow-web-links = true
+traverse-parent-directories = false
+exclude = ['github\.com/LibertyDSNP/frequency-docs']
+
+[output.html.fold]
+enable = true
