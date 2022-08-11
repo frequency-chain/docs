@@ -1,39 +1,57 @@
 # Frequency Documentation
 
-Technical documentation for the Frequency parachain.
-The current documentation can be viewed in its compiled form at TBD.
-Alternatively, the latest iteration of the docs can be viewed non-formatted [here](https://github.com/LibertyDSNP/frequency-docs/tree/main/pages).
-For more information about Frequency, visit [frequency.xyz](https://www.frequency.xyz) or [Frequency on GitHub](https://github.com/LibertyDSNP/frequency)
+Technical documentation for the Frequency parachain. 
+The current documentation can be viewed in its compiled form at https://docs.frequency.xyz.
+Alternatively, the latest iteration of the docs [can be viewed 
+non-formatted here](https://github.com/LibertyDSNP/frequency-docs/tree/main/pages).
 
-## Releases
+For more information about Frequency, visit [frequency.xyz](https://www.frequency.xyz) 
+or [Frequency on GitHub](https://github.com/LibertyDSNP/frequency)
 
-1. Merge changes into `main`.
-2. CI automatically deploys `main`.
+## Install
 
-## Running Locally
-
-To build the generator locally, install [mdBook](https://github.com/rust-lang/mdBook.git) and [link checker](https://github.com/Michael-F-Bryan/mdbook-linkcheck). The link checker will run during build process and throw warnings for any broken internal or external links.
-
+To build the generator locally, install [mdBook](https://github.com/rust-lang/mdBook.git) 
+and [link checker](https://github.com/Michael-F-Bryan/mdbook-linkcheck). The link checker will run during build process and throw warnings for any broken internal 
+or external links.
+ 
 ``` bash
 cargo install mdbook
 cargo install mdbook-linkcheck
-```
-
-To run the doc generator locally and preview the formatted doc website, use the following commands:
-
-``` bash
 npm install
-npm run build
 ```
+## Run
 
-To run the doc generator locally and also actively build after each change, use the following command:
+### (Option 1) Hot Reload
+
+To run the doc generator locally and also actively build after each change 
+(a.k.a hot reload), use the following command:
 
 ``` bash
 npm run serve
 ```
 
-Once the local server is running, the site will automatically open in the browser. A live-reloading preview of the doc can also be viewed at <http://localhost:3000>.
+Once the local server is running, the site will automatically open in the browser. 
+A live-reloading preview of the doc can also be viewed at <http://localhost:3000>.
 
-## Tools and frameworks used in this repo
+### (Option 2) Static Rendering
+To run the doc generator locally and preview the formatted docs from local files, use the following:
 
-* [mdBook](https://rust-lang.github.io/mdBook/)
+``` bash
+npm run build
+```
+
+## Lint
+
+```sh
+npm run lint
+```
+
+## Release
+
+The CI will automatically deploy what's merged into `main`.
+
+## Tools and Frameworks
+
+* [mdBook](https://rust-lang.github.io/mdBook/) — create books with Markdown
+
+
