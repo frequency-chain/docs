@@ -46,3 +46,5 @@
         - [Requirements]()
         - [Registering]()
         - [Selection]()
+- [Glossary](glossary.md)
+
