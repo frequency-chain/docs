@@ -5,8 +5,7 @@ Frequency has two types of accounts —  Token Accounts and Message Source Accou
 (see below). 
 
 * `Account ID` — A public key that could be a Token Account and/or associated with an MSA.
-Account IDs (aka public keys) may only be associated with one MSA and that 
-association is immutable.
+Account IDs (aka public keys) may only be associated with one MSA.
 
 ### 1. Token Account
 Token accounts are accounts that hold the token used on Frequency. Token accounts 
@@ -30,8 +29,6 @@ a token account, they do not require Capacity to be active.
 * `Registered MSA` — An MSA that can allow others to delegate to it. Required for 
 some types of staking.
 
-## Activity Content
-The linked content connected to an "Announcement"
 ## Actor
 (Need definition)
 ### Bad Actor
@@ -40,22 +37,7 @@ A user intentionally using the application for bad-faith or illegal purposes
 ## Announcer
 (Need definition)
 
-## Announcement
-Announcements are content or references to content that 
-communicate new user activity to the rest of the network. Announcements are 
-associated with an Identifier that can be validated as the creator of the announcement. 
-Depending on the implementation, Announcements may be published directly to the network, 
-included in Batch Publication Files, or some combination of those two.
-
-### Batch Publication
-A collection of Announcements.
-
-### Tombstone Announcement
-A Tombstone Announcement is a way to note that a previously announced content is 
-invalid and the related Announcement should be considered reverted. It is NOT possible 
-to revert a tombstone.
-
-### Announcer MSA
+### Provider MSA
 The MSA associated with the Account ID that signs a capacity transaction.
 
 ## Bot
@@ -78,11 +60,6 @@ In Frequency context, Capacity is the ability to send messages every Capacity Ep
 - Modifying a Delegation Permissions
 - Sending an on-chain message with a given Schema
 - Sending a batch message with a given Schema
-
-### Capacity Action Weight
-Weight is the term for the blockchain computational cost of an action. Different 
-actions cost different weights. We also charge additional capacity for some actions 
-for spam or future “free” actions.
 
 ### Capacity Epoch
 The Capacity Epoch is the number of blocks before capacity refills. In other words,
@@ -208,6 +185,11 @@ Substrate’s version of gas. This the core value for the “cost” of the acti
 
 ## Token Account
 See [Account](#account) section for definition.
+
+### Transaction Weight
+Weight is the term for the blockchain computational cost of an action. Different 
+actions cost different weights. We also charge more for some actions 
+for spam or future “free” actions.
 
 ## Unstaking
 If someone who has staked wants to become liquid again in order to transfer or trade 
