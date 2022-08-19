@@ -86,8 +86,7 @@ for spam or future “free” actions.
 
 ### Capacity Epoch
 The Capacity Epoch is the number of blocks before capacity refills. In other words,
-it is a number of blocks before you get to reuse your Capacity. Capacity Epoch 
-length has a minimum block length.
+it is a number of blocks before you get to reuse your Capacity.
 
 ## Collator
 A Frequency node that generates blocks and submit them to the Relay Chain.
