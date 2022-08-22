@@ -37,6 +37,12 @@ A user intentionally using the application for bad-faith or illegal purposes
 ## Announcer
 (Need definition)
 
+### Batch Message
+One on-chain message that points to lots of messages from different Message Source Accounts. 
+In other words, it represents a shorthand that is a logical construct: 
+off-chain payload reference + more than one MSA referenced as a sender in that off-chain data 
+(aka a Parquet schema with payload location of IPFS).
+
 ### Provider MSA
 The MSA associated with the Account ID that signs a capacity transaction.
 
@@ -109,27 +115,23 @@ A Frequency packet of data that matches a registered schema. Any message sent on
 Frequency must have a registered Message Schema Id. This registration tells consumers 
 of the message how to read the data in the Payload.
 
-### 1. On-Chain Message
+### On-Chain Message
 One message on chain from a Message Sending Account
+We have two schema options that are important here:
 
-### 2. Batch Message
-One on-chain message that points to lots of messages from different 
-Message Source Accounts. A message in a Parquet file
-lots of individual messages.
-
-### 3. Tombstone Message
-An indication that an individual Frequency message should be deleted. Any actor that 
-ignores a Tombstone would be acting outside the specification, and one possibility 
-is such an actor could be punished via on-chain, governance-approved action.
+- **Payload location** - this is currently either on-chain or ipfs. 
+It could be expanded to more in the future.
+- **Model Type** - this is currently either AvroBinary or Parquet. 
+This tells you how to read the schema's model to construct new message payloads and potentially read or validate data.
 
 ## Message Source Account (MSA)
 See [Account](#account) section for definition.
 
-## ~~MRC~~
-The old name for Frequency. **DO NOT** use.
-
 ## Payload
-The user data in a Message that matches a [Schema](#Schema).
+The user data in a Message that matches a [Schema](#schema).
+
+The user data in a [Message](#message) that is defined specifically by the corresponding schema model. 
+Schema defines the message as a whole.
 
 ## Provider
 An [MSA](#message-source-account-msa) that is registered for being able to be 
@@ -185,6 +187,12 @@ Substrate’s version of gas. This the core value for the “cost” of the acti
 
 ## Token Account
 See [Account](#account) section for definition.
+
+## Tombstone
+Represent a deleted record in a replica of a distributed data store.
+The tombstone is necessary, as distributed data stores use eventual consistency, 
+where only a subset of nodes where the data is stored must respond before an operation 
+is considered to be successful. [See more info here](https://en.wikipedia.org/wiki/Tombstone_(data_store))
 
 ### Transaction Weight
 Weight is the term for the blockchain computational cost of an action. Different 
