@@ -5,7 +5,7 @@
     - [Getting Started]()
     - [Community]()
     - [Contributing]()
-    - [Glossary]()
+    - [Glossary](glossary.md)
     - [Scam Protection]()
     - [FAQ]()
     - [Programs]()
@@ -46,3 +46,4 @@
         - [Requirements]()
         - [Registering]()
         - [Selection]()
+

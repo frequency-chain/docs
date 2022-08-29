@@ -21,19 +21,20 @@ npm install
 ```
 ## Run
 
-### (Option 1) Hot Reload
+### (Option 1) Active Build and Serve via HTTP
 
-To run the doc generator locally and also actively build after each change 
-(a.k.a hot reload), use the following command:
+To run the doc generator locally, actively build after each change and serve them
+via HTTP use the following command:
 
 ``` bash
 npm run serve
 ```
 
-Once the local server is running, the site will automatically open in the browser. 
-A live-reloading preview of the doc can also be viewed at <http://localhost:3000>.
+Once the local server is running, the site will automatically open 
+in the browser at <http://localhost:3000>. Note, it will not automatically refresh
+browser page after each change.
 
-### (Option 2) Static Rendering
+### (Option 2) Manual Build
 To run the doc generator locally and preview the formatted docs from local files, use the following:
 
 ``` bash
