@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - 30-fix-failing-ci-build
 
 jobs:
   deploy:
@@ -14,25 +15,10 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-
-      - name: Setup mdBook 📚
-        uses: peaceiris/actions-mdbook@v1
-        with:
-          mdbook-version: 'latest'
-
-      - name: Install mdbook-linkcheck plugin
-        run: |
-          curl -s https://api.github.com/repos/Michael-F-Bryan/mdbook-linkcheck/releases/latest \
-            | grep browser_download_url \
-            | grep $(rustc -Vv | grep host | cut -d' ' -f2) \
-            | cut -d : -f 2,3 \
-            | tr -d \" \
-            | wget -qi - -O mdbook-linkcheck.zip
-
-          unzip mdbook-linkcheck.zip -d mdbook-linkcheck
-          chmod +x mdbook-linkcheck/mdbook-linkcheck
-          echo "$PWD/mdbook-linkcheck" >> $GITHUB_PATH
       
+      - name: Set up mdBook 📚
+        uses: ./.github/workflows/common/set-up-mdbook
+
       - name: Build mdBook 📚
         run: mdbook build   
 
