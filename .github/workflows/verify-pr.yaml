@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install 💾
+      - name: Install Node Modules 💾
         run: npm ci
 
       - name: Lint and Spellcheck 🧶
@@ -43,4 +43,3 @@ jobs:
       
       - name: Build mdBook 📚
         run: mdbook build
-
