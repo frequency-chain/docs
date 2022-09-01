@@ -1,0 +1,34 @@
+name: Verify PR
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+  
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - name: Get npm cache directory
+        id: npm-cache-dir
+        run: |
+          echo "::set-output name=dir::$(npm config get cache)"
+      - uses: actions/cache@v3
+        with:
+          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Use Node.js 🐰
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install 💾
+        run: npm install
+      - name: Lint and Spellcheck 🧶
+        run: npm run lint
+      - name: Setup mdBook 📚
+        uses: drmingdrmer/mdbook-full@main
+      - name: Build Frequency Docs book 📚
+        run: mdbook build
