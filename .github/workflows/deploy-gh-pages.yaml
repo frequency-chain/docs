@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      # - 30-fix-failing-ci-build
+      - 30-fix-failing-ci-build
 
 jobs:
   deploy:
