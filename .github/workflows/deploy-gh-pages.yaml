@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - 30-fix-failing-ci-build
 
 jobs:
   deploy:
@@ -15,21 +14,6 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-
-      # - name: Setup mdBook
-      #   uses: peaceiris/actions-mdbook@v1
-      #   with:
-      #     mdbook-version: 'latest'
-
-      # - name: Build mdBook
-      #   run: mdbook build
-
-      # - name: Deploy
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   if: ${{ github.ref == 'refs/heads/main' }}
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     publish_dir: ./book/html
 
       - name: Setup mdBook 📚
         uses: drmingdrmer/mdbook-full@main
