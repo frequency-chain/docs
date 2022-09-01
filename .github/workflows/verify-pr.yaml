@@ -22,21 +22,21 @@ jobs:
       - name: Lint and Spellcheck 🧶
         run: npm run lint
 
-      # - name: Setup mdBook 📚
-      #   uses: drmingdrmer/mdbook-full@main
+      - name: Setup mdBook 📚
+        uses: drmingdrmer/mdbook-full@main
 
-      # - name: Build Frequency Docs book 📚
-      #   run: mdbook build
-
-      - name: Setup mdBook
-        uses: peaceiris/actions-mdbook@v1
-        with:
-          mdbook-version: 'latest'
-
-      - name: Install mdbook-linkcheck
-        run: |
-          curl -LSfs https://japaric.github.io/trust/install.sh | \
-            sh -s -- --git Michael-F-Bryan/mdbook-linkcheck
-
-      - name: Build mdBook
+      - name: Build Frequency Docs book 📚
         run: mdbook build
+
+      # - name: Setup mdBook
+      #   uses: peaceiris/actions-mdbook@v1
+      #   with:
+      #     mdbook-version: 'latest'
+
+      # - name: Install mdbook-linkcheck
+      #   run: |
+      #     curl -LSfs https://japaric.github.io/trust/install.sh | \
+      #       sh -s -- --git Michael-F-Bryan/mdbook-linkcheck
+
+      # - name: Build mdBook
+      #   run: mdbook build
