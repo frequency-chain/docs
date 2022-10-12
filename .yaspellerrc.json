@@ -70,6 +70,8 @@
     "B's",
     "blockchains",
     "timestamps",
-    "mempool"
+    "mempool",
+    "parallelization",
+    "refillable"
   ]
 }
