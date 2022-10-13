@@ -37,7 +37,7 @@
     - [Creating an MSA]()
     - [Registering as a Provider]()
     - [Getting Capacity]()
-- [Tokenomics]()
+- [Tokenomics](TokenomicsOverview.md)
   - [Capacity]()
   - [Initial Distribution]()
 - [Node Operators]()
