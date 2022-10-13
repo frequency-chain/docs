@@ -1,4 +1,4 @@
-##Initial Token Distribution:
+## Initial Token Distribution:
 
 Initial distribution applies only to the FRQCY token as Capacity can only be gained through staking.
 

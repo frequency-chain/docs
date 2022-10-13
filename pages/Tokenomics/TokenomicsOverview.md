@@ -13,7 +13,7 @@ Frequency aims to accomplish two goals:
 * **To establish different classes of transactions:** Prioritize data-focused transactions centered around creating and sourcing new data. 
 * **To become a force of democratization amongst a decentralized social network:** Distributing Capacity to users for delegation to Providers 
 
-##FRQCY Token & Capacity
+## FRQCY Token & Capacity
 
 FRQCY is a utility token. Capacity is a non-transferable resource associated with an MSA account. 
 Users can stake FRQCY tokens to generate Capacity through Maximized Capacity Staking or Rewards Capacity Staking. 
@@ -27,7 +27,7 @@ Visit here for more information regarding the Capacity Economic System
 | Unit (FRQCY)   | 8   	   | 1/1			  | 1.00000000    |
 | Million (MFRQCY) | 14		| 1,000,000/1	  | 1,000,000.00  |
 
-##Frequency Users and Democratization:
+## Frequency Users and Democratization:
 
 On the Frequency network, end users do not need to access FRQCY tokens or Capacity to use the network. 
 There are a few primary users on the Frequency network broken into the categories below.
@@ -57,7 +57,7 @@ The limited reach and goals of each incentive provides a safeguard against misus
 ## Crowdloan: 
 Details regarding Crowdloan are still under development.
 
-##Vesting Schedules:
+## Vesting Schedules:
 Details regarding Vesting Schedules are still under development.
 
 * **Investor Vesting:**
@@ -65,7 +65,7 @@ Details regarding Vesting Schedules are still under development.
 	* Voting:  
 *  **Crowdloan Vesting:**
 
-##Useful Terms
+## Useful Terms
 
 * **Capacity:** Capacity is the ability to send messages every Capacity Epoch.
 
