@@ -4,7 +4,7 @@
 
 ## What is Capacity 
 Capacity is a value transaction that allows for the ability to send messages or do a consistent amount of work on the chain that continues over time. 
-It is a non-transferrable resource that acts as an alternative to using FRQCY tokens to perform certain transactions and is managed through a rate-limited continuous stream of transactions.
+It is a non-transferable resource that acts as an alternative to using FRQCY tokens to perform certain transactions and is managed through a rate-limited continuous stream of transactions.
 
 ## Capacity Epoch 
 A set amount of Capacity is available each Capacity Epoch. 

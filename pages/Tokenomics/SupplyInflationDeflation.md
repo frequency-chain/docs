@@ -6,5 +6,5 @@ The Frequency network will mint at genesis 1 Billion FRQCY Tokens until Capacity
 
 * **Deflation:**
 
-Information regarding inflation and deflation has yet to be dermined and is currently under development.
+Information regarding inflation and deflation has yet to be determined and is currently under development.
 
