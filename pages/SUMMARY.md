@@ -38,7 +38,7 @@
     - [Registering as a Provider]()
     - [Getting Capacity]()
 - [Tokenomics](TokenomicsOverview.md)
-  - [Capacity]()
+  - [Capacity](Capacity.md)
   - [Initial Distribution](InitialDistribution.md)
   - [Supply, Inflation, Deflation](SupplyInflationDeflation.md)
 - [Node Operators]()
