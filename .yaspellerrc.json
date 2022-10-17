@@ -72,6 +72,23 @@
     "timestamps",
     "mempool",
     "parallelization",
-    "refillable"
+    "refillable",
+    "subkey",
+    "validators",
+    "macOS",
+    "prereq",
+    "params",
+    "hasKey",
+    "jsonrpc",
+    "param",
+    "protobuf",
+    "bootnodes",
+    "whitespace",
+    "multiaddr",
+    "invulnerables",
+    "WebSocket",
+    "RPCs",
+    "situational",
+    "rpc"
   ]
 }

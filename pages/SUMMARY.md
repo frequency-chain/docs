@@ -46,8 +46,8 @@
   - [Supply, Inflation, Deflation](Tokenomics/SupplyInflationDeflation.md)
 - [Node Operators]()
     - [Running a Node]()
-    - [Collators]()
-        - [Requirements]()
-        - [Registering]()
-        - [Selection]()
+    - [Collators](NodeOperators/Collators.md)
+       - [Collator Roll Out Plan](NodeOperators/CollatorRollOut.md)
+        - [Running a Collator](NodeOperators/RunningCollators.md)
+        - [Collator Troubleshooting](NodeOperators/CollatorTroubleshooting.md)
 
