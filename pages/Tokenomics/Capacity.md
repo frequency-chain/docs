@@ -7,7 +7,7 @@ Capacity is a value transaction that allows for the ability to send messages or 
 It is a non-transferable resource that acts as an alternative to using FRQCY tokens to perform certain transactions and is managed through a rate-limited continuous stream of transactions.
 
 ## Capacity Epoch 
-A set amount of Capacity is available each Capacity Epoch. 
+A set amount of Capacity is available each [Capacity Epoch](#capacity-epoch). 
 A Capacity Epoch acts as a cycle and refills Capacity each Capacity Epoch (see below visual) during which one can use any amount of Capacity for transactions/messages. 
 An Epoch Period is composed of a set number of approximately 100 blocks and could be adjusted through governance. 
 
@@ -21,27 +21,27 @@ The amount of Capacity generated for a Provider from staking FRQCY tokens to the
 **By Use Case:**
 
 * Capacity can be used to perform transactions such as
-* Create and MSA
+* Create and [MSA](#2-message-source-account-msa)
 * Add a key to an MSA
 * Delegate permissions to another MSA
-* Update Delegate Permissions
-* Send a message
-* Send a batch message
+* Update [Delegate Permissions](#delegate-verb-ie-to-delegate)
+* Send a [message](#message)
+* Send a [batch message](#batch-message)
 
 **By User Type**
 
 * **Providers:** 
 Utilize Capacity to put towards user transitions for provider applications and services. 
 This allows applications to increase their users by reducing costs. 
-Maximized Capacity Staking allows Providers to use FRQCY tokens as efficiently as possible, optimizing their Generated Capacity.
+[Maximized Capacity Staking](#2-maximized-capacity-staking-for-applications-and-services) allows Providers to use FRQCY tokens as efficiently as possible, optimizing their Generated Capacity.
 
 * **End Users:** 
 Do not need to have Capacity directly. 
 They can delegate to Providers who generate Capacity for them. 
-Users can participate in Rewards Capacity Staking to support services and participate in on-chain governance with Capacity.
+Users can participate in [Rewards Capacity Staking](#1-rewards-capacity-staking-for-users) to support services and participate in on-chain governance with Capacity.
 
 ## Capacity Implementation Functionality
-Capacity is only effective through the technologies of batching, and parallelization of source-dependent messaging. 
+Capacity is only effective through the technologies of batching, and parallelization of [source-dependent messaging](https://forums.projectliberty.io/t/04-batching-source-dependent-messages-with-delegation/216). 
 These allow Capacity to play three primary roles in the Frequency ecosystem: incentive alignment, cost management, and volume regulation. 
 
 1. **Incentive Alignment:** Capacity works to align independent actors toward increasing the value of the network. 
@@ -53,7 +53,7 @@ Those who use Capacity as a utility receive the benefit from it.
 Those who dump the token after abusing the network will receive a natural market penalty. 
 Network and token values are correlated, encouraging those with the Capacity to align in the goal of a successful and well-functioning network. 
 
-2. **Cost Management:** Capacity acts as an asset, like that of capital expenditure, in the sense that it fulfills long-term value. 
+2. **Cost Management:** Capacity acts as an asset, like that of [capital expenditure](https://en.wikipedia.org/wiki/Capital_expenditure), in the sense that it fulfills long-term value. 
 The FRQCY tokens that generate capacity are locked but the Generated Capacity is usable again and again. 
 Regular message sending is allowed without additional costs. 
 	
@@ -73,12 +73,12 @@ Capacity Epochs allow for expansion of that space where a Capacity holder and ad
 	In batching, adding a single message allows for the cost of that message to be small. 
 	A batched message is one on-chain message that acts as an anchor tied to many off-chain messages from various MSA accounts. 
 	Transferring data for a single batch message is cheaper than pushing data for all messages included in a batch. 
-	More info on batching will be released soon.
+	More information on Frequency batching will be released soon.
 		
 **Validation protects the integrity of the Batch from being manipulated.** 
 Cryptographic technology protects the integrity of messages through the use of hashes and signatures. 
 Validation occurs at write time for non-batched messages and at read time for batched messages. 
-Find more information here. 
+Find more information [here](https://spec.dsnp.org/Frequency/Validation.html). 
 
 ## Capacity Refill:
 Capacity refills at the start of each Capacity Epoch. 
