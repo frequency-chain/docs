@@ -1,6 +1,6 @@
 # Tokenomics
 The Frequency mainnet token is called FRQCY. 
-Frequency also utilizes [Capacity](#capacity), an alternative to using tokens to perform certain types of transactions. 
+Frequency also utilizes [Capacity](https://docs.frequency.xyz/glossary.html#capacity), an alternative to using tokens to perform certain types of transactions. 
 See the Capacity page for more detailed information. 
 In this document, we outline the economics of the FRQCY token, it's functionality in the Frequency network, and the supply and demand dynamics. 
 
@@ -50,7 +50,7 @@ Frequency utilizes a limited incentive model with minimal goals to accomplish th
 The limited reach and goals of each incentive provides a safeguard against misuse and allows for minor adjustments as consequences arise.
 
 1. Encourage collaboration between Providers [(Capacity)](Capacity.md)
-2. Produce the value necessary to support itself [(Collator Rewards)](Collators.md)
+2. Produce the value necessary to support itself (Collator Rewards)
 3. Decentralize system control over time [(Capacity Token Rewards)](#1.-incentive-alignment)
 
 
