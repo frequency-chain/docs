@@ -53,7 +53,7 @@ To learn more about decentralized social networks visit [DSNP.org](https://www.d
 ## Scalability:
 
 Building Frequency as a [Polkadot](https://wiki.polkadot.network/docs/getting-started) parachain offers a solution to the challenge of scaling a social networking platform. 
-Polkadot’s fixed price consensus combined with the relay chain and parachain infrastructures offer capability to manage costs more effectively than other blockchain ecosystems. 
+Polkadot's fixed price consensus combined with the relay chain and parachain infrastructures offer capability to manage costs more effectively than other blockchain ecosystems. 
 
 Frequency addresses scalability primarily through batching and delegation. 
 These schemas significantly reduce the number of transactions the main blockchain needs to verify and record, which in turn speeds up the processing time of the remaining transactions.
