@@ -42,9 +42,9 @@ Users must go through a “thaw” period for staked FRQCY tokens to become liqu
 A thaw period is a time interval, currently expected to be about 7 days, where tokens are not generating any rewards or Capacity but cannot yet be used or transferred to the user’s account. 
 After the thaw period has ended, tokens can be used, transferred, or re-staked. Once unstaking has begun, the Capacity received for those tokens is removed at the start of the next Capacity Epoch. 
 
-## Prioritizaiton of Capacity Transactions
+## Prioritization of Capacity Transactions
 
 Capacity transactions do not have the ability to tip, placing them at a disadvantage to token transactions, in which a tip increases the priority of the transactions likelihood to be added to the next block. 
 
 Frequency prioritizes Capacity transactions over token transactions but place a limit on the block space Capacity transactions can consume. 
-This allows Capacity transactions to fill the allocated spand and still allow for token transactions to fill the remaining block.
+This allows Capacity transactions to fill the allocated spend and still allow for token transactions to fill the remaining block.
