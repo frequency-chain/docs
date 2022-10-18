@@ -1,6 +1,6 @@
 # Tokenomics
 The Frequency mainnet token is called FRQCY. 
-Frequency also utilizes [Capacity](#capacity), an alternative to using tokens to perform certain types of transactions. 
+Frequency also utilizes [Capacity](#glossary/capacity), an alternative to using tokens to perform certain types of transactions. 
 See the Capacity page for more detailed information. 
 In this document, we outline the economics of the FRQCY token, it's functionality in the Frequency network, and the supply and demand dynamics. 
 
