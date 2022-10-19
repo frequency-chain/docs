@@ -1,7 +1,7 @@
 # Tokenomics
 The Frequency mainnet token is called FRQCY. 
-Frequency also utilizes [Capacity](https://docs.frequency.xyz/glossary.html#capacity), an alternative to using tokens to perform certain types of transactions. 
-See the Capacity page for more detailed information. 
+Frequency also utilizes [Capacity](#capacity), an alternative to using tokens to perform certain types of transactions. 
+See the [Capacity](Capacity.md) page for more detailed information. 
 In this document, we outline the economics of the FRQCY token, it's functionality in the Frequency network, and the supply and demand dynamics. 
 
 The Rococo Testnet token is notated as XRQCY - this token is only for testing and holds no value. 
@@ -15,8 +15,8 @@ Frequency aims to accomplish two goals:
 
 ## FRQCY Token & Capacity
 
-FRQCY is a utility token. Capacity is a non-transferable resource associated with an [MSA account](https://docs.frequency.xyz/glossary.html#2-message-source-account-msa). 
-Users can stake FRQCY tokens to generate Capacity through [Maximized Capacity Staking](https://docs.frequency.xyz/glossary.html#2-maximized-capacity-staking-for-applications-and-services) or [Rewards Capacity Staking](https://docs.frequency.xyz/glossary.html#1-rewards-capacity-staking-for-users). 
+FRQCY is a utility token. Capacity is a non-transferable resource associated with an [MSA account](#2-message-source-account-msa). 
+Users can stake FRQCY tokens to generate Capacity through [Maximized Capacity Staking](#2-maximized-capacity-staking-for-applications-and-services) or [Rewards Capacity Staking](#1-rewards-capacity-staking-for-users). 
 Visit here for more information regarding the [Capacity Economic System](Capacity.md).
 
 | Unit   | Decimal Places | Syntax        | Decimal FRQCY |
@@ -33,7 +33,7 @@ On the Frequency network, end users do not need to access FRQCY tokens or Capaci
 There are a few primary users on the Frequency network broken into the categories below.
 
 * **Frequency Providers:**
-Applications and services that use the Capacity Economic system are called [Providers](https://docs.frequency.xyz/glossary.html#provider), and must have Capacity to serve the users that delegate to them. 
+Applications and services that use the Capacity Economic system are called [Providers](#provider), and must have Capacity to serve the users that delegate to them. 
 While Capacity isn’t like other costs, Providers are not dictated how to pay for Frequency. 
 
 * **Coinless Users:**
@@ -43,7 +43,7 @@ While they may interact with tokens for other purposes, they are not required to
 
 * **Direct Frequency Users:**
 	Those who interact with the FRQCY token and are engaged in staking, governance, building new schemas, or other systems on Frequency. 
-	These users overlap with [DSNP users](https://spec.dsnp.org/index.html).
+	These users overlap with [DSNP users](https://spec.dsnp.org/).
 
 ## Frequency Incentives: 
 Frequency utilizes a limited incentive model with minimal goals to accomplish three things outlined below. 
@@ -53,17 +53,12 @@ The limited reach and goals of each incentive provides a safeguard against misus
 2. Produce the value necessary to support itself (Collator Rewards)
 3. Decentralize system control over time [(Capacity Token Rewards)](#1.-incentive-alignment)
 
-
-## Crowdloan: 
-Details regarding Crowdloan are still under development.
-
 ## Vesting Schedules:
 Details regarding Vesting Schedules are still under development.
 
 * **Investor Vesting:**
 	* Token Access:
 	* Voting:  
-*  **Crowdloan Vesting:**
 
 ## [Useful Terms](#glossary) 
 
