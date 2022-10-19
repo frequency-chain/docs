@@ -1,8 +1,8 @@
-## Work in Progress
+## All is subject to change
 
 # Introduction
 
-Frequency is the first implementation of [The Decentralized Social Network Protocol (DSNP)](https://www.dsnp.org/introducing-dsnp.html) operating as a Polkadot parachain. 
+Frequency is the first implementation of [The Decentralized Social Network Protocol (DSNP)](https://www.dsnp.org/) operating as a Polkadot parachain. 
 Frequency delivers essential tooling to create a next generation of people-centric social networking apps that offer consumers more control and choice. 
 In other words, it enables users to interact in a public digital space while retaining agency over their data. 
 It provides scalable message passing as a backbone of new shared protocols that create value through cooperation and user choice. 
@@ -40,19 +40,19 @@ Yet when blockchain technology is applied to high-volume, low-value transactions
 
 The solution necessitates developing a new foundation and infrastructure to secure individual’s data rights and opens innovation beyond the current select few. 
 
-The project originated with [Unfinished](https://www.unfinishedlabs.io/), a social impact organization with a network of partners engaged in technology, academia, social impact, and the arts. The first phase of work focused on delivering the social network as core internet functionality.  The Decentralized Social Network, DSNP serves as a public resource entirely independent of financial incentives. Frequency is the second strange of work and unlocks decentralized social networking at scale for the first time.
+The project originated with [Unfinished](https://unfinished.com/), a social impact organization with a network of partners engaged in technology, academia, social impact, and the arts. The first phase of work focused on delivering the social network as core internet functionality.  The Decentralized Social Network, DSNP serves as a public resource entirely independent of financial incentives. Frequency is the second strange of work and unlocks decentralized social networking at scale for the first time.
 
 Frequency builds on blockchain technology to enable users to interact in a public digital space and retain agency over their data. 
 A public social graph disconnects financial incentivization completely, establishing an essential foundation for the future of social networks. 
 Frequency changes the way blockchain transactions are priced to leverage a network scale suitable for social networking. 
 This approach allows technology to be cost-efficiently used for a new range of high-frequency, massive-scale decentralized apps and services.
 
-To learn more about decentralized social networks visit [DSNP.org](https://www.dsnp.org/introducing-dsnp.html)
+To learn more about decentralized social networks visit [DSNP.org](https://www.dsnp.org/)
 
 
 ## Scalability:
 
-Building Frequency as a [Polkadot](https://wiki.polkadot.network/docs/getting-started) parachain offers a solution to the challenge of scaling a social networking platform. 
+Building Frequency as a [Polkadot](https://wiki.polkadot.network/) parachain offers a solution to the challenge of scaling a social networking platform. 
 Polkadot's fixed price consensus combined with the relay chain and parachain infrastructures offer capability to manage costs more effectively than other blockchain ecosystems. 
 
 Frequency addresses scalability primarily through batching and delegation. 
@@ -60,6 +60,4 @@ These schemas significantly reduce the number of transactions the main blockchai
 
 ## Financial Incentive Freedom for Applications on DSNP and Frequency: 
 
-Removal of financial incentives is a key pillar of DSNP and Frequency’s implementation framework. 
-
-Implementation elements for this concept are currently under development.
+More details coming soon.
