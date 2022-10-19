@@ -15,8 +15,8 @@ Frequency aims to accomplish two goals:
 
 ## FRQCY Token & Capacity
 
-FRQCY is a utility token. Capacity is a non-transferable resource associated with an [MSA account](#2-message-source-account-msa). 
-Users can stake FRQCY tokens to generate Capacity through [Maximized Capacity Staking](#2-maximized-capacity-staking-for-applications-and-services) or [Rewards Capacity Staking](#1-rewards-capacity-staking-for-users). 
+FRQCY is a utility token. Capacity is a non-transferable resource associated with an [MSA account](https://docs.frequency.xyz/glossary.html#2-message-source-account-msa). 
+Users can stake FRQCY tokens to generate Capacity through [Maximized Capacity Staking](https://docs.frequency.xyz/glossary.html#2-maximized-capacity-staking-for-applications-and-services) or [Rewards Capacity Staking](https://docs.frequency.xyz/glossary.html#1-rewards-capacity-staking-for-users). 
 Visit here for more information regarding the [Capacity Economic System](Capacity.md).
 
 | Unit   | Decimal Places | Syntax        | Decimal FRQCY |
@@ -33,7 +33,7 @@ On the Frequency network, end users do not need to access FRQCY tokens or Capaci
 There are a few primary users on the Frequency network broken into the categories below.
 
 * **Frequency Providers:**
-Applications and services that use the Capacity Economic system are called [Providers](#provider), and must have Capacity to serve the users that delegate to them. 
+Applications and services that use the Capacity Economic system are called [Providers](https://docs.frequency.xyz/glossary.html#provider), and must have Capacity to serve the users that delegate to them. 
 While Capacity isn’t like other costs, Providers are not dictated how to pay for Frequency. 
 
 * **Coinless Users:**

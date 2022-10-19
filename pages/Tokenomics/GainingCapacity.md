@@ -10,21 +10,21 @@ Find more information on staking here.
 ### Token vs Message Source Accounts:
 
 * **Token: Standard across other parachains:**
-[Token Accounts](#1-token-account) hold the token used by Frequency (FRQCY). 
+[Token Accounts](https://docs.frequency.xyz/glossary.html#1-token-account) hold the token used by Frequency (FRQCY). 
 They are the same across Polkadot accounts and most other parachains. 
 Anyone can create and use these accounts but they are only active if they have FRQCY tokens stored. 
 These accounts can only store and execute token transactions
 
 * **Message Source Accounts: Unique to Frequency:** 
-[MSA's](#2-message-source-account-msa) are unique to Frequency and used to send messages using Capacity (from the user or Provider). 
+[MSA's](https://docs.frequency.xyz/glossary.html#2-message-source-account-msa) are unique to Frequency and used to send messages using Capacity (from the user or Provider). 
 MSA's can provide or revoke access to the chain and providers 
 
-### Two types of [staking](#staking): 
+### Two types of [staking](https://docs.frequency.xyz/glossary.html#staking): 
 Frequency supports two types of staking to generate Capacity - each for a different purpose. 
 Capacity must be directed/delegated to a selected Provider for **both** methods of staking.
 
 1. **Maximized Capacity Staking:**
-The goal of [Maximized Capacity Staking](#2-maximized-capacity-staking-for-applications-and-services) is to use FRQCY tokens as efficiently as possible to generate the most amount of Capacity possible. 
+The goal of [Maximized Capacity Staking](https://docs.frequency.xyz/glossary.html#2-maximized-capacity-staking-for-applications-and-services) is to use FRQCY tokens as efficiently as possible to generate the most amount of Capacity possible. 
 Applications, services, and Providers need Capacity to interact with Frequency on behalf of their users. 
 The amount of Generated Capacity is balanced against Rewards Capacity Staking to ensure that it is almost always more capital efficient. 
 Because Providers have an amount of Capacity they need to operate they care most about gaining the necessary Capacity while regular users don’t need a specific amount of Capacity and can opt for more useful token earnings.
