@@ -17,7 +17,7 @@
             - [Account Safety]()
             - [Token Accounts]()
             - [Message Source Accounts]()
-        - [Capacity]()
+        - [Capacity](GainingCapacity.md)
         - [Staking]()
     - [Vision]()
     - [Governance]()
