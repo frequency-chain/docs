@@ -27,7 +27,7 @@ These highly compressed files are stored using the same `SchemaId` in IPFS, that
 Other Parquet formats are permitted, but not recommended, as it may exhibit challenges for end users to read the data and would require notification from Providers. 
 A read-check validation is currently under development for Parquet files.
 
-* **JSON Arvo Type (On-Chain):** Frequency implements Apache Avro for all on-chain transaction storage. 
+* **JSON Avro Type (On-Chain):** Frequency implements Apache Avro for all on-chain transaction storage. 
 * Data is always accompanied by a schema that allows files to be processed later by any program
 
 ## [Payload Location:](#payload) 
