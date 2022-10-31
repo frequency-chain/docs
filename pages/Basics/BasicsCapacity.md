@@ -39,3 +39,4 @@ This allows applications to increase their users by reducing costs.
 Do not need to have Capacity directly. 
 They can delegate to Providers who generate Capacity for them. 
 Users can participate in [Rewards Capacity Staking](#1-rewards-capacity-staking-for-users) to support services and participate in on-chain governance with Capacity.
+
