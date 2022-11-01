@@ -1,6 +1,6 @@
 # Capacity 
 
-### Capacity is currently under development - more details will be released soon regarding instructions and implementation details.
+#### Capacity is currently under development - more details will be released soon regarding instructions and implementation details.
 
 ## What is Capacity 
 Capacity is a value transaction that allows for the ability to send messages or do a consistent amount of work on the chain that continues over time. 
@@ -16,9 +16,9 @@ The amount of Capacity generated for a Provider from staking FRQCY tokens to the
 
 ![Capacity Epoch Diagram](https://global.discourse-cdn.com/standard11/uploads/unfinishedlabs/original/1X/6fadc75824cd238e5aa1decd06339f8f60d7978e.png)
 
-## Purpose of Capacity for Frequency: 
+## Purpose of Capacity for Frequency
 
-**By Use Case:**
+### By Use Case
 
 * Capacity can be used to perform transactions such as
 * Create and [MSA](#2-message-source-account-msa)
@@ -28,7 +28,7 @@ The amount of Capacity generated for a Provider from staking FRQCY tokens to the
 * Send a [message](#message)
 * Send a [batch message](#batch-message)
 
-**By User Type**
+### By User Type
 
 * **Providers:** 
 Utilize Capacity to put towards user transitions for provider applications and services. 
