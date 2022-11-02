@@ -4,9 +4,12 @@ Frequency has two account types: [Token Accounts](#1-token-account) and [Message
 
 Token Accounts act as a “wallet” and are responsible for holding a balance, transferring tokens, and paying for transactions. 
 
-Message Source Accounts are unique to Frequency and allow users to broadcast messages and delegate to a Registered MSA account, called a [Provider](#provider).
+Message Source Accounts are unique to Frequency and allow users to broadcast messages and delegate to a [Registered MSA account](2-message-source-account-msa), called a [Provider](#provider).
 
-Users must have a Message Source Account to send messages on Frequency but may not require a Token Account due to delegation.
+Users must have a Message Source Account to send messages on Frequency. 
+Token Accounts and MSA's can exist independently of the other. 
+
+Visit the Token Accounts and Message Source Accounts pages for specific account information. 
 
 ## Accounts by Use Case
 ### Primary Users
