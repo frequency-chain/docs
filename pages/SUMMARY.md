@@ -16,7 +16,7 @@
         - [Accounts](Basics/AccountOverview.md)
             - [Account Safety]()
             - [Token Accounts]()
-            - [Message Source Accounts]()
+            - [Message Source Accounts](Basics/MessageSourceAccounts.md)
         - [Capacity](Basics/Capacity.md)
         - [Staking]()
         - [Schemas](Basics/Schemas.md)

@@ -11,7 +11,7 @@ Anyone can create and use these accounts but they are only active if they have F
 These accounts can store tokens and execute transactions.
 
 * **Message Source Accounts: Unique to Frequency** 
-[MSA's](https://docs.frequency.xyz/glossary.html#2-message-source-account-msa) are unique to Frequency and used to send messages using Capacity (from the user or Provider). 
+[MSAs](Basics/MessageSourceAccounts.md) are unique to Frequency and used to send messages using Capacity (from the user or Provider). 
 MSA's can provide or revoke access to the chain and providers 
 
 ### Two Types of [Staking](https://docs.frequency.xyz/glossary.html#staking)
