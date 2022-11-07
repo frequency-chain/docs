@@ -26,8 +26,7 @@ These highly compressed files are stored by message producers in a decentralized
 Other Parquet formats are permitted, but not recommended, as it may exhibit challenges for end users to read the data and would require notification from Providers.
 A read-check validation is currently under development for Parquet files.
 
-* **JSON Avro Type (On-Chain):** Frequency implements Apache Avro for all on-chain transaction storage.
-* Data is always accompanied by a schema that allows files to be processed later by any program
+* **Avro Type (On-Chain):** Frequency implements [Apache Avro](https://avro.apache.org/) for all on-chain transaction storage.
 
 Data is always accompanied by a schema that allows files to be processed later by any program
 
