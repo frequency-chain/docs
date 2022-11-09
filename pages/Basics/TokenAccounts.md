@@ -18,7 +18,7 @@ Users must acquire tokens via an exchange or transfer tokens into an account add
 #### Capacity is currently under development - more details will be released soon regarding instructions and implementation details.
 
 [Capacity](#capacity) is a value transaction that allows for the ability to send messages or do a consistent amount of work on the chain that continues over time. 
-It is a non-transferrable resource that acts as an alternative to using FRQCY tokens to perform certain transactions and is managed through a rate-limited continuous stream of transactions.
+It is a non-transferable resource that acts as an alternative to using FRQCY tokens to perform certain transactions and is managed through a rate-limited continuous stream of transactions.
  
 Users must have a Token Account to engage with FRQCY tokens and Capacity. 
 Capacity transactions can interact with only two things: account management and sending messages. 

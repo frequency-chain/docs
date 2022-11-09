@@ -20,6 +20,7 @@
         - [Capacity](Basics/Capacity.md)
         - [Staking]()
         - [Schemas](Basics/Schemas.md)
+        - [Messages]()
     - [Vision]()
     - [Governance]()
         - [Roadmap]()
