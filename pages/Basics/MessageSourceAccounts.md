@@ -18,7 +18,7 @@ The `MSA ID` creates a stable identifier that multiple keys link to. The same ke
 An MSA can [delegate](#delegate-verb-ie-to-delegate), or grant access to Providers to take action on their behalf.
 Providers use the Capacity Economic System to serve the users that delegate to them.
 
-### Delegation accomplishes two primary objectives:
+### Delegation accomplishes two primary objectives
 
 1. It allows users to interact with Frequency without in-depth knowledge of blockchain technology.
 2. Shifts the responsibility of transaction fees from the individual to the Provider.
@@ -41,5 +41,5 @@ Users submit a transaction from their Token Account to their MSA Account to pay 
 * *Future Development:*
 Allows permissions for Providers to take action on behalf of the user (Ex. Sign in with Google, link with contacts, etc.)
 
-Visit the Provider, [Token Accounts](Basics/TokenAccounts.md) and Delegation pages for more details specific to these topics.
+Visit the Provider, [Token Accounts](Basics/TokenAccounts.md), and Delegation pages for more details specific to these topics.
 
