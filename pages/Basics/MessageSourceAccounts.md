@@ -41,5 +41,5 @@ Users submit a transaction from their Token Account to their MSA Account to pay 
 * *Future Development:*
 Allows permissions for Providers to take action on behalf of the user (Ex. Sign in with Google, link with contacts, etc.)
 
-Visit the Provider, [Token Accounts](Basics/TokenAccounts.md), and Delegation pages for more details specific to these topics.
+Visit the Provider, [Token Accounts](./TokenAccounts.md), and Delegation pages for more details specific to these topics.
 

@@ -2,9 +2,9 @@
 
 Frequency has two account types: Token Accounts and Message Source Accounts (MSAs).
 
-[Token Accounts](Basics/TokenAccounts.md) are responsible for holding a balance, transferring tokens, and paying for transactions. These accounts are the same as on the [Polkadot chain](https://wiki.polkadot.network/docs/learn-accounts).
+[Token Accounts](./TokenAccounts.md) are responsible for holding a balance, transferring tokens, and paying for transactions. These accounts are the same as on the [Polkadot chain](https://wiki.polkadot.network/docs/learn-accounts).
 
-[Message Source Accounts](Basics/MessageSourceAccounts.md) are unique to Frequency and allow users to broadcast messages and delegate to a [Registered MSA account](2-message-source-account-msa), called a [Provider](#provider).
+[Message Source Accounts](./MessageSourceAccounts.md) are unique to Frequency and allow users to broadcast messages and delegate to a [Registered MSA account](#2-message-source-account-msa), called a [Provider](#provider).
 
 Users must have a Message Source Account to send messages on Frequency.
 A user does not need a Token Account to be able to have an MSA.
@@ -14,7 +14,7 @@ Both Token Accounts and the private keys that control an MSA are stored in such 
 
 See [Polkadot's Wiki](https://wiki.polkadot.network/docs/build-wallets) for supported wallets.
 
-Visit the [Token Accounts](Basics/TokenAccounts.md) and [Message Source Accounts](Basics/MessageSourceAccounts.md) pages for specific account information.
+Visit the [Token Accounts](./TokenAccounts.md) and [Message Source Accounts](./MessageSourceAccounts.md) pages for specific account information.
 
 ## Who would need an MSA and/or Token Account?
 ### Primary Users
