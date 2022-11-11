@@ -18,7 +18,7 @@
             - [Token Accounts](Basics/TokenAccounts.md)
             - [Message Source Accounts](Basics/MessageSourceAccounts.md)
         - [Capacity](Basics/Capacity.md)
-        - [GainingCapacity](Basics/GainingCapacity.md)
+        - [Gaining Capacity](Basics/GainingCapacity.md)
         - [Staking]()
         - [Schemas](Basics/Schemas.md)
         - [Messages]()
