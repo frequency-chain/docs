@@ -21,7 +21,7 @@ The amount of Capacity generated for a Provider from staking FRQCY tokens to the
 ### By Use Case
 
 * Capacity can be used to perform transactions such as
-* Create and [MSA](#2-message-source-account-msa)
+* Create and [MSA](./MessageSourceAccounts.md)
 * Add a key to an MSA
 * Delegate permissions to another MSA
 * Update [Delegate Permissions](#delegate-verb-ie-to-delegate)
