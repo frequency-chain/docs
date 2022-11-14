@@ -29,4 +29,4 @@ This phase will test the incentivization as Frequency progresses to fully public
 * Collators are selected based on bond, governance support, and uptime that will be developed
 * Progression highly depends on the safety and security of the network
 
-Post completion, Frequency plans to continue running Collators as well, to do our part to ensure the guarantees do state and access. 
+Post completion, Frequency plans to continue running Collators as well, to do our part to ensure the guarantees do state and access.
