@@ -71,6 +71,22 @@
     "blockchains",
     "timestamps",
     "mempool",
-    "validators"
+    "validators",
+    "Subkey",
+    "macOS",
+    "Perreq",
+    "Params",
+    "hasKey",
+    "jsonrpc",
+    "params",
+    "protobuf",
+    "bootnodes",
+    "whitespace",
+    "multiaddr",
+    "invulnerables",
+    "WebSocket",
+    "RPCs",
+    "Situational",
+    "rpc"
   ]
 }

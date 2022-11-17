@@ -9,7 +9,7 @@ Collator operators will have some technical and financial requirements to be abl
 Collator nodes require fast enough hardware and bandwidth to service the network within the necessary block time.
 If a Collator lags or drops offline for more than the minimum time, they will be kicked out of the Collator candidate pool.
 
-Collators follow the same expectations outlined in Polkadot’s reference hardware.
+Collators follow the same expectations outlined in Polkadot's reference hardware.
 
 #### See Running a Node for details on node setup and deployment
 
