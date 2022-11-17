@@ -1,4 +1,4 @@
-# Collator Troubleshooting 
+# Collator Troubleshooting
 
 ## Helpful Links and References
 - https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot#set-session-keys
