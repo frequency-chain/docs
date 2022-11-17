@@ -70,6 +70,7 @@
     "B's",
     "blockchains",
     "timestamps",
-    "mempool"
+    "mempool",
+    "validators"
   ]
 }
