@@ -99,20 +99,4 @@ Collators are required to post a “bond” to register as a Collator candidate.
     - It is also possible for your session key to match your Controller Account, but not suggested for production
 1. Wait until the relay chain and parachain are up to date and synced
 
-## Launch Collator Setup
-
-1. Follow steps 1-3 above
-2. Inject your generated Session Key into the server via localhost (or using external rpc and )
-    ```
-    curl --location --request POST 'http://localhost:9933' \
-    --header 'Content-Type: application/json' \
-    --data-raw '{
-        "jsonrpc": "2.0",
-        "method": "author_insertKey",
-        "params": ["aura", "secret phrase would go here but this is not one", "0x...hex public key here"],
-        "id": 1
-    }'
-    ```
-3. Wait until the relay chain is synchronized
-
-#### See [Collator Troubleshooting](./CollatorTroubleshooting.md) for additional information.
+#### See [Troubleshooting](./Troubleshooting.md) for help when things go wrong.

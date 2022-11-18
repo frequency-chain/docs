@@ -16,7 +16,7 @@ The unique identification of schemas on Frequency is a `SchemaId` that is set wh
 A `SchemaID` ensures there is only one type of schema that exists for a specific format of data.
 
 ## Properties of Schemas
-### [Models](#on-chain-message)
+### Models
 Schema Models define the format and structure of the data.
 Frequency currently supports two model formats for data to differentiate between on-chain and off-chain storage.
 
@@ -30,7 +30,7 @@ A read-check validation is currently under development for Parquet files.
 
 Data is always accompanied by a schema that allows files to be processed later by any program
 
-## [Payload Location](#payload)
+## Payload Location
 Payload Location specifies where the data will be stored: on-chain or off-chain.
 Off-chain messages offer a decentralized encrypted location at a lower transaction price and faster transaction publishing.
 On-chain messages offer increased privacy and security at a higher price point and slower transaction publishing.

@@ -89,6 +89,9 @@
     "WebSocket",
     "RPCs",
     "situational",
-    "rpc"
+    "rpc",
+    "testnet",
+    "roadmaps",
+    "MeWe"
   ]
 }

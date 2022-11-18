@@ -13,18 +13,18 @@ The `Account ID` both identifies the Token Account and represents the public key
 Token Accounts send funds to an MSA to pay transaction fees to send messages.
 Users must acquire tokens via an exchange or transfer tokens into an account address.
 
-## [Capacity](./Capacity.md)
+## Capacity
 
 #### Capacity is currently under development - more details will be released soon regarding instructions and implementation details.
 
-[Capacity](#capacity) is a value transaction that allows for the ability to send messages or do a consistent amount of work on the chain that continues over time.
+Capacity is a value transaction that allows for the ability to send messages or do a consistent amount of work on the chain that continues over time.
 It is a non-transferable resource that acts as an alternative to using FRQCY tokens to perform certain transactions and is managed through a rate-limited continuous stream of transactions.
 
 Users must have a Token Account to engage with FRQCY tokens and Capacity.
 Capacity transactions can interact with only two things: account management and sending messages.
 Other transactions use token fees alone.
 
-Visit the [Capacity](./Capacity.md) and [Gaining Capacity](./GainingCapacity.md) pages for more detailed information.
+Visit [Tokenomics](../Tokenomics/TokenomicsOverview.md) for more detailed information.
 
 ## Overview
 To summarize, Token Accounts support the following actions:

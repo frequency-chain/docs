@@ -18,7 +18,7 @@ Payload Location specifies where the data will be stored: on-chain or off-chain.
 * On-chain messages offer increased privacy and security at a higher price point and slower transaction publishing.
 * Off-chain messages offer a decentralized encrypted location at a lower price and faster transaction publishing.
 
-Visit the [Schemas](https://docs.frequency.xyz/Basics/Schemas.html) page to learn more.
+Visit the [Schemas](./Schemas.md) page to learn more.
 
 ## Batching vs Single Messages
 
@@ -38,8 +38,6 @@ Ordering of messages on-chain occurs as received and will have a transaction ind
 
 > For example, Node A has 5 messages and Node B has 5 messages. If Node A posts all of the extrinsic of their messages to the mempool before B, then Node A's messages will be posted first and show up in the block earlier than B's messages.
 
-Contrary to other blockchains, Frequency does not implement the concept of ‘tips’ to submit messages sooner.
-
 Messages off-chain are encouraged to use optional timestamps. Due to the nature of timestamps, ordering cannot be guaranteed for off-chain messages. Message replies to off-chain messages are recorded in response to the initial message in which case message ordering is canonical.
 
 ## Retrieving from the Chain:
@@ -52,7 +50,7 @@ Messages may be retrieved from the chain by calling the pointer message location
 
 Providers would purchase what amounts to a per-epoch (1 or more blocks) “allowance” for messages. Once the capacity is used up, the Provider must wait until the next epoch, when their capacity would refill, before they could resume posting messages.
 
-Learn more about [Capacity](https://docs.frequency.xyz/Basics/Capacity.html) here.
+Learn more about [Capacity](../Tokenomics/Capacity.md) here.
 
 ### Tokens
 FRQCY Tokens allow users to pay for a transaction based on its “weight," proportional to the amount of chain database storage accessed or changed, as calculated when executing the transaction. This type of payment is already supported.

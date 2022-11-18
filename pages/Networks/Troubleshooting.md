@@ -1,10 +1,18 @@
-# Collator Troubleshooting
+# Troubleshooting
 
-## Helpful Links and References
+## Common Logs
+
+- `-lcumulus-collator=trace` Trouble with collating and forming blocks
+- `-lsync=trace` Trouble with syncing and peers
+
+
+## Key Generation
+
+### Helpful Links and References
 - https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot#set-session-keys
 - https://wiki.polkadot.network/docs/learn-keys
 
-### Detailed Key Generation
+### Generating Keys
 
 - Suggested: Subkey https://support.polkadot.network/support/solutions/articles/65000180519-how-to-create-an-account-in-subkey
     - macOS Prereq
@@ -58,9 +66,3 @@ curl --location --request POST 'http://localhost:9933' \
     "id": 1
 }'
 ```
-
-## Troubleshooting
-
-### Logs
-- `-lcumulus-collator=trace` Trouble with collating and forming blocks
-- `-lsync=trace` Trouble with syncing and peers
