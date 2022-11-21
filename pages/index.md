@@ -17,11 +17,11 @@ Here you can find detailed documentation for Frequency, official implementation 
 	<a href="glossary.html"><div>Glossary</div></a>
 </div>
 
-<!-- FUTURE Links once these pages are filled out...->
+<!-- FUTURE Links once these pages are filled out... -->
 
 <!--
 <div class="button-links">
 	<a href="Roadmap.html"><div>Roadmap</div></a>
 	<a href="Governance/Overview.html"><div>Governance</div></a>
 </div>
-->
+-->
