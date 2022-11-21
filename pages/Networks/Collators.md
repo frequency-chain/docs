@@ -17,4 +17,4 @@ Collators generate blocks on Frequency from transactions taken from the mempool 
 The core team will run a few collator nodes to ensure the Frequency  Parachain is always running.
 We encourage the community to run their own Collator nodes to help maintain the network.
 
-More details will soon be released along with detailed instructions on how to run a Collator node.
+Learn more about [how to run a Collator](./RunningCollators.md).

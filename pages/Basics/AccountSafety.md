@@ -26,4 +26,4 @@ See the [Token Account](./TokenAccounts.md) and [Message Source Account](./Messa
 ## Resources
 
 - [Polkadot support article](https://support.polkadot.network/support/solutions/articles/65000181874-how-to-store-your-mnemonic-phrase-and-backup-file-safely) with more information about key security.
-- [General information](https://wiki.polkadot.network/docs/learn-account-generation) about Polkadot’s account generation and security.
+- [General information](https://wiki.polkadot.network/docs/learn-account-generation) about the Polkadot account generation and security.

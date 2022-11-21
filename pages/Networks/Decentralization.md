@@ -9,7 +9,7 @@ To accomplish this, we have three key initiatives to execute:
 2. Expansion and Testing: Open Applications
 3. Public Collators: Anyone can register as a Collator candidate
 
-**Initialization**
+## Initialization (Current)
 
 * Integrates Collators from select organizations
 * Organizations guarantee public transparency and access to all non-malicious transactions to the block
@@ -17,7 +17,7 @@ To accomplish this, we have three key initiatives to execute:
 
 Collators will receive FRQCY token grants to assist with operational costs distributed through the genesis and governance
 
-**Expansion and Testing**
+## Expansion and Testing
 
 * Collator applications will be open to anyone
 * Collators will form the foundation of the public Collator set
@@ -25,7 +25,7 @@ Collators will receive FRQCY token grants to assist with operational costs distr
 
 This phase will test the incentivization as Frequency progresses to fully public Collators. 
 
-**Public Collators**
+## Public Collators
 
 * Collators are selected based on bond, governance support, and uptime that will be developed
 * Progression highly depends on the safety and security of the network

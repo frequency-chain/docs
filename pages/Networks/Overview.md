@@ -2,33 +2,30 @@
 
 ## Frequency Mainnet
 
-TODO
+|  |  |
+| --- | --- |
+| Relay Chain     | [Polkadot](https://wiki.polkadot.network/) |
+| ParaId          | 2091 |
+| Public RPC Node | `wss://0.rpc.frequency.xyz`, `wss://1.rpc.frequency.xyz` |
+| Bootnodes       | `/dns4/0.boot.frequency.xyz/tcp/30333/ws/p2p/12D3KooWBd4aEArNvXECtt2JHQACBdFmeafpyfre3q81iM1xCcpP`, `/dns4/1.boot.frequency.xyz/tcp/30333/ws/p2p/12D3KooWCW8d7Yz2d3Jcb49rWcNppRNEs1K2NZitCpPtrHSQb6dw` |
 
 ## Frequency Rococo Testnet
 
-TODO
+Frequency Rococo is used as a testnet for those building on
 
-## Nodes
-
-TODO and link to nodes
-
-
-## Collators TODO Clean up and link to the sub-pages
-
-Collators maintain parachains by collecting parachain transactions from users and producing state transition proofs for the Relay Chain validators.
-Essentially they serve as transaction censorship that generates blocks and submits them to the Relay Chain.
-
-They maintain a full node on both the parachain and Relay Chain.
-As a parachain, Frequency’s network is decentralized and requires only one honest Collator to be censorship-resistant.
-See more details about Collators on [Polkadot's Wiki Page.](https://wiki.polkadot.network/docs/learn-collator)
-
-![Collator Architecture](https://wiki.polkadot.network/assets/images/polkadot-consensus-example-1-b4a05f2e5a4b991594612da57e1d6dfd.png)
-
-### Active Collators
-
-The core team will run a few collator nodes to ensure the Frequency  Parachain is always running.
-We encourage the community to run their own Collator nodes to help maintain the network.
-
-More details will soon be released along with detailed instructions on how to run a Collator node.
+|  |  |
+| --- | --- |
+| Relay Chain     | [Rococo](https://wiki.polkadot.network/docs/build-pdk#rococo-testnet) |
+| ParaId          | 4044 |
+| Public RPC Node | `wss://rpc.rococo.frequency.xyz` |
+| Bootnodes       | `/dns4/0.boot.rococo.frequency.xyz/tcp/30333/ws/p2p/12D3KooWArmKDbY8Y6XXHGodosWAjRWWxSw5YxWEjSZTBNjJXVSC` |
 
 
+<div class="button-links">
+	<a href="Node.html"><div>Nodes</div></a>
+	<a href="RunningCollators.html"><div>Collators</div></a>
+</div>
+<div class="button-links">
+	<a href="Decentralization.html"><div>Decentralization Roadmap</div></a>
+	<a href="Troubleshooting.html"><div>Troubleshooting</div></a>
+</div>
