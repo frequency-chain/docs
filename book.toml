@@ -12,6 +12,7 @@ site-url = "/pages/"
 git-repository-url = "https://github.com/LibertyDSNP/frequency-docs"
 edit-url-template = "https://github.com/LibertyDSNP/frequency-docs/blob/main/{path}"
 preferred-dark-theme = "coal"
+additional-css = ["css/extended.css"]
 
 # https://github.com/Michael-F-Bryan/mdbook-linkcheck
 [output.linkcheck]

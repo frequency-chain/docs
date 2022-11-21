@@ -1,0 +1,48 @@
+.nav-return,
+.nav-return:visited {
+    color: var(--sidebar-fg);
+    text-decoration: none;
+}
+
+#logo, #logo:hover, #logo:visited, #logo:hover:visited {
+    color: var(--fg);
+    letter-spacing: -0.1rem;
+    text-decoration: none;
+    font-size: 4.2rem;
+    font-weight: 300;
+}
+
+.button-links {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.button-links a {
+    font-weight: 300;
+    background-color: transparent;
+    border: 2px solid var(--sidebar-active);
+    border-radius: 15px;
+    user-select: none;
+    padding: 40px 10%;
+    margin: 20px;
+    display: flex;
+    font-size: 2.5rem;
+    font-weight: 400;
+    flex: 1;
+    transition-property: border;
+    transition-duration: 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-links a:hover {
+    text-decoration: none;
+    border: 2px solid #29fd47;
+}
+
+.button-links a div {
+    text-align: center;
+}
