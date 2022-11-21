@@ -1,6 +1,6 @@
 # Summary
 
-[Frequency Docs](index.md)
+[About](index.md)
 - [General](General.md)
     - [Community](Community.md)
     - [Contributing](Contributing.md)
