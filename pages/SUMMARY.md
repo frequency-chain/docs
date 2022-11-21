@@ -1,7 +1,7 @@
 # Summary
 
 [Frequency Docs](index.md)
-- [General](General.md) <!-- Header Only ->
+- [General](General.md)
     - [Community](Community.md)
     - [Contributing](Contributing.md)
     - [Glossary](glossary.md)
@@ -12,7 +12,7 @@
         - [Token Accounts](Basics/TokenAccounts.md)
         - [Message Source Accounts](Basics/MessageSourceAccounts.md)
     - [Schemas](Basics/Schemas.md)
-    - [Messages](Basics/BasicsMessages.md)
+    - [Messages](Basics/Messages.md)
 - [Roadmap](Roadmap.md)
 - [Governance](Governance/Overview.md)
 - [Networks](Networks/Overview.md)

@@ -1,6 +1,6 @@
-# What is a Message
+# Messages
 
-A message on Frequency consists of data conforming to a registered `SchemaID`.
+A message on Frequency consists of data conforming to a registered `SchemaId`.
 
 ## How messages relate to Schemas
 Any message sent must be associated with a `SchemaId` to group data types and indicate to users how to read the data in the payload. The schema specifies whether the message is on-chain or off-chain (IPFS). The `SchemaId` validates that the message data contains all of the necessary field information required.
