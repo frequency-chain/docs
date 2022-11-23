@@ -1,43 +1,38 @@
-# What is a Schema
+# What is a Schema?
 
-[Schemas](#schema) are registered data structures that define the format and properties of how messages are stored. Messages are stores and parsed by the consumer of the message.
+Frequency is a data-distribution blockchain that uses Schemas define the flow of data across different channels.
+
+Schemas are registered data structures that define the format and how message payloads are stored and how the consumers can parse the message.
 This ensures message correctness, validity, extensibility, and interoperability between services.
-
-Frequency is a data-distribution blockchain and implements schemas to define the flow of data across different channels.
 This allows Frequency to support a variety of message types and enforce communication protocol between network and service participants.
 
-Schemas are immutable.
-Once the schema is created it cannot be changed.
-Schema immutability prevents an overly complicated necessity to evolve and update schema(s), simplifying the process.
+Schemas are immutable; once created, they cannot be changed.
+Schema immutability removes evolving data structures and relies on new schemas for updates to simplify upgrades.
 
 ## Schema Registry
-The `Schema Registry` provides an on-chain repository for schemas, thereby allowing participants of the network to flexibly interact and exchange messages without the challenge of managing different schema types.
+The `Schema Registry` is the on-chain repository for schemas, allowing participants of the network to flexibly interact with and exchange messages without the challenge of managing unknown schema types.
 The unique identification of schemas on Frequency is a `SchemaId` that is set when the schema is created.
-A `SchemaID` ensures there is only one type of schema that exists for a specific format of data.
 
 ## Properties of Schemas
 ### Models
 Schema Models define the format and structure of the data.
 Frequency currently supports two model formats for data to differentiate between on-chain and off-chain storage.
 
-* **Parquet Type (Off-Chain):**
-Frequency recommends constrained requirements for Parquet files.
-These highly compressed files are stored by message producers in a decentralized file system such as IPFS and a pointer to that file is stored on the Frequency blockchain.
-Other Parquet formats are permitted, but not recommended, as it may exhibit challenges for end users to read the data and would require notification from Providers.
-A read-check validation is currently under development for Parquet files.
+* **Parquet Type:**
+Frequency recommends Parquet files for off-chain data and is great for batching multiple user messages.
+These highly-compressed files are stored by message producers in a decentralized file system such as IPFS, and a pointer to that file is stored on the Frequency blockchain.
 
-* **Avro Type (On-Chain):** Frequency implements [Apache Avro](https://avro.apache.org/) for all on-chain transaction storage.
+* **Avro Type:**
+Frequency recommends [Apache Avro](https://avro.apache.org/) when on-chain storage is desired.
 
-Data is always accompanied by a schema that allows files to be processed later by any program
+Data is always accompanied by a `SchemaId` so payload content can be parsed correctly.
 
 ## Payload Location
 Payload Location specifies where the data will be stored: on-chain or off-chain.
-Off-chain messages offer a decentralized encrypted location at a lower transaction price and faster transaction publishing.
-On-chain messages offer increased privacy and security at a higher price point and slower transaction publishing.
+Off-chain messages offer a lower transaction price and can batch many messages together.
+On-chain messages offer increased validation and security, but at a higher price point and does not allow for batching.
 
-* **Off-Chain:** [IPFS](#interplanetary-file-system-ipfs) is a preferred, decentralized file system that allowed dApps to create a batch of messages and store them in IPFS an off-chain. Only the pointer to the file location is published to Frequency on-chain storage. Public domain data allows any user to obtain file information.
+* **Off-Chain:** Frequency currently supports [IPFS](../glossary.md#interplanetary-file-system-ipfs) for off-chain data storage.
+Only the pointer to the file location is published to Frequency, but any user should have enough information to retrieve and validate the payload contents.
 
-* [**On-Chain**](#on-chain-message): Utilize a key-value pair (A UniqueID stored against a SchemaID that matches an incoming message) where data is stored in an immutable blockchain database.
-
-
-Additional information on **How to Create a Schema** will be released soon.
+* **On-Chain**: Data is stored in the Frequency database and does not require additional protocol support for retrieval.

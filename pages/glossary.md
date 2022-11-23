@@ -87,6 +87,10 @@ it is a number of blocks before you get to reuse your Capacity.
 
 A Frequency node that generates blocks and submit them to the Relay Chain.
 
+### Invulnerable Collator
+
+A collator that does not receive a reward and will not be removed without governance action.
+
 ## Consumer
 
 Someone who reads content from social media
@@ -139,19 +143,18 @@ A Frequency packet of data that matches a registered schema. Any message sent on
 Frequency must have a registered Message Schema Id. This registration tells consumers
 of the message how to read the data in the Payload.
 
-### On-Chain Message
-
-One message on chain from a Message Sending Account
-We have two schema options that are important here:
-
 - **Payload location** - this is currently either on-chain or ipfs.
   It could be expanded to more in the future.
 - **Model Type** - this is currently either AvroBinary or Parquet.
   This tells you how to read the schema's model to construct new message payloads and potentially read or validate data.
 
-## Message Source Account (MSA)
+### On-Chain Message
 
-See [Account](#account) section for definition.
+A message that has a payload location that is on Frequency.
+
+### Off-Chain Message
+
+A message that has a payload location that is stored off-chain such as on IPFS.
 
 ## Payload
 

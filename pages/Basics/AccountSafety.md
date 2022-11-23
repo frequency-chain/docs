@@ -3,7 +3,7 @@
 **Remember: Keeping your account safe is a responsibility that goes beyond the scope of this document.**
 **While we try to provide the basic concepts, security is in constant flux and these may not represent the latest best practices.**
 
-## Message Source Account Public Keys and Rotation
+## Public Keys and Rotation
 
 Frequency’s [Message Source Account (MSA)](./MessageSourceAccounts.md) allow users to separate and rotate public keys that control the account.
 The ability to attach multiple keys to an account offers increased security for users to rotate a corrupted key for a new one if compromised.
@@ -12,7 +12,8 @@ Having an on-chain identifier with connected public keys increases the chain sto
 Currently all keys attached to an MSA carry the same level of access, functioning as a “master key” and can be rotated to replace compromised keys.
 The ability add additional keys acts similar to a backup, allowing users to maintain and protect their accounts.
 
-Keys are unique, once assigned to an MSA the key cannot be associated with another MSA.
+Keys are unique.
+Once assigned to an MSA, a key cannot be associated with another MSA.
 Key pair validation protects the user identifier associated with an MSA.
 Frequency expects third-party developers and applications built on Frequency to manage the issue of fraudulent identities within their applications and protocols.
 

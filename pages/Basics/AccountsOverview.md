@@ -1,20 +1,17 @@
 # Accounts Overview
 
-Frequency has two account types: Token Accounts and Message Source Accounts (MSAs).
+Frequency has two account types: **Token Accounts** and **Message Source Accounts** (MSAs).
 
 [Token Accounts](./TokenAccounts.md) are responsible for holding a balance, transferring tokens, and paying for transactions.
 These accounts are the same as on the [Polkadot chain](https://wiki.polkadot.network/docs/learn-accounts).
 
-[Message Source Accounts](./MessageSourceAccounts.md) are unique to Frequency and allow users to broadcast messages and delegate to [Provider MSA accounts](#provider), that can send messages on behalf of a user who has delegated to them.
+[Message Source Accounts](./MessageSourceAccounts.md) are unique to Frequency and ensure messages have verifiable authorship.
+[Provider MSA accounts](#provider) enable users to broadcast messages through delegation without needing tokens.
 
 Users must have a Message Source Account to send messages on Frequency.
-A user does not need a Token Account to be able to have an MSA.
+A user does *not* need a Token Account to be able to have an MSA.
 
-A [wallet](https://wiki.polkadot.network/docs/glossary#wallet) is a program that allows users to store private keys and sign transactions for blockchain networks.
-Both Token Accounts and the private keys that control an MSA are stored in such a wallet to secure user data.
-
-See [Polkadot's Wiki](https://wiki.polkadot.network/docs/build-wallets) for wallets that support token accounts.
-
+[Wallets](./Wallets.md) store private keys for both Token Accounts and Message Source Accounts.
 Visit the [Token Accounts](./TokenAccounts.md) and [Message Source Accounts](./MessageSourceAccounts.md) pages for specific account information.
 
 ## Who would need an MSA and/or Token Account?
@@ -45,7 +42,7 @@ Autonomous users may also engage in staking, governance, building new schemas, o
 * Token Account Required: Yes
 
 ### Providers
-Providers must register for both a Token Account and a [Provider MSA Account](#provider-msa) to participate on the Frequency chain.
+[Providers](./Providers.md) must register for both a Token Account and an MSA Account to participate on the Frequency chain.
 Providers are the applications and services directly interacting with Frequency.
 They use the Capacity economic system to serve the users that delegate to them.
 Providers use Token Accounts to hold FRQCY Tokens and Capacity to pay messaging transactions on behalf of their users.

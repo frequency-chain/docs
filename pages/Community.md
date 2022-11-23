@@ -12,7 +12,9 @@ Below are links to official platforms, as well as unofficial, community-managed 
 
 ## Social & Announcements
 
+- [Frequency Homepage](https://www.frequency.xyz)
 - [Twitter: @one_frequency](https://twitter.com/one_frequency)
+- [Medium Blog](https://medium.com/one-frequency)
 
 ## Communities Building on Frequency
 

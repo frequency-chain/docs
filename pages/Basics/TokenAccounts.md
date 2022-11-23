@@ -1,9 +1,9 @@
 # Token Accounts
 
-Token Accounts act as “wallets” and are accounts that hold FRQCY tokens and [Capacity](#capacity).
+Token Accounts act as "wallets" and are accounts that hold FRQCY tokens and [Capacity](#capacity).
 These are the same as accounts used across other parachains.
 Anyone can create a Token Account but they are only active if storing tokens.
-This account is responsible for holding a balance, transferring tokens to other accounts, and pay certain transactions.
+This account is responsible for holding a balance, transferring tokens to other accounts, and paying fees for transactions.
 
 Token Accounts are identified by the public key, `Account ID`, from a pair and are secured by storing the private part of the key pair in a wallet.
 The `Account ID` serves as the account identifier for token accounts.
@@ -15,7 +15,7 @@ Users must acquire tokens via an exchange or transfer tokens into an account add
 
 ## Capacity
 
-#### Capacity is currently under development - more details will be released soon regarding instructions and implementation details.
+**Capacity is currently under development - more details will be released soon.**
 
 Capacity is a value transaction that allows for the ability to send messages or do a consistent amount of work on the chain that continues over time.
 It is a non-transferable resource that acts as an alternative to using FRQCY tokens to perform certain transactions and is managed through a rate-limited continuous stream of transactions.
@@ -25,12 +25,3 @@ Capacity transactions can interact with only two things: account management and 
 Other transactions use token fees alone.
 
 Visit [Tokenomics](../Tokenomics/TokenomicsOverview.md) for more detailed information.
-
-## Overview
-To summarize, Token Accounts support the following actions:
-
-* The primary use of Token Accounts are necessary for users or Providers to pay for transactions.
-* Could be used for trading exclusively as a token account.
-* Can be used by users who want to delegate and revoke access to Providers and operate independently.
-
-

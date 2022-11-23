@@ -1,16 +1,14 @@
-# Basics
-
-## Core Principles
+# Core Principles of Frequency
 
 Frequency aims to return agency to the user amongst an ecosystem of rampant misinformation, censorship from state and corporate actors, and near monopolies from select players with absolute power over social engagements.
 Frequency, as an implementation of DSNP, strives to solve these challenges by reshaping online social interactions.
 
 ### Different Classes of Transactions
-**Data Focused Transactions**
+**Data-Focused Transactions**
 
 Blockchain transactions have primarily been financial in nature, even when they didn’t need to be.
-Frequency distinguishes between financial transactions and data focused transactions.
-Financial transactions require extra rigor and additional steps (such as defending against the double-spend attack) that are not necessary in data focused transactions.
+Frequency distinguishes between financial transactions and data-focused transactions.
+Financial transactions require extra rigor and additional steps (such as defending against the double-spend attack) that are not necessary in data-focused transactions.
 However, Frequency [Messages](./Messages.md) retain other blockchain guarantees such as authenticity and data validation.
 
 
@@ -18,7 +16,7 @@ However, Frequency [Messages](./Messages.md) retain other blockchain guarantees 
 **Announcements and Metadata**
 
 Traditional web systems are centered around point-to-point communications.
-Any information that is desired to transmit to an unknown third party requires a centralized system to compile and then distribute the data to known requestors.
+Any information that one wants to transmit to an unknown third party requires a centralized system to compile and then distribute the data to known requestors.
 Frequency uses the broadcast nature of the blockchain to provide [Message](./Messages.md) metadata that allows the existence of information to be discovered by anyone.
 Thus users, be they creators or consumers, can choose their own tools.
 Users may then tune in to the data they want, ensuring user control without losing the power and value of a network.
