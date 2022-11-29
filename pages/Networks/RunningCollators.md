@@ -6,7 +6,7 @@
 
 Collator operators will have some technical and financial requirements to be able to serve as a candidate chosen to form the next block.
 
-Collator nodes require fast enough hardware and bandwidth to service the network within the necessary block time.
+Collator nodes require sufficient hardware and bandwidth to service the network within the necessary block time.
 If a Collator lags or drops offline for more than the minimum time, they will be kicked out of the Collator candidate pool.
 
 Collators follow the same expectations outlined in Polkadot's reference hardware.
@@ -21,7 +21,7 @@ There are five keys that matter for a Collator node:
 	* Collator: Can be auto-generated
 	* Can be set via CLI with `--node-key` or `--node-key-file`, usually for public bootnodes
 		* Remember that `--node-key-file` reads the file bytes, so do not have trailing new lines or other whitespace.
-	* Used by `libp2p` for secure node communications and is the public key at the end of the node multiaddr
+	* Used by `libp2p` for secure node communications and is the public key at the end of the node multiaddr.
 
 2. **The Controller Account Key** (Sometimes referred to as the `Account ID`)
 	* Account used to control the collator
@@ -83,7 +83,7 @@ Collators are required to post a “bond” to register as a Collator candidate.
 
       ```
 1. Generate a new Controller Account aura key: `subkey generate`
-    - If you want a password, you can add that `subkey generate --password [password here]`
+    - (Optional) Add password `subkey generate --password [password here]`
 1. Generate a new Session Key
     - Node Generated
       - Use `author_rotateKey` (localhost or "unsafe" RPC required)
