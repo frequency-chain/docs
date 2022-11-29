@@ -1,7 +1,5 @@
 # Running a Collator
 
-## Registration & Requirements
-
 ### Collator details are currently under development — more details will be released soon regarding instructions and implementation details.
 
 Collator operators will have some technical and financial requirements to be able to serve as a candidate chosen to form the next block.
@@ -9,9 +7,45 @@ Collator operators will have some technical and financial requirements to be abl
 Collator nodes require sufficient hardware and bandwidth to service the network within the necessary block time.
 If a Collator lags or drops offline for more than the minimum time, they will be kicked out of the Collator candidate pool.
 
-Collators follow the same expectations outlined in Polkadot's reference hardware.
+See [Running a Node](./Node.md) for binary and general node information.
 
-#### See Running a Node for details on node setup and deployment
+## Requirements
+
+Collators follow the same expectations outlined in [Polkadot's reference hardware](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot#reference-hardware).
+
+### Suggested Minimums
+
+- **CPU**
+  - AMD64/x86-64 compatible;
+    - Intel Ice Lake, or newer (Xeon or Core series); AMD Zen3, or newer (EPYC or Ryzen);
+    - 4 physical cores @ 3.4GHz;
+    - Simultaneous multithreading disabled (Hyper-Threading on Intel, SMT on AMD);
+  - ARM64 compatible
+    - ARM64 binaries are available, we do not yet have specific CPU suggestions.
+- **Storage**
+  - An NVMe SSD of 1 TB
+  - In general, the latency is more important than the throughput.
+- **Memory**
+  - 16GB DDR4 ECC.
+- **System**
+  - Linux Kernel 5.16 or newer.
+- **Network**
+  - The minimum symmetric networking speed is set to 500 Mbit/s (= 62.5 MB/s).
+
+### Reference Hardware
+
+For reproducibility, we use Amazon's [`c6id.2xlarge`](https://aws.amazon.com/ec2/instance-types/c6i/) instances to generate our benchmarks.
+
+- **CPU**
+  - Intel Ice Lake (3rd Gen Xeon)
+  - 3.5 GHz
+  - 8 vCPU
+- **Storage**
+  - NVMe SSD
+- **Memory**
+  - 16GB
+- **System**
+  - Linux Kernel 5.16 or newer.
 
 ## Key Types
 
@@ -40,20 +74,7 @@ There are five keys that matter for a Collator node:
 	* "Owned" by the the controller account
 	* Does the actual work of signing blocks
 	* Can be rotated by generating a new key on the node with `author_rotateKey`, then calling `session.setKeys` from the controller account
-
-
-## Bond Information
-#### More details regarding bond information will be released soon.
-
-Collators are required to post a “bond” to register as a Collator candidate.
-
-**Bond:** A number of FRQCY tokens that can be slashed if the Collator acts in a malicious manner.
-
-* Bond may be automatically slashed if a block is rejected by Polkadot's Relay Chain
-* Bond amount is set by governance but will evolve into a minimum (Will serve as a ranking factor for running a Collator)
-* Collator operators must control the tokens placed up for bond and does not provide any system for others to stake tokens to a Collator
-* If the same person wants to bond multiple Collators they must put up the same amount of bond for each Collator
-	* If the bond requirement increases, it is multiplied by the number of Collators they run. 
+	* If the bond requirement increases, it is multiplied by the number of Collators they run.
 
 ## Collator Setup
 
