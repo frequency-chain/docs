@@ -13,6 +13,7 @@
         - [Token Accounts](Basics/TokenAccounts.md)
         - [Message Source Accounts](Basics/MessageSourceAccounts.md)
         - [Providers](Basics/Providers.md)
+        - [Delegation](Basics/Delegation.md)
     - [Schemas](Basics/Schemas.md)
     - [Messages](Basics/Messages.md)
     - [Wallets](Basics/Wallets.md)

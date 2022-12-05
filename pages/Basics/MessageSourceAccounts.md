@@ -25,3 +25,5 @@ Providers use the Capacity Economic System to serve the users that delegate to t
 2. Shifts the responsibility of transaction fees from the individual to the Provider.
 
 Users still maintain ultimate control of their data with the ability to opt-in or out of relationships with Providers.
+
+Learn more about [Delegation](./Delegation.md).
