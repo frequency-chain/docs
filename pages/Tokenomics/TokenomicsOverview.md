@@ -2,7 +2,7 @@
 The Frequency mainnet token is called FRQCY.
 Frequency also utilizes [Capacity](#capacity), an alternative to using tokens to perform certain types of transactions.
 See the [Capacity](Capacity.md) page for more detailed information.
-In this document, we outline the economics of the FRQCY token, it's functionality in the Frequency network, and the supply and demand dynamics.
+In this document, the economics of the FRQCY token, it's functionality in the Frequency network, and the supply and demand dynamics are outlined.
 
 The Rococo Testnet token is notated as XRQCY - this token is only for testing and holds no value.
 
@@ -84,4 +84,4 @@ In other words, it represents a shorthand that is a logical construct: off-chain
 * **Delegate:** The action of an MSA (the Delegator) delegating to a Provider.
 A verb only. DO NOT use as a noun!
 
-* **Collators:** A Frequency node that generates blocks and submit them to the Relay Chain.
+* **Collators:** A Frequency node that generates blocks and submits them to the Relay Chain.
