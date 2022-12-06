@@ -36,7 +36,7 @@ For more information on Frequency’s economic structure visit the [Capacity](..
 ### Autonomous Users
 The use of both an MSA and a Token Account allow users to pay for and send their own messages without delegation to a Provider.
 The user’s Token Account key must be associated with the user’s MSA account in order to pay for message transactions.
-Autonomous users may also engage in staking, governance, building new schemas, or other systems on Frequency.
+Autonomous users may also engage in staking, governance, building new Schemas, or other systems on Frequency.
 
 * MSA Required: Yes
 * Token Account Required: Yes

@@ -1,7 +1,7 @@
 # Protocols Built on Frequency
 
 Want to build out a new protocol on top of Frequency?
-You will want to learn about [creating new schemas](./Basics/Schemas.md).
+You will want to learn about [creating new Schemas](./Basics/Schemas.md).
 
 ## DSNP
 

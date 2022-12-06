@@ -32,7 +32,7 @@ Capacity is managed via a rate-limited continuous stream of transactions and pro
 
 ## Capacity Epoch
 
-The Capacity Epoch is the number of blocks before capacity refills.
+The Capacity Epoch is the number of blocks before Capacity refills.
 In other words, it is the number of blocks before one may reuse Capacity.
 
 ## Coinless User
@@ -75,7 +75,7 @@ Set to 0.01 FRQCY.
 
 ## Direct Frequency User
 
-Those who interact with the FRQCY token and are engaged in staking, governance, building new schemas, or other systems on Frequency.
+Those who interact with the FRQCY token and are engaged in staking, governance, building new Schemas, or other systems on Frequency.
 These users overlap with DSNP users.
 
 ## Frequency Rococo
@@ -106,7 +106,7 @@ A form of staking that allows Providers to use FRQCY tokens as efficiently as po
 
 ## Message
 
-A Frequency packet of data that matches a registered schema.
+A Frequency packet of data that matches a registered Schema.
 Any message sent on Frequency must have a registered [Schema Id](./Basics/Schemas.md) which tells consumers of the message how to read the data in the Payload.
 
 ## Message Service Account (MSA)
@@ -144,7 +144,7 @@ Providers utilize Capacity to serve the End Users that delegate to them.
 
 ## Provider MSA
 
-The MSA associated with the Account ID that signs a capacity transaction.
+The MSA associated with the Account ID that signs a Capacity transaction.
 
 ## Public Graph
 
@@ -197,7 +197,7 @@ Frequency may make changes to Transaction Weight in order to discourage spam mes
 ## Unstaking
 
 The process of liquidating assets that were previously staked so they may be transferred or traded.
-When one unstakes their Frequency tokens, there is a "thaw period" or interval of time where	tokens are not generating rewards or capacity, but are not yet liquid (cannot be transferred or traded).
+When one unstakes their Frequency tokens, there is a "thaw period" or interval of time where	tokens are not generating rewards or Capacity, but are not yet liquid (cannot be transferred or traded).
 
 ## XRQCY
 

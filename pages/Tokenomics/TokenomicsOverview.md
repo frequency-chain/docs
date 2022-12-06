@@ -1,17 +1,19 @@
 # Tokenomics
+
+**Capacity is currently under development - more details will be released soon.**
+
 The Frequency mainnet token is called FRQCY.
 Frequency also utilizes [Capacity](#capacity), an alternative to using tokens to perform certain types of transactions.
 See the [Capacity](Capacity.md) page for more detailed information.
-In this document, the economics of the FRQCY token, it's functionality in the Frequency network, and the supply and demand dynamics are outlined.
 
-The Rococo Testnet token is notated as XRQCY - this token is only for testing and holds no value.
+The [Frequency Rococo Testnet](../Networks/Overview.md) token is notated as XRQCY - this token is only for testing and holds no value.
 
 ## Goals:
 
 Frequency aims to accomplish two goals:
 
 * **To establish different classes of transactions:** Prioritize data-focused transactions centered around creating and sourcing new data.
-* **To become a force of democratization amongst a decentralized social network:** Distributing Capacity to users for delegation to Providers
+* **To become a force of democratization amongst a decentralized social network:** Distributing Capacity to users for delegation to Providers.
 
 ## FRQCY Token & Capacity
 
@@ -29,7 +31,7 @@ Visit here for more information regarding the [Capacity Economic System](Capacit
 
 ## Frequency Users and Democratization:
 
-On the Frequency network, end users do not need to access FRQCY tokens or Capacity to use the network.
+On the Frequency network, End Users do not need to access FRQCY tokens or Capacity to use the network.
 There are a few primary users on the Frequency network broken into the categories below.
 
 * **Frequency Providers:**
@@ -42,8 +44,8 @@ They still have wallets with private keys but instead of managing tokens these k
 While they may interact with tokens for other purposes, they are not required to.
 
 * **Direct Frequency Users:**
-	Those who interact with the FRQCY token and are engaged in staking, governance, building new schemas, or other systems on Frequency.
-	These users overlap with [DSNP users](https://spec.dsnp.org/).
+Those who interact with the FRQCY token and are engaged in staking, governance, building new Schemas, or other systems on Frequency.
+These users overlap with [DSNP users](https://spec.dsnp.org/).
 
 ## Frequency Incentives:
 Frequency utilizes a limited incentive model with minimal goals to accomplish three things outlined below.
@@ -64,13 +66,13 @@ Details regarding Vesting Schedules are still under development.
 
 * **Capacity:** Capacity is the ability to send messages every Capacity Epoch.
 
-* **Capacity Epoch:** The Capacity Epoch is the number of blocks before capacity refills.
+* **Capacity Epoch:** The Capacity Epoch is the number of blocks before Capacity refills.
 In other words, it is a number of blocks before you reuse your Capacity.
 
 * **Staking:** A stake is an amount of money that a person gives up temporarily when receiving a benefit, usually to shift some of the risk to the owner of the money.
 Maximized Capacity: The amount of Capacity generated from Maximized Capacity Staking is balanced against Rewards Capacity Staking to ensure that it is almost always more capital efficient for an application to choose Maximized Capacity Staking.
 Because Providers have an amount of Capacity they need to operate, they care most about gaining the required Capacity while regular users don’t need a specific Capacity amount and can opt for the more useful token earnings instead.
-Rewards Capacity: The stake generates capacity that the user must direct to a Provider they chose.
+Rewards Capacity: The stake generates Capacity that the user must direct to a Provider they chose.
 However, the Rewards Capacity Staking is much less Capacity for the same amount of tokens staked.
 Instead, the user receives a periodic “reward” back to the Token Account of the stake.
 
@@ -79,7 +81,7 @@ This is a time interval where the tokens are not generating any rewards or Capac
 After the thaw period ends, the user can use, transfer, or even re-stake their tokens.
 
 * **Batching:** One on-chain message that points to lots of messages from different Message Source Accounts.
-In other words, it represents a shorthand that is a logical construct: off-chain payload reference + more than one MSA referenced as a sender in that off-chain data (aka a Parquet schema with payload location of IPFS).
+In other words, it represents a shorthand that is a logical construct: off-chain payload reference + more than one MSA referenced as a sender in that off-chain data (aka a Schema with Parquet model type and payload location of IPFS).
 
 * **Delegate:** The action of an MSA (the Delegator) delegating to a Provider.
 A verb only. DO NOT use as a noun!

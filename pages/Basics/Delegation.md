@@ -37,5 +37,5 @@ Default mode of operation is ***Restricted*** for any provider.
 "A user grants a permission to a provider".
 * **ToS:** The hash of terms of service between a delegator and provider.
 * **expiry:** The expiry time of a permission/grant.
-* **schema_id:** The unique identifier of a registered schema on Frequency
+* **schema_id:** The unique identifier of a registered Schema on Frequency
 

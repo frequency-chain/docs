@@ -2,7 +2,7 @@
 
 ### Collator details are currently under development — more details will be released soon regarding instructions and implementation details.
 
-Collator operators will have some technical and financial requirements to be able to serve as a candidate chosen to form the next block.
+Collator operators will have to meet technical and financial requirements to be able to serve as a candidate chosen to form the next block.
 
 Collator nodes require sufficient hardware and bandwidth to service the network within the necessary block time.
 If a Collator lags or drops offline for more than the minimum time, they will be kicked out of the Collator candidate pool.
@@ -58,29 +58,28 @@ There are five keys that matter for a Collator node:
 	* Used by `libp2p` for secure node communications and is the public key at the end of the node multiaddr.
 
 2. **The Controller Account Key** (Sometimes referred to as the `Account ID`)
-	* Account used to control the collator
-	* When an invulnerable collator, should be set as one of the "invulnerable keys"
+	* Account used to control the Collator
+	* When an invulnerable Collator, should be set as one of the "invulnerable keys"
 
 3. **The Invulnerable Address Key**
 	* The controller account's address
-	* Must be added to the invulnerables using `collatorSelection.setInvulnerables`
+	* Must be added to the invulnerables using `collatorSelection.setInvulnerables`.
 
 4. **The Stash Account Key** (Sometimes referred to as the `Validator ID`)
-	* Not used with collator selection
+	* Not used with Collator selection
 	* Should be the same as the controller account
 
 5. **The Session Aura Key**
 
 	* "Owned" by the the controller account
 	* Does the actual work of signing blocks
-	* Can be rotated by generating a new key on the node with `author_rotateKey`, then calling `session.setKeys` from the controller account
-	* If the bond requirement increases, it is multiplied by the number of Collators they run.
+	* Can be rotated by generating a new key on the node with `author_rotateKey`, then calling `session.setKeys` from the controller account.
 
 ## Collator Setup
 
-1. Create a new full node and match or exceed the [official collator requirements](https://docs.frequency.xyz/)
-1. Download (or use docker) with  use the most recent release from
-1. Remember that the node should be able to peer with others, but access to HTTP and WebSocket RPCs should be restricted
+1. Create a new full node and match or exceed the [official collator requirements](https://docs.frequency.xyz/).
+1. [Download the latest release](https://github.com/LibertyDSNP/frequency/releases) (or use [docker](https://hub.docker.com/u/frequencychain)).
+1. Remember that the node should be able to peer with others, but access to HTTP and WebSocket RPCs should be restricted.
     - Required flags
       - `--collator` Telling your node to run as a collator
     - Suggested Flags
@@ -97,7 +96,7 @@ There are five keys that matter for a Collator node:
 
       ```
     - Additional flags are documented with `--help`
-    - Flags applied after a `--` are applied to built in relay chain node.
+    - Flags applied after a `--` are applied to built in Relay Chain node.
       - Example:
       ```
       ./frequency --collator -- --rpc-port=9934
@@ -111,13 +110,13 @@ There are five keys that matter for a Collator node:
       - Returns the new public key
     - Manually Generated via `subkey generate`
       - Add to the node with `author_insertKey` (localhost or "unsafe" RPC required)
-1. Register a session key
+1. Register a Session Key
     - Submit the Extrinsic: `session.setKeys`
       - Sender: The Controller Account
       - keys: Address of the new Session Key
       - proof: `0x` (Yes, it is empty)
-    - New session keys do not become active until the next session (every ~6h)
-    - It is also possible for your session key to match your Controller Account, but not suggested for production
-1. Wait until the relay chain and parachain are up to date and synced
+    - New session keys do not become active until the next session (every ~6h).
+    - While it is possible for your session key to match your Controller Account, but not recommended.
+1. Wait until the Relay Chain and parachain are up to date and synced.
 
 #### See [Troubleshooting](./Troubleshooting.md) for help when things go wrong.

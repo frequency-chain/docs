@@ -54,7 +54,7 @@ Those who dump the token after abusing the network will receive a natural market
 Network and token values are correlated, encouraging those with the Capacity to align in the goal of a successful and well-functioning network.
 
 2. **Cost Management:** Capacity acts as an asset, like that of [capital expenditure](https://en.wikipedia.org/wiki/Capital_expenditure), in the sense that it fulfills long-term value.
-The FRQCY tokens that generate capacity are locked but the Generated Capacity is usable again and again.
+The FRQCY tokens that generate Capacity are locked but the Generated Capacity is usable again and again.
 Regular message sending is allowed without additional costs.
 
 	* **Short-term vs long-term value:**

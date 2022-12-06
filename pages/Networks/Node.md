@@ -4,9 +4,9 @@
 
 ### Binaries
 
-Releases are maintained on our [GitHub Repository](https://github.com/LibertyDSNP/frequency/releases).
+Releases are maintained on Frequency's [GitHub Repository](https://github.com/LibertyDSNP/frequency/releases).
 
-We build releases for both arm64 and AMD64 architectures.
+Frequency builds releases for both arm64 and AMD64 architectures.
 
 | Network | Binary Name |
 | --- | --- |

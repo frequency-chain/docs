@@ -1,6 +1,6 @@
 # Contributing
 
-As a relatively new project, Frequency is moving quickly to get our open source technologies to market.
+As a relatively new project, Frequency is moving quickly to get our open-source technologies to market.
 However, the power and utility of the project going forward will depend on robust and continual contributions from the development community.
 Contributions are welcomed, and those interested in contributing to Frequency should begin by connecting with our [GitHub repository](https://github.com/LibertyDSNP/frequency/).
 

@@ -21,7 +21,7 @@
 - Alternatives: https://wiki.polkadot.network/docs/learn-account-generation
 
 #### Curl command for inserting a new Session Key
-Usually only used for changing servers or initial setup
+Usually only used for changing servers or initial setup.
 
 Params:
 - Key Type: "aura"

@@ -1,17 +1,17 @@
 # What is a Schema?
 
-Frequency is a data-distribution blockchain that uses Schemas define the flow of data across different channels.
+Frequency is a data-distribution blockchain that uses Schemas to define the flow of data across different channels.
 
-Schemas are registered data structures that define the format and how message payloads are stored and how the consumers can parse the message.
-This ensures message correctness, validity, extensibility, and interoperability between services.
-This allows Frequency to support a variety of message types and enforce communication protocol between network and service participants.
+Schemas are registered data structures that define the both format and how message payloads are stored.
+Consumers can use the Schema to properly retrieve and parse the message data.
+This ensures message correctness, validity, extensibility, and interoperability between services, allowing Frequency to support a variety of message types and enforce communication protocol between network and service participants.
 
 Schemas are immutable; once created, they cannot be changed.
-Schema immutability removes evolving data structures and relies on new schemas for updates to simplify upgrades.
+Schema immutability removes evolving data structures and relies on new Schemas for updates to simplify upgrades.
 
 ## Schema Registry
-The `Schema Registry` is the on-chain repository for schemas, allowing participants of the network to flexibly interact with and exchange messages without the challenge of managing unknown schema types.
-The unique identification of schemas on Frequency is a `SchemaId` that is set when the schema is created.
+The `Schema Registry` is the on-chain repository for Schemas, allowing participants of the network to flexibly interact with and exchange messages without the challenge of managing unknown Schema types.
+The unique identification of Schemas on Frequency is a `SchemaId` that is set when the Schema is created.
 
 ## Properties of Schemas
 ### Models
@@ -28,9 +28,9 @@ Frequency recommends [Apache Avro](https://avro.apache.org/) when on-chain stora
 Data is always accompanied by a `SchemaId` so payload content can be parsed correctly.
 
 ## Payload Location
-Payload Location specifies where the data will be stored: on-chain or off-chain.
+Payload Location specifies where the data will be stored.
 Off-chain messages offer a lower transaction price and can batch many messages together.
-On-chain messages offer increased validation and security, but at a higher price point and does not allow for batching.
+On-chain messages offer increased validation and security, but at a higher price point and do not allow for batching.
 
 * **Off-Chain:** Frequency currently supports [IPFS](../glossary.md#interplanetary-file-system-ipfs) for off-chain data storage.
 Only the pointer to the file location is published to Frequency, but any user should have enough information to retrieve and validate the payload contents.

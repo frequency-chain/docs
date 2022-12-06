@@ -1,9 +1,9 @@
 # Decentralization Roadmap
 
-Frequency currently operates using “invulnerable” Collators, however, expects to switch to open Collators sometime in 2023.
+Frequency currently operates using "invulnerable" Collators, and expects to switch to open Collators sometime in 2023.
 
-More Collators are not necessarily better, as they can slow the network; we aim to maintain network stability and operation while increasing decentralization and openness as quickly as possible.
-To accomplish this, we have three key initiatives to execute:
+More Collators are not necessarily better, as they can slow the network; Frequency aims to maintain network stability and operation while increasing decentralization and openness as quickly as possible.
+To accomplish this, Frequency has three key initiatives to execute:
 
 1. Initialization: Select Organizations
 2. Expansion and Testing: Open Applications

@@ -32,7 +32,7 @@ Frequency uses a staking system for sending messages called [Capacity](../Tokeno
 ### Collaborative Standardization
 **Shared Schemas**
 
-Much of the power of Blockchain has not been in custom smart contracts, but the ability for those contracts to follow standards.
+Much of the power of blockchain has not been in custom smart contracts, but the ability for those contracts to follow standards.
 Common use of custom tokens would not be possible without ERC-20 nor NFTs without EIP-721.
 Even once those standards are complete, implementations can be flawed or allow for twisted results.
 Frequency enables collaborative standardization instead of individual customization.

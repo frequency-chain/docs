@@ -10,7 +10,7 @@ The ability to attach multiple keys to an account offers increased security for 
 Having an on-chain identifier with connected public keys increases the chain storage requirements, yet greatly reduces the risk of corruption and can include additional validity checks.
 
 Currently all keys attached to an MSA carry the same level of access, functioning as a “master key” and can be rotated to replace compromised keys.
-The ability add additional keys acts similar to a backup, allowing users to maintain and protect their accounts.
+The ability to add additional keys acts similar to a backup, allowing users to maintain and protect their accounts.
 
 Keys are unique.
 Once assigned to an MSA, a key cannot be associated with another MSA.
