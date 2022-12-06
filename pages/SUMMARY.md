@@ -23,6 +23,7 @@
 - [Networks](Networks/Overview.md)
   - [Running a Node](Networks/Node.md)
   - [Decentralization Roadmap](Networks/Decentralization.md)
+  - [Collators](Networks/Collators.md)
   - [Running a Collator](Networks/RunningCollators.md)
   - [Troubleshooting](Networks/Troubleshooting.md)
 - [Tokenomics](Tokenomics/TokenomicsOverview.md)
