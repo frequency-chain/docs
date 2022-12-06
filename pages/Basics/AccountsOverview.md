@@ -24,7 +24,7 @@ Visit the [Token Accounts](./TokenAccounts.md) and [Message Source Accounts](./M
 | [Token traders](#token-trader) |       No      |         **Yes**         |
 
 ### Coinless Users
-Frequency implements delegation and Capacity economic systems to enable “coinless users” as first-class citizens of Frequency.
+Frequency implements delegation and Capacity economic systems to enable "coinless users" as first-class citizens of Frequency.
 Coinless users do not need tokens to interact with the blockchain.
 These users have MSA accounts with private keys that maintain control of their user information and identity on-chain.
 While a coinless user might still interact with tokens for other purposes, they are not required to do so and therefore may not want a Token Account.

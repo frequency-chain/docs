@@ -1,6 +1,7 @@
 # Supply & Inflation/Deflation
 
-The Frequency network will mint at genesis 1 Billion FRQCY Tokens until Capacity Economics are implemented.
+The Frequency network minted at Genesis 1 Billion FRQCY Tokens.
+Until Capacity Economics are implemented, no additional tokens will be minted.
 
 ## Inflationary
 - None Currently

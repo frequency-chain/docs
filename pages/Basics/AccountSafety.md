@@ -9,7 +9,7 @@ Frequency’s [Message Source Account (MSA)](./MessageSourceAccounts.md) allow u
 The ability to attach multiple keys to an account offers increased security for users to rotate a corrupted key for a new one if compromised.
 Having an on-chain identifier with connected public keys increases the chain storage requirements, yet greatly reduces the risk of corruption and can include additional validity checks.
 
-Currently all keys attached to an MSA carry the same level of access, functioning as a “master key” and can be rotated to replace compromised keys.
+Currently all keys attached to an MSA carry the same level of access, functioning as a "master key" and can be rotated to replace compromised keys.
 The ability to add additional keys acts similar to a backup, allowing users to maintain and protect their accounts.
 
 Keys are unique.

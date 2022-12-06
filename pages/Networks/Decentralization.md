@@ -15,7 +15,7 @@ To accomplish this, Frequency has three key initiatives to execute:
 * Organizations guarantee public transparency and access to all non-malicious transactions to the block
 * Commits to keeping up with client updates to enable chain evolution
 
-Collators will receive FRQCY token grants to assist with operational costs distributed through the genesis and governance.
+Collators will receive FRQCY token grants to assist with operational costs distributed through the Genesis and governance.
 
 ## Expansion and Testing
 

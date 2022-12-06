@@ -18,9 +18,8 @@ The amount of Capacity generated for a Provider from staking FRQCY tokens to the
 
 ## Purpose of Capacity for Frequency
 
-**By Use Case:**
+**By Use Case**
 
-* Capacity can be used to perform transactions such as
 * Create and [MSA](#2-message-source-account-msa)
 * Add a key to an MSA
 * Delegate permissions to another MSA
@@ -51,34 +50,32 @@ Capacity focuses on outcomes instead of testing each message for value.
 	* **Penalties and Incentives:**
 Those who use Capacity as a utility receive the benefit from it.
 Those who dump the token after abusing the network will receive a natural market penalty.
-Network and token values are correlated, encouraging those with the Capacity to align in the goal of a successful and well-functioning network.
+Network and token values are correlated, encouraging those with Capacity to align in the goal of a successful and well-functioning network.
 
 2. **Cost Management:** Capacity acts as an asset, like that of [capital expenditure](https://en.wikipedia.org/wiki/Capital_expenditure), in the sense that it fulfills long-term value.
-The FRQCY tokens that generate Capacity are locked but the Generated Capacity is usable again and again.
+The FRQCY tokens that generate Capacity are locked but Generated Capacity is usable again and again.
 Regular message sending is allowed without additional costs.
 
 	* **Short-term vs long-term value:**
 	Blockchains primarily interact using short-term, per transaction operation expenses, in which efficiency demands as few transactions as possible.
-	Capacity optimizes flow through pricing a continuous stream of messages/transactions together rather than as individual transactions.
+	Capacity optimizes flow-through pricing a continuous stream of messages/transactions together rather than as individual transactions.
 	This supports the collective value of the messages, in other words, the whole is greater than the sum of its parts.
 
 3. **Volume Regulation:** Frequency has limited space that it needs to allocate.
-Capacity Epochs allow for expansion of that space where a Capacity holder and add to the “mempool” (the transaction queue) as many transactions as they have Capacity to cover at the time in the Capacity Epoch cycle.
+Capacity Epochs allow for expansion of that space where a Capacity holder can add to the "mempool" (the transaction queue) as many transactions as they have Capacity to cover at the time in the Capacity Epoch cycle.
 	* **Rate Limiting:**
-	Limiting the rate of transactions ensures a proportional volume of transactions to the volume of FRQCY tokens staked.
+	Limiting the rate of transactions ensures a proportional volume of transactions to the amount of Capacity.
 
 	* **Batching and Capacity:**
-	More messages require more FRQCY tokens staked.
+	More messages requires more Capacity.
 	Batching requires less Capacity to send messages, part of Frequency’s marginal cost structure.
-	In batching, adding a single message allows for the cost of that message to be small.
-	A batched message is one on-chain message that acts as an anchor tied to many off-chain messages from various MSA accounts.
-	Transferring data for a single batch message is cheaper than pushing data for all messages included in a batch.
-	More information on Frequency batching will be released soon.
+	When batching, adding one additional message has a tiny marginal cost.
+	A batched message is one on-chain message that acts as an anchor tied to a large amount of off-chain data from various MSA accounts.
 
-**Validation protects the integrity of the Batch from being manipulated.**
+**Validation protects the integrity of the batch from being manipulated.**
 Cryptographic technology protects the integrity of messages through the use of hashes and signatures.
 Validation occurs at write time for non-batched messages and at read time for batched messages.
-Find more information [here](https://spec.dsnp.org/Frequency/Validation.html).
+An example from the [DSNP Frequency Implementation](https://spec.dsnp.org/Frequency/Validation.html).
 
 ## Capacity Refill
 Capacity refills at the start of each Capacity Epoch.
@@ -86,7 +83,7 @@ The refillable nature incentivizes services to use Capacity to the best of their
 Capacity encourages continual use and sharing; increasing the quantity of data available and thus the value of the network.
 
 **Dynamic Capacity Epoch Development**
-These “epochs” form a meta-block that may slowly grow over time.
+These "epochs" form a meta-block that may slowly grow over time.
 The growth is a predictable depreciation of Capacity, but rather than influencing price, it increases the lag between refills.
 Providers may increase Capacity or allow a minor increase in lag through sending messages.
 

@@ -48,42 +48,9 @@ Those who interact with the FRQCY token and are engaged in staking, governance, 
 These users overlap with [DSNP users](https://spec.dsnp.org/).
 
 ## Frequency Incentives:
-Frequency utilizes a limited incentive model with minimal goals to accomplish three things outlined below.
-The limited reach and goals of each incentive provides a safeguard against misuse and allows for minor adjustments as consequences arise.
+Frequency utilizes a limited incentive model to accomplish three things.
+The goals and limited reach of each incentive provides a safeguard against misuse and allows for minor adjustments as consequences arise.
 
-1. Encourage collaboration between Providers [(Capacity)](Capacity.md)
+1. Encourage collaboration between Providers (Capacity)
 2. Produce the value necessary to support itself (Collator Rewards)
-3. Decentralize system control over time [(Capacity Token Rewards)](#1.-incentive-alignment)
-
-## Vesting Schedules:
-Details regarding Vesting Schedules are still under development.
-
-* **Investor Vesting:**
-	* Token Access:
-	* Voting:
-
-## Useful Terms
-
-* **Capacity:** Capacity is the ability to send messages every Capacity Epoch.
-
-* **Capacity Epoch:** The Capacity Epoch is the number of blocks before Capacity refills.
-In other words, it is a number of blocks before you reuse your Capacity.
-
-* **Staking:** A stake is an amount of money that a person gives up temporarily when receiving a benefit, usually to shift some of the risk to the owner of the money.
-Maximized Capacity: The amount of Capacity generated from Maximized Capacity Staking is balanced against Rewards Capacity Staking to ensure that it is almost always more capital efficient for an application to choose Maximized Capacity Staking.
-Because Providers have an amount of Capacity they need to operate, they care most about gaining the required Capacity while regular users don’t need a specific Capacity amount and can opt for the more useful token earnings instead.
-Rewards Capacity: The stake generates Capacity that the user must direct to a Provider they chose.
-However, the Rewards Capacity Staking is much less Capacity for the same amount of tokens staked.
-Instead, the user receives a periodic “reward” back to the Token Account of the stake.
-
-* **Unstaking:** If someone who has staked wants to become liquid again in order to transfer or trade their tokens, they have to go through what is called a thaw period.
-This is a time interval where the tokens are not generating any rewards or Capacity, but cannot yet be used or transferred from the user’s account.
-After the thaw period ends, the user can use, transfer, or even re-stake their tokens.
-
-* **Batching:** One on-chain message that points to lots of messages from different Message Source Accounts.
-In other words, it represents a shorthand that is a logical construct: off-chain payload reference + more than one MSA referenced as a sender in that off-chain data (aka a Schema with Parquet model type and payload location of IPFS).
-
-* **Delegate:** The action of an MSA (the Delegator) delegating to a Provider.
-A verb only. DO NOT use as a noun!
-
-* **Collators:** A Frequency node that generates blocks and submits them to the Relay Chain.
+3. Decentralize system control over time (Tokens)

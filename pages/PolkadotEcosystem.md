@@ -2,7 +2,7 @@
 
 ## What is a Polkadot Parachain?
 
-A Parachain is a blockchain that works within the confines of the Polkadot host Relay Chain, running in parallel as a “parallelized chain”.
+A Parachain is a blockchain that works within the confines of the Polkadot host Relay Chain, running in parallel as a "parallelized chain".
 
 The main responsibility of the Relay Chain serves to coordinate parachains as a whole.
 Parachains benefit from the pooled security, thought-through governance, and overall scalability generated through the Relay Chain.
