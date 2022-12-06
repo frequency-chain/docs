@@ -31,6 +31,9 @@ Collators follow the same expectations outlined in [Polkadot's reference hardwar
   - Linux Kernel 5.16 or newer.
 - **Network**
   - The minimum symmetric networking speed is set to 500 Mbit/s (= 62.5 MB/s).
+- **Clock Synchronization**
+  - The system clock must be within a margin of the other collators.
+  - It is suggested to use [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) or other method of maintaining clock synchronization.
 
 ### Reference Hardware
 
