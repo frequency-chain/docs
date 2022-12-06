@@ -2,254 +2,203 @@
 
 ## Account
 
-Frequency has two types of accounts — Token Accounts and Message Source Accounts
-(see below).
+Frequency has two types of accounts — [Token Accounts](./Basics/TokenAccounts.md) (which are responsible for holding a balance, transferring tokens, and paying for transactions) and [Message Source Accounts](./Basics/MessageSourceAccounts.md) (which are unique to Frequency and ensure messages have verifiable authorship.)
 
-- `Account ID` — A public key that could be a Token Account and/or associated with an MSA.
-  Account IDs (aka public keys) may only be associated with one MSA.
+## Account ID
 
-### 1. Token Account
-
-Token accounts are accounts that hold the token used on Frequency. Token accounts
-are the same as [Polkadot accounts](https://wiki.polkadot.network/docs/learn-accounts)
-and accounts on most other parachains. Anyone can
-create and use one of these accounts, but they are only active if they have tokens
-stored in them. They are identified by the public key from a key pair and they are
-secured by storing the private part of the key pair in a wallet.
-
-### 2. Message Source Account (MSA)
-
-Message Source Accounts (MSAs) are unique to Frequency and do not interact with tokens.
-MSAs have [one or more associated public keys](https://forums.projectliberty.io/t/shorts-one-public-key-is-not-enough/215),
-allowing for different keys for devices and separate backup keys. Each key is able to be
-revoked and new keys added without breaking any connections because the connections are
-recorded using a unique number generated when the MSA is created. A wallet is still
-required to store the associated private keys for each public key that controls the MSA.
-These MSAs interact with [Capacity](#capacity) and data on the chain, but unlike
-a token account, they do not require Capacity to be active.
-
-- `MSA ID` — The 64-bit unsigned integer identifier associated with an MSA.
-- `Registered MSA` — An MSA that can allow others to delegate to it. Required for
-  some types of staking.
+Account ID — a string that both identifies the Token Account and represents the Public Key used to link the User’s Token Account with their MSA.
 
 ## Actor
 
 The human(s) behind any single user or service that is either directly or indirectly interacting with Frequency.
 
-### Bad Actor
+## Bad Actor
 
-A user intentionally using the application for bad-faith or illegal purposes
+A user intentionally using the application for bad-faith or illegal purposes.
 
-## Announcer
+## Batch Message
 
-A service that a provider uses to queue individual messages and create message for a Parquet Schema.
-
-### Batch Message
-
-One on-chain message that points to lots of messages from different Message Source Accounts.
-In other words, it represents a shorthand that is a logical construct:
-off-chain payload reference + more than one MSA referenced as a sender in that off-chain data
-(aka a Parquet schema with payload location of IPFS).
-
-### Provider MSA
-
-The MSA associated with the Account ID that signs a capacity transaction.
+One on-chain message that points to several messages from different Message Source Accounts (MSAs) that allows Providers to publish large quantities of data off chain at once thereby reducing the transaction price.
 
 ## Bot
 
-An automated account, sometimes malicious but often providing some service
-("Hey Alexa, what's the weather?")
+A program that can interact autonomously with systems or users on a network.
+Sometimes malicious, but often providing useful services.
 
 ## Capacity
 
-Ability to do a consistent amount of work on the chain repeatedly into the future.
-Capacity received from staking is available for the Provider to use once the
-Capacity Epoch after the staking happened.
+Currently under development, [Capacity](./Tokenomics/Capacity.md) is a staking system for account management and sending messages that allows messages to be sent and on-chain work to occur over time.
+Capacity is managed via a rate-limited continuous stream of transactions and provides an alternative to using FRQCY tokens to perform individual transactions.
 
-In Frequency context, Capacity is the ability to send messages every Capacity Epoch.
+## Capacity Epoch
 
-- Capacity refills each Capacity Epoch
-- Capacity is gained through Staking
-- Capacity can be used for the following actions
-- Creating an MSA
-- Adding a Key to an MSA
-- Adding a Provider to an MSA
-- Modifying a Delegation Permissions
-- Sending an on-chain message with a given Schema
-- Sending a batch message with a given Schema
+The Capacity Epoch is the number of blocks before capacity refills.
+In other words, it is the number of blocks before one may reuse Capacity.
 
-### Capacity Epoch
+## Coinless User
 
-The Capacity Epoch is the number of blocks before capacity refills. In other words,
-it is a number of blocks before you get to reuse your Capacity.
+An End User who doesn’t use tokens to interact with the blockchain.
+While Coinless Users have wallets with private keys that enable them to maintain control of their information and identity on chain, they typically will delegate their needs to a Provider who will in turn manage on-chain transactions (such as sending messages) on their behalf.
 
 ## Collator
 
-A Frequency node that generates blocks and submit them to the Relay Chain.
-
-### Invulnerable Collator
-
-A collator that does not receive a reward and will not be removed without governance action.
+A Frequency node that generates blocks and submits them to the Relay Chain.
+Frequency currently operates using "[invulnerable Collators](./Networks/Collators.md)", but intends to transition to public collators sometime in 2023.
 
 ## Consumer
 
-Someone who reads content from social media
+Someone who reads content from social media.
 
 ## Content Identifier (CID)
 
-Self-describing content-addressed identifiers for distributed systems
+Self-describing content-addressed identifiers for distributed systems such as IPFS.
 
 ## Delegate (verb, i.e. "to delegate")
 
-The action of an MSA (the Delegator) delegating to a Provider. A verb only.
-**DO NOT** use as a noun!
-
-## ~~Delegate (noun, i.e. "a delegate")~~
-
-!! **DO NOT** use as a noun! Confusing due to being spelled the same as the verb and
-close to Delegator. Replaced with Provider.
+The action of an [MSA](./Basics/MessageSourceAccounts.md) (the Delegator) granting permissions (such as sending messages on their behalf) to a Provider.
+Used as a verb only; i.e. there is no entity that serves as a "delegate" in the Frequency system to prevent confusion.
 
 ## Delegator
 
-An [MSA](#message-source-account-msa) that has granted specific permissions to a Provider.
+An MSA that has granted specific permissions to a Provider.
 
 ## End User
 
-Groups or individuals that own an MSA that is not a [Provider MSA](#provider).
+A user who owns an MSA but is not acting as a Provider MSA.
+An End User may choose to own tokens to participate in Rewards Capacity Staking to support services and participate in on-chain governance with Capacity.
+However, End Users typically delegate other tasks to Providers who perform actions on the user's behalf.
 
 ## Existential Deposit
 
-The minimum amount an account may have and be considered alive. May be set to 0.
+The minimum token amount a token account may have and still be considered alive.
+Set to 0.01 FRQCY.
+
+## Direct Frequency User
+
+Those who interact with the FRQCY token and are engaged in staking, governance, building new schemas, or other systems on Frequency.
+These users overlap with DSNP users.
+
+## Frequency Rococo
+
+The testnet for Frequency that is connected to the Rococo Relay Chain.
+
+## FRQCY
+
+FRQCY is the token on the mainnet Frequency blockchain.
 
 ## Graph / Social Graph
 
 A social graph is a graph that represents social relations between entities.
 
-### Public Graph
-
-A social connection graph between MSA Ids that is readable by anyone.
-
-### Private Graph
-
-A social connection graph between MSA Ids that is readable only by those with the necessary encryption key(s).
-
 ## InterPlanetary File System (IPFS)
 
-A decentralized content-addressed file system. See https://docs.ipfs.tech/ for more detail.
+A decentralized content-addressed file system.
+See [https://docs.ipfs.tech/](https://docs.ipfs.tech/) for more detail.
+
+## Invulnerable Collator
+
+A collator that does not receive a reward and will not be removed without governance action.
+
+## Maximized Capacity Staking
+
+A form of staking that allows Providers to use FRQCY tokens as efficiently as possible, optimizing their Generated Capacity for serving End Users.
+ Maximized Capacity Staking earns more Capacity per token staked than Rewards Capacity Staking.
 
 ## Message
 
-A Frequency packet of data that matches a registered schema. Any message sent on
-Frequency must have a registered Message Schema Id. This registration tells consumers
-of the message how to read the data in the Payload.
+A Frequency packet of data that matches a registered schema.
+Any message sent on Frequency must have a registered [Schema Id](./Basics/Schemas.md) which tells consumers of the message how to read the data in the Payload.
 
-- **Payload location** - this is currently either on-chain or ipfs.
-  It could be expanded to more in the future.
-- **Model Type** - this is currently either AvroBinary or Parquet.
-  This tells you how to read the schema's model to construct new message payloads and potentially read or validate data.
+## Message Service Account (MSA)
 
-### On-Chain Message
+[Message Source Accounts](./Basics/MessageSourceAccounts.md) are unique to Frequency and ensure messages have verifiable authorship.
+End Users with MSAs are not required to have tokens or Capacity to interact with Frequency, but may instead choose to delegate tasks that require Capacity to Providers.
 
-A message that has a payload location that is on Frequency.
+## MSA ID
 
-### Off-Chain Message
+The 64-bit unsigned integer identifier associated with an MSA.
 
-A message that has a payload location that is stored off-chain such as on IPFS.
+## On-Chain Message
+
+A [message](./Basics/Messages.md) that has a payload location that is on the Frequency blockchain.
+
+## Off-Chain Message
+
+A [message](./Basics/Messages.md) that has a payload location stored off-chain (such as on IPFS.)
+
+## Public Collator
+
+A collator who applies for the Collator operator space, bonds tokens in order to participate, and receives rewards for participation.
+However, public collators who behave improperly risk losing their position and their bond.
 
 ## Payload
 
-The user data in a message that is defined specifically by the corresponding schema model.
-[Schema](#schema) defines the message as a whole.
+The user data within a message.
+The payload is defined specifically by the corresponding Schema model.
+Schema defines the message as a whole.
 
 ## Provider
 
-An [MSA](#message-source-account-msa) that is registered for being able to be
-delegated to and being the target of capacity rewards when a person stakes to the
-network for token rewards. Anyone can register to be a provider.
+An MSA that can allow others to delegate to it such as applications and services that use the Capacity Economic system.
+Providers utilize Capacity to serve the End Users that delegate to them.
+
+## Provider MSA
+
+The MSA associated with the Account ID that signs a capacity transaction.
+
+## Public Graph
+
+A social connection graph between MSA Ids that is readable by anyone.
+Frequency supports the DSNP public graph.
+
+## Rewards Capacity Staking
+
+A form of staking that encourages End Users to support services and participate in the chain governance.
+Rewards Capacity Staking earns less Capacity per token staked than Maximized Capacity Staking.
+However in Rewards Capacity Staking the user receives a periodic "reward" back to the Token Account of the stake.
 
 ## Schema
 
-A registered data structure and the settings around it.
+[Schemas](./Basics/Schemas.md) are registered data structures and the data that surround it.
+With Frequency Schemas define the format, how message payloads are stored, and how End Users can parse the message.
+This ensures message correctness, validity, extensibility, and interoperability between services and allows Frequency to support a variety of message types while enforcing communication protocols between network and service participants.
 
 ## Staking
 
-A stake is an amount of money that a person gives up temporarily when receiving a benefit,
-usually to shift some of the risk to the owner of the money. A rental security deposit
-is a great example of a stake in everyday life. A renter gives the landlord or rental
-company some money, and as long as certain criteria are met, the renter receives that
-money back at the end of the agreement. The security deposit helps secure against the
-renter breaking the agreement because the renter desires the return of the deposit.
-
-Frequency supports two different types of staking that generate Capacity, each
-with a different goal. Both types are a form of network staking which supports the
-network as a whole and does not participate in securing the network like validator
-staking for example. Network staking connects the market component for the value of
-the network, which in part reflects the value of the content flowing through the
-network. The risk of loss is not from slashing, but that the token loses value.
-
-### 1. Rewards Capacity Staking for Users
-
-Because most users will use capacity from Providers, they do not need Capacity directly.
-To encourage users to support services and participate in the chain governance,
-Frequency offers Rewards Capacity Staking. Like Maximized Capacity Staking, the
-stake generates capacity that the user must direct to a Provider they chose.
-However, the Rewards Capacity Staking is much less Capacity for the same amount of
-tokens staked. Instead, the user receives a periodic “reward” back to the
-Token Account of the stake.
-
-### 2. Maximized Capacity Staking for Applications and Services
-
-The goal of Maximized Capacity Staking is to use tokens as efficiently as possible to
-generate the most amount of Capacity that is possible. Providers, like applications
-and services, need Capacity to interact with Frequency on behalf of their users.
-These companies have many competing needs for their capital and will want to maximize
-the Capacity generated for the number of tokens they stake.
-
-The amount of Capacity generated from Maximized Capacity Staking is balanced against
-Rewards Capacity Staking to ensure that it is almost always more capital efficient for
-an application to choose Maximized Capacity Staking. Because Providers have an amount
-of Capacity they need to operate, they care most about gaining the needed Capacity
-while regular users don’t need a specific Capacity amount and can opt for the more
-useful token earnings instead.
-
-## Store
-
-A means of keeping messages or data for an extended period of time.
+[Staking](./Tokenomics/Staking.md) refers to the process of temporarily surrendering something of value (tokens) in order to receive a benefit or to encourage a specific type of behavior.
+With Frequency tokens are staked for certain permissions and governance actions.
+In addition Frequency supports two types of staking that generate Capacity Rewards: Capacity Staking and Maximized Capacity Staking.
 
 ## Substrate Weight (aka Weight)
 
-Substrate’s version of gas. This the core value for the “cost” of the action on the chain.
+Substrate’s version of transaction gas.
+This is the core value for the "cost" of any action performed on chain.
 
 ## Token Account
 
-See [Account](#account) section for definition.
+[Token Accounts](./Basics/TokenAccounts.md) are the Frequency accounts responsible for holding a balance, transferring tokens, and paying for transactions.
 
 ## Tombstone
 
-Represent a deleted record in a replica of a distributed data store.
-The tombstone is necessary, as distributed data stores use eventual consistency,
-where only a subset of nodes where the data is stored must respond before an operation
-is considered to be successful. [See more info here](<https://en.wikipedia.org/wiki/Tombstone_(data_store)>)
+A Tombstone can be created when a record should be "deleted".
+Distributed data store captures the delete operation onto a marker or placeholder for that data which is called a Tombstone.
+This prevents errors that can occur when requests for data and requests for deletion get out of order.
 
-### Transaction Weight
+## Thaw Period
 
-Weight is the term for the blockchain computational cost of an action. Different
-actions cost different weights. We also charge more for some actions
-for spam or future “free” actions.
+The period of time between token unstaking and token liquidity during which tokens can neither be used nor transferred or sold.
+
+## Transaction Weight
+
+Weight is the term for the blockchain computational cost of an action.
+Different actions cost different weights.
+Frequency may make changes to Transaction Weight in order to discourage spam messaging and other undesirable behaviors.
 
 ## Unstaking
 
-If someone who has staked wants to become liquid again in order to transfer or trade
-their tokens, they have to go through what is called a thaw period. This is a time
-interval where the tokens are not generating any rewards or Capacity, but cannot yet
-be used or transferred from the user’s account. After the thaw period ends,
-the user can then use, transfer, or even re-stake their tokens.
-Once someone has triggered the unstaking process, the Capacity received for those
-tokens is removed at the start of the next Capacity Epoch.
+The process of liquidating assets that were previously staked so they may be transferred or traded.
+When one unstakes their Frequency tokens, there is a "thaw period" or interval of time where	tokens are not generating rewards or capacity, but are not yet liquid (cannot be transferred or traded).
 
-This period is important to allow time for the market to react to any actions that
-a user has done. It also encourages longer term commitment and investment.
-Unlike some chains, Frequency does not currently have staking time periods.
-Unstaking requires an active choice by the owner. The length of the thaw period is
-currently expected to be about 7 days, but it is still being finalized and is an
-example of something that governance could adjust in the future.
+## XRQCY
+
+The Frequency Rococo Testnet token is notated as XRQCY - this token is only for testing and holds no value.
