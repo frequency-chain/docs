@@ -40,7 +40,7 @@ While Capacity isn’t like other costs, Providers are not dictated how to pay f
 
 * **Coinless Users:**
 People who don’t need tokens to interact with the blockchain.
-They still have wallets with private keys but instead of managing tokens these keys enable them to maintain control of their information and identity on-chain.
+They still have wallets with private keys but instead of managing tokens these keys enable them to maintain control of their information and identity on chain.
 While they may interact with tokens for other purposes, they are not required to.
 
 * **Direct Frequency Users:**

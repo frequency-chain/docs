@@ -124,7 +124,7 @@ A [message](./Basics/Messages.md) that has a payload location that is on the Fre
 
 ## Off-Chain Message
 
-A [message](./Basics/Messages.md) that has a payload location stored off-chain (such as on IPFS.)
+A [message](./Basics/Messages.md) that has a payload location stored off chain (such as on IPFS.)
 
 ## Public Collator
 
@@ -155,7 +155,7 @@ Frequency supports the DSNP public graph.
 
 A form of staking that encourages End Users to support services and participate in the chain governance.
 Rewards Capacity Staking earns less Capacity per token staked than Maximized Capacity Staking.
-However in Rewards Capacity Staking the user receives a periodic "reward" back to the Token Account of the stake.
+However, in Rewards Capacity Staking the user receives a periodic "reward" back to the Token Account of the stake.
 
 ## Schema
 

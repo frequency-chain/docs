@@ -22,7 +22,7 @@ Providers use the Capacity Economic System to serve the users that delegate to t
 ### Delegation accomplishes two primary objectives
 
 1. It allows users to interact with Frequency without in-depth knowledge of blockchain technology.
-2. Shifts the responsibility of transaction fees from the individual to the Provider.
+2. It shifts the responsibility of transaction fees from the individual to the Provider.
 
 Users still maintain ultimate control of their data with the ability to opt-in or out of relationships with Providers.
 

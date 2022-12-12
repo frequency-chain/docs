@@ -4,24 +4,23 @@
 
 A Parachain is a blockchain that works within the confines of the Polkadot host Relay Chain, running in parallel as a "parallelized chain".
 
-The main responsibility of the Relay Chain serves to coordinate parachains as a whole.
-Parachains benefit from the pooled security, thought-through governance, and overall scalability generated through the Relay Chain.
+The main responsibility of the Relay Chain is to coordinate parachains as a whole.
+Parachains benefit from the pooled security, thought-through governance, and overall scalability generated via the Relay Chain.
 
-Parachains operate as layer-1 blockchains that connect to a Relay Chain, which validates the state transition of connected parachains, providing shared state across the entire ecosystem.
-Since the validator set on the Relay Chain is expected to be secure with a large amount of stake put up to back it, it is desirable for parachains to benefit from this shared security.
+Parachains operate as layer-1 blockchains that run parallel to the Polkadot Relay Chain. Parachains can parallelize transaction processing and utilize other benefits from the Polkadot blockchain including scalability, solidly-staked security, and communication (via the XCM format) with other parachains.
 
 Learn more about Polkadot's [parachain architecture](https://wiki.polkadot.network/docs/learn-parachains).
 
 ## Why is Frequency a Parachain?
 
 Frequency is a Polkadot Parachain dedicated to decentralized social media.
-Balancing blockchain-based incentive models with the scale needed to support a social network is a challenge.
-However, Polkadot’s model of a Relay Chain with connected parachains offers a fixed price consensus, making it ideal for a highly scalable operation.
+Balancing blockchain-based incentive models with the massive scale needed to support a social network is challenging.
+However, Polkadot’s model (a Relay Chain with connected Parachains) offers a fixed price consensus, making it ideal for a highly scalable operation.
 
 The ability to alter the pricing structure of blockchain transactions served as an essential consideration in developing Frequency as a Polkadot Parachain.
 
-Parachains don’t pay a separate fee for each block that gets validated because of parachain leases.
-[Parachain leases](https://wiki.polkadot.network/docs/learn-auction#parachain-lease-extension) have been settled via funds gathered from the Polkadot community and slot auctions.
+Parachains don’t pay a separate fee for each block that gets validated. Rather, Parachains pay via 
+[Parachain leases](https://wiki.polkadot.network/docs/learn-auction#parachain-lease-extension) which are settled via funds gathered from slot auctions and the Polkadot community.
 
 As a Parachain, Frequency accomplishes several functionality components essential for its development:
 

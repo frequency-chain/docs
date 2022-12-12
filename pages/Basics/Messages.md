@@ -4,7 +4,7 @@ A message on Frequency consists of data conforming to a registered `SchemaId`.
 
 ## How messages relate to Schemas
 Any message sent must be associated with a `SchemaId` to group data types and indicate to users how to read the data in the payload.
-The Schema specifies whether the message is on-chain or off-chain (IPFS).
+The Schema specifies whether the message is on chain or off chain (IPFS).
 The `SchemaId` validates that the message data contains all of the necessary field information required.
 
 ## How a message is created and verified:
@@ -16,7 +16,7 @@ Users are not required to delegate to a Provider, so long as they have an MSA; u
 Providers serve as the primary creator of messages, however, any MSA can submit messages so long as they have enough FRQCY tokens or Capacity (future development).
 Providers are expected to post messages on behalf of the MSAs that delegate to them.
 Providers submit messages containing the `MSA ID` of the message sender.
-This verification is valid for on chain messages only at this time.
+This verification is valid for on-chain messages only at this time.
 
 ## Batching Content
 
@@ -25,7 +25,7 @@ Usually these are structured as Schemas that are stored off chain such as in IPF
 Only one data type is allowed per message payload in order to improve searching, indexing, and organizing message threads.
 Frequency supports off-chain, batched, messages as it allows a much higher effective message throughput and reduces costs associated with running a node.
 
-Batched messages allow Providers to publish large quantities of data off-chain at once, reducing the transaction price.
+Batched messages allow Providers to publish large quantities of data off chain at once, reducing the transaction price.
 There are tradeoffs for how long to wait to post batched messages.
 Smaller batches reduce latency while larger batches reduce transaction fees.
 Additionally, batched messages reduce the congestion of data on chain, which is crucial for a high-message volume ecosystem.
@@ -46,7 +46,7 @@ Message replies to off-chain messages are recorded in response to the initial me
 ## Retrieving from the Chain
 Messages may be retrieved from the chain by calling the pointer message location of the IPFS `SchemaId`.
 IPFS messages retrieved from the chain generally would be fetched for the purpose of getting the IPFS location for a batch file and then retrieving that file for processing.
-On chain messages retrieved from the chain may be fetched for immediate processing as the message content is on chain.
+On-chain messages retrieved from the chain may be fetched for immediate processing as the message content is on chain.
 
 ## Paying for Messages
 

@@ -1,7 +1,6 @@
 # Providers
 
-Providers are the applications and services directly interacting with Frequency.
-Providers are about to be delegated to by [Message Source Accounts (MSAs)](./MessageSourceAccounts.md) to send and receive messages on behalf of those who have delegated, through the respective use of permissions and grants.
+Providers are the applications and services directly interacting with Frequency.  Message Source Accounts delegate to Providers who may then send and receive messages on the MSA holder's behalf via the respective uses of grants and permissions.
 
 ## Who can become a Provider?
 The basic workflow for provider registration is as follows:

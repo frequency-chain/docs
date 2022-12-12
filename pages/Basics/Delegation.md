@@ -1,6 +1,6 @@
 # Delegation
 
-Delegation shifts transaction costs of the chain away from the end user and toward a third party, Providers.
+Delegation shifts transaction costs of the chain away from the end user and toward a third party (namely Providers.)
 
 An MSA can delegate, or grant access to Providers to take action on their behalf.
 
@@ -11,7 +11,7 @@ Through delegation to a Provider, users have the ability to complete the followi
 * Processing of Messages
 * Message and Data Storage
 
-Users still maintain ultimate control of their data with the ability to opt-in, or out of relationships with Providers.
+Users still maintain ultimate control of their data with the ability to opt in, or out of relationships with Providers.
 
 ## Properties of Delegation on Frequency
 
@@ -23,7 +23,7 @@ Users still maintain ultimate control of their data with the ability to opt-in, 
 Permissions establish a separation of control between Delegator (User) - Provider relationships.
 
 * **Providers:** Request a Delegation and Permissions to publish data for one or more specific Schemas on-behalf of a Delegator.
-* **Delegator:** Restrict a Provider, by granting a Provider permission to publish data for specific Schemas on-behalf of the Delegator.
+* **Delegator:** Restrict a Provider, by granting a Provider permission to publish data only for the specific Schemas they select on-behalf of the Delegator.
 
 ## Revocation
 

@@ -1,7 +1,7 @@
 ## The Problem
 
 Social networking has wholly transformed digital communication for the modern age.
-Unfortunately, the social networking industry is currently dominated by a handful of global private companies, growing rich off the data of their users.
+Unfortunately, the social networking industry is currently dominated by a handful of global private companies growing rich off the data of their users.
 These data repositories, that were ceaselessly mined for significant user insights, ultimately grew into a web of manipulation, exploitation, and polarization.
 The evolution of these secretive agencies made clear that the social infrastructure needed to change and return agency back to the users.
 

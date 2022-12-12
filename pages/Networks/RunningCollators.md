@@ -1,8 +1,8 @@
 # Running a Collator
 
-### Collator details are currently under development — more details will be released soon regarding instructions and implementation details.
+### Collator details are currently under development. More details will be released soon regarding instructions and implementation details.
 
-Collator operators will have to meet technical and financial requirements to be able to serve as a candidate chosen to form the next block.
+Collator operators will need to meet technical and financial requirements to serve as a candidate chosen to form the next block.
 
 Collator nodes require sufficient hardware and bandwidth to service the network within the necessary block time.
 If a Collator lags or drops offline for more than the minimum time, they will be kicked out of the Collator candidate pool.
@@ -33,7 +33,7 @@ Collators follow the same expectations outlined in [Polkadot's reference hardwar
   - The minimum symmetric networking speed is set to 500 Mbit/s (= 62.5 MB/s).
 - **Clock Synchronization**
   - The system clock must be within a margin of the other collators.
-  - It is suggested to use [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) or other method of maintaining clock synchronization.
+  - It is suggested to use [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) or another similar method of maintaining clock synchronization.
 
 ### Reference Hardware
 
@@ -65,7 +65,7 @@ There are five keys that matter for a Collator node:
 	* When an invulnerable Collator, should be set as one of the "invulnerable keys"
 
 3. **The Invulnerable Address Key**
-	* The controller account's address
+	* The address of the controller account
 	* Must be added to the invulnerables using `collatorSelection.setInvulnerables`.
 
 4. **The Stash Account Key** (Sometimes referred to as the `Validator ID`)

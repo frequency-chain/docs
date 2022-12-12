@@ -53,11 +53,11 @@ Those who dump the token after abusing the network will receive a natural market
 Network and token values are correlated, encouraging those with Capacity to align in the goal of a successful and well-functioning network.
 
 2. **Cost Management:** Capacity acts as an asset, like that of [capital expenditure](https://en.wikipedia.org/wiki/Capital_expenditure), in the sense that it fulfills long-term value.
-The FRQCY tokens that generate Capacity are locked but Generated Capacity is usable again and again.
+The FRQCY tokens that generate Capacity are locked, but Generated Capacity is usable again and again.
 Regular message sending is allowed without additional costs.
 
 	* **Short-term vs long-term value:**
-	Blockchains primarily interact using short-term, per transaction operation expenses, in which efficiency demands as few transactions as possible.
+	Blockchains primarily interact using short-term, per transaction operation expenses, where efficiency demands as few transactions as possible.
 	Capacity optimizes flow-through pricing a continuous stream of messages/transactions together rather than as individual transactions.
 	This supports the collective value of the messages, in other words, the whole is greater than the sum of its parts.
 
@@ -67,7 +67,7 @@ Capacity Epochs allow for expansion of that space where a Capacity holder can ad
 	Limiting the rate of transactions ensures a proportional volume of transactions to the amount of Capacity.
 
 	* **Batching and Capacity:**
-	More messages requires more Capacity.
+	More messages require more Capacity.
 	Batching requires less Capacity to send messages, part of Frequency’s marginal cost structure.
 	When batching, adding one additional message has a tiny marginal cost.
 	A batched message is one on-chain message that acts as an anchor tied to a large amount of off-chain data from various MSA accounts.
