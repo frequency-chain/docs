@@ -2,9 +2,9 @@ name: "Install mdBook with Plugins"
 description: 'Shared action steps to install mdBook with required plugins'
 runs:
   using: "composite"
-  steps: 
+  steps:
     - name: Setup mdBook 📚
-      uses: peaceiris/actions-mdbook@v1
+      uses: peaceiris/actions-mdbook@adeb05db28a0c0004681db83893d56c0388ea9ea
       with:
         mdbook-version: 'latest'
 
@@ -18,6 +18,8 @@ runs:
           | tr -d \" \
           | wget -qi - -O mdbook-linkcheck.zip
 
+        echo "Checking to make sure we have the pinned version..."
+        echo "50459b7db8e85a43d653e9f0d7524234  mdbook-linkcheck.x86_64-unknown-linux-gnu.zip" | md5sum -c
         unzip mdbook-linkcheck.zip -d mdbook-linkcheck
         chmod +x mdbook-linkcheck/mdbook-linkcheck
         echo "$PWD/mdbook-linkcheck" >> $GITHUB_PATH
