@@ -13,9 +13,6 @@ The basic workflow for provider registration is as follows:
 
 - UTF-8 Name (non-unique).
 
-## How are Providers identified?
-
-Providers are
 
 ## Provider Verification
 #### Provider Verification details are currently under development and additional details will be released soon.
