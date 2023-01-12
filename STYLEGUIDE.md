@@ -28,9 +28,6 @@ Uppercase B and P
 ## Capacity
 Uppercase C, always add “currently under development”
 
-## Capacity Economic System
-Uppercase C, E and S 
-
 ## Capacity Token Rewards
 Uppercase C, T and R
 
@@ -57,45 +54,6 @@ Used as a verb ONLY i.e. an MSA delegates to a Provider, not as a noun
 
 ## development community
 All lowercase
-
-## DSNP public social graph
-All lowercase after acronym
-
-## DSNP
-Just DSNP (no the before it and never DSNP protocol)
-
-## DSNP Batch Publications
-Uppercase Acronym plus uppercase B and P
-
-## DSNP Content Hash
-Uppercase Acronym plus uppercase C and H
-
-## DSNP graph
-Only acronym is uppercase
-
-## DSNP Identifiers
-Uppercase Acronym plus uppercase I
-
-## DSNP Identity
-Uppercase Acronym plus Uppercase I
-
-## DSNP Id
-Short for DSNP Identity, Uppercase Acronym plus uppercase I
-
-## DSNP ID
-Short for DSNP Identity Document, do not confuse with DSNP Id
-
-## DSNP Protocol Scheme
-Uppercase Acronym plus uppercase P and S
-
-## DSNP Specification
-Uppercase DSNP and S, avoid preceding with the word "the"
-
-## DSNP User Id
-Uppercase acronym, U and I, avoid preceding with the word "the"
-
-## DSNP User URI
-Uppercase Acronyms plus uppercase U
 
 ## End User
 Uppercase E and U
@@ -167,13 +125,10 @@ Uppercase P
 Polkadot wiki uses uppercase R and C
 
 ## Possessives
-Making Frequency or DSNP possessive should be avoided (e.g. Frequency’s or DSNP’s)
+Making Frequency possessive should be avoided (e.g. Frequency’s)
 
 ## Profile Activity Type
 Uppercase P, A and T
-
-## Project Liberty
-Uppercase P and L
 
 ## Providers
 Uppercase P
