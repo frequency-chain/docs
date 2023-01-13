@@ -76,6 +76,9 @@ Uppercase F and M
 ## FRQCY 
 Avoid following with the word "tokens"
 
+## Functions
+Use Snake Case e.g. on_initialize
+
 ## Generated Capacity
 Uppercase G and C
 
@@ -105,6 +108,9 @@ Always use
 
 ## parachain
 All lowercase
+
+## parameters
+Use snake case e.g. current_block_number
 
 ## Parquet
 Uppercase P (proper noun)
@@ -174,6 +180,9 @@ Uppercase T and C
 
 ## Token Account
 Uppercase T and A
+
+## Types
+Use Pascal Case e.g. DoubleStorageMap, StorageMap
 
 ## Update Announcement
 Uppercase U and A
