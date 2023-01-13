@@ -27,7 +27,9 @@ Permissions establish a separation of control between Delegator (User) - Provide
 
 ## Revocation
 
-Either the Delegator or the Provider may
+Either the Delegator or the Provider may revoke permissions at any time.
+
+## Definitions
 
 * **delegator_msa:** The MSA of a delegator/user.
 * **provider_msa:** The MSA of the provider/app.
