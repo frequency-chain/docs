@@ -27,7 +27,7 @@ Permissions establish a separation of control between Delegator (User) - Provide
 
 ## Revocation
 
-Either the Delegator or the Provider may revoke permissions at any time.
+Either the Delegator or the Provider may revoke permissions at any time without cost.
 
 ## Definitions
 
