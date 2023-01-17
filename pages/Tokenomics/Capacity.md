@@ -20,7 +20,7 @@ The amount of Capacity generated for a Provider from staking FRQCY tokens to the
 
 **By Use Case**
 
-* Create and [MSA](#2-message-source-account-msa)
+* Create an [MSA](#2-message-source-account-msa)
 * Add a key to an MSA
 * Delegate permissions to another MSA
 * Update [Delegate Permissions](#delegate-verb-ie-to-delegate)
@@ -82,6 +82,8 @@ Capacity refills at the start of each Capacity Epoch.
 The refillable nature incentivizes services to use Capacity to the best of their user’s needs.
 Capacity encourages continual use and sharing; increasing the quantity of data available and thus the value of the network.
 
+189948939-6b85465a-f9d9-4330-b887-561c7f0283b1.png)
+
 **Dynamic Capacity Epoch Development**
 These "epochs" form a meta-block that may slowly grow over time.
 The growth is a predictable depreciation of Capacity, but rather than influencing price, it increases the lag between refills.
@@ -95,7 +97,25 @@ Collator and token holder values are aligned economically in support of a health
 
 ## Prioritization of Capacity Transactions
 
-Capacity transactions do not have the ability to tip, placing them at a disadvantage to token transactions, in which a tip increases the priority of the transactions likelihood to be added to the next block.
 
-Frequency prioritizes Capacity transactions over token transactions but place a limit on the block space Capacity transactions can consume.
-This allows Capacity transactions to fill the allocated spend and still allow for token transactions to fill the remaining block.
+Substrate default prioritization is composed of the transaction length, weight, and tip. Adding a tip allows you to increase your priority and thus increases the chance that your transaction is added to the next block.
+
+Capacity transactions do not have the ability to tip, unlike token transactions. This puts Capacity transactions at a disadvantage because in times of high congestion tokens transactions can prevent Capacity transactions from being included in a block.
+
+To prevent token transactions from dominating block space, we prioritize Capacity transactions over token transactions. Additionally, we put a limit on the amount of block space Capacity transactions can consume. This new priority allows Capacity transactions to fill up their allocated space first and once the limit has been reached allow for token transactions to fill up the remaining block. We flip the prioritization in this manner because we expect more Capacity transactions than non-capacity transactions. The following section will describe how the block space is filled.
+
+**Block space allocation for Capacity transactions** <a id='block-space'></a>
+
+We expect more Capacity transactions versus non-capacity transactions. To prevent Capacity transactions from dominating block space, we extend what Substrate does to distribute block space among Mandatory, Operational, and Normal transactions.
+
+In Substrate, a max limit is imposed on how much block space Mandatory, Operational, and Normal transactions can consume. Once that limit is reached, transactions are returned to the transaction pool for reprocessing. Below you can see that three Normal transactions have not reached the `max total`.
+
+![https://user-images.githubusercontent.com/3433442/189948974-5dc537ad-2e87-4425-9616-6e93e7b69c2b.png](https://user-images.githubusercontent.com/3433442/189948974-5dc537ad-2e87-4425-9616-6e93e7b69c2b.png)
+
+Similarly, we impose a limit on how much space Capacity transactions can consume from Normal transactions. This new configurable limit can be set by governance.
+
+![https://user-images.githubusercontent.com/3433442/189949020-7bdd2e34-5323-4264-a821-1dcbb0063c20.png](https://user-images.githubusercontent.com/3433442/189949020-7bdd2e34-5323-4264-a821-1dcbb0063c20.png)
+
+A [SignedExtension](https://paritytech.github.io/substrate/master/sp_runtime/traits/trait.SignedExtension.html) trait is implemented so that once the Capacity transaction has reached the `max_total` of allocated Capacity space, the transaction is put back into the transaction pool. Below illustrates the Capacity transaction SignedExtension flow.
+
+![https://user-images.githubusercontent.com/3433442/189949048-7d19a194-701d-4267-ae1a-0333ee665ae7.png](https://user-images.githubusercontent.com/3433442/189949048-7d19a194-701d-4267-ae1a-0333ee665ae7.png)
