@@ -194,3 +194,24 @@ Should not be used in context with Frequency
 All uppercase, avoid following with the word "token"
 
 
+
+# General Technology Terms
+This section details how various general technology terms should be presented in Frequency documentation.  Typically usage conforms to AP style unless there is a specific reason to deviate.
+
+## dapp
+All lower case (per AP style and Etherium.org)
+
+## DeFi
+Uppercase D and F.  One word. (per AP style)
+
+## internet
+Lowercase i (AP style)
+
+## web
+Lowercase w (AP style)
+
+## Web 2.0
+Uppercase W space between b and 2.0 NOT Web2
+
+## web3
+Lowercase w, all one word, NOT 3.0. (AP style)
