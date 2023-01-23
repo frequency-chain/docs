@@ -10,6 +10,11 @@ Below are links to official platforms, as well as unofficial, community-managed 
 - General Enquiry Email​: [hello@frequency.xyz](mailto:hello@frequency.xyz)
 - Issues can be raised directly in the [Frequency GitHub](https://github.com/LibertyDSNP/frequency) code repository.
 
+## Polkassembly
+- [Frequency Rococo](https://frequency-rococo.polkassembly.io/)
+- [Frequency Mainnet](https://frequency.polkassembly.io/)
+
+
 ## Social & Announcements
 
 - [Frequency Homepage](https://www.frequency.xyz)
