@@ -6,7 +6,7 @@ Frequency has two account types: **Token Accounts** and **Message Source Account
 These accounts are the same as on the [Polkadot chain](https://wiki.polkadot.network/docs/learn-accounts).
 
 [Message Source Accounts](./MessageSourceAccounts.md) are unique to Frequency and ensure messages have verifiable authorship.
-[Provider MSA accounts](#provider) enable users to broadcast messages through delegation without needing tokens.
+[Provider MSA accounts](./Providers.md) enable users to broadcast messages through delegation without needing tokens.
 
 Users must have a Message Source Account to send messages on Frequency.
 A user does *not* need a Token Account to be able to have an MSA.
