@@ -1,7 +1,7 @@
 # Keeping Your Accounts Safe
 
 **Remember: keeping your account safe is a responsibility that goes beyond the scope of this document.**
-**While we try to provide the basic concepts, security is in constant flux, and these may not represent the latest best practices.**
+**While this document provides basic concepts, security is in constant flux, and these may not represent the latest best practices.**
 
 ## Public Keys and Rotation
 
