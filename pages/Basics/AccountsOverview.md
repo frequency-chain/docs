@@ -45,7 +45,7 @@ Autonomous users may also engage in staking, governance, building new Schemas, o
 [Providers](./Providers.md) must register for both a Token Account and an MSA Account to participate on the Frequency chain.
 Providers are the applications and services directly interacting with Frequency.
 They use the Capacity economic system to serve the users that delegate to them.
-Providers use Token Accounts to hold FRQCY Tokens and Capacity to pay messaging transactions on behalf of their users.
+Providers use Token Accounts to hold FRQCY Tokens and Capacity to pay for messaging transactions on behalf of their users.
 
 * MSA Required: YES
 * Token Account Required: YES
