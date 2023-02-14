@@ -1,4 +1,4 @@
-# Decentralization Roadmap
+# Collator Decentralization Roadmap
 
 Frequency currently operates using "invulnerable" Collators, and expects to switch to open Collators sometime in 2023.
 
