@@ -6,6 +6,7 @@ Know of another wallet that supports Frequency?
 [Open a GitHub Issue](https://github.com/LibertyDSNP/frequency-docs/issues/new/choose) and let us know!
 
 - [Polkadot JS Extension](https://polkadot.js.org/extension/)
-- (Coming Soon) [Parity Signer](https://www.parity.io/technologies/signer/)
+- [Parity Signer](https://www.parity.io/technologies/signer/) 
+- To update the Parity Signer app, visit the [Frequency Metadata Portal](https://metadata.frequency.xyz/#/frequency)
 
 Most Polkadot ecosystem wallets can be configured for Frequency as well. See [Polkadot's Wiki](https://wiki.polkadot.network/docs/build-wallets) for these additional wallets.
