@@ -15,7 +15,6 @@ These are important governance parameters, which may change over time as we prog
 * Enactment Period: Minimum period for locking funds and the period between a proposal being approved and enacted is **8 days**.
 * Cool-off Period: Vetoed proposal may not be re-submitted within **7 days**.
 
-
 Detailed documentation regarding councils, collectives and committees as well as information for participating in the democracy will be available soon.
 
 ## Roadmap
@@ -25,3 +24,6 @@ Coming soon...
 ## Treasury
 
 Coming soon...
+
+## Mainnet Polkassembly
+[Link for Mainnet Polkassembly](https://frequency.polkassembly.io/)
