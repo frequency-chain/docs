@@ -114,7 +114,7 @@ There are five keys that matter for a Collator node:
 1. Register a Session Key
     - Submit the Extrinsic: `session.setKeys`
       - Sender: The Controller Account
-      - keys: Address of the new Session Key
+      - keys: Address of the new Session Key in hex format
       - proof: `0x` (Yes, it is empty)
     - New session keys do not become active until the next session (every ~6h).
     - While it is possible for your session key to match your Controller Account, but not recommended.
