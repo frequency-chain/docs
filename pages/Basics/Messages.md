@@ -58,4 +58,4 @@ Learn more about [Capacity](../Tokenomics/Capacity.md) here.
 ### Tokens
 
 While it is possible to pay for sending messages with tokens, it is expected that they are mostly sent using Capacity.
-Sending messages using tokens is currently supported.
+Sending messages using tokens is currently supported, and is the preferred method for local testing.
