@@ -5,7 +5,6 @@ You will want to learn about [creating new Schemas](./Basics/Schemas.md).
 
 ## DSNP
 
-Summary of DSNP coming...
-
 - [DSNP.org](https://www.dsnp.org)
 - [DSNP on Frequency](https://spec.dsnp.org/Frequency/Overview.html)
+- Want to add your protocol to this list? Make a [PR on GitHub](https://github.com/LibertyDSNP/frequency-docs)
