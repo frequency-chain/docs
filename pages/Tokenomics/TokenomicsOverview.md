@@ -36,7 +36,7 @@ There are a few primary users on the Frequency network broken into the categorie
 
 * **Frequency Providers:**
 Applications and services that use the Capacity Economic system are called [Providers](#provider), and must have Capacity to serve the users that delegate to them.
-While Capacity isn’t like other costs, Providers are not dictated how to pay for Frequency.
+While Capacity isn’t like other costs, Providers are not dictated how to pay for Frequency transactions.
 
 * **Coinless Users:**
 People who don’t need tokens to interact with the blockchain.
@@ -45,7 +45,7 @@ While they may interact with tokens for other purposes, they are not required to
 
 * **Direct Frequency Users:**
 Those who interact with the FRQCY token and are engaged in staking, governance, building new Schemas, or other systems on Frequency.
-These users overlap with [DSNP users](https://spec.dsnp.org/).
+
 
 ## Frequency Incentives:
 Frequency utilizes a limited incentive model to accomplish three things.
