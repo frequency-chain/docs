@@ -37,7 +37,6 @@ Either the Delegator or the Provider may revoke permissions at any time without 
 Default mode of operation is ***Restricted*** for any provider.
 * **Grant:** The user level action/result.
 "A user grants a permission to a provider".
-* **ToS:** The hash of terms of service between a delegator and provider.
-* **expiry:** The expiry time of a permission/grant.
+* **revoked_at:** The expiry block number of a permission/grant.
 * **schema_id:** The unique identifier of a registered Schema on Frequency
 
