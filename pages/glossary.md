@@ -6,7 +6,7 @@ Frequency has two types of accounts — [Token Accounts](./Basics/TokenAccounts.
 
 ## Account ID
 
-Account ID — a string that both identifies the Token Account and represents the Public Key used to link the User’s Token Account with their MSA.
+Account ID — a string that can identify the Token Account or the Public Key used to control an MSA.
 
 ## Actor
 
@@ -53,6 +53,10 @@ Someone who reads content from social media.
 
 Self-describing content-addressed identifiers for distributed systems such as IPFS.
 
+## Control Key
+
+The Public Key used to control an MSA.
+
 ## Delegate (verb, i.e. "to delegate")
 
 The action of an [MSA](./Basics/MessageSourceAccounts.md) (the Delegator) granting permissions (such as sending messages on their behalf) to a Provider.
@@ -61,6 +65,11 @@ Used as a verb only; i.e. there is no entity that serves as a "delegate" in the 
 ## Delegator
 
 An MSA that has granted specific permissions to a Provider.
+
+## Direct Frequency User
+
+Those who interact with the FRQCY token and are engaged in staking, governance, building new Schemas, or other systems on Frequency.
+These users overlap with DSNP users.
 
 ## End User
 
@@ -71,12 +80,7 @@ However, End Users typically delegate other tasks to Providers who perform actio
 ## Existential Deposit
 
 The minimum token amount a token account may have and still be considered alive.
-Set to 0.01 FRQCY.
-
-## Direct Frequency User
-
-Those who interact with the FRQCY token and are engaged in staking, governance, building new Schemas, or other systems on Frequency.
-These users overlap with DSNP users.
+Set to 0.01 FRQCY on mainnet.
 
 ## Frequency Rococo
 
@@ -97,7 +101,7 @@ See [https://docs.ipfs.tech/](https://docs.ipfs.tech/) for more detail.
 
 ## Invulnerable Collator
 
-A collator that does not receive a reward and will not be removed without governance action.
+A Collator that does not receive a reward and will not be removed without governance action.
 
 ## Maximized Capacity Staking
 
@@ -144,7 +148,7 @@ Providers utilize Capacity to serve the End Users that delegate to them.
 
 ## Provider MSA
 
-The MSA associated with the Account ID that signs a Capacity transaction.
+The MSA associated with the Account ID that signs a transaction acting on behalf of a Delegator MSA.
 
 ## Public Graph
 
