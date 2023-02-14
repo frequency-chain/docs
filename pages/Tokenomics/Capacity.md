@@ -82,8 +82,6 @@ Capacity refills at the start of each Capacity Epoch.
 The refillable nature incentivizes services to use Capacity to the best of their user’s needs.
 Capacity encourages continual use and sharing; increasing the quantity of data available and thus the value of the network.
 
-189948939-6b85465a-f9d9-4330-b887-561c7f0283b1.png)
-
 **Dynamic Capacity Epoch Development**
 These "epochs" form a meta-block that may slowly grow over time.
 The growth is a predictable depreciation of Capacity, but rather than influencing price, it increases the lag between refills.
