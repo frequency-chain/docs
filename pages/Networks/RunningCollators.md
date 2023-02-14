@@ -1,7 +1,5 @@
 # Running a Collator
 
-### Collator details are currently under development. More details will be released soon regarding instructions and implementation details.
-
 Collator operators will need to meet technical and financial requirements to serve as a candidate chosen to form the next block.
 
 Collator nodes require sufficient hardware and bandwidth to service the network within the necessary block time.
