@@ -100,20 +100,4 @@ Substrate default prioritization is composed of the transaction length, weight, 
 
 Capacity transactions do not have the ability to tip, unlike token transactions. This puts Capacity transactions at a disadvantage because in times of high congestion tokens transactions can prevent Capacity transactions from being included in a block.
 
-To prevent token transactions from dominating block space, we prioritize Capacity transactions over token transactions. Additionally, we put a limit on the amount of block space Capacity transactions can consume. This new priority allows Capacity transactions to fill up their allocated space first and once the limit has been reached allow for token transactions to fill up the remaining block. We flip the prioritization in this manner because we expect more Capacity transactions than non-capacity transactions. The following section will describe how the block space is filled.
-
-**Block space allocation for Capacity transactions** <a id='block-space'></a>
-
-We expect more Capacity transactions versus non-capacity transactions. To prevent Capacity transactions from dominating block space, we extend what Substrate does to distribute block space among Mandatory, Operational, and Normal transactions.
-
-In Substrate, a max limit is imposed on how much block space Mandatory, Operational, and Normal transactions can consume. Once that limit is reached, transactions are returned to the transaction pool for reprocessing. Below you can see that three Normal transactions have not reached the `max total`.
-
-![https://user-images.githubusercontent.com/3433442/189948974-5dc537ad-2e87-4425-9616-6e93e7b69c2b.png](https://user-images.githubusercontent.com/3433442/189948974-5dc537ad-2e87-4425-9616-6e93e7b69c2b.png)
-
-Similarly, we impose a limit on how much space Capacity transactions can consume from Normal transactions. This new configurable limit can be set by governance.
-
-![https://user-images.githubusercontent.com/3433442/189949020-7bdd2e34-5323-4264-a821-1dcbb0063c20.png](https://user-images.githubusercontent.com/3433442/189949020-7bdd2e34-5323-4264-a821-1dcbb0063c20.png)
-
-A [SignedExtension](https://paritytech.github.io/substrate/master/sp_runtime/traits/trait.SignedExtension.html) trait is implemented so that once the Capacity transaction has reached the `max_total` of allocated Capacity space, the transaction is put back into the transaction pool. Below illustrates the Capacity transaction SignedExtension flow.
-
-![https://user-images.githubusercontent.com/3433442/189949048-7d19a194-701d-4267-ae1a-0333ee665ae7.png](https://user-images.githubusercontent.com/3433442/189949048-7d19a194-701d-4267-ae1a-0333ee665ae7.png)
+Initially Capacity transactions are expected to make up the majority of transactions on Frequency.  However, to prevent token transactions from dominating block space in the future, alternate techniques may be used to prioritize Capacity transactions over token transactions. Additionally, a limit may be imposed on the amount of block space Capacity transactions can consume. 
