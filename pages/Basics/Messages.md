@@ -44,9 +44,7 @@ Due to the nature of timestamps, ordering cannot be guaranteed for off-chain mes
 Message replies to off-chain messages are recorded in response to the initial message, in which case message ordering is canonical.
 
 ## Retrieving from the Chain
-Messages may be retrieved from the chain by calling the pointer message location of the IPFS `SchemaId`.
-IPFS messages retrieved from the chain generally would be fetched for the purpose of getting the IPFS location for a batch file and then retrieving that file for processing.
-On-chain messages retrieved from the chain may be fetched for immediate processing as the message content is on chain.
+Messages metadata is on-chain and thus always available.  Messages payloads may exist either on chain or off chain.  On-chain Messages payloads are always available and may be fetched for immediate processing as the message content is on chain.  Messages with off-chain payloads contain pointers to an off-chain location such as IPFS.  These off-chain Messages payloads may may be retrieved from the chain by calling the pointer message location of the IPFS `SchemaId`.
 
 ## Paying for Messages
 
