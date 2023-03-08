@@ -216,5 +216,5 @@ Lowercase w (AP style)
 ## Web 2.0
 Uppercase W space between b and 2.0 NOT Web2
 
-## Web3
+## web3
 Lowercase w, all one word, NOT 3.0. (AP style plus [this](https://sdtimes.com/data/web3-and-web-3-0-two-different-ideas-that-can-coexist/))
