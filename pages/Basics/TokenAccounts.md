@@ -1,6 +1,6 @@
 # Token Accounts
 
-Token Accounts act as "wallets" and are accounts that hold FRQCY tokens and [Capacity](#capacity).
+Token Accounts act as "wallets" and are accounts that hold FRQCY tokens and can stake to generate [Capacity](#capacity).
 These are the same as accounts used across other parachains.
 Anyone can create a Token Account but they are only active if storing tokens.
 This account is responsible for holding a balance, transferring tokens to other accounts, and paying fees for transactions.
@@ -17,7 +17,7 @@ Users must acquire tokens via an exchange or transfer tokens into an account add
 
 **Capacity is currently under development - more details will be released soon.**
 
-Capacity is a value transaction that allows for the ability to send messages or do a consistent amount of work on the chain that continues over time.
+Capacity is a alternative transaction model that allows for the ability to send messages or do a consistent amount of work on the chain that continues over time.
 It is a non-transferable resource that acts as an alternative to using FRQCY tokens to perform certain transactions and is managed through a rate-limited continuous stream of transactions.
 
 Users must have a Token Account to engage with FRQCY tokens and Capacity.
