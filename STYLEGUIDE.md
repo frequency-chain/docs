@@ -207,6 +207,9 @@ Uppercase D and F.  One word. (per AP style)
 ## internet
 Lowercase i (AP style)
 
+## Social Web
+Uppercase S and W
+
 ## testnet
 Lowercase t, one word (per Cardano, Hedera)
 
