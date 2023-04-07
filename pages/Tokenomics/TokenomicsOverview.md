@@ -29,6 +29,10 @@ Visit here for more information regarding the [Capacity Economic System](Capacit
 | Unit (FRQCY)   | 8   	   | 1/1			  | 1.00000000    |
 | Million (MFRQCY) | 14		| 1 000 000/1	  | 1 000 000.00  |
 
+### Existential Deposit
+
+Token accounts are required to have at a balance of at least 0.01 FRQCY or they will be collected and any balance below that value (called "dust") will be discarded.
+
 ## Frequency Users and Democratization:
 
 On the Frequency network, End Users do not need to access FRQCY tokens or Capacity to use the network.
