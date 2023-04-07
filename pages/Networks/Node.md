@@ -26,7 +26,7 @@ Used for local development on or against Frequency.
 This does not need any other servers or network and is completely self-contained.
 It will produce a block as soon as a transaction has entered the queue.
 
-- Binaries: `frequency-local.amd64`,  `frequency-local.[arch]`
+- Binaries: `frequency-local.[arch]`
 - Docker: [`frequencychain/instant-seal-node`](https://hub.docker.com/r/frequencychain/instant-seal-node)
 
 ### Easy Docker Start
