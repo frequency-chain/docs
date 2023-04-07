@@ -6,7 +6,7 @@
 
 Releases are maintained on Frequency's [GitHub Repository](https://github.com/LibertyDSNP/frequency/releases).
 
-Frequency builds releases for both arm64 and AMD64 architectures.
+Frequency currently builds releases for the AMD64 architecture only.
 
 | Network | Binary Name |
 | --- | --- |
