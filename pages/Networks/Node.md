@@ -29,6 +29,15 @@ See also:
 - https://docs.substrate.io/deploy/prepare-to-deploy/
 - https://docs.substrate.io/deploy/deployment-options/
 
+### Relay Chain Options
+
+Each node also has a Relay Chain node as well and these options will often apply with different defualts to the Relay Chain.
+The docker images do not pass through the ports for the relay chain, but if you are running using the binary, the options are available.
+
+`frequency-binary <parachain-args> -- <relay-chain-args>`
+
+See: `--help` and `-- --help` for more information.
+
 ### RPC Access Control
 
 The node offers NO generalized options for access control.
