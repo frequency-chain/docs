@@ -13,7 +13,7 @@ Messages can only be added by MSAs.
 Users are not required to delegate to a Provider, so long as they have an MSA; users could become a Provider and pay to post message transactions themselves.
 
 * **How it relates to Providers:**
-Providers serve as the primary creator of messages, however, any MSA can submit messages so long as they have enough FRQCY tokens or Capacity (future development).
+Providers serve as the primary creator of messages, however, any MSA can submit messages so long as they have enough FRQCY tokens or [Capacity](../Tokenomics/Capacity.md).
 Providers are expected to post messages on behalf of the MSAs that delegate to them.
 Providers submit messages containing the `MSA ID` of the message sender.
 This verification is valid for on-chain messages only at this time.

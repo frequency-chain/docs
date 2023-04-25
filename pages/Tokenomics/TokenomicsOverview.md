@@ -1,6 +1,6 @@
 # Tokenomics
 
-**Capacity is currently under development - more details will be released soon.**
+**Parts of the Tokenomics are currently under development - more details will be released soon.**
 
 The Frequency mainnet token is called FRQCY.
 Frequency also utilizes [Capacity](#capacity), an alternative to using tokens to perform certain types of transactions.

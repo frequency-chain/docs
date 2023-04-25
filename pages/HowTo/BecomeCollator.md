@@ -1,8 +1,8 @@
-# How to become a Collator 
+# How to become a Collator
 
 ### Collator details are currently under development. More details will be released soon regarding instructions and implementation details.
 
-In order to become a Collator, you will need to meet technical and financial requriements.
+In order to become a Collator, you will need to meet technical and financial requirements.
 
 ## Requirements
 

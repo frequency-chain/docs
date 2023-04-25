@@ -27,7 +27,7 @@ Sometimes malicious, but often providing useful services.
 
 ## Capacity
 
-Currently under development, [Capacity](./Tokenomics/Capacity.md) is a staking system for account management and sending messages that allows messages to be sent and on-chain work to occur over time.
+[Capacity](./Tokenomics/Capacity.md) is a staking system for account management and sending messages that allows messages to be sent and on-chain work to occur over time.
 Capacity is managed via a rate-limited continuous stream of transactions and provides an alternative to using FRQCY tokens to perform individual transactions.
 
 ## Capacity Epoch

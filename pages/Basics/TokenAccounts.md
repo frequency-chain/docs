@@ -15,8 +15,6 @@ Users must acquire tokens via an exchange or transfer tokens into an account add
 
 ## Capacity
 
-**Capacity is currently under development - more details will be released soon.**
-
 Capacity is a alternative transaction model that allows for the ability to send messages or do a consistent amount of work on the chain that continues over time.
 It is a non-transferable resource that acts as an alternative to using FRQCY tokens to perform certain transactions and is managed through a rate-limited continuous stream of transactions.
 

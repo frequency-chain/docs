@@ -2,7 +2,7 @@
 
 Style guide defining wording, spelling, and other details regarding how Frequency terms are referenced.
 
-For more information about Frequency, visit [frequency.xyz](https://www.frequency.xyz) 
+For more information about Frequency, visit [frequency.xyz](https://www.frequency.xyz)
 or [Frequency on GitHub](https://github.com/LibertyDSNP/frequency)
 
 
@@ -26,7 +26,7 @@ Uppercase B
 Uppercase B and P
 
 ## Capacity
-Uppercase C, always add “currently under development”
+Uppercase C
 
 ## Capacity Token Rewards
 Uppercase C, T and R
@@ -37,7 +37,7 @@ Uppercase C and C
 ## Collator Rewards
 Uppercase C and R
 
-## Collator 
+## Collator
 Uppercase C
 
 ## community
@@ -73,7 +73,7 @@ Uppercase F and C
 ## Frequency Message
 Uppercase F and M
 
-## FRQCY 
+## FRQCY
 Avoid following with the word "tokens"
 
 ## Functions

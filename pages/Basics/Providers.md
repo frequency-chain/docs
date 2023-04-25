@@ -5,9 +5,18 @@ Providers are the applications and services directly interacting with Frequency.
 ## Who can become a Provider?
 The basic workflow for provider registration is as follows:
 
+### Testnet
+
 - Any [Message Source Account (MSA)](./MessageSourceAccounts.md) can register to be a Provider.
 - The Provider must pay token transaction fees to become a provider.
 - An additional "Registration Fee" may later be required.
+
+### Mainnet
+
+- Any [Message Source Account (MSA)](./MessageSourceAccounts.md) can request to be a Provider.
+- The Provider must pay token transaction fees to become a provider.
+- An additional "Registration Fee" may later be required.
+- The MSA request to be a provider must be approved by a member of the [Frequency Council](../Governance/Overview.md).
 
 ## Provider Attributes
 

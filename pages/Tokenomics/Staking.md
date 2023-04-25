@@ -6,14 +6,14 @@
 Frequency supports two types of staking to generate Capacity - each for a different purpose.
 Capacity must be directed to a selected Provider for **both** methods of staking.
 
-### 1. Maximized Capacity Staking
+### 1. Maximized Capacity Staking (Enabled)
 The goal of [Maximized Capacity Staking](../glossary.md#2-maximized-capacity-staking-for-applications-and-services) is to use FRQCY tokens as efficiently as possible to generate the most amount of Capacity possible.
 Applications, services, and Providers need Capacity to interact with Frequency on behalf of their users.
 The amount of Generated Capacity is balanced against Rewards Capacity Staking to ensure that it is almost always more capital efficient.
 Providers need to operate a necessary amount of Capacity to support their delegates.
 Regular Users do not require a specific amount of Capacity and can opt for token earning options instead.
 
-### 2. Rewards Capacity Staking
+### 2. Rewards Capacity Staking (Future)
 Rewards Capacity Staking generates less Capacity for the same number of tokens staked in Maximized Capacity Staking.
 [Most users](../basics/AccountsOverview.md#coinless-users) will use Capacity from Providers.
 Frequency offers Rewards Capacity Staking to encourage users to engage in on-chain governance and support services.
