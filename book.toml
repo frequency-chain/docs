@@ -18,7 +18,7 @@ additional-css = ["css/extended.css"]
 [output.linkcheck]
 follow-web-links = true
 traverse-parent-directories = false
-exclude = ['github\.com/LibertyDSNP/frequency-docs']
+exclude = ['github\.com/LibertyDSNP/frequency-docs', 'twitter\.com']
 
 [output.html.fold]
 enable = true
