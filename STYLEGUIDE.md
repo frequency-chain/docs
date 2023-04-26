@@ -207,6 +207,9 @@ Uppercase D and F.  One word. (per AP style)
 ## internet
 Lowercase i (AP style)
 
+## Layer 1 blockchain
+Uppercase L numeral 1 lower case b
+
 ## Social Web
 Uppercase S and W
 
