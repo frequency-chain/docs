@@ -1,6 +1,6 @@
 # Capacity
 
-**Capacity is currently under development - more details will be released soon.**
+
 
 ## What is Capacity
 Capacity is a value transaction that allows for the ability to send messages or do a consistent amount of work on the chain that continues over time.
