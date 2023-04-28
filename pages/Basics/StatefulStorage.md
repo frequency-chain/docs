@@ -1,1 +1,8 @@
 
+# Stateful Storage
+
+The Stateful Storage pallet on Frequency is a storage mechanism designed for situations where transactional history is less important than the current state of the transaction. While in many use cases (such as DSNP over Frequency) state transitions may be modeled via [Announcments](https://unfinished.com/wp-content/uploads/dsnp_whitepaper.pdf) in some situations, Frequency is only interested in the latest state.  In these situations Stateful Storage allows storage of stateful data with flexible schemas on chain. 
+
+## Types of Stateful Storage
+Stateful Storage expands the definition of a Schema, adding two additional payload locations: Itemized and Paginated. Itemized Stateful Storage is limited to a single page and is most useful when there are many small items.  Paginated Stateful Storage is organized in pages and is most useful for larger items (although the number of pages is restricted).  Both forms of storage are data agnostic in that Frequency does not check the data against the schema model.  The client or application is expected to manage the data within each page or within the itemized model.  Stateful Storage refers to two different types of Schema Settings: Append Only and Signature Required. The Append Only setting is applicable exclusively to Schemas utilizing Itemized Stateful Storage which ultimately restricts the Schema to allow adding items but not removing them.  Append only extrinsics may be called directly by the owner. The Signature Required setting may apply both to Schemas utilizing Itemized or Paginated Stateful Storage but ultimately require that the extrinsics be called with a signed payload as opposed to being called directly by the owner.
+
