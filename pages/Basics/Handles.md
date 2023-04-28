@@ -1,7 +1,9 @@
 # Handles
 
 ## What are User Handles?
-User Handles allow Frequency Users to select names for themselves in the Frequency Nework.  The User Handle system enforces guidelines to ensure that handles are user-friendly and easy to remember while preventing misuse and abuse. The User Handle has two parts: the Base (the part of the handle the User selects for themself) followed by a dot and then the Suffix (a numerical code assigned by Frequency.  So in the case where Alice chose the Base name AliceInWonderland, her User Handle might read AliceInWonderland.356 with the suffix 356 assigned by Frequency.  Each User Handle is unique, and is mapped 1:1 with a ```MessageSourceAccount``` (MSA). Users are not required to create handles for their MSAs.  The range of suffixes allowed for a given handle as well as the time period a handle must be retired before it is reused will be determined by governance.  Registering a time period before expiration (a specific number of blocks determined by governance)prevents replay attacks on the chain and implies a User may not change or retire their User Handle until the registration period retires.
+User Handles allow Frequency Users to select names for themselves in the Frequency Nework. The User Handle has two parts: the Base (the part of the handle the User selects for themself) and then the Suffix (a numerical code assigned by Frequency.)  So if user Alice chose the Base "AliceIn Wonderland", the User Handle format would be AliceInWonderland.356 with the suffix 356 assigned by Frequency.  
+
+Each User Handle is unique, and is mapped 1:1 with a ```MessageSourceAccount``` (MSA). Users may choose to, but are not required to create handles for their MSAs.  The range of suffixes allowed for a given handle as well as the time period a handle must be retired before it is reused will be determined by governance.  Registering a time period before expiration (a specific number of blocks determined by governance)prevents replay attacks on the chain and implies a User may not change or retire their User Handle until the registration period retires.
 
 ## User Handle Goals
 User handles are designed to meet the following goals:
@@ -27,37 +29,9 @@ In the extremely unlikely scenario that two users attempt to claim the same hand
 ## Frequency Functions for User Handles
 
 * Translation: Given a self-defined User Handle and a seed, generate a suffix for the handle. The suffix will be created using the current seed and suffix range as well as a PRNG (pseudo-random number generator) helper function to generate a sequence of suffixes)
-* Verification: Given a 
+* Verification: Verify that a User Handle is valid and follows the Handle guidelines and check for homoglyphs (characters that look very much alike and may be easily confused such as an uppercase O and the number 0).
 
-## Claiming a User Handle (Move to How To Section? Use Code snippets rather than directions from the demo?)
-A User Handle may be claimed using the following steps:
+## Suffix Generation
+The suffix generation algorithm takes a seed and generates a sequence of suffixes. The sequence is generated lazily, meaning the algorithm generates a new suffix only when the previous suffix has been used. This will prevent the generation of a large number of suffixes that may not be used. [An Example of Fisher Yates, and Lazy Sequence Shuffling](https://github.com/Liberty30/magic-rs)
 
-* Open the associated MSA for the given user.
-* Go to the Handles Pallet and choose Claim Handle.
-* Select the Schnorrkel Ristretto signature.
-* Enter the desired User Handle. (in Pascal Case?)
-* Enter the Expiration Block Number (i.e. the number of blocks before expiration as determined by governance.)   
-* Copy the Base Handle and Expiration Block Number.  
-* Move to the sign and verify function and paste the Base Handle followed by a space followed by the Expiration Block Number.
-* Select Sign message.
-* Copy the signature and paste it in the Signature box and submit the transaction.
 
-## Verifying a User Handle has been Claimed
-* Select the handles pallet.
-* Select msaid ```ToDisplayName```.
-* Execute the query.
-* Verify that the MSA ID matches the User Handle and appropriate Expiration Block Number.
-
-## Retiring a User Handle
-* Note that a User Handle may not be retired until it has reached its Expiration Block Number.
-* Go to the appropriate User Account and select Handles.
-* Select  Retire Handle.
-* Select Submit Transaction.
-* Select Sign and Submit.
-* The User Handle should now be retired.
-
-## Verifying a User Handle has been Retired
-* Go to Chain state and select handles.
-* Select msaid ```ToDisplayName```
-* Execute the query.
-* The selected MSA ID should no longer have a User Handle or Expiration Block Number listed.
