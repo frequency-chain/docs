@@ -32,6 +32,6 @@ In the extremely unlikely scenario that two users attempt to claim the same hand
 * Verification: Verify that a User Handle is valid and follows the Handle guidelines and check for homoglyphs (characters that look very much alike and may be easily confused such as an uppercase O and the number 0).
 
 ## Suffix Generation
-The suffix generation algorithm takes a seed and generates a sequence of suffixes. The sequence is generated lazily, meaning the algorithm generates a new suffix only when the previous suffix has been used. This will prevent the generation of a large number of suffixes that may not be used. [An Example of Fisher Yates, and Lazy Sequence Shuffling](https://github.com/Liberty30/magic-rs)
+The suffix generation algorithm takes a seed and generates a sequence of suffixes. The sequence is generated lazily, meaning the algorithm generates a new suffix only when the previous suffix has been used. This will prevent the generation of a large number of suffixes that may not be used. [An Example of Fisher Yates, and Lazy Sequence Shuffling](https://github.com/Liberty30/magic-rs) Additionally the governance window is minimum size, (10k). This will prevent the generation of a large number of suffixes that may not be used, while keeping the performance in acceptable limits.
 
 
