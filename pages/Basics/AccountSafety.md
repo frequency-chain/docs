@@ -1,13 +1,13 @@
 # Keeping Your Accounts Safe
 
 **Remember: keeping your account safe is a responsibility that goes beyond the scope of this document.**
-**While this document provides basic concepts, security is in constant flux, and these may not represent the latest best practices.**
+**While this document provides basic concepts, security is constantly in flux, and these may not represent the latest best practices.**
 
 ## Public Keys and Rotation
 
 Frequency’s [Message Source Account (MSA)](./MessageSourceAccounts.md) allows users to separate and rotate public keys that control the account.
 The ability to attach multiple keys to an account offers increased security for users to rotate a corrupted key for a new one if compromised.
-Having an on-chain identifier with connected public keys increases the chain storage requirements, yet greatly reduces the risk of corruption and can include additional validity checks.
+While having an on-chain identifier with connected public keys increases chain storage requirements, it also greatly reduces the risk of corruption and can include additional validity checks.
 
 Currently all keys attached to an MSA carry the same level of access, functioning as a "master key", and can be rotated to replace compromised keys.
 The ability to add additional keys behaves like a backup, allowing users to maintain and protect their accounts.
