@@ -28,6 +28,9 @@ Uppercase B and P
 ## Capacity
 Uppercase C
 
+## Capacity Staking Model (the)
+Uppercase C, S and M
+
 ## Capacity Token Rewards
 Uppercase C, T and R
 
@@ -54,6 +57,12 @@ Uppercase C,P and M
 
 ## Cost Per Transaction
 Uppercase C,P and T
+
+## Data Transaction Model (the)
+Uppercase D, T and M
+
+## Delegation Model (the)
+Uppercase D and M
 
 ## delegate
 Used as a verb ONLY i.e. an MSA delegates to a Provider, not as a noun
