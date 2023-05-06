@@ -49,6 +49,12 @@ Uppercase C, I, and D
 ## Contribution Guidelines
 Uppercase C and G
 
+## Cost Per Message
+Uppercase C,P and M
+
+## Cost Per Transaction
+Uppercase C,P and T
+
 ## delegate
 Used as a verb ONLY i.e. an MSA delegates to a Provider, not as a noun
 
@@ -186,6 +192,9 @@ Use Pascal Case e.g. DoubleStorageMap, StorageMap
 
 ## Update Announcement
 Uppercase U and A
+
+## User
+Uppercase U
 
 ## We/Us/Our
 Should not be used in context with Frequency
