@@ -28,6 +28,9 @@ Uppercase B and P
 ## Capacity
 Uppercase C
 
+## Capacity Epoch
+Uppercase C and E
+
 ## Capacity Staking Model (the)
 Uppercase C, S and M
 
@@ -61,6 +64,9 @@ Uppercase C,P and T
 ## Data Transaction Model (the)
 Uppercase D, T and M
 
+## delegation
+Lowercase d
+
 ## Delegation Model (the)
 Uppercase D and M
 
@@ -81,6 +87,9 @@ Use Camel Caps i.e. announcementType, contentHash
 
 ## Frequency
 Uppercase F, avoid preceding with the word "the"
+
+## Frequency application
+Uppercase F and lowercase a
 
 ## Frequency Council
 Uppercase F and C
@@ -153,6 +162,9 @@ Making Frequency possessive should be avoided (e.g. Frequency’s)
 
 ## Profile Activity Type
 Uppercase P, A and T
+
+## Provider Applications
+Uppercase P and A
 
 ## Providers
 Uppercase P
@@ -237,14 +249,23 @@ Lowercase i (AP style)
 ## Layer 1 blockchain
 Uppercase L numeral 1 lower case b
 
+## protocol
+Lowercase p
+
 ## Social Web
 Uppercase S and W
 
 ## testnet
 Lowercase t, one word (per Cardano, Hedera)
 
+## thaw period
+Lowercase t and p
+
 ## token
 Lowercase t
+
+## User Interface or UI
+Uppercase U and I
 
 ## web
 Lowercase w (AP style)
