@@ -112,8 +112,8 @@ Uppercase M, C and S
 ## Message Source Account (MSA)
 Uppercase M, S and A. In the first instance, spell out followed by the acronym in parentheses. Use the acronym only thereafter. Never MSA Account.
 
-## Messages
-Uppercase M
+## messages
+Lowercase m
 
 ## MUST/MUST NOT
 All Caps when defining rules for specification
