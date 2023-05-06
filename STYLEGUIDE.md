@@ -243,6 +243,9 @@ Uppercase S and W
 ## testnet
 Lowercase t, one word (per Cardano, Hedera)
 
+## token
+Lowercase t
+
 ## web
 Lowercase w (AP style)
 
