@@ -109,6 +109,9 @@ Uppercase M
 ## MUST/MUST NOT
 All Caps when defining rules for specification
 
+## Node Operator
+Uppercase N and O
+
 ## Oxford Comma
 Always use
 
