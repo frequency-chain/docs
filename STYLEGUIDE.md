@@ -219,6 +219,9 @@ All uppercase, avoid following with the word "token"
 # General Technology Terms
 This section details how various general technology terms should be presented in Frequency documentation.  Typically usage conforms to AP style unless there is a specific reason to deviate.
 
+## blockchain
+Lowercase b
+
 ## dapp
 All lower case (per AP style and Etherium.org)
 
