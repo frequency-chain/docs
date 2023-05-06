@@ -199,6 +199,9 @@ Uppercase T and C
 ## Token Account
 Uppercase T and A
 
+## token to Capacity ratio
+Uppercase C
+
 ## Types
 Use Pascal Case e.g. DoubleStorageMap, StorageMap
 
