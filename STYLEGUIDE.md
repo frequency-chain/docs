@@ -130,6 +130,10 @@ All Caps when defining rules for specification
 ## Node Operator
 Uppercase N and O
 
+## on chain vs on-chain
+As an adjective prior to a noun use hyphen (i.e. on-chain storage)
+As a noun no hyphen (i.e. stored on chain)
+
 ## Oxford Comma
 Always use
 
