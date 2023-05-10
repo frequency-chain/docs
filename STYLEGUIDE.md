@@ -167,7 +167,7 @@ Making Frequency possessive should be avoided (e.g. Frequency’s)
 ## Profile Activity Type
 Uppercase P, A and T
 
-## Provider Applications
+## Provider applications
 Uppercase P and A
 
 ## Providers
