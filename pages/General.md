@@ -15,7 +15,7 @@ To learn more about decentralized social networks visit [DSNP.org](https://dsnp.
 
 ## Scalability
 
-Building Frequency as a Polkadot parachain offers a solution to the challenge of scaling a social networking platform.  Frequency addresses scalability via The Frequency Triangle--a unique combination of three unique economic models with manual and automatic balance mechanisms in a novel ecosystem that can provide blockchain applications that are both economical and ethical at scale.
+Building Frequency as a Polkadot parachain offers a solution to the challenge of scaling a social networking platform.  Frequency addresses scalability via The Frequency Triangle--a unique combination of three unique economic models with manual and automatic balance mechanisms in a novel ecosystem that can support blockchain applications that are both economical and ethical at scale.
 
 NOTE: INSERT IMAGE HERE
 
