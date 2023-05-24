@@ -8,6 +8,8 @@ Typical blockchain solutions exhibit a push/pull between those that are transpar
 ## The Delegation Model Solution
 Frequency manages the User’s need for accessibility via its Delegation Model, which shifts most of the complexity and all the fees of participating in blockchain applications away from End Users to Providers: the creators of third-party applications and services directly interacting with Frequency. Users may choose to engage with tokens if they wish to disintermediate third-party providers or participate in chain governance, but the system does not require it.
 
+<img src="https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/images/Actor%20Interactions.png" width=75% height=75%>
+
 Frequency has two account types–**Token Accounts** and **Message Source Accounts (MSAs)**. MSAs allow Users to delegate tasks to Providers on their behalf and ensure messages (i.e., lightweight, non-financial transactions) have verifiable chains of authorship, while maintaining the ability to revoke that delegation at any time without cost. 
 
 Users and Providers must have a Message Source Account to send messages on Frequency. A user does not need a Token Account to have an MSA. In this case they are considered “Coinless Users”. Providers may broadcast messages on behalf of their Users.
