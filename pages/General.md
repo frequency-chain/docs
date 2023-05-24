@@ -20,8 +20,6 @@ Building Frequency as a Polkadot parachain offers a solution to the challenge of
 NOTE: INSERT IMAGE HERE
 
 Frequency's three economic models include:
-The Delegation Model
-The Capacity Staking Model, and
-The Data Transaction Model.
+The Delegation Model, The Capacity Staking Model, and The Data Transaction Model.
 
 
