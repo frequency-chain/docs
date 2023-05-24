@@ -17,4 +17,5 @@ To learn more about decentralized social networks visit [DSNP.org](https://dsnp.
 
 Frequency changes the unit economics of blockchain transactions to leverage a network scale suitable for a new range of massively scaled decentralized apps and services.  Frequency addresses scalability via The Frequency Triangle--a unique combination of three unique economic models with manual and automatic balance mechanisms in a novel ecosystem that can support blockchain applications that are both economical and ethical at scale.  Frequency's three economic models include:The Delegation Model, The Capacity Staking Model, and The Data Transaction Model. The Frequency blockchain is like a 3-legged stool. Without any one of the three economic model solutions, balance is lost, and the stool can no longer stand. Not only must all three of these models be present, but they must also be carefully balanced with one another, otherwise the stool will wobble, and the ecosystem will not thrive. Thus, each model has manual and automatic mechanisms that may be used to restore the system to a balanced state.
 
-
+## The Frequency Triangle
+<img src="https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/images/The%20Frequency%20Triangle.png" width=75% height=75%>
