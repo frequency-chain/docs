@@ -27,3 +27,8 @@ Frequency supports two different types of staking to generate Capacity, each wit
 
 ### Unstaking
 Those who participate in Frequency staking may unstake whenever they wish. However, unstaking requires a thaw period during which they may not restake or transfer their thawing tokens. The Capacity originally received for those tokens is removed immediately.
+
+### The Roles of Capacity
+Capacity is used by Users and Providers to do two things on Frequency: 1) manage their accounts and 2) send messages. These are the two tasks within Frequency that are most repetitious and thus the most sensitive to volatile transaction fees. What’s more, Capacity transactions function independently of global state. In most blockchain transactions, the entire global state of the blockchain is brought in for each transaction, because transactions must happen serially and in the correct order. Capacity focuses on transactions that are limited in scope. When combined with “batching”, Frequency enables a high scale of parallelization.
+
+Capacity fills three primary roles within the Frequency ecosystem: 1) regulates volume on the chain, 2) manages costs, and 3) aligns incentives. Each of these roles pairs with a balance mechanism available on Frequency.
