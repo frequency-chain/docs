@@ -9,8 +9,8 @@ Yet there are significant challenges when blockchain technology is applied to th
 
 ## The Solution
 
-Frequency builds on blockchain technology to enable users to interact in a public digital space while retaining agency over their data.
-Frequency supports the [DSNP](https://dsnp.org) public social graph which completely disconnects financial incentivization from the social graph, establishing an essential foundation for the future of social networks.  Frequency changes the unit economics of blockchain transactions to leverage a network scale suitable for a new range of massively scaled decentralized apps and services. The first use case for Frequency is with the Decentralized Social Networking Protocol, an open, web3 protocol for ethical, economical, and scalable decentralized social media applications.
+Frequency is a Layer 1 blockchain[2] designed around a novel economic system that uses three interconnected models: the Delegation Model, the Capacity Staking Model, and the Data Transaction Model, to meet and carefully balance the necessary criteria. This blockchain is available for multiple use cases—including non-financial, high-volume, broadcast-based ones like social media. Frequency builds on blockchain technology to enable users to interact in a public digital space while retaining agency over their data.
+Frequency changes the unit economics of blockchain transactions to leverage a network scale suitable for a new range of massively scaled decentralized apps and services. The first use case for Frequency is with the Decentralized Social Networking Protocol, an open, web3 protocol for ethical, economical, and scalable decentralized social media applications.
 To learn more about decentralized social networks visit [DSNP.org](https://dsnp.org).
 
 ## Scalability
