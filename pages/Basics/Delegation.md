@@ -1,8 +1,9 @@
 # Delegation
 
+<img src="https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/images/Decentralized%20vs%20Low%20Friction_Cost%20Dichotomy.png" width=75% height=75%>
+
 ## The Low Cost/Friction vs. Decentralized Dichotomy
 Typical blockchain solutions exhibit a push/pull between those that are transparent and decentralized and those that are low friction (i.e., easy on-ramp and participation for Users) with little to no cost. Low cost and low friction solutions tend to be highly centralized, opaque, and offer little to no user controls. On the other side of the coin, solutions that offer transparency, decentralization, and user control tend to be complicated and require Users to come to the table with both significant domain knowledge and the willingness to acquire a substantial number of tokens.
-
 
 ## The Delegation Model Solution
 Frequency manages the User’s need for accessibility via its Delegation Model, which shifts most of the complexity and all the fees of participating in blockchain applications away from End Users to Providers: the creators of third-party applications and services directly interacting with Frequency. Users may choose to engage with tokens if they wish to disintermediate third-party providers or participate in chain governance, but the system does not require it.
