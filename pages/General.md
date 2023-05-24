@@ -10,13 +10,18 @@ Yet there are significant challenges when blockchain technology is applied to th
 ## The Solution
 
 Frequency builds on blockchain technology to enable users to interact in a public digital space while retaining agency over their data.
-Frequency supports the [DSNP](https://dsnp.org) public social graph which completely disconnects financial incentivization from the social graph, establishing an essential foundation for the future of social networks.
-Frequency changes the way blockchain transactions are financed and priced to leverage a network scale suitable for social networking.
-This approach allows technology to be used cost-efficiently for a new range of high-frequency, massively scaled decentralized apps and services.
+Frequency supports the [DSNP](https://dsnp.org) public social graph which completely disconnects financial incentivization from the social graph, establishing an essential foundation for the future of social networks.  Frequency changes the unit economics of blockchain transactions to leverage a network scale suitable for a new range of massively scaled decentralized apps and services. The first use case for Frequency is with the Decentralized Social Networking Protocol, an open, web3 protocol for ethical, economical, and scalable decentralized social media applications.
 To learn more about decentralized social networks visit [DSNP.org](https://dsnp.org).
 
 ## Scalability
 
-Building Frequency as a Polkadot parachain offers a solution to the challenge of scaling a social networking platform.
-Polkadot's fixed price consensus combined with the Relay Chain and parachain infrastructures offer the capability to manage costs more effectively than other blockchain ecosystems.
-Frequency addresses scalability with [Messages](./Basics/Messages.md) that can support [delegation](Basics/MessageSourceAccounts.md) and [batching](Basics/Messages.md#batching-vs-single-messages) that significantly reduce the number of transactions the main blockchain needs to verify and record, which in turn speeds up the processing time of the remaining transactions.
+Building Frequency as a Polkadot parachain offers a solution to the challenge of scaling a social networking platform.  Frequency addresses scalability via The Frequency Triangle--a unique combination of three unique economic models with manual and automatic balance mechanisms in a novel ecosystem that can provide blockchain applications that are both economical and ethical at scale.
+
+NOTE: INSERT IMAGE HERE
+
+Frequency's three economic models include:
+The Delegation Model
+The Capacity Staking Model, and
+The Data Transaction Model.
+
+
