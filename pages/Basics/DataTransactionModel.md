@@ -1,6 +1,6 @@
 # Frequency's Data Transaction Model
 
-<img src="https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/images/Low%20Cost%20and%20Friction%20vs%20Business-Friendly%20Dichotomy.png" width=75% height=75%>
+![alt text](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/images/Low%20Cost%20and%20Friction%20vs%20Business-Friendly%20Dichotomy.png)
 
 ## The Low Cost/Friction vs Business-Friendly Dichotomy
 Another problem with many blockchains is the trade-off between offering End Users low-friction and low- or no-cost solutions and offering businesses (Providers) a way to manage costs. Predictable costs are a key component to encourage businesses to participate in such an ecosystem. Financial transactions require significant rigor (such as defending against the double-spend attack). Since financial transactions are charged individually at the time of creation and must be validated by all parties before the transaction can go through, asynchronous batching is not feasible. In addition, blockchain transactions often require that the relevant data be permanently stored on chain. As the ecosystem grows, these on-chain costs also grow. The results of these requirements are slow transactions, high per-transaction costs, and high volatility in per-transaction pricing (i.e., marginal cost pricing). In order for Providers to sustain themselves in this collaborative ecosystem, the participation costs must be lower than the utility the Provider receives for participating.
