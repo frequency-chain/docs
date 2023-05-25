@@ -11,7 +11,7 @@ Frequency balances the End User’s need for control and participation in the sy
 ### What is Capacity
 Frequency’s Capacity Staking Model is a unique, continually-renewing, stake-based leasing model for sending messages without explicit payment in tokens. Capacity is replenishable, as all Capacity refills after a fixed period called a Capacity Epoch. 
 
-<img src="https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/images/The%20Capacity%20Refill%20Model.png" width=75% height=75%>
+![alt text](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/images/The%20Capacity%20Refill%20Model.png)
 
 ### What is an Epoch?
 Capacity is divided into time segments called Capacity Epochs, each composed of a set number of blocks. Capacity (or the ability to transact a subset of blockchain interactions) refills at the start of each new Capacity Epoch. These Capacity Epochs form a meta-block that can grow slowly over time if needed. The block may grow naturally as system efficiency increases (i.e., each block holds 3 Capacity rather than 2) or manually by increasing the Capacity Epoch length. As Capacity is used up, Providers using Capacity may choose to increase their Capacity (by staking more tokens) or allow a lag in sending messages (by waiting until the next Capacity Epoch).
@@ -23,7 +23,7 @@ Frequency supports two different types of staking to generate Capacity, each wit
 
 **Rewards Capacity Staking** does not generate Capacity for Users, but rather directs their Capacity to the Provider(s) of their choice. Rewards Capacity Staking generates less Capacity Per Token than Maximized Capacity Staking, yet still allows Users to participate in the governance system and receive a periodic “reward” back to their Token Account in exchange for increasing the decentralization and stability of the network. Since Users are allowed to change which Providers they support without unstaking, Providers are encouraged to keep their applications aligned with Users. Balancing these two types of staking presents a natural balance mechanism. 
 
-<img src="https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/images/Staking%20for%20Capacity.png" width=75% height=75%>
+![alt text](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/images/Staking%20for%20Capacity.png)
 
 ### Unstaking
 Those who participate in Frequency staking may unstake whenever they wish. However, unstaking requires a thaw period during which they may not restake or transfer their thawing tokens. The Capacity originally received for those tokens is removed immediately.
