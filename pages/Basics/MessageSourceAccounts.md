@@ -1,7 +1,7 @@
 # Message Source Accounts
 
 Message Source Accounts (MSAs) serve as the source of messages on Frequency.
-They can have one or more associated public keys and are not required to interact with tokens (via delegation to a Provider).
+They can have one or more associated public keys and are not required to interact with tokens (via delegation).
 
 ## Account Keys
 An MSA can have multiple keys attached to one `MSA ID`.
