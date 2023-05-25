@@ -7,6 +7,10 @@ It provides scalable message passing as a backbone of new shared protocols that 
 
 Here you can find detailed documentation for Frequency, official implementation specifications, associated specifications, detailed documentation regarding contributions, governance and participation, details about tokenomics as well as a roadmap and proposals for future extensions.
 
+<div class="button-links">
+	<a href="General.html"><div>Introduction</div></a>
+	<a href="Tokenomics/TokenomicsOverview.html"><div>Tokenomics</div></a>
+</div>
 
 <div class="button-links">
 	<a href="Basics/Overview.html"><div>Basic Information</div></a>
