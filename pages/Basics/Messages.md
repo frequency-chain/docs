@@ -10,7 +10,7 @@ The `SchemaId` validates that the message data contains all of the necessary fie
 ## How a message is created and verified:
 * **How it relates to MSAs:**
 Messages can only be added by MSAs.
-Users are not required to delegate to a Provider, so long as they have an MSA; users could become a Provider and pay to post message transactions themselves.
+Users are not required to delegate to a Provider, so long as they have an MSA; users may choose to become a Provider and pay to post message transactions themselves.
 
 * **How it relates to Providers:**
 Providers serve as the primary creator of messages, however, any MSA can submit messages so long as they have enough FRQCY tokens or [Capacity](../Tokenomics/Capacity.md).
