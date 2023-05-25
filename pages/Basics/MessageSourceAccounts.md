@@ -1,7 +1,7 @@
 # Message Source Accounts
 
-Message Source Accounts (MSAs) serve as the source of a message on Frequency.
-They can have one or more associated public keys and are not required to interact with tokens.
+Message Source Accounts (MSAs) serve as the source of messages on Frequency.
+They can have one or more associated public keys and are not required to interact with tokens (via delegation to a Provider).
 
 ## Account Keys
 An MSA can have multiple keys attached to one `MSA ID`.
@@ -17,7 +17,7 @@ The same key cannot be associated with more than one MSA Account.
 ## Delegation
 
 An MSA can delegate, or grant access to [Providers](./Providers.md) to take action on their behalf.
-Providers use the Capacity Economic System to serve the users that delegate to them.
+Providers use Capacity to serve the Users that delegate to them.
 
 ### Delegation accomplishes two primary objectives
 
