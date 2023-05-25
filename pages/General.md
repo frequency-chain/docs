@@ -20,4 +20,4 @@ Frequency changes the unit economics of blockchain transactions to leverage a ne
 The Frequency blockchain is like a 3-legged stool. Without any one of the three economic model solutions, balance is lost, and the stool can no longer stand. Not only must all three of these models be present, but they must also be carefully balanced with one another, otherwise the stool will wobble, and the ecosystem will not thrive. Thus, each model has manual and automatic mechanisms that may be used to restore the system to a balanced state.
 
 ## The Frequency Triangle
-<img src="https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/images/The%20Frequency%20Triangle.png" width=75% height=75%>
+![alt text](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/images/The%20Frequency%20Triangle.png)
