@@ -1,20 +1,7 @@
-# Capacity
+# Capacity Staking
 
-
-
-## What is Capacity
-Capacity is a value transaction that allows for the ability to send messages or do a consistent amount of work on the chain that continues over time.
-It is a non-transferable resource that acts as an alternative to using FRQCY tokens to perform certain transactions and is managed through a rate-limited continuous stream of transactions.
-
-## Capacity Epoch
-A set amount of Capacity is available each [Capacity Epoch](#capacity-epoch).
-A Capacity Epoch acts as a cycle and refills Capacity each Capacity Epoch (see below visual) during which one can use any amount of Capacity for transactions/messages.
-An Epoch Period is composed of a set number of approximately 100 blocks and could be adjusted through governance.
-
-* **Generated Capacity:**
-The amount of Capacity generated for a Provider from staking FRQCY tokens to the network.
-
-![Capacity Epoch Diagram](https://global.discourse-cdn.com/standard11/uploads/unfinishedlabs/original/1X/6fadc75824cd238e5aa1decd06339f8f60d7978e.png)
+## Basic information  
+About [The Capacity Economic Model here](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/Basics/CapacityModel.md)
 
 ## Purpose of Capacity for Frequency
 
