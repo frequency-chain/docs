@@ -7,8 +7,6 @@ Frequency, in conjunction with Provider Applications, strives to solve these cha
 
 Frequency is a Layer 1 blockchain designed around a novel economic system that uses three interconnected models: the Delegation Model, the Capacity Staking Model and the Data Transaction model, to meet and carefully balance the criteria necessary for massively scaled applications. This blockchain is available for multiple use cases–including non-financial, high volume, broadcast-based ones like social media. The Frequency blockchain is like a 3-legged stool.  Without any one of the three economic model solutions, balance is lost, and the stool can no longer stand. Not only must all three of these models be present, but they must also be carefully balanced with one another, otherwise the stool will wobble, and the ecosystem will not thrive.  Thus, each model has manual and automatic level sets that may be used to restore the system to a balanced state.
 
-![image](https://github.com/LibertyDSNP/frequency-docs/assets/118223896/62d62a7c-49b9-4c2c-b279-f49d5dbe5119)
-
 Typical blockchains exhibit a push pull between many opposing forces.  Those blockchains that are Low Cost and Low Friction tend to be highly centralized.  By contrast, those blockchains that are truly decentralized, tend to be expensive and present a lot of friction for onboarding Users.  Frequency carefully balances these opposing forces with the three economic models mentioned above.  This overall balance is called The Frequency Triangle.
 
 ![image](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/images/The%20Frequency%20Triangle.png)
