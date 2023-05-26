@@ -1,15 +1,23 @@
 # Core Principles of Frequency
 
 Frequency aims to return agency to the user amongst an ecosystem of rampant misinformation, censorship from state and corporate actors, and near monopolies from select players with absolute power over social engagements.
-Frequency, as an implementation of DSNP, strives to solve these challenges by reshaping online social interactions.
+Frequency, in conjunction with Provider Applications, strives to solve these challenges by reshaping online social interactions.
 
-### Different Classes of Transactions
-**Data-Focused Transactions**
+## The Frequency Triangle
+
+Frequency is a Layer 1 blockchain designed around a novel economic system that uses three interconnected models: the Delegation Model, the Capacity Staking Model and the Data Transaction model, to meet and carefully balance the criteria necessary for massively scaled applications. This blockchain is available for multiple use cases–including non-financial, high volume, broadcast-based ones like social media. The Frequency blockchain is like a 3-legged stool.  Without any one of the three economic model solutions, balance is lost, and the stool can no longer stand. Not only must all three of these models be present, but they must also be carefully balanced with one another, otherwise the stool will wobble, and the ecosystem will not thrive.  Thus, each model has manual and automatic level sets that may be used to restore the system to a balanced state.
+
+![image](https://github.com/LibertyDSNP/frequency-docs/assets/118223896/62d62a7c-49b9-4c2c-b279-f49d5dbe5119)
+
+Typical blockchains exhibit a push pull between many opposing forces.  Those blockchains that are Low Cost and Low Friction tend to be highly centralized.  By contrast, those blockchains that are truly decentralized, tend to be expensive and present a lot of friction for onboarding Users.  Frequency carefully balances these opposing forces with the three economic models mentioned above.  This overall balance is called The Frequency Triangle.
+
+![image](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/images/The%20Frequency%20Triangle.png)
+
+### The Data Transaction Model
 
 Blockchain transactions have primarily been financial in nature, even when they didn’t need to be.
-Frequency distinguishes between financial transactions and data-focused transactions.
-Financial transactions require extra rigor and additional steps (such as defending against the double-spend attack) that are not necessary in data-focused transactions.
-However, Frequency [Messages](./Messages.md) retain other blockchain guarantees such as authenticity and data validation.
+Frequency distinguishes between financial transactions and data-focused transactions via its [Data Transaction Model](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/Basics/DataTransactionModel.md).
+Financial transactions require extra rigor and additional steps (such as defending against the double-spend attack) that are not necessary in data-focused transactions.  However, Frequency [Messages](./Messages.md) retain other blockchain guarantees such as authenticity and data validation while storing the bulk of its data off chain.
 
 
 ### Broadcast as a Key to Decentralization
