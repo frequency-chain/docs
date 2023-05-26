@@ -1,6 +1,6 @@
 # Token Accounts
 
-Token Accounts act as "wallets" and are accounts that hold FRQCY tokens and can stake to generate [Capacity](#capacity).
+Token Accounts act as "wallets" and are accounts that hold FRQCY and can stake to generate [Capacity](#capacity).
 These are the same as accounts used across other parachains.
 Anyone can create a Token Account but they are only active if storing tokens.
 This account is responsible for holding a balance, transferring tokens to other accounts, and paying fees for transactions.
@@ -15,10 +15,10 @@ Users must acquire tokens via an exchange or transfer tokens into an account add
 
 ## Capacity
 
-Capacity is a alternative transaction model that allows for the ability to send messages or do a consistent amount of work on the chain that continues over time.
-It is a non-transferable resource that acts as an alternative to using FRQCY tokens to perform certain transactions and is managed through a rate-limited continuous stream of transactions.
+[Capacity](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/Basics/CapacityModel.md) is a alternative transaction model that allows for the ability to send messages or do a consistent amount of work on chain that continues over time.
+It is a non-transferable resource that acts as an alternative to using FRQCY to perform certain transactions and is managed through a rate-limited continuous stream of transactions.
 
-Users must have a Token Account to engage with FRQCY tokens and Capacity.
+Users must have a Token Account to engage with FRQCY and Capacity.
 Capacity transactions can interact with only two things: account management and sending messages.
 Other transactions use token fees alone.
 
