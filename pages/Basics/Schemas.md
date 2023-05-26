@@ -9,6 +9,8 @@ This ensures message correctness, validity, extensibility, and interoperability 
 Schemas are immutable; once created, they cannot be changed.
 Schema immutability removes evolving data structures and relies on new Schemas for updates in order to simplify upgrades.
 
+Schemas are related both to Messages and Stateful Storage. [Messages](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/Basics/Messages.md) are more temporally focused and are used when the details of the transaction history are more important.  [Stateful Storage](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/Basics/StatefulStorage.md) is more User focused and is used when the current state of the transaction is more important than the transactional history.
+
 ## Schema Registry
 The `Schema Registry` is the on-chain repository for Schemas, allowing participants of the network to flexibly interact with and exchange messages without the challenge of managing unknown Schema types.
 The unique identification of Schemas on Frequency is a `SchemaId` which is set when the Schema is created.
