@@ -13,7 +13,7 @@ Messages can only be added by MSAs.
 Users are not required to delegate to a Provider, so long as they have an MSA; users may choose to become a Provider and pay to post message transactions themselves.
 
 * **How it relates to Providers:**
-Providers serve as the primary creator of messages, however, any MSA can submit messages so long as they have enough FRQCY tokens or [Capacity](../Tokenomics/Capacity.md).
+Providers serve as the primary creator of messages, however, any MSA can submit messages so long as they have enough FQCY or [Capacity](../Tokenomics/CapacityStaking.md).
 Providers are expected to post messages on behalf of the MSAs that delegate to them.
 Providers submit messages containing the `MSA ID` of the message sender.
 This verification is valid for on-chain messages only at this time.
@@ -21,9 +21,9 @@ This verification is valid for on-chain messages only at this time.
 ## Batching Content
 
 Messages can be a collection of messages from multiple MSAs that are collated together into a batch.
-Usually these are structured as Schemas that are stored off chain such as in IPFS.
+Usually these are structured as Schemas that are stored off chain such (e.g., in IPFS).
 Only one data type is allowed per message payload in order to improve searching, indexing, and organizing message threads.
-Frequency supports off-chain, batched, messages as it allows a much higher effective message throughput and reduces costs associated with running a node.
+Frequency supports off-chain, batched, messages as this provides a much higher effective message throughput and reduces costs associated with running a node.
 
 Batched messages allow Providers to publish large quantities of data off chain at once, reducing the transaction price.
 There are tradeoffs for how long to wait to post batched messages.
@@ -44,12 +44,11 @@ Due to the nature of timestamps, ordering cannot be guaranteed for off-chain mes
 Message replies to off-chain messages are recorded in response to the initial message, in which case message ordering is canonical.
 
 ## Retrieving from the Chain
-Messages metadata is on-chain and thus always available.  Messages payloads may exist either on chain or off chain.  On-chain Messages payloads are always available and may be fetched for immediate processing as the message content is on chain.  Messages with off-chain payloads contain pointers to an off-chain location such as IPFS.  These off-chain Messages payloads may may be retrieved from the chain by calling the pointer message location of the IPFS `SchemaId`.
+Messages metadata is on-chain and thus always available.  Messages payloads may exist either on chain or off chain.  On-chain Message payloads are always available and may be fetched for immediate processing as the message content is on chain.  Messages with off-chain payloads contain pointers to an off-chain location such as IPFS.  These off-chain Messages payloads may may be retrieved from the chain by calling the pointer message location of the IPFS `SchemaId`.
 
 ## Paying for Messages
 
 ### Capacity
-**Capacity is currently under development - more details will be released soon.**
 
 Learn more about [Capacity](../Tokenomics/Capacity.md) here.
 
