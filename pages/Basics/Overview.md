@@ -11,31 +11,26 @@ Typical blockchains exhibit a push pull between many opposing forces.  Those blo
 
 ![image](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/images/The%20Frequency%20Triangle.png)
 
-### The Data Transaction Model
+### The Delegation Model
 
-Blockchain transactions have primarily been financial in nature, even when they didn’t need to be.
-Frequency distinguishes between financial transactions and data-focused transactions via its [Data Transaction Model](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/Basics/DataTransactionModel.md).
-Financial transactions require extra rigor and additional steps (such as defending against the double-spend attack) that are not necessary in data-focused transactions.  However, Frequency [Messages](./Messages.md) retain other blockchain guarantees such as authenticity and data validation while storing the bulk of its data off chain.
+**Shifting Cost and Complexity**
 
+Many blockchain systems face inhibited growth as a result of high/unpredictable user costs as well and complex systems that are difficult for new users to understand. Via its [Delegation Model](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/Basics/DelegationModel.md) Frequency shifts most of the complexity and all the fees of participating in blockchain applications away from End Users to Providers: the creators of third-party applications and services directly interacting with Frequency. Users need not learn the intricacies of blockchain or even engage with tokens in order to use Frequency as providers can handle these tasks for them.
 
-### Broadcast as a Key to Decentralization
-**Announcements and Metadata**
+**The Power of Choice**
 
 Traditional web systems are centered around point-to-point communications.
-Any information that one wants to transmit to an unknown third party requires a centralized system to compile and then distribute the data to known requestors.
-Frequency uses the broadcast nature of the blockchain to provide [Message](./Messages.md) metadata that allows the existence of information to be discovered by anyone.
-Thus users, be they creators or consumers, can choose their own tools.
-Users may then tune in to the data they want, ensuring user control without losing the power and value of a network.
+Any information that one wants to transmit to an unknown third party requires a centralized system to compile and then distribute the data to known requestors. Frequency uses the broadcast nature of the blockchain to provide [Message](./Messages.md) metadata that allows the existence of information to be discovered by anyone. Thus users, be they creators or consumers, can choose their own tools.
+Users may then tune in to the data they want, ensuring user control without losing the power and value of a network.  Frequency Providers compete for customers in an open market where users may move from one Provider to another without losing agency over their relationships or their data--ensuring a chainwide focus on User needs and desires.
 
 
-### Different Economic Structure
-**Capacity**
+### The Capacity Model
 
-The tremendous volatility of blockchain transaction pricing, while normal for emerging technology, creates an unacceptable level of uncertainty for many businesses trying to build on a blockchain.
-Even if costs are low on average, unpredictable price spikes lead to businesses not being able to budget or control their costs.
-Frequency uses a staking system for sending messages called [Capacity](../Tokenomics/Capacity.md), designed to shift transactions from an operational expense to closer to a capital expenditure.
+**Renewable and Business-Friendly**
 
-### Collaborative Standardization
+The tremendous volatility of blockchain transaction pricing, while normal for emerging technology, creates an unacceptable level of uncertainty for many businesses trying to build on a blockchain.  Even if costs are low on average, unpredictable price spikes lead to businesses not being able to budget or control their costs.
+Frequency uses a unique continually renewing stake-based leasing system for sending messages called [Capacity](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/Basics/CapacityModel.md), making node expenses more predictable and economical for participating Collators.
+
 **Shared Schemas**
 
 Much of the power of blockchain has not been in custom smart contracts, but the ability for those contracts to follow standards.
@@ -44,4 +39,18 @@ Even once those standards are complete, implementations can be flawed or allow f
 Frequency enables collaborative standardization instead of individual customization.
 Frequency is not a replacement for smart contracts.
 However, a large subset of the benefits of smart contracts can be realized through [Schemas](./Schemas.md).
-With clear usage data and information structures, Frequency allows users to collaborate faster and iterate on standards in new ways.
+With clear usage data and information structures, Frequency allows Providers to collaborate faster and iterate on standards in new ways.
+
+### The Data Transaction Model
+
+**Off-Chain Storage**
+
+Blockchain transactions have primarily been financial in nature, even when they didn’t need to be.
+Frequency distinguishes between financial transactions and data-focused transactions via its [Data Transaction Model](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/Basics/DataTransactionModel.md).
+Financial transactions require extra rigor and additional steps (such as defending against the double-spend attack) that are not necessary in data-focused transactions.  However, Frequency [Messages](./Messages.md) retain other blockchain guarantees such as authenticity and data validation while storing the bulk of its data off chain.
+
+**Batching**
+
+Frequency's data-focused, non-financial use cases allow for parallel transactions in batches.  Verification may be done asychronously at read time or write time.  This allows Providers to batch and publish a lot of data off chain at once--a key requirement for managing transaction costs as well as scaling.
+
+
