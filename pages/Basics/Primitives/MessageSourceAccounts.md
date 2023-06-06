@@ -7,12 +7,8 @@ They can have one or more associated public keys and are not required to interac
 An MSA can have multiple keys attached to one `MSA ID`.
 These keys provide different utilities to the user such as access to different permissions, devices, restrictions, or backup keys.
 
-![](https://user-images.githubusercontent.com/3433442/162544133-9d163fa5-edcc-4cff-b060-9e8f4b3d9147.png)
-
 The `MSA ID` creates a stable identifier that is controlled by multiple keys.
 The same key cannot be associated with more than one MSA Account.
-
-![](https://user-images.githubusercontent.com/3433442/162544190-cfdfb02a-ea82-4b53-9d2e-188a747a7384.png)
 
 ## Delegation
 
