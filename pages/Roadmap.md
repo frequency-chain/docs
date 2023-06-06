@@ -1,4 +1,0 @@
-# Frequency Roadmap
-
-## Coming Soon
-
