@@ -10,8 +10,8 @@ Frequency currently builds releases for the AMD64 architecture only.
 
 | Network | Binary Name |
 | --- | --- |
-| Frequency |  `frequency-mainnet.[arch]` |
-| Frequency Rococo | `frequency-rococo.[arch]` |
+| Frequency |  `frequency.[arch]` |
+| Frequency Rococo | `frequency.rococo.[arch]` |
 
 ### Docker Images
 
