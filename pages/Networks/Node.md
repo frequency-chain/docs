@@ -22,6 +22,31 @@ Production releases ONLY work with the one given network. (You may still provide
 | Frequency | [`frequencychain/parachain-node-mainnet`](https://hub.docker.com/r/frequencychain/parachain-node-mainnet) |
 | Frequency Rococo | [`frequencychain/parachain-node-rococo`](https://hub.docker.com/r/frequencychain/parachain-node-rococo) |
 
+## The Embedded Relay Chain Node
+
+The Frequency node has a built in relay chain node to support checking block validation.
+To configure the embeded relay chain node at the command line place a `--` between the Frequency node options and the relay chain node options: `frequency-binary [OPTIONS] [-- <RELAY_CHAIN_ARGS>...]`
+
+## Default Ports
+
+### Frequency Node
+
+| Description | Port |
+| --- | --- |
+| P2P (TCP) | 30333 |
+| RPC | 9933 |
+| WebSocket | 9944 |
+| Prometheus | 9615 |
+
+### Embedded Relay Chain Node
+
+| Description | Port |
+| --- | --- |
+| P2P (TCP) | 30334 |
+| RPC | 9934 |
+| WebSocket | 9945 |
+| Prometheus | 9616 |
+
 ## RPC Node
 
 If you are running an RPC node there are several options to be aware of.
@@ -66,17 +91,17 @@ Archive nodes are useful for accessing historical states, but Frequency is desig
 
 ### Ports
 
-The node uses various ports (with defaults):
+Frequency and the embedded relay node uses various ports (with Frequency defaults):
 
-- RPC: `--ws-port 9933`
-- WebSocket: `--rpc-port 9944`
+- RPC: `--rpc-port 9933`
+- WebSocket: `--ws-port 9944`
 - Gossip Protocol: `--port 30333`
 
 ### Monitoring
 
-Nodes have a Prometheus exporter enabled by default.
+Frequency and the embedded relay node have a Prometheus exporter enabled by default.
 
-- Prometheus Port: `--prometheus-port`
+- Prometheus Port: `--prometheus-port 9615`
 - Disable Prometheus: `--no-prometheus`
 
 See: https://docs.substrate.io/maintain/monitor/ for more information on monitoring options.
@@ -102,6 +127,9 @@ It will produce a block as soon as a transaction has entered the queue.
 - Docker: [`frequencychain/instant-seal-node`](https://hub.docker.com/r/frequencychain/instant-seal-node)
 
 ### Easy Docker Start
+
+If on macOS, you currently need to add `--platform=linux/amd64`
+
 ```
 docker run --rm -p 9944:9944 -p 9933:9933 frequencychain/instant-seal-node
 ```
