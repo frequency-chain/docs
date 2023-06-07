@@ -8,6 +8,8 @@ Releases are maintained on Frequency's [GitHub Repository](https://github.com/Li
 
 Frequency currently builds releases for the AMD64 architecture only.
 
+Production releases ONLY work with the one given network. (You may still provide the `--chain` argument if you wish.)
+
 | Network | Binary Name |
 | --- | --- |
 | Frequency |  `frequency.[arch]` |
