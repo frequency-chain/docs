@@ -18,7 +18,6 @@
     - [Messages](Basics/Messages.md)
     - [Wallets](Basics/Wallets.md)
 - [Built on Frequency](BuiltOnFrequency.md)
-- [Roadmap](Roadmap.md)
 - [Governance](Governance/Overview.md)
 - [Networks](Networks/Overview.md)
   - [Running a Node](Networks/Node.md)
