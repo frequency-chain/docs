@@ -1,7 +1,7 @@
 
 # Stateful Storage
 
-Stateful Storage on Frequency is designed to allow for storage of stateful data with flexible schemas on chain.  Stateful Storage allows for high read and write throughput and is useful for cases where transactional history is less important than the current state of the transaction. While in many use cases (such as DSNP over Frequency) state transitions may be modeled via [Announcments](https://unfinished.com/wp-content/uploads/dsnp_whitepaper.pdf), in some situations, Frequency is only interested in the latest state.  Stateful storage can be used by:
+Stateful Storage on Frequency is designed to allow for storage of stateful data with flexible schemas on chain.  Stateful Storage allows for high read and write throughput and is useful for cases where transactional history is less important than the current state of the transaction. While in many use cases (such as DSNP over Frequency) state transitions may be modeled via [Announcements](https://unfinished.com/wp-content/uploads/dsnp_whitepaper.pdf), in some situations, Frequency is only interested in the latest state.  Stateful storage can be used by:
 * An MSA "owner" directly
 * An MSA's delegate (Provider)
 * Anyone submitting a previously-signed payload given to them by the MSA owner
