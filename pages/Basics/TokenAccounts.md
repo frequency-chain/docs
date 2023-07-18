@@ -15,7 +15,7 @@ Users must acquire tokens via an exchange or transfer tokens into an account add
 
 ## Capacity
 
-[Capacity](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/Basics/CapacityModel.md) is a alternative transaction model that allows for the ability to send messages or do a consistent amount of work on chain that continues over time.
+[Capacity](https://github.com/LibertyDSNP/frequency-docs/blob/editing-session/pages/Basics/CapacityModel.md) is an alternative transaction model that allows for the ability to send messages or do a consistent amount of work on chain that continues over time.
 It is a non-transferable resource that acts as an alternative to using FRQCY to perform certain transactions and is managed through a rate-limited continuous stream of transactions.
 
 Users must have a Token Account to engage with FRQCY and Capacity.

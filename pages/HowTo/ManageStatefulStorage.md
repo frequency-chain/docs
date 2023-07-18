@@ -35,7 +35,7 @@ and smaller size of each.
     - _input_: `SchemaId` and `PageNumber`
     - _Purpose_: Removes a Page
 
-## Pre Checks
+## Pre-Checks
 1. Checking schema (id and structure) against submitted data
 2. Checking schema permission and grants
 3. Checking Hash of previous state to avoid data races

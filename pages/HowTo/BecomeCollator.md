@@ -86,7 +86,7 @@ For reproducibility, we use Amazon's [`c6id.2xlarge`](https://aws.amazon.com/ec2
       - Sender: The Controller Account
       - keys: Address of the new Session Key
       - proof: `0x` (Yes, it is empty)
-    - New session keys do not become active until the next session (every ~6h).
+    - New session keys do not become active until the next session (approximately every 6 hours).
     - While it is possible for your session key to match your Controller Account, but not recommended.
 1. Wait until the Relay Chain and parachain are up to date and synced.
 

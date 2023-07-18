@@ -1,7 +1,7 @@
 # Handles
 
 ## What are User Handles?
-User Handles allow Frequency Users to select names for themselves in the Frequency Nework. The User Handle has two parts: the Base (the part of the handle the User selects) and then the Suffix (a numerical code assigned by Frequency.)  So if user Alice chose the Base "AliceIn Wonderland", the User Handle format would be AliceInWonderland.356 with the suffix 356 assigned by Frequency.  
+User Handles allow Frequency Users to select names for themselves in the Frequency Network. The User Handle has two parts: the Base (the part of the handle the User selects) and then the Suffix (a numerical code assigned by Frequency.)  So if user Alice chose the Base "AliceInWonderland", the User Handle format would be AliceInWonderland.356 with the suffix 356 assigned by Frequency.  
 
 Each User Handle is unique, and is mapped 1:1 with a ```MessageSourceAccount``` (MSA). Users may choose to, but are not required to create handles for their MSAs.  The range of suffixes allowed for a given handle as well as the time period a handle must be retired before it is reused will be determined by governance.  Registering a time period before expiration (a specific number of blocks determined by governance) prevents replay attacks on the chain and implies a User may not change or retire their User Handle until the registration period retires.
 
@@ -14,8 +14,8 @@ User handles are designed to meet the following goals:
 * Make the system easy to use and integrate with existing UI and wallet systems.
 
 ## User Handle Requirements
-* User handles must be unique and each msa can only be be mapped to one handle.
-* User handles must be between 2 and 32 characters (32b limit) long.
+* User handles must be unique and each MSA can only be mapped to one handle.
+* User handles must be between 2 and 32 characters (32-byte limit) long.
 * User handles cannot contain the following substrings (or homoglyphs): @, #, :, ., ```
 * User handles cannot be (@admin, @everyone, @all) as these are reserved by Frequency.
 * Suffixes are u32 limited to a range defined by governance.
@@ -24,7 +24,7 @@ User handles are designed to meet the following goals:
 * After a handle is released, it cannot be reused during a time window set by governance.
 
 ## Duplicate Handles
-In the extremely unlikely scenario that two users attempt to claim the same handle and suffix combination within the same block, the transaction will fail to create the MSA and the app will recieve a failure for the transaction rather than the expected MsaHandleCreated event.
+In the extremely unlikely scenario that two users attempt to claim the same handle and suffix combination within the same block, the transaction will fail to create the MSA and the app will receive a failure for the transaction rather than the expected MsaHandleCreated event.
 
 ## Frequency Functions for User Handles
 

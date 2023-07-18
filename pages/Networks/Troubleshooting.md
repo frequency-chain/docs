@@ -15,7 +15,7 @@
 ### Generating Keys
 
 - Suggested: Subkey https://support.polkadot.network/support/solutions/articles/65000180519-how-to-create-an-account-in-subkey
-    - macOS Prereq
+    - macOS Prerequisites
         - rust https://rustup.rs/
         - protobuf `brew install protobuf`
 - Alternatives: https://wiki.polkadot.network/docs/learn-account-generation

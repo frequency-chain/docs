@@ -25,7 +25,7 @@ Production releases ONLY work with the one given network. (You may still provide
 ## The Embedded Relay Chain Node
 
 The Frequency node has a built in relay chain node to support checking block validation.
-To configure the embeded relay chain node at the command line place a `--` between the Frequency node options and the relay chain node options: `frequency-binary [OPTIONS] [-- <RELAY_CHAIN_ARGS>...]`
+To configure the embedded relay chain node at the command line place a `--` between the Frequency node options and the relay chain node options: `frequency-binary [OPTIONS] [-- <RELAY_CHAIN_ARGS>...]`
 
 ## Default Ports
 
@@ -58,7 +58,7 @@ See also:
 
 ### Relay Chain Options
 
-Each node also has a Relay Chain node as well and these options will often apply with different defualts to the Relay Chain.
+Each node also has a Relay Chain node as well and these options will often apply with different defaults to the Relay Chain.
 The docker images do not pass through the ports for the relay chain, but if you are running using the binary, the options are available.
 
 `frequency-binary <parachain-args> -- <relay-chain-args>`
@@ -74,7 +74,7 @@ If you need access control, you should proxy through a service that provides tha
 
 Generally WebSockets are used to access the node, but there are both an RPC and WebSocket interfaces.
 
-- External WebSocket Access: `--ws-external` (defualt is local only)
+- External WebSocket Access: `--ws-external` (default is local only)
 - External RPC Access: `--rpc-externa` (default is local only)
 - WebSocket Connection Limit: `--ws-max-connections 250`
 - RPC and WebSocket CORS: `--rpc-cors <ORIGINS>` (use `all` to disable)

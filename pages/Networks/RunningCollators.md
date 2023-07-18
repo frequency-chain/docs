@@ -72,7 +72,7 @@ There are five keys that matter for a Collator node:
 
 5. **The Session Aura Key**
 
-	* "Owned" by the the controller account
+	* "Owned" by the controller account
 	* Does the actual work of signing blocks
 	* Can be rotated by generating a new key on the node with `author_rotateKey`, then calling `session.setKeys` from the controller account.
 
@@ -116,7 +116,7 @@ There are five keys that matter for a Collator node:
       - Sender: The Controller Account
       - keys: Address of the new Session Key in hex format
       - proof: `0x` (Yes, it is empty)
-    - New session keys do not become active until the next session (every ~6h).
+    - New session keys do not become active until the next session (approximately every 6 hours).
     - While it is possible for your session key to match your Controller Account, but not recommended.
 1. Wait until the Relay Chain and parachain are up to date and synced.
 

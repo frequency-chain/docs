@@ -8,7 +8,7 @@ Non-batched Messages (sent by MSAs) are on chain, are validated at write time, a
 
 ## On-chain Messages
 
-An MSA with a Token Account may choose to send a message directly on chain.  Creation of an an on-chain Frequency Message requires that the Message be validated before adding to the chain.
+An MSA with a Token Account may choose to send a message directly on chain.  Creation of an on-chain Frequency Message requires that the Message be validated before adding to the chain.
 Thus, any Message read from a trusted node, can be trusted to have been made by the MSA or a delegate of the MSA at the time the Frequency Message was sent.
 
 
