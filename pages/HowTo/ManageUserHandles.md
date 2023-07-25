@@ -1,6 +1,6 @@
 # Managing User Handles
 The Frequency blockchain aims to provide a mechanism to register and retrieve user handles on chain to make it easier to use MSA Ids.
-To achieve this, we have created a user handle ```registry``` system on Frequency , coupled with ```MessageSourceAccount```, that allows users to choose a handle for their MSA Ids.  The Handle system then appends an available numeric suffix to the chosen user handle, separated by a delimiter[.], to make it unique and store the mapping of the handle to the MSA Id in the registry.
+To achieve this, we have created a user handle ```registry``` system on Frequency , coupled with ```MessageSourceAccount```, that allows users to choose a handle for their MSA Ids.  The Handle system then appends an available numeric suffix to the chosen user handle, separated by a delimiter (`.`), to make it unique and store the mapping of the handle to the MSA Id in the registry.
 
 The user handle system also enforces guidelines to ensure that handles are user-friendly and easy to remember and prevent misuse and abuse.
 
@@ -10,7 +10,7 @@ The user handle system also enforces guidelines to ensure that handles are user-
 * Handles are unique and have a 1:1 mapping with ```MessageSourceAccount```.
 * Governance will define the range of suffixes allowed for a given handle.
 * Governance will define the time period a handle must be retired before it can be reused.
-* The handle create/change/(and retire, if its not feeless) supports capacity based transactions.
+* The handle create/change/(and retire, if it's not feeless) supports capacity based transactions.
 ### General Steps
 
 * Create a randomly shuffled array of numeric suffixes.
@@ -19,7 +19,7 @@ The user handle system also enforces guidelines to ensure that handles are user-
 * Query the chain to check which values are available, check if the handle with the suffix is available.
 * Choose an available value and attempt to claim it by submitting the full handle with the suffix to the chain.
 * Chain validates the handle and suffix and maps the handle to the ```msa_id```.
-* Chain maintains a reverse mapping from handle to msa for offchain use.
+* Chain maintains a reverse mapping from handle to MSA for off-chain use.
 
 ### Chain Steps
 
@@ -242,7 +242,7 @@ Given a user handle and a seed, the crate provides a function that generates a s
 Provides a verification function that takes a user handle and a suffix and verifies that the handle is valid and the suffix is available. This function is used to verify a handle and suffix when a user attempts to create a new handle or change their handle. Typical operations will be:
 
 * Verify that the handle is valid, i.e. it follows the handle guidelines.
-* Check for homoglpyhs.
+* Check for homoglyphs.
 
 ### PRNG
 

@@ -15,7 +15,7 @@ We run benchmarks with and recommend the same reference [hardware specified by P
 
 Releases are maintained on Frequency's [GitHub Repository](https://github.com/LibertyDSNP/frequency/releases).
 
-Frequency builds releases for both arm64 and AMD64 architectures.
+Frequency builds releases for both ARM64 and AMD64 architectures.
 
 | Network | Binary Name |
 | --- | --- |
@@ -93,7 +93,7 @@ sudo apt install --assume-yes clang curl libssl-dev cmake
 ## Run
 There are 2 options to run the chain locally:
 
-*Note, running Frequency via the following options does not require binary to be built or chain specs to be granted separately, and is programmed within the scripts for simplicty.*
+*Note, running Frequency via the following options does not require binary to be built or chain specs to be granted separately, and is programmed within the scripts for simplicity.*
 
 1. Collator Node in Instant Sealing Mode
 2. Collator Node with Local Relay Chain
@@ -117,7 +117,7 @@ make start
 ```
 docker run --rm -p 9944:9944 -p 9933:9933 frequencychain/instant-seal-node
 ```
-To stop running chain, hit [Ctrl+C] in terminal where the chain was started.
+To stop running chain, hit `[Ctrl+C]` in terminal where the chain was started.
 
 | Node | Ports | Explorer URL |
 | --- | --- | --- |
@@ -150,7 +150,7 @@ make register
 ```
 3. Generate chain spec files.  If this is your first time running the project or new pallets/runtime code changes have been made to Frequency, then the chain specs need to be generated.  Refer to [generation spec file]() for more details.
 
-4. Start Frequency as a parachain.  This step will generate/genesis/wasm and onboard the parachain.
+4. Start Frequency as a parachain.  This step will generate genesis/wasm and onboard the parachain.
 
 ```
 make start-frequency
@@ -168,7 +168,7 @@ Stop and Clean Environment
 5. Clean up temporary directory to avoid any conflicts with next onboarding: `rm -fr /tmp/frequency`
 
 ### All in Docker Container
-**Currently does not work on M-Series MacOS Laptops.**   See [https://github.com/LibertyDSNP/frequency/issues/432](https://github.com/LibertyDSNP/frequency/issues/432)
+**Currently does not work on M-Series macOS Laptops.**   See [https://github.com/LibertyDSNP/frequency/issues/432](https://github.com/LibertyDSNP/frequency/issues/432)
 
 Start
 ```
@@ -185,7 +185,3 @@ make stop-frequency-docker
 | Frequency Relay Node | ws:`9944`, rpc:`9933`, p2p:`30333` | [127.0.0.1:9944](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/explorer) 
 | Alice Relay Node | ws:`19946`, rpc:`9935`, p2p:`30335` | [127.0.0.1:9946](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9946#/explorerhttps://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9946#/explorer) |
 Bob Relay Node | ws:`9947`,rpc:`9936`, p2p:`30336` | [127.0.0.1:9947](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9947#/explorer)|
-
-
-
-

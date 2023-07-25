@@ -20,7 +20,7 @@ Many blockchain systems face inhibited growth as a result of high/unpredictable 
 **The Power of Choice**
 
 Traditional web systems are centered around point-to-point communications.
-Any information that one wants to transmit to an unknown third party requires a centralized system to compile and then distribute the data to known requestors. Frequency uses the broadcast nature of the blockchain to provide [Message](./Messages.md) metadata that allows the existence of information to be discovered by anyone. Thus users, be they creators or consumers, can choose their own tools.
+Any information that one wants to transmit to an unknown third party requires a centralized system to compile and then distribute the data to known requesters. Frequency uses the broadcast nature of the blockchain to provide [Message](./Messages.md) metadata that allows the existence of information to be discovered by anyone. Thus users, be they creators or consumers, can choose their own tools.
 Users may then tune in to the data they want, ensuring user control without losing the power and value of a network.  Frequency Providers compete for customers in an open market where users may move from one Provider to another without losing agency over their relationships or their data--ensuring a chainwide focus on User needs and desires.
 
 
@@ -34,7 +34,7 @@ Frequency uses a unique continually renewing stake-based leasing system for send
 **Shared Schemas**
 
 Much of the power of blockchain has not been in custom smart contracts, but the ability for those contracts to follow standards.
-Common use of custom tokens would not be possible without ERC-20 nor NFTs without EIP-721.
+Common use of custom tokens would not be possible without ERC-20 nor NFTs without ERC-721.
 Even once those standards are complete, implementations can be flawed or allow for twisted results.
 Frequency enables collaborative standardization instead of individual customization.
 Frequency is not a replacement for smart contracts.
@@ -51,6 +51,6 @@ Financial transactions require extra rigor and additional steps (such as defendi
 
 **Batching**
 
-Frequency's data-focused, non-financial use cases allow for parallel transactions in batches.  Verification may be done asychronously at read time or write time.  This allows Providers to batch and publish a lot of data off chain at once--a key requirement for managing transaction costs as well as scaling.
+Frequency's data-focused, non-financial use cases allow for parallel transactions in batches.  Verification may be done asynchronously at read time or write time.  This allows Providers to batch and publish a lot of data off chain at once--a key requirement for managing transaction costs as well as scaling.
 
 
