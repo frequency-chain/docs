@@ -100,6 +100,15 @@ Uppercase F and M
 ## FRQCY
 Avoid following with the word "tokens"
 
+## Frequency Content Hash
+Uppercase F, C and H (if Frequency precedes otherwise all lowercase)
+
+## Frequency Graph Keys
+Uppercase F, G and K (if Frequency precedes otherwise all lowercase)
+
+## Frequency Graph Types
+Uppercase F, G and T (if Frequency precedes otherwise all lowercase)
+
 ## Functions
 Use Snake Case e.g. on_initialize
 
@@ -111,6 +120,12 @@ Uppercase G, C and A
 
 ## Graph Change event
 Uppercase G and C lowercase e
+
+## graph edges
+All lowercase
+
+## Graph SDK
+Uppercase G, S, D, K
 
 ## InterPlanetary File System (IPFS)
 Uppercase I, P, F and S. In the first instance, spell out followed by the acronym in parentheses. Use the acronym only thereafter.
@@ -124,6 +139,9 @@ Uppercase M, S and A. In the first instance, spell out followed by the acronym i
 ## messages
 Lowercase m
 
+## MSA Id
+Uppercase M, S, A and I
+
 ## MUST/MUST NOT
 All Caps when defining rules for specification
 
@@ -134,8 +152,14 @@ Uppercase N and O
 As an adjective prior to a noun use hyphen (i.e. on-chain storage)
 As a noun no hyphen (i.e. stored on chain)
 
+## Owning User
+Uppercase O and U
+
 ## Oxford Comma
 Always use
+
+## Page Id
+Uppercase P and I
 
 ## parachain
 All lowercase
@@ -164,17 +188,38 @@ Polkadot wiki uses uppercase R and C
 ## Possessives
 Making Frequency possessive should be avoided (e.g. Frequency’s)
 
+## private connections
+all lowercase
+
+## private follow
+all lowercase
+
+## Private Graph Encryption Key
+Uppercase P, G, E and K
+
 ## Profile Activity Type
 Uppercase P, A and T
 
-## Provider applications
+## Provider
+Uppercase P
+
+## Provider Applications
 Uppercase P and A
 
-## Providers
-Uppercase P
+## Provider Platforms
+Uppercase P and P
+
+## Pseudonymous Relationship Identifiers (PRIds)
+Uppercase P, R and I and acronym as shown
+
+## public follow
+all lowercase
 
 ## public graph
 All lowercase
+
+## Public Graph Encryption Key
+Uppercase P, G, E and K
 
 ## Reaction Announcement
 Uppercase R and A
@@ -200,11 +245,20 @@ One word uppercase S and I
 ## Session Key
 Uppercase S and K
 
+## Social Graph Key
+Uppercase S, G and K
+
 ## social network graph
 All lowercase
 
+## Stateful-Storage
+Both S are uppercase, has a hyphen in the middle
+
 ## Substrate
 Uppercase S
+
+## Target User
+Uppercase T and U
 
 ## Team
 Should not be used in context with Frequency
