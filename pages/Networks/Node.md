@@ -27,6 +27,11 @@ Production releases ONLY work with the one given network. (You may still provide
 The Frequency node has a built in relay chain node to support checking block validation.
 To configure the embedded relay chain node at the command line place a `--` between the Frequency node options and the relay chain node options: `frequency-binary [OPTIONS] [-- <RELAY_CHAIN_ARGS>...]`
 
+## Additional Resources
+
+- [Substrate Docs: Deployment](https://docs.substrate.io/deploy/) - Great starter place to understand node deployments
+- [Substrate DevOps Guide](https://paritytech.github.io/devops-guide/) - Great for DevOps teams running nodes
+
 ## Default Ports
 
 ### Frequency Node
