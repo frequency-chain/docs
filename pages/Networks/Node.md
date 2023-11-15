@@ -32,6 +32,11 @@ To configure the embedded relay chain node at the command line place a `--` betw
 - [Substrate Docs: Deployment](https://docs.substrate.io/deploy/) - Great starter place to understand node deployments
 - [Substrate DevOps Guide](https://paritytech.github.io/devops-guide/) - Great for DevOps teams running nodes
 
+## High Volume Notice
+
+Running a node that will have a high volume from one or more servers requires altering the defaults.
+Please read over not just the notes here, but also the details of all the command line parameters: `./frequency --help`
+
 ## Default Ports
 
 ### Frequency Node
@@ -39,8 +44,7 @@ To configure the embedded relay chain node at the command line place a `--` betw
 | Description | Port |
 | --- | --- |
 | P2P (TCP) | 30333 |
-| RPC | 9933 |
-| WebSocket | 9944 |
+| RPC/WebSocket | 9944 |
 | Prometheus | 9615 |
 
 ### Embedded Relay Chain Node
@@ -48,8 +52,7 @@ To configure the embedded relay chain node at the command line place a `--` betw
 | Description | Port |
 | --- | --- |
 | P2P (TCP) | 30334 |
-| RPC | 9934 |
-| WebSocket | 9945 |
+| RPC/WebSocket | 9945 |
 | Prometheus | 9616 |
 
 ## RPC Node
@@ -79,10 +82,10 @@ If you need access control, you should proxy through a service that provides tha
 
 Generally WebSockets are used to access the node, but there are both an RPC and WebSocket interfaces.
 
-- External WebSocket Access: `--ws-external` (default is local only)
-- External RPC Access: `--rpc-externa` (default is local only)
-- WebSocket Connection Limit: `--ws-max-connections 250`
-- RPC and WebSocket CORS: `--rpc-cors <ORIGINS>` (use `all` to disable)
+- External RPC/WebSocket Access: `--rpc-externa;` (default is local only)
+- RPC/WebSocket CORS: `--rpc-cors <ORIGINS>` (use `all` to disable)
+- RPC/WebSocket Connection Limit: `--rpc-max-connections 250`
+- RPC/WebSocket Subscription Limit: `--rpc-max-subscriptions-per-connection 1024`
 
 ### Archive vs State Pruning
 
@@ -98,8 +101,7 @@ Archive nodes are useful for accessing historical states, but Frequency is desig
 
 Frequency and the embedded relay node uses various ports (with Frequency defaults):
 
-- RPC: `--rpc-port 9933`
-- WebSocket: `--ws-port 9944`
+- RPC/WebSocket: `--rpc-port 9944`
 - Gossip Protocol: `--port 30333`
 
 ### Monitoring
@@ -113,7 +115,9 @@ See: https://docs.substrate.io/maintain/monitor/ for more information on monitor
 
 ### Other
 
-- Public address if different: `--public-addr <IP Address>`
+- Public address if different or behind a proxy: `--public-addr <Multiaddr address>`
+    - Example IP: `/ip4/55.66.77.88/tcp/30333`
+    - Example DNS: `/dns4/0.boot.frequency.xyz/tcp/30333`
 - Public name of the node: `--name <string>`
 - Base path for chain data storage: `--base-path <PATH>`
 
@@ -136,7 +140,7 @@ It will produce a block as soon as a transaction has entered the queue.
 If on macOS, you currently need to add `--platform=linux/amd64`
 
 ```
-docker run --rm -p 9944:9944 -p 9933:9933 frequencychain/instant-seal-node
+docker run --rm -p 9944:9944 frequencychain/standalone-node
 ```
 
 ### Force creation of an empty block
