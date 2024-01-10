@@ -1,5 +1,10 @@
 # Troubleshooting
 
+## Short-term: Switch to a Different Node
+
+While not all nodes can support all situations, nodes are mostly interchangable.
+Thus, for basic short-term fixes, even public nodes maybe a fix.
+
 ## Common Logs
 
 - `-lcumulus-collator=trace` Trouble with collating and forming blocks
