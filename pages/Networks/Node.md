@@ -82,7 +82,7 @@ If you need access control, you should proxy through a service that provides tha
 
 Generally WebSockets are used to access the node, but there are both an RPC and WebSocket interfaces.
 
-- External RPC/WebSocket Access: `--rpc-externa;` (default is local only)
+- External RPC/WebSocket Access: `--rpc-external` (default is local only)
 - RPC/WebSocket CORS: `--rpc-cors <ORIGINS>` (use `all` to disable)
 - RPC/WebSocket Connection Limit: `--rpc-max-connections 250`
 - RPC/WebSocket Subscription Limit: `--rpc-max-subscriptions-per-connection 1024`
