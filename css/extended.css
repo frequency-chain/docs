@@ -12,6 +12,10 @@
     font-weight: 300;
 }
 
+#logo > svg {
+    width: 100%;
+}
+
 .button-links {
     display: flex;
     justify-content: space-around;

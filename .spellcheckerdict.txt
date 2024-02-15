@@ -29,7 +29,9 @@ DDR4
 [Dd]elegator
 democratization
 De-registration
+DevOps
 disintermediate
+DNS
 DSNP
 EC2
 ECC

@@ -11,21 +11,21 @@
 /* Themes */
 
 .coal {
-    --bg: #2b2b2b;
+    --bg: #0b1e28;
     --fg: #F5F6F7;
 
-    --sidebar-bg: #1c1c1c;
+    --sidebar-bg: #19455E;
     /* Also change toggle background svg stroke */
     --sidebar-fg: #f0f0f0;
     --sidebar-non-existant: var(--sidebar-fg);
     /* Also change toggle background svg stroke */
-    --sidebar-active: #4473ec;
-    --sidebar-spacer: #393939;
+    --sidebar-active: #4BA0A5;
+    --sidebar-spacer: #0b1e28;
 
     --scrollbar: var(--sidebar-fg);
 
     --icons: #f1f1f1;
-    --icons-hover: #4473ec;
+    --icons-hover: #4BA0A5;
 
     --links: var(--sidebar-active);
     --inline-code-color: #c5c8c6;
@@ -39,7 +39,7 @@
 
     --table-border-color: #67788a;
     --table-header-bg: #67788a;
-    --table-alternate-bg: hsl(0, 0%, 15%);
+    --table-alternate-bg: hsl(0, 0%, 5%);
 
     --searchbar-border-color: #aaa;
     --searchbar-bg: #b7b7b7;
@@ -53,18 +53,18 @@
 
 .light {
     --bg: #FFFFFF;
-    --fg: #2D3747;
+    --fg: #19455E;
 
     --sidebar-bg: #f0f0f0;
-    --sidebar-fg: #2D3747;
+    --sidebar-fg: #19455E;
     --sidebar-non-existant: var(--sidebar-fg);
-    --sidebar-active: #4473ec;
+    --sidebar-active: #4BA0A5;
     --sidebar-spacer: #f4f4f4;
 
     --scrollbar: var(--sidebar-fg);
 
     --icons: #245463;
-    --icons-hover: #4473ec;
+    --icons-hover: #4BA0A5;
 
     --links: var(--sidebar-active);
 
@@ -99,13 +99,13 @@
         --sidebar-bg: #f0f0f0;
         --sidebar-fg: #2D3747;
         --sidebar-non-existant: var(--sidebar-fg);
-        --sidebar-active: #4473ec;
+        --sidebar-active: #4BA0A5;
         --sidebar-spacer: #f4f4f4;
 
         --scrollbar: var(--sidebar-fg);
 
         --icons: #245463;
-        --icons-hover: #4473ec;
+        --icons-hover: #4BA0A5;
 
         --links: var(--sidebar-active);
 
