@@ -11,7 +11,6 @@ Below are links to official platforms, as well as unofficial, community-managed 
 - Issues can be raised directly in the [Frequency GitHub](https://github.com/LibertyDSNP/frequency) code repository.
 
 ## Polkassembly
-- [Frequency Rococo](https://frequency-rococo.polkassembly.io/)
 - [Frequency Mainnet](https://frequency.polkassembly.io/)
 
 
