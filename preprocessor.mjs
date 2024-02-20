@@ -1,13 +1,20 @@
-function makeButtonLink({ Chapter }) {
-  return `<a href="/${Chapter.path.replace(".md", ".html")}">${Chapter.name}</a>`;
+function makeButtonLink({ Chapter }, parentPath) {
+  // Remove any part of the path that the parent already has.
+  // This assumes that there are no nested duplicate names
+  const path = Chapter.path.split("/").filter((x) => !parentPath.has(x));
+  return `<a href="${path.join("/").replace(".md", ".html")}">${Chapter.name}</a>`;
 }
 
-function generateButtonLinks(items) {
-  return '<div class="button-links">' + items.map(makeButtonLink).join("\n") + "</div>";
+function generateButtonLinks(parent) {
+  // Remove the last /page.md as there might be collisions with that part
+  const parentPath = new Set(parent.path.replace(/\/[^\/]*$/, "").split("/"));
+  return (
+    '<div class="button-links">' + parent.sub_items.map((x) => makeButtonLink(x, parentPath)).join("\n") + "</div>"
+  );
 }
 function replaceButtonLinks(chapter) {
   if (chapter.sub_items && chapter.content.includes("{{#button-links}}")) {
-    chapter.content = chapter.content.replace("{{#button-links}}", generateButtonLinks(chapter.sub_items));
+    chapter.content = chapter.content.replace("{{#button-links}}", generateButtonLinks(chapter));
   }
 
   if (chapter.sub_items) {
