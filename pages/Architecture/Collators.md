@@ -13,4 +13,4 @@ In order to operate as a Frequency Collator, the node must meet additional crite
 
 <!--
 Learn more about [how to run a Collator](Networks/Collator.md).
-->
+-->
