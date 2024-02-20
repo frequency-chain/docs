@@ -1,5 +1,5 @@
 function makeButtonLink({ Chapter }) {
-  return `<a href="${Chapter.path.replace(".md", ".html")}">${Chapter.name}</a>`;
+  return `<a href="/${Chapter.path.replace(".md", ".html")}">${Chapter.name}</a>`;
 }
 
 function generateButtonLinks(items) {
