@@ -23,5 +23,3 @@ Frequency Nodes are also configured to provide a layer of Custom RPCs (Remote Pr
 Custom RPCs are deployed only on the node, so allow for heavy processing, external calls, or other code that is not appropriate for the Wasm runtime execution environment.
 These RPCs do not upgrade until the node binary is upgraded, but may rely on Runtime APIs that are upgraded.
 Some Custom RPCs may require additional node configuration.
-
-Read more about Wasm Upgrades TODO.

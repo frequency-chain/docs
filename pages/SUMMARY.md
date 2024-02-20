@@ -27,7 +27,6 @@
         - [Initial Token Distribution](Tokenomics/InitialDistribution.md)
         - [Inflation & Liquidity](Tokenomics/InflationLiquidity.md)
     - [Governance](Governance/index.md)
-        - [Parameters](Governance/Parameters.md)
     - [Glossary](Glossary.md)
 - [Networks](Networks/index.md)
   - [Running a Node](Networks/Node.md)

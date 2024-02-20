@@ -44,6 +44,7 @@
   transition-duration: 0.5s;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1080px) {

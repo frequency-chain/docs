@@ -1,7 +1,7 @@
 # Benefits of Delegation
 
 Frequency's implementation of delegation and the Capacity economic system enable a new class of low-friction "coinless users".
-Coinless users, as the name suggests, do not need tokens to interact with the blockchain and do not need to cryptographically sign every interaction (such as posting a Message or updating their Social Graph).
+Coinless users, as the name suggests, do not need tokens to interact with the blockchain and do not need to cryptographically sign every interaction (such as posting a Message or updating their social graph).
 Instead, coinless users delegate their needs to a Provider.
 Coinless users still have MSA accounts with private keys that maintain control of their user information, identity, and delegations on chain.
 While a coinless user might still interact with tokens for other purposes, they are not required to do so.
