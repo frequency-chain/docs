@@ -110,8 +110,6 @@ a > .hljs {
 
 .menu-bar,
 .menu-bar:visited,
-.nav-chapters,
-.nav-chapters:visited,
 .mobile-nav-chapters,
 .mobile-nav-chapters:visited,
 .menu-bar .icon-button,
@@ -120,54 +118,21 @@ a > .hljs {
 }
 
 .menu-bar i:hover,
-.menu-bar .icon-button:hover,
-.nav-chapters:hover,
-.mobile-nav-chapters i:hover {
+.menu-bar .icon-button:hover {
   color: var(--icons-hover);
-}
-
-/* Nav Icons */
-
-.nav-chapters {
-  font-size: 2.5em;
-  text-align: center;
-  text-decoration: none;
-
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  margin: 0;
-  max-width: 150px;
-  min-width: 90px;
-
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-
-  transition:
-    color 0.5s,
-    background-color 0.5s;
-}
-
-.nav-chapters:hover {
-  text-decoration: none;
-  background-color: var(--theme-hover);
-  transition:
-    background-color 0.15s,
-    color 0.15s;
 }
 
 .nav-wrapper {
   margin-top: 50px;
-  display: none;
+  display: block;
 }
 
 .mobile-nav-chapters {
-  font-size: 2.5em;
+  display: block;
+  font-size: 1em;
   text-align: center;
   text-decoration: none;
-  width: 90px;
+  padding: 10px 20px;
   border-radius: 5px;
   background-color: var(--sidebar-bg);
 }
@@ -179,24 +144,6 @@ a > .hljs {
 .next {
   float: right;
   right: var(--page-padding);
-}
-
-@media only screen and (max-width: 1080px) {
-  .nav-wide-wrapper {
-    display: none;
-  }
-  .nav-wrapper {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 1380px) {
-  .sidebar-visible .nav-wide-wrapper {
-    display: none;
-  }
-  .sidebar-visible .nav-wrapper {
-    display: block;
-  }
 }
 
 /* Inline code */
