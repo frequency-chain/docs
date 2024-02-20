@@ -21,10 +21,4 @@ Frequency Rococo is used as a testnet for those building on
 | Bootnodes       | `/dns4/0.boot.rococo.frequency.xyz/tcp/30333/ws/p2p/12D3KooWArmKDbY8Y6XXHGodosWAjRWWxSw5YxWEjSZTBNjJXVSC` |
 
 
-<div class="button-links">
-	<a href="Node.html"><div>Nodes</div></a>
-	<a href="Collator.html"><div>Collators</div></a>
-</div>
-<div class="button-links">
-	<a href="Troubleshooting.html"><div>Troubleshooting</div></a>
-</div>
+{{#button-links}}

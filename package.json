@@ -13,6 +13,7 @@
         "build": "mdbook build -o",
         "serve": "mdbook serve -o",
         "watch": "mdbook watch -o",
+        "preprocessor": "node preprocessor.mjs",
         "mdbook:install": "cargo install mdbook",
         "lint:spellcheck": "spellchecker",
         "lint:md": "remark --frail ./pages/**/*.md ./pages/*.md",
