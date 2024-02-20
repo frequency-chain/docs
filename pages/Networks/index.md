@@ -11,7 +11,7 @@
 
 ## Frequency Rococo Testnet
 
-Frequency Rococo is used as a testnet for those building on
+Frequency Rococo is a testnet for those building new applications on Frequency.
 
 |  |  |
 | --- | --- |
@@ -20,5 +20,15 @@ Frequency Rococo is used as a testnet for those building on
 | Public RPC Node | `wss://rpc.rococo.frequency.xyz` |
 | Bootnodes       | `/dns4/0.boot.rococo.frequency.xyz/tcp/30333/ws/p2p/12D3KooWArmKDbY8Y6XXHGodosWAjRWWxSw5YxWEjSZTBNjJXVSC` |
 
+## (Coming Soon) Frequency Paseo Testnet
+
+Frequency Paseo is a testnet for those building new applications on Frequency.
+
+|  |  |
+| --- | --- |
+| Relay Chain     | [Paseo](https://wiki.polkadot.network/docs/build-pdk#rococo-testnet) |
+| ParaId          | TBD |
+| Public RPC Node | TBD |
+| Bootnodes       | TBD |
 
 {{#button-links}}

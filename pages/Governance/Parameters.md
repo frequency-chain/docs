@@ -1,1 +1,1 @@
-# Governance Parameters
+# Parameters
