@@ -229,12 +229,8 @@ The period of time between token unstaking and token liquidity during which thos
 
 ## Token Account
 
-An Account that is secured with FRQCY.
+An Account that is secured with FRQCY. See [Visibility](./Tokenomics/UserIncentives.md)
 
-## Transaction Weight
-
-The precalculated computational cost of an action on the blockchain.
-Different actions have different weights.
 
 ## Unstaking
 
