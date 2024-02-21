@@ -64,11 +64,11 @@ A unique identifier used with IPFS derived from the content of a file.
 
 ## Control Key
 
-The public key used to control an MSA.
+The public key used to control an MSA. See [Identity Management](./Identity/ControlKeys.md).
 
 ## Delegation Model
 
-The mechanism whereby end users can grant permission to perform tasks that require significant blockchain knowledge or token ownership to Providers, reducing friction and enabling Message Batching to improve scalability. See [Delegation Model](./Delegation/index.md).
+The mechanism whereby end users can grant permission to perform tasks that require significant blockchain knowledge or token ownership to Providers, reducing friction and enabling Message Batching to improve scalability. See [Delegation Model](./Delegation/Benefits.md).
 
 ## Delegator
 
@@ -107,15 +107,16 @@ See [User Handle](#user-handle).
 
 ## Handle Base
 
-The user-selected portion of the Handle Display.
+The user-selected portion of the Handle Display. See [Handle Creation](./Identity/Handles.md).
+
 
 ## Handle Display
 
-A user’s entire User Handle as displayed by the system including the user-selected Handle Base and the system-selected Handle Suffix, separated by a “.” character.
+A user’s entire User Handle as displayed by the system including the user-selected Handle Base and the system-selected Handle Suffix, separated by a “.” character. See [Handle Creation](./Identity/Handles.md).
 
 ## Handle Suffix
 
-The system-selected numeric portion of the Handle Display.
+The system-selected numeric portion of the Handle Display. See [Handle Creation](./Identity/Handles.md).
 
 ## InterPlanetary File System (IPFS)
 
@@ -124,12 +125,12 @@ See https://docs.ipfs.tech/ for more detail.
 
 ## Invulnerable Collator
 
-A collator that cannot be removed without governance action.
+A collator that cannot be removed without governance action. See [Collator Decentralization Roadmap](./Networks/Decentralization.md).
 
 ## Keypair
 
 A matching public key and private key.
-The private key can be used to generate cryptographic signatures which third parties may verify with the public key.
+The private key can be used to generate cryptographic signatures which third parties may verify with the public key. See [Identity Management](./Identity/ControlKeys.md).
 
 ## Message
 
@@ -146,11 +147,12 @@ A collection of Messages, possibly from many different Message Source Accounts (
 
 Message Source Accounts (MSAs) are distinct from Token Accounts and unique to Frequency.
 They ensure protocol related data items have verifiable authorship.
-End users with MSAs are not required to have FRQCY Tokens or Capacity to interact with Frequency, but may instead choose to delegate tasks that require Capacity to Providers.
+End users with MSAs are not required to have FRQCY Tokens or Capacity to interact with Frequency, but may instead choose to delegate tasks that require Capacity to Providers. See[Message Source Accounts](./Identity/MessageSourceAccounts.md).
 
 ## MSA Id
 
-The unique 64-bit unsigned integer identifier associated with an MSA.
+The unique 64-bit unsigned integer identifier associated with an MSA. See [Message Source Accounts](./Identity/MessageSourceAccounts.md).
+
 
 ## On-Chain Message
 
@@ -245,7 +247,7 @@ Any entity with an Account on Frequency.
 
 ## User Handle
 
-A unique identifier for users on Frequency, consisting of a user-selected Handle Base and a chain-selected Handle Suffix.
+A unique identifier for users on Frequency, consisting of a user-selected Handle Base and a chain-selected Handle Suffix. See [User Handles](./Identity/Handles.md).
 
 ## XRQCY
 
