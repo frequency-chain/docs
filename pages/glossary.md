@@ -60,7 +60,7 @@ FRQCY Tokens awarded to Frequency-specific Public Collators for staking to the F
 
 ## Content Identifier (CID)
 
-A unique identifier used with IPFS derived from the content of a file.
+A unique identifier used with IPFS derived from the content of a file. See [Schema Models](./Data/Schemas.md)
 
 ## Control Key
 
@@ -156,11 +156,11 @@ The unique 64-bit unsigned integer identifier associated with an MSA. See [Messa
 
 ## On-Chain Message
 
-A Message that has its payload stored on the Frequency blockchain.
+A Message that has its payload stored on the Frequency blockchain. See (Payload Location)(./Data/Schemas.md)
 
 ## Off-Chain Message
 
-A Message that has its payload stored on IPFS.
+A Message that has its payload stored on IPFS. See (Payload Location)(./Data/Schemas.md)
 
 ## Payload
 
@@ -169,7 +169,7 @@ The format of the payload is defined by the corresponding Schema Model. See [Sch
 
 ## Payload Location
 
-The attribute of a Frequency Schema that specifies how and where data will be stored. See [Schemas](./Data/Schemas.md).
+The attribute of a Frequency Schema that specifies how and where data will be stored. See [Schema Models](./Data/Schemas.md).
 
 ## Provider
 
@@ -204,7 +204,7 @@ The unique identifier of a Schema on Frequency. See [Schemas](./Data/Schemas.md)
 ## Schema Model
 
 Metadata about a Frequency Schema that defines the format and structure of the Schema itself, from which applications can determine how to serialize and deserialize data using the Schema.
-Frequency supports two model types for data: Parquet and Avro. See [Schemas](./Data/Schemas.md).
+Frequency supports two model types for data: Parquet and Avro. See [Schema Models](./Data/Schemas.md).
 
 ## Schema Registry
 
