@@ -14,7 +14,7 @@ An end user who spends tokens to perform transactions directly on Frequency, in 
 
 ## Batch
 
-See [Message Batch](#message-batch)
+See [Message Batch](#message-batch).
 
 ## Capacity
 
