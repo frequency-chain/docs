@@ -35,7 +35,8 @@ In other words, it is the number of blocks before a Provider may reuse their Cap
 
 A form of staking that allows Providers to use FRQCY Tokens as efficiently as possible, optimizing their generated Capacity for serving end users.
 Capacity Staking generates more Capacity per token staked than Provider Boosting.
-Capacity Staking Ratio
+
+## Capacity Staking Ratio
 The ratio of the number of FRQCY Tokens that must be staked per unit of Capacity generated each Capacity Epoch.
 
 ## Coinless User
