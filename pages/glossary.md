@@ -46,7 +46,7 @@ While coinless users maintain Control Keys that enable them to directly control 
 ## Collator
 
 A Frequency Node that generates blocks and submits them to the Relay Chain.
-Frequency currently operates using Invulnerable Collators, but intends to transition to Public Collators in the future.
+Frequency currently operates using Invulnerable Collators, but intends to transition to Public Collators in the future.  See [Collator](./Architecture/Collators.md) page.
 
 ## Collator Nodes
 
@@ -101,7 +101,7 @@ The native coin on Frequency Mainnet, which can be used to pay any Frequency tra
 
 ## Handle
 
-See User Handle.
+See [User Handle].
 
 ## Handle Base
 
