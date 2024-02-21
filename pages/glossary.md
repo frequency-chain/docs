@@ -51,7 +51,7 @@ Frequency currently operates using Invulnerable Collators, but intends to transi
 ## Collator Nodes
 
 Servers that participate in the Frequency Network and are configured to form blocks.
-See [Operational](./Architecture/OperationalModel.md).
+See [Operational Model](./Architecture/OperationalModel.md).
 
 ## Collator Rewards
 
