@@ -20,7 +20,7 @@ See [Message Batch](#message-batch)
 
 An alternate payment mechanism for certain classes of transactions that allows Messages to be sent and on-chain work to occur over time.
 Capacity allows Providers a rate-limited continuous stream of transactions and provides an alternative to using tokens to perform individual transactions.
-Capacity is generated via Capacity Staking and Provider Boosting.
+Capacity is generated via Capacity Staking and Provider Boosting. See [Capacity Model](./Tokenomics/ProviderIncentives.md).
 
 ## Capacity Allocation
 
@@ -29,15 +29,15 @@ The amount of Capacity generated for a Provider per Capacity Epoch.
 ## Capacity Epoch
 
 The number of blocks before Capacity refills.
-In other words, it is the number of blocks before a Provider may reuse their Capacity Allocation.
+In other words, it is the number of blocks before a Provider may reuse their Capacity Allocation. See [Capacity Renewal](./Tokenomics/ProviderIncentives.md).
 
 ## Capacity Staking
 
 A form of staking that allows Providers to use FRQCY Tokens as efficiently as possible, optimizing their generated Capacity for serving end users.
-Capacity Staking generates more Capacity per token staked than Provider Boosting.
+Capacity Staking generates more Capacity per token staked than Provider Boosting. See [Capacity Staking](./Tokenomics/ProviderIncentives.md).
 
 ## Capacity Staking Ratio
-The ratio of the number of FRQCY Tokens that must be staked per unit of Capacity generated each Capacity Epoch.
+The ratio of the number of FRQCY Tokens that must be staked per unit of Capacity generated each Capacity Epoch. See [Capacity Staking](./Tokenomics/ProviderIncentives.md).
 
 ## Coinless User
 
