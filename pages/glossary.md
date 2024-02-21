@@ -6,7 +6,7 @@
 
 An account on the blockchain, represented by a public key.
 Accounts may hold a token balance, transfer tokens, and pay transaction fees.
-Not to be confused with Message Source Accounts, which are unique to Frequency and ensure that user-generated data has verifiable authorship.
+Not to be confused with Message Source Accounts, which are unique to Frequency and ensure that user-generated data has verifiable authorship.  See [Identity Management](./Identity/index.md).
 
 ## Autonomous User
 
