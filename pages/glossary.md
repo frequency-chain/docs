@@ -79,19 +79,19 @@ See [Coinless Users](#coinless-user) and [Delegation](#delegation-model).
 
 ## Existential Deposit
 
-The minimum token amount an Account that is not associated with an MSA may have and still be considered alive.
+The minimum token amount an Account that is not associated with an MSA may have and still be considered alive. See [Message Source Accounts](./Identity/MessageSourceAccounts.md).
 
 ## Frequency Council
 
-The set of Frequency accounts that are responsible for certain governance actions, including Provider approval.
+The set of Frequency accounts that are responsible for certain governance actions, including Provider approval. See [Governance](./Governance/index.md).
 
 ## Frequency Network Foundation
 
-The organization which owns the intellectual property relating to Frequency.
+The organization which owns the intellectual property relating to Frequency. See [Collators](./Architecture/Collators.md).
 
 ## Frequency Node
 
-A server that participates in the Frequency network.
+A server that participates in the Frequency network. See [Interaction Model](Architecture/InteractionModel.md).
 
 ## FRQCY
 
@@ -152,11 +152,11 @@ The unique 64-bit unsigned integer identifier associated with an MSA. See [Messa
 
 ## On-Chain Message
 
-A Message that has its payload stored on the Frequency blockchain. See (Payload Location)(./Data/Schemas.md)
+A Message that has its payload stored on the Frequency blockchain. See [Payload Location](./Data/Schemas.md).
 
 ## Off-Chain Message
 
-A Message that has its payload stored on IPFS. See (Payload Location)(./Data/Schemas.md)
+A Message that has its payload stored on IPFS. See [Payload Location](./Data/Schemas.md).
 
 ## Payload
 
