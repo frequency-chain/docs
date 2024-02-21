@@ -167,7 +167,7 @@ The format of the payload is defined by the corresponding Schema Model.
 
 ## Payload Location
 
-The attribute of a Frequency Schema that specifies how and where data will be stored.
+The attribute of a Frequency Schema that specifies how and where data will be stored. See [Schemas](./Data/Schemas.md).
 
 ## Provider
 
@@ -192,20 +192,21 @@ The number of blocks between distributions of Provider Boosting rewards.
 
 Registered data structures for Messages and Stateful Storage items.
 Frequency Schemas define where Payloads are stored and how end users can parse the data within.
-See also On-Chain Message and Off-Chain Message.
+See also On-Chain Message and Off-Chain Message. See [Schemas](./Data/Schemas.md).
+
 
 ## Schema Id
 
-The unique identifier of a Schema on Frequency.
+The unique identifier of a Schema on Frequency. See [Schemas](./Data/Schemas.md).
 
 ## Schema Model
 
 Metadata about a Frequency Schema that defines the format and structure of the Schema itself, from which applications can determine how to serialize and deserialize data using the Schema.
-Frequency supports two model types for data: Parquet and Avro.
+Frequency supports two model types for data: Parquet and Avro. See [Schemas](./Data/Schemas.md).
 
 ## Schema Registry
 
-The Schema Registry is the on-chain repository for Frequency Schemas.
+The Schema Registry is the on-chain repository for Frequency Schemas. See [Schemas](./Data/Schemas.md).
 
 ## Staking
 
@@ -218,7 +219,7 @@ See [Capacity Staking Ratio](#capacity-staking-ratio).
 
 ## Stateful Storage
 
-A mode of storing on-chain protocol related data items so that they can be easily retrieved, modified, and removed, indexed by the data controller's MSA and a Schema Id.
+A mode of storing on-chain protocol related data items so that they can be easily retrieved, modified, and removed, indexed by the data controller's MSA and a Schema Id. See [Stateful Storage](./Data/StatefulStorage.md).
 
 ## Thaw Period
 
