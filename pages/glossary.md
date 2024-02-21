@@ -163,7 +163,7 @@ A Message that has its payload stored on IPFS.
 ## Payload
 
 The data within a protocol related data item.
-The format of the payload is defined by the corresponding Schema Model.
+The format of the payload is defined by the corresponding Schema Model. See [Schemas](./Data/Schemas.md).
 
 ## Payload Location
 
