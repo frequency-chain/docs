@@ -70,16 +70,12 @@ The public key used to control an MSA. See [Identity Management](./Identity/Cont
 
 The mechanism whereby end users can grant permission to perform tasks that require significant blockchain knowledge or token ownership to Providers, reducing friction and enabling Message Batching to improve scalability. See [Delegation Model](./Delegation/Benefits.md).
 
-## Delegator
-
-An end user that has granted specific permissions to a Provider via their MSA.
-
 ## End User
 
 A user who owns an MSA but is not acting as a Provider.
-An end user may choose to own tokens to participate in Provider Boosting to support services and participate in on-chain governance with Capacity.
+An end user may choose to own tokens to participate in Provider Boosting to support services and participate in on-chain governance with Capacity. See [Delegation Model](./Delegation/index.md)
 However, end users typically delegate other tasks to Providers who perform actions on the user's behalf.
-See Coinless Users and Delegation.
+See [Coinless Users](#coinless-user) and [Delegation](#delegation-model).
 
 ## Existential Deposit
 
