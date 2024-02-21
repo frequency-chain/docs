@@ -99,7 +99,7 @@ A server that participates in the Frequency network.
 
 ## FRQCY
 
-The native coin on Frequency Mainnet, which can be used to pay any Frequency transaction fees, or staked for Capacity.
+The native coin on Frequency Mainnet, which can be used to pay any Frequency transaction fees, or staked for Capacity.  See [Tokenomics](./Tokenomics/index.md).
 
 ## Handle
 
