@@ -101,7 +101,7 @@ The native coin on Frequency Mainnet, which can be used to pay any Frequency tra
 
 ## Handle
 
-See [User Handle].
+See [User Handle](#user-handle).
 
 ## Handle Base
 
