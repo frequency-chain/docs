@@ -134,10 +134,13 @@ The private key can be used to generate cryptographic signatures which third par
 ## Message
 
 A protocol related data item that is indexed by its Schema Id and block number.
+See [Messages](./Data/Messages.md).
+
 
 ## Message Batch
 
-A collection of Messages, possibly from many different Message Source Accounts (MSAs), that allows Providers to publish a single on-chain transaction that references large quantities of data off chain, thereby reducing the transaction fee.
+A collection of Messages, possibly from many different Message Source Accounts (MSAs), that allows Providers to publish a single on-chain transaction that references large quantities of data off chain, thereby reducing the transaction fee. See [Batching](./Data/Batching.md).
+
 
 ## Message Source Account (MSA)
 
