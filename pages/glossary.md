@@ -253,4 +253,4 @@ A unique identifier for users on Frequency, consisting of a user-selected Handle
 
 The Frequency Testnet Token.
 This token is only for testing and holds no value.
-See also FRQCY. See [Tokenomics](./Tokenomics/index).
+See also FRQCY. See [Tokenomics](./Tokenomics/index.md).
