@@ -60,7 +60,7 @@ FRQCY Tokens awarded to Frequency-specific Public Collators for staking to the F
 
 ## Content Identifier (CID)
 
-A unique identifier used with IPFS derived from the content of a file. See [Schema Models](./Data/Schemas.md)
+A unique identifier used with IPFS derived from the content of a file. See [Schema Models](./Data/Schemas.md).
 
 ## Control Key
 
