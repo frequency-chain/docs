@@ -56,7 +56,7 @@ See [Operational Model](./Architecture/OperationalModel.md).
 
 ## Collator Rewards
 
-FRQCY Tokens awarded to Frequency-specific Public Collators for staking to the Frequency Network and participating in block formation activities.
+FRQCY Tokens awarded to Frequency-specific Public Collators for staking to the Frequency Network and participating in block formation activities. See [Collator Incentives](./Tokenomics/CollatorIncentives.md).
 
 ## Content Identifier (CID)
 
