@@ -10,7 +10,7 @@ Not to be confused with Message Source Accounts, which are unique to Frequency a
 
 ## Autonomous User
 
-An end user who spends tokens to perform transactions directly on Frequency, in contrast to a coinless user, who delegates to Providers in order to pay transaction fees.
+An end user who spends tokens to perform transactions directly on Frequency, in contrast to a coinless user, who delegates to Providers in order to pay transaction fees. See [Autonomous Users](./Delegation/Benefits.md).
 
 ## Batch
 
@@ -42,7 +42,7 @@ The ratio of the number of FRQCY Tokens that must be staked per unit of Capacity
 ## Coinless User
 
 An end user who doesn’t use tokens to interact with Frequency.
-While coinless users maintain Control Keys that enable them to directly control their authentication and authorization data on chain, they delegate transaction handling to a Provider who will in turn manage data transactions (such as sending Messages) on their behalf.
+While coinless users maintain Control Keys that enable them to directly control their authentication and authorization data on chain, they delegate transaction handling to a Provider who will in turn manage data transactions (such as sending Messages) on their behalf. See [Benefits of Delegation](./Delegation/Benefits.md).
 
 ## Collator
 
@@ -68,7 +68,7 @@ The public key used to control an MSA.
 
 ## Delegation Model
 
-The mechanism whereby end users can grant permission to perform tasks that require significant blockchain knowledge or token ownership to Providers, reducing friction and enabling Message Batching to improve scalability.
+The mechanism whereby end users can grant permission to perform tasks that require significant blockchain knowledge or token ownership to Providers, reducing friction and enabling Message Batching to improve scalability. See [Delegation Model](./Delegation/index.md).
 
 ## Delegator
 
@@ -172,7 +172,7 @@ The attribute of a Frequency Schema that specifies how and where data will be st
 ## Provider
 
 The holder of an MSA that can allow others to delegate to it such as applications and services that use the Capacity economic system.
-Providers utilize Capacity to serve the end users that delegate to them.
+Providers utilize Capacity to serve the end users that delegate to them. See [Providers](./Delegation/Providers.md).
 
 ## Provider Boosting
 
