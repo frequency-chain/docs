@@ -14,7 +14,7 @@ An end user who spends tokens to perform transactions directly on Frequency, in 
 
 ## Batch
 
-See Message Batch
+See [Message Batch](#message-batch)
 
 ## Capacity
 
@@ -210,7 +210,7 @@ FRQCY Tokens can be staked for specific purposes, including serving as Public Co
 
 ## Staking Ratio
 
-See Capacity Staking Ratio.
+See [Capacity Staking Ratio](#capacity-staking-ratio).
 
 ## Stateful Storage
 
