@@ -24,7 +24,7 @@ Capacity is generated via Capacity Staking and Provider Boosting. See [Capacity 
 
 ## Capacity Allocation
 
-The amount of Capacity generated for a Provider per Capacity Epoch.
+The amount of Capacity generated for a Provider per Capacity Epoch.  See [Capacity Renewal](./Tokenomics/ProviderIncentives.md).
 
 ## Capacity Epoch
 
@@ -179,7 +179,7 @@ Providers utilize Capacity to serve the end users that delegate to them. See [Pr
 ## Provider Boosting
 
 Provider Boosting allows users to stake FRQCY tokens they hold to endorse or reward specific Providers.
-Providers who are “boosted” by end users receive additional Capacity, while Users who “boost” Providers receive a reward (in the form of additional FRQCY tokens).
+Providers who are “boosted” by end users receive additional Capacity, while Users who “boost” Providers receive a reward (in the form of additional FRQCY tokens). [Boosting](./Tokenomics/UserIncentives.md).
 
 ## Public Collator
 
@@ -225,7 +225,7 @@ A mode of storing on-chain protocol related data items so that they can be easil
 
 ## Thaw Period
 
-The period of time between token unstaking and token liquidity during which those tokens cannot be used, transferred or sold.
+The period of time between token unstaking and token liquidity during which those tokens cannot be used, transferred or sold. See [Thaw Period](./Tokenomics/ProviderIncentives.md).
 
 ## Token Account
 
@@ -239,11 +239,11 @@ Different actions have different weights.
 ## Unstaking
 
 The process of allowing tokens that have been staked to be made available again.
-When a user unstakes their FRQCY Tokens, there is a Thaw Period before the tokens are unlocked.
+When a user unstakes their FRQCY Tokens, there is a Thaw Period before the tokens are unlocked. See [Unstaking](./Tokenomics/ProviderIncentives.md).
 
 ## User
 
-Any entity with an Account on Frequency.
+Any entity with an Account on Frequency. See [Identity Management](./Identity/index.md).
 
 ## User Handle
 
