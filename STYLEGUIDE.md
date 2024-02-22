@@ -5,8 +5,6 @@ Style guide defining wording, spelling, and other details regarding how Frequenc
 For more information about Frequency, visit [frequency.xyz](https://www.frequency.xyz)
 or [Frequency on GitHub](https://github.com/LibertyDSNP/frequency)
 
-
-
 ## Activity Content Types
 Uppercase A, C and T
 
@@ -16,80 +14,140 @@ Uppercase A
 ## Announcement Type
 Uppercase A and T
 
+## Annual Rewards Rate
+Uppercase A, R and R
+
+## Apache Parquet
+Official
+
 ## Avro Type
 Uppercase A and T
 
-## Batch
-Uppercase B
+## batch
+All lowercase
 
-## Batch Publication
-Uppercase B and P
+## blockchain
+As a general term, lowercase b
+
+## Boosting Ratio
+Uppercase B and R
 
 ## Capacity
-Uppercase C
+Uppercase C 
+
+## Capacity Allocation
+Uppercase C and A
+
+## Capacity Economic System
+Uppercase C, E and S (is this a thing?)
 
 ## Capacity Epoch
 Uppercase C and E
 
-## Capacity Staking Model (the)
+## Capacity Staking
+Uppercase C and S
+
+## Capacity Staking Model
 Uppercase C, S and M
 
+## Capacity Staking Program
+Uppercase C, S and P
+
+## Capacity Staking Ratio
+Uppercase C, S and R
+
 ## Capacity Token Rewards
-Uppercase C, T and R
+DO NOT USE
 
 ## Code of Conduct
-Uppercase C and C
+Uppercase C, lowercase o, Uppercase C
 
-## Collator Rewards
-Uppercase C and R
+## coinless user
+All lowercase
 
 ## Collator
 Uppercase C
 
+## Collator incentives
+Do not use
+
+## Collator Nodes
+Uppercase C and N
+
+## Collator Rewards
+Uppercase C and R
+
 ## community
 All lowercase
 
-## Content IDentifier
-Uppercase C, I, and D
+## content hash
+All lowercase
 
-## Contribution Guidelines
-Uppercase C and G
+## Content Identifier (CID)
+Official
 
-## Cost Per Message
-Uppercase C,P and M
+## contribution guidelines
+All lowercase
 
-## Cost Per Transaction
-Uppercase C,P and T
+## Control Key
+Uppercase C and K
 
-## Data Transaction Model (the)
+## cost per message
+All lowercase
+
+## cost per transaction
+All lowercase
+
+## dapp
+All lowercase (per AP style and Etherium.org)
+
+## Data Transaction Model
 Uppercase D, T and M
+
+## DeFi
+Uppercase D and F single word (per AP style)
+
+## delegate
+Used as a verb ONLY i.e. an MSA delegates to a Provider. Not as a noun.
 
 ## delegation
 Lowercase d
 
-## Delegation Model (the)
+## Delegation Model
 Uppercase D and M
-
-## delegate
-Used as a verb ONLY i.e. an MSA delegates to a Provider, not as a noun
 
 ## development community
 All lowercase
 
-## End User
+## DSNP public social graph
+All lowercase after acronym
+
+## end user
 Uppercase E and U
 
-##  Exclamation Marks
+## Epoch
+Always Capacity Epoch or Reward Epoch
+
+## Exclamation Marks
 Should be avoided
 
+## existential deposit
+All lowercase
+
+## extrinsics
+Lowercase e
+
 ## Field Names
-Use Camel Caps i.e. announcementType, contentHash
+In Frequency use Camel Caps i.e. contentHash
 
 ## Frequency
-Uppercase F, avoid preceding with the word "the"
+Uppercase F
 
-## Frequency application
-Uppercase F and lowercase a
+## Frequency Application
+Uppercase F and A
+
+## Frequency Collator Nodes
+Uppercase F, C and N
 
 ## Frequency Council
 Uppercase F and C
@@ -97,63 +155,101 @@ Uppercase F and C
 ## Frequency Message
 Uppercase F and M
 
-## FRQCY
-Avoid following with the word "tokens"
+## Frequency Network Foundation
+Uppercase F, N and F
 
-## Frequency Content Hash
-Uppercase F, C and H (if Frequency precedes otherwise all lowercase)
+## Frequency Nodes
+Uppercase F and N
 
-## Frequency Graph Keys
-Uppercase F, G and K (if Frequency precedes otherwise all lowercase)
-
-## Frequency Graph Types
-Uppercase F, G and T (if Frequency precedes otherwise all lowercase)
+## FRQCY Tokens
+Always followed with the word tokens with uppercase T.
 
 ## Functions
-Use Snake Case e.g. on_initialize
+In Frequency use Snake Case e.g. on_initialize
 
-## Generated Capacity
-Uppercase G and C
+## generated Capacity
+Lowercase g and uppercase C
+
+## Governance/governance
+Lowercase general, uppercase specific (Frequency Governance)
 
 ## Graph Change Announcements
-Uppercase G, C and A
+Remove, no longer relevant
 
 ## Graph Change event
-Uppercase G and C lowercase e
+Remove, no longer relevant
 
 ## graph edges
 All lowercase
 
+## graph keys
+All lowercase
+
 ## Graph SDK
-Uppercase G, S, D, K
+Uppercase G, S, D and K
+
+## graph types
+All lowercase
+
+## Handle Display
+Uppercase H and D
+
+## Interesting, Interesting to note
+Filler words should be avoided
+
+## Initial Token Distribution
+Uppercase I, T and D
+
+## internet
+All lowercase (per AP Style)
 
 ## InterPlanetary File System (IPFS)
 Uppercase I, P, F and S. In the first instance, spell out followed by the acronym in parentheses. Use the acronym only thereafter.
 
+## keypair
+All lowercase
+
+## Layer 1, Layer 2
+Uppercase L (space) numeral
+
+## Mainnet
+Uppercase M
+
 ## Maximum Capacity Staking
-Uppercase M, C and S
+Uppercase M, C and S (is this term in use any more?)
+
+## mempool
+Lowercase m
+
+## Message
+Uppercase M
+
+## Message Batch
+Uppercase M and B
+
+## Message Payload
+Uppercase M and P
 
 ## Message Source Account (MSA)
 Uppercase M, S and A. In the first instance, spell out followed by the acronym in parentheses. Use the acronym only thereafter. Never MSA Account.
 
-## messages
-Lowercase m
-
 ## MSA Id
-Uppercase M, S, A and I
+Uppercase M,S, A and I
 
 ## MUST/MUST NOT
-All Caps when defining rules for specification
+All caps when defining rules in a specification per W3 standard
 
-## Node Operator
-Uppercase N and O
+## node operator
+All lowercase
 
-## on chain vs on-chain
-As an adjective prior to a noun use hyphen (i.e. on-chain storage)
-As a noun no hyphen (i.e. stored on chain)
+## Nominated Proof-of-Stake algorithm
+official
 
-## Owning User
-Uppercase O and U
+## On chain vs. on-chain
+As an adjective prior to a noun, use a hyphen (e.g. on-chain storage) As a noun, no hyphen (e.g. stored on chain)
+
+## owning user 
+All lowercase
 
 ## Oxford Comma
 Always use
@@ -165,73 +261,97 @@ Uppercase P and I
 All lowercase
 
 ## parameters
-Use snake case e.g. current_block_number
+In Frequency use snake case e.g. current_block_number
 
 ## Parquet
-Uppercase P (proper noun)
+Uppercase P
 
 ## Parquet Schema
 Uppercase P and S
 
-## Parquet Type
-Uppercase P and T
+## payload
+All lowercase
+
+## Payload Location
+Uppercase P and L
 
 ## Polkadot
 Uppercase P
 
 ## Polkadot accounts
-Uppercase P
+Uppercase P lowercase a
+
+## Polkadot protocol
+Uppercase P, lowercase p 
 
 ## Polkadot Relay Chain
 Polkadot wiki uses uppercase R and C
 
 ## Possessives
-Making Frequency possessive should be avoided (e.g. Frequency’s)
+Making Frequency possessive (e.g. Frequency’s) should be avoided
 
 ## private connections
-all lowercase
+All lowercase
 
 ## private follow
-all lowercase
+All lowercase
 
-## Private Graph Encryption Key
-Uppercase P, G, E and K
+## private graph
+All lowercase
 
-## Profile Activity Type
-Uppercase P, A and T
+## protocol
+As general term, all lowercase
 
 ## Provider
 Uppercase P
 
-## Provider Applications
-Uppercase P and A
+## Provider applications 
+Uppercase P and lowercase a
+
+## Provider Boosting
+Uppercase P and B
+
+## Provider Capacity Allocation
+Uppercase P, C, and A
+
+## Provider incentives
+Uppercase P and lowercase i
 
 ## Provider Platforms
-Uppercase P and P
+Avoid using the word “platform”
 
 ## Pseudonymous Relationship Identifiers (PRIds)
-Uppercase P, R and I and acronym as shown
+Uppercase, P, R and I (acronym lowercase d and s)
+
+## Public Collators
+Uppercase P and C
 
 ## public follow
-all lowercase
+All lowercase
 
 ## public graph
 All lowercase
 
-## Public Graph Encryption Key
-Uppercase P, G, E and K
+## public key
+All lowercase
 
 ## Reaction Announcement
 Uppercase R and A
 
-## Rewards Capacity Staking
-Uppercase R, C and S
+## Reward/reward
+Lowercase general, uppercase specific (Staking Reward)
 
-## Roadmap
-Uppercase R
+## Reward Epoch
+Uppercase R and E
+
+## roadmap
+All lowercase
+
+## runtime
+Should be the Frequency Runtime
 
 ## Schema
-Uppercase S
+Uppercase S for specific (Frequency Schema) otherwise lowercase
 
 ## Schema Models
 Uppercase S and M
@@ -240,96 +360,102 @@ Uppercase S and M
 Uppercase S and R
 
 ## Schema Id
-One word uppercase S and I
+Uppercase S and I
 
-## Session Key
-Uppercase S and K
-
-## Social Graph Key
-Uppercase S, G and K
-
-## social network graph
+## session key
 All lowercase
 
-## Stateful-Storage
-Both S are uppercase, has a hyphen in the middle
+## Signature Required setting
+Uppercase S and R, lowercase s
+
+## Social Graph
+Uppercase S and G
+
+## Social Web
+Uppercase S and W 
+
+## staking ratio
+All lowercase unless preceded by “Capacity”
+
+## Stateful Storage
+Uppercase S and S (no dash)
 
 ## Substrate
 Uppercase S
 
-## Target User
-Uppercase T and U
-
 ## Team
-Should not be used in context with Frequency
+Forbidden Term in context with Frequency
 
 ## Technical Committee
 Uppercase T and C
 
+## Testnet
+Uppercase T
+
+## Thaw Period
+Uppercase T and P
+
+## The Decentralized Social Network Protocol (DSNP)
+Begin with “The”. In the first instance, spell out followed by the acronym in parentheses. Use the acronym only thereafter.
+
+## the Project Liberty Code of Conduct
+Uppercase P, L, C and C
+
+## token
+General lowercase, specific uppercase (after FRQCY)
+
 ## Token Account
 Uppercase T and A
 
-## token to Capacity ratio
-Uppercase C
+## Token Staking
+Uppercase T and S
+
+## Token to Capacity Ratio
+Uppercase T, lowercase t, Uppercase C and R
+
+## transaction fees
+All lowercase
 
 ## Types
-Use Pascal Case e.g. DoubleStorageMap, StorageMap
+In Frequency use Pascal Case (e.g. DoubleStorageMap)
 
 ## Update Announcement
 Uppercase U and A
 
-## User
-Uppercase U
+## User/user
+Lowercase unless specific (Frequency User)
 
-## We/Us/Our
-Should not be used in context with Frequency
+## User Handle
+Uppercase U and H
 
-## XRQCY
-All uppercase, avoid following with the word "token"
+## User Handle Base
+Uppercase U, H and B
 
+## User Handle Suffix
+Uppercase U, H and S
 
-
-# General Technology Terms
-This section details how various general technology terms should be presented in Frequency documentation.  Typically usage conforms to AP style unless there is a specific reason to deviate.
-
-## blockchain
-Lowercase b
-
-## dapp
-All lower case (per AP style and Etherium.org)
-
-## DeFi
-Uppercase D and F.  One word. (per AP style)
-
-## internet
-Lowercase i (AP style)
-
-## Layer 1 blockchain
-Uppercase L numeral 1 lower case b
-
-## protocol
-Lowercase p
-
-## Social Web
-Uppercase S and W
-
-## testnet
-Lowercase t, one word (per Cardano, Hedera)
-
-## thaw period
-Lowercase t and p
-
-## token
-Lowercase t
+## User Incentives
+Uppercase U and I
 
 ## User Interface or UI
 Uppercase U and I
 
-## web
-Lowercase w (AP style)
+## UTF-8
+official
+
+## Wasm
+official
 
 ## Web 2.0
-Uppercase W space between b and 2.0 NOT Web2
+Uppercase W space between b and 2 Not Web2
 
 ## web3
-Lowercase w, all one word, NOT 3.0. (AP style plus [this](https://sdtimes.com/data/web3-and-web-3-0-two-different-ideas-that-can-coexist/))
+All lowercase one word (per AP style)
+
+## We/Us/Our
+Forbidden Term in context with Frequency
+
+## XRQCY
+All uppercase. May have the word “token” after it.
+
+
