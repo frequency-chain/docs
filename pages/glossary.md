@@ -143,7 +143,7 @@ A collection of Messages, possibly from many different Message Source Accounts (
 
 Message Source Accounts (MSAs) are distinct from Token Accounts and unique to Frequency.
 They ensure protocol related data items have verifiable authorship.
-End users with MSAs are not required to have FRQCY Tokens or Capacity to interact with Frequency, but may instead choose to delegate tasks that require Capacity to Providers. See[Message Source Accounts](./Identity/MessageSourceAccounts.md).
+End users with MSAs are not required to have FRQCY Tokens or Capacity to interact with Frequency, but may instead choose to delegate tasks that require Capacity to Providers. See [Message Source Accounts](./Identity/MessageSourceAccounts.md).
 
 ## MSA Id
 
