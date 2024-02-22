@@ -180,11 +180,11 @@ Providers who are “boosted” by end users receive additional Capacity, while 
 ## Public Collator
 
 A Collator who bonds tokens in order to participate in block formation, and receives rewards for participation.
-Public Collators who behave improperly risk losing their position and their bond. See [Collator Incentives](./Tokenomics/CollatorIncentives.md)
+Public Collators who behave improperly risk losing their position and their bond. See [Collator Incentives](./Tokenomics/CollatorIncentives.md).
 
 ## Reward Epoch
 
-The number of blocks between distributions of Provider Boosting rewards. See [Boosting](./Tokenomics/UserIncentives.md)
+The number of blocks between distributions of Provider Boosting rewards. See [Boosting](./Tokenomics/UserIncentives.md).
 
 ## Schema
 
