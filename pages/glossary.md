@@ -225,7 +225,7 @@ The period of time between token unstaking and token liquidity during which thos
 
 ## Token Account
 
-An Account that is secured with FRQCY. See [Visibility](./Tokenomics/UserIncentives.md)
+An Account that is secured with FRQCY. See [Visibility](./Tokenomics/UserIncentives.md).
 
 
 ## Unstaking
