@@ -175,16 +175,16 @@ Providers utilize Capacity to serve the end users that delegate to them. See [Pr
 ## Provider Boosting
 
 Provider Boosting allows users to stake FRQCY tokens they hold to endorse or reward specific Providers.
-Providers who are “boosted” by end users receive additional Capacity, while Users who “boost” Providers receive a reward (in the form of additional FRQCY tokens). [Boosting](./Tokenomics/UserIncentives.md).
+Providers who are “boosted” by end users receive additional Capacity, while Users who “boost” Providers receive a reward (in the form of additional FRQCY tokens). See [Boosting](./Tokenomics/UserIncentives.md).
 
 ## Public Collator
 
 A Collator who bonds tokens in order to participate in block formation, and receives rewards for participation.
-Public Collators who behave improperly risk losing their position and their bond.
+Public Collators who behave improperly risk losing their position and their bond. See [Collator Incentives](./Tokenomics/CollatorIncentives.md)
 
 ## Reward Epoch
 
-The number of blocks between distributions of Provider Boosting rewards.
+The number of blocks between distributions of Provider Boosting rewards. See [Boosting](./Tokenomics/UserIncentives.md)
 
 ## Schema
 
@@ -209,7 +209,7 @@ The Schema Registry is the on-chain repository for Frequency Schemas. See [Schem
 ## Staking
 
 Staking refers to the process of temporarily locking tokens in order to accomplish a specific action.
-FRQCY Tokens can be staked for specific purposes, including serving as Public Collators, Capacity Staking and Provider Boosting.
+FRQCY Tokens can be staked for specific purposes, including serving as [Public Collators](#public-collator], [Capacity Staking](#capacity-staking) and [Provider Boosting](#provider-boosting).
 
 ## Staking Ratio
 
