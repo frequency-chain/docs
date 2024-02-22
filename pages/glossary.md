@@ -209,7 +209,7 @@ The Schema Registry is the on-chain repository for Frequency Schemas. See [Schem
 ## Staking
 
 Staking refers to the process of temporarily locking tokens in order to accomplish a specific action.
-FRQCY Tokens can be staked for specific purposes, including serving as [Public Collators](#public-collator], [Capacity Staking](#capacity-staking) and [Provider Boosting](#provider-boosting).
+FRQCY Tokens can be staked for specific purposes, including serving as [Public Collators](#public-collator), [Capacity Staking](#capacity-staking) and [Provider Boosting](#provider-boosting).
 
 ## Staking Ratio
 
