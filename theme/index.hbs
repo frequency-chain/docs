@@ -20,12 +20,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        {{#if favicon_svg}}
-        <link rel="icon" href="{{ path_to_root }}favicon.svg">
-        {{/if}}
-        {{#if favicon_png}}
-        <link rel="shortcut icon" href="{{ path_to_root }}favicon.png">
-        {{/if}}
+        <link rel="icon" href="{{ path_to_root }}/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ path_to_root }}/images/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ path_to_root }}/images/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ path_to_root }}/images/favicon-16x16.png" />
+
         <link rel="stylesheet" href="{{ path_to_root }}css/variables.css">
         <link rel="stylesheet" href="{{ path_to_root }}css/general.css">
         <link rel="stylesheet" href="{{ path_to_root }}css/chrome.css">
