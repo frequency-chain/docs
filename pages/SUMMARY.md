@@ -31,5 +31,6 @@
 - [Networks](Networks/index.md)
   - [Running a Node](Networks/Node.md)
   - [Running a Collator](Networks/Collator.md)
+  - [Decentralization](Networks/Decentralization.md)
   - [Troubleshooting](Networks/Troubleshooting.md)
 - [Community](Community.md)
