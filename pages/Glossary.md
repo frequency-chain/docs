@@ -108,7 +108,7 @@ The user-selected portion of the Handle Display. See [Handle Creation](./Identit
 
 ## Handle Display
 
-A user’s entire User Handle as displayed by the system including the user-selected Handle Base and the system-selected Handle Suffix, separated by a ".” character. See [Handle Creation](./Identity/Handles.md).
+A user’s entire User Handle as displayed by the system including the user-selected Handle Base and the system-selected Handle Suffix, separated by a “.” character. See [Handle Creation](./Identity/Handles.md).
 
 ## Handle Suffix
 
@@ -175,7 +175,7 @@ Providers utilize Capacity to serve the end users that delegate to them. See [Pr
 ## Provider Boosting
 
 Provider Boosting allows users to stake FRQCY tokens they hold to endorse or reward specific Providers.
-Providers who are "boosted” by end users receive additional Capacity, while Users who "boost” Providers receive a reward (in the form of additional FRQCY tokens). See [Boosting](./Tokenomics/UserIncentives.md).
+Providers who are “boosted” by end users receive additional Capacity, while Users who “boost” Providers receive a reward (in the form of additional FRQCY tokens). See [Boosting](./Tokenomics/UserIncentives.md).
 
 ## Public Collator
 
