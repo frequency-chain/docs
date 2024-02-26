@@ -7,6 +7,6 @@ In contrast, solutions that offer transparency, decentralization, and user contr
 Frequency manages the user’s need for accessibility via its Delegation Model, which shifts most of the complexity and all of the fees for participating in blockchain applications away from end users to Providers: the creators of third-party applications and services directly interacting with Frequency.
 Users can still choose to interact with the chain using tokens if they wish to avoid third-party providers or participate in chain governance, but the system does not require it.
 
-MSAs allow users to delegate tasks to Providers on their behalf and ensure Messages (in other words, lightweight, non-financial transactions) have verifiable chains of authorship, while maintaining the ability to revoke a delegation at any time without cost.
+MSAs allow users to delegate tasks to Providers on their behalf and ensure Messages and Stateful Storage (i.e. non-financial transactions) have verifiable chains of authorship, while maintaining the ability to revoke a delegation at any time without cost.
 
 {{#button-links}}

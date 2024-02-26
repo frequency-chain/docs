@@ -33,7 +33,7 @@ As a general term, lowercase b
 Uppercase B and R
 
 ## Capacity
-Uppercase C 
+Uppercase C
 
 ## Capacity Allocation
 Uppercase C and A
@@ -248,7 +248,7 @@ official
 ## On chain vs. on-chain
 As an adjective prior to a noun, use a hyphen (e.g. on-chain storage) As a noun, no hyphen (e.g. stored on chain)
 
-## owning user 
+## owning user
 All lowercase
 
 ## Oxford Comma
@@ -282,7 +282,7 @@ Uppercase P
 Uppercase P lowercase a
 
 ## Polkadot protocol
-Uppercase P, lowercase p 
+Uppercase P, lowercase p
 
 ## Polkadot Relay Chain
 Polkadot wiki uses uppercase R and C
@@ -305,7 +305,7 @@ As general term, all lowercase
 ## Provider
 Uppercase P
 
-## Provider applications 
+## Provider applications
 Uppercase P and lowercase a
 
 ## Provider Boosting
@@ -318,7 +318,7 @@ Uppercase P, C, and A
 Uppercase P and lowercase i
 
 ## Provider Platforms
-Avoid using the word “platform”
+Avoid using the word "platform"
 
 ## Pseudonymous Relationship Identifiers (PRIds)
 Uppercase, P, R and I (acronym lowercase d and s)
@@ -372,10 +372,10 @@ Uppercase S and R, lowercase s
 Uppercase S and G
 
 ## Social Web
-Uppercase S and W 
+Uppercase S and W
 
 ## staking ratio
-All lowercase unless preceded by “Capacity”
+All lowercase unless preceded by "Capacity"
 
 ## Stateful Storage
 Uppercase S and S (no dash)
@@ -396,7 +396,7 @@ Uppercase T
 Uppercase T and P
 
 ## The Decentralized Social Network Protocol (DSNP)
-Begin with “The”. In the first instance, spell out followed by the acronym in parentheses. Use the acronym only thereafter.
+Begin with "The". In the first instance, spell out followed by the acronym in parentheses. Use the acronym only thereafter.
 
 ## the Project Liberty Code of Conduct
 Uppercase P, L, C and C
@@ -456,6 +456,4 @@ All lowercase one word (per AP style)
 Forbidden Term in context with Frequency
 
 ## XRQCY
-All uppercase. May have the word “token” after it.
-
-
+All uppercase. May have the word "token" after it.

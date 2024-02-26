@@ -17,7 +17,7 @@ Most libraries provide utilities to make the creation of the correct key and dec
 
 Runtime APIs provide access to both chain and node information without being tied directly to the key-value store.
 They may also access running information about the Frequency node such as the version of the binary.
-These are “Runtime” APIs as they are deployed with the Runtime Wasm upgrades.
+These are "Runtime" APIs as they are deployed with the Runtime Wasm upgrades.
 
 Frequency Nodes are also configured to provide a layer of Custom RPCs (Remote Procedure Calls).
 Custom RPCs are deployed only on the node, so allow for heavy processing, external calls, or other code that is not appropriate for the Wasm runtime execution environment.
