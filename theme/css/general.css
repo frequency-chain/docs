@@ -8,7 +8,7 @@
 }
 
 html {
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Poppins", "Adjusted Verdana Fallback", Tahoma, Arial, sans-serif;
   font-weight: 300;
   color: var(--fg);
   background-color: var(--bg);
@@ -61,6 +61,16 @@ h6 code {
 }
 .hidden {
   display: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Newake", "Arial Black", Arial, sans-serif;
+  font-weight: normal;
 }
 
 h2,
