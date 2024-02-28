@@ -55,7 +55,7 @@ Any unused Capacity remaining in a Provider's Capacity Allocation at the end of 
 When Capacity renews at the beginning of a Capacity Epoch, it can never be more than 100% of the Provider's current Capacity Allocation.
 This makes Capacity usage more analogous to time-bound resources such as wireless spectrum or bandwidth than to accumulation-bound resources such as a bank balance.
 The combination of favorable staking ratios, the fact that the staking ratios are locked at the time of stake, and the fact that Capacity cannot be transferred might incentivize Providers to hold excessive stakes at favorable rates.
-However, the fact that Capacity cannot be rolled over incentivizes behavior that optimizes Capacity Staking for peak use cases, but not not much beyond that, since such stakes provide no extra economic value for the encumbrance of staking.
+However, the fact that Capacity cannot be rolled over incentivizes behavior that optimizes Capacity Staking for peak use cases, but not much beyond that, since such stakes provide no extra economic value for the encumbrance of staking.
 
 ### Capacity Unstaking
 

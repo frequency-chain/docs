@@ -206,8 +206,8 @@ All lowercase (per AP Style)
 ## InterPlanetary File System (IPFS)
 Uppercase I, P, F and S. In the first instance, spell out followed by the acronym in parentheses. Use the acronym only thereafter.
 
-## keypair
-All lowercase
+## key pair
+All lowercase, two words
 
 ## Layer 1, Layer 2
 Uppercase L (space) numeral

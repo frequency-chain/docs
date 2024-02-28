@@ -144,7 +144,7 @@ See https://docs.ipfs.tech/ for more detail.
 A collator that cannot be removed without governance action.
 See [Collator Decentralization Roadmap](./Networks/Decentralization.md).
 
-## Keypair
+## Key pair
 
 A matching public key and private key.
 The private key can be used to generate cryptographic signatures which third parties may verify with the public key.

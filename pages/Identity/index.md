@@ -3,7 +3,7 @@
 Frequency has been designed to serve applications such as social networking that require a discoverable and addressable user identity.
 Users reference an identity that can be authenticated via the blockchain when communicating.
 
-Frequency, like most blockchains, represents a blockchain account with a public key from a user's keypair.
+Frequency, like most blockchains, represents a blockchain account with a public key from a user's key pair.
 Additionally, Frequency introduces the concept of a long-lived identity, separate from the cryptographic credentials used to access that identity at a given point in time.
 A Control Key is Frequency's term for a blockchain account that is associated with a user's identity.
 The user’s identity, known as a Message Source Account, or MSA, has its own separate identifier, the MSA Id, which is a 64-bit unsigned integer.
