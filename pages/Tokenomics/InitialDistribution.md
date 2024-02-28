@@ -1,6 +1,6 @@
 # Initial Token Distribution
 
-One billion FRQCY Tokens were created at Genesis and allocated as follows:
+One billion FRQCY were created at Genesis and allocated as follows:
 
 - Frequency Network Foundation
     - Foundation: 2.0%
@@ -11,4 +11,4 @@ One billion FRQCY Tokens were created at Genesis and allocated as follows:
    - Team: 14.5%
    - Treasury: 3.5%
 
-TODO: Add pie chart image
+![Initial Allocation](../images/token-allocation.png)

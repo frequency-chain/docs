@@ -161,8 +161,8 @@ Uppercase F, N and F
 ## Frequency Nodes
 Uppercase F and N
 
-## FRQCY Tokens
-Always followed with the word tokens with uppercase T.
+## FRQCY
+NEVER followed with the word token
 
 ## Functions
 In Frequency use Snake Case e.g. on_initialize
@@ -402,7 +402,7 @@ Begin with "The". In the first instance, spell out followed by the acronym in pa
 Uppercase P, L, C and C
 
 ## token
-General lowercase, specific uppercase (after FRQCY)
+Always lowercase, never used with FRQCY
 
 ## Token Account
 Uppercase T and A
@@ -456,4 +456,4 @@ All lowercase one word (per AP style)
 Forbidden Term in context with Frequency
 
 ## XRQCY
-All uppercase. May have the word "token" after it.
+All uppercase. NEVER have the word "token" after it.

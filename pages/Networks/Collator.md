@@ -120,4 +120,4 @@ There are five keys that matter for a Collator node:
     - While it is possible for your session key to match your Controller Account, but not recommended.
 1. Wait until the Relay Chain and parachain are up to date and synced.
 
-#### See [Troubleshooting](./Troubleshooting.md) for help when things go wrong.
+See [Troubleshooting](./Troubleshooting.md) for help when things go wrong.

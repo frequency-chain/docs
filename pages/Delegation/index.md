@@ -4,8 +4,11 @@ Typical blockchain solutions exhibit a dichotomy between those that are transpar
 Low-cost and low-friction solutions tend to be highly centralized, opaque, and offer little to no user controls.
 In contrast, solutions that offer transparency, decentralization, and user control tend to be complicated and require users to possess both significant domain knowledge and the willingness to acquire a substantial number of tokens in order to participate.
 
+![Delegation Model](../images/delegation-model.png)
+
 Frequency manages the user’s need for accessibility via its Delegation Model, which shifts most of the complexity and all of the fees for participating in blockchain applications away from end users to Providers: the creators of third-party applications and services directly interacting with Frequency.
 Users can still choose to interact with the chain using tokens if they wish to avoid third-party providers or participate in chain governance, but the system does not require it.
+Users can also directly revoke delegated permissions, even if they are Coinless Users.
 
 MSAs allow users to delegate tasks to Providers on their behalf and ensure Messages and Stateful Storage (i.e. non-financial transactions) have verifiable chains of authorship, while maintaining the ability to revoke a delegation at any time without cost.
 

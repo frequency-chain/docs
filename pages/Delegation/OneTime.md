@@ -1,7 +1,8 @@
 # One-Time Delegation
 
-Some actions are sensitive and may require direct user approval. These actions may still be delegated and the token or capacity cost of that action paid for by a Provider.
-Most of these actions are user account centric instead of user activity centric like the continuous delegation.
+Some actions are sensitive and may require direct user approval.
+These actions may still be delegated and the token or capacity cost of that action paid for by a Provider.
+Most of these actions are user account-centric instead of user activity-centric like the continuous delegation.
 Some example actions are Handle changes, adding Control Keys, and creation of delegations.
 Developers of Schemas may also indicate that a Stateful Storage requires a one-time signature instead of a continuous delegation.
 

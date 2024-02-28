@@ -14,4 +14,8 @@ Frequency's Collator Nodes maintain a full node on both the parachain (Frequency
 Because it operates as a parachain, Frequency requires only one honest Collator in order to operate without interruption.
 See more details about Collators on [Polkadot's Wiki Page](https://wiki.polkadot.network/docs/learn-collator).
 
-Learn more about Polkadot's parachain architecture.
+![Parachain diagram from the Polkadot Wiki](../images/polkadot-consensus.png)
+
+_Diagram from Polkadot wiki on [Collators](https://wiki.polkadot.network/docs/learn-collator)_
+
+Learn more about Polkadot's [parachain architecture](https://wiki.polkadot.network/docs/learn-parachains).

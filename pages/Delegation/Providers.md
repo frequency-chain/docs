@@ -2,7 +2,7 @@
 
 Providers are the on-chain representation of applications and services directly interacting with Frequency.
 Providers must have their own MSAs, but a user may delegate to one or more Providers who may then submit data transactions on that user's behalf via delegated permissions.
-Providers can use the Capacity economic system as an alternative to FRQCY Tokens to pay the transaction fees of the users that delegate to them.
+Providers can use the Capacity economic system as an alternative to FRQCY to pay the transaction fees of the users that delegate to them.
 
 ## Provider Registration
 Any entity that controls an MSA and wishes to be a Provider may follow the procedure to do so.

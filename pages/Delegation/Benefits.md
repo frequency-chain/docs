@@ -12,7 +12,7 @@ Onboarding becomes straightforward and intuitive to users as they do not need to
 
 ## Autonomous Users
 
-While the Provider-Delegator relationship has clear benefits, the owner of an MSA can still opt to pay for their own interactions with FRQCY Tokens, and can send their own Messages without delegating to a Provider.
+While the Provider-Delegator relationship has clear benefits, the owner of an MSA can still opt to pay for their own interactions with FRQCY, and can send their own Messages without delegating to a Provider.
 The user’s Control Key must be associated with the user’s MSA and hold tokens in order to pay for these transactions.
 
-Any users that opt to hold tokens may engage in staking, governance, building new Frequency Schemas, and with other systems on Frequency.
+Any users that opt to hold FRQCY may engage in staking, governance, building new Frequency Schemas, and with other systems on Frequency.
