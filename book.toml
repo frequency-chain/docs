@@ -19,9 +19,15 @@ additional-css = ["css/extended.css"]
 
 # https://github.com/Michael-F-Bryan/mdbook-linkcheck
 [output.linkcheck]
+exclude = [
+  'github\.com/LibertyDSNP/frequency-docs',
+  'github\.com/LibertyDSNP/frequency/releases',
+  'github\.com/LibertyDSNP/frequency',
+  'twitter\.com',
+  'www\.frequency\.xyz',
+]
 follow-web-links = true
 traverse-parent-directories = false
-exclude = ['github\.com/LibertyDSNP/frequency-docs', 'twitter\.com']
 
 [output.html.fold]
 enable = true
