@@ -142,8 +142,9 @@ See https://docs.ipfs.tech/ for more detail.
 ## Invulnerable Collator
 
 A collator that cannot be removed without governance action.
+<!--
 See [Collator Decentralization Roadmap](./Networks/Decentralization.md).
-
+-->
 ## Key pair
 
 A matching public key and private key.

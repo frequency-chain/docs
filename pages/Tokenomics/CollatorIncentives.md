@@ -7,4 +7,8 @@ Public Collators must stake to the network to participate.
 All Collators participating in block formation activities will eventually begin to receive token rewards, though the details of this mechanism will be finalized as part of the process of launching Public Collators.
 
 Collators are analogous to validators in other proof of stake networks, but the work done by Collators is significantly lower, requiring less computational overhead and lower participation levels, given that consensus and finality occur at the Relay Chain level.
+Public Collators are currently a roadmap item, and Frequency currently uses Invulnerable Collators that do not receive rewards for block formation.
+
+<!--
 Public Collators are currently a [roadmap item](../Networks/Decentralization.md), and Frequency currently uses Invulnerable Collators that do not receive rewards for block formation.
+-->
