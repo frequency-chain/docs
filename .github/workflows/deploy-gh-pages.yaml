@@ -20,7 +20,8 @@ jobs:
 
       - name: Set up mdBook 📚
         uses: ./.github/workflows/common/set-up-mdbook
-
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
