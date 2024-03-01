@@ -43,6 +43,7 @@ Capacity Staking generates more Capacity per token staked than Provider Boosting
 See [Capacity Staking](./Tokenomics/ProviderIncentives.md#capacity-staking).
 
 ## Capacity Staking Ratio
+
 The ratio of the number of FRQCY that must be staked per unit of Capacity generated each Capacity Epoch.
 See [Capacity Staking](./Tokenomics/ProviderIncentives.md#capacity-staking).
 
@@ -123,7 +124,6 @@ See [User Handle](#user-handle).
 The user-selected portion of the Handle Display.
 See [Handle Creation](./Identity/Handles.md#handle-creation).
 
-
 ## Handle Display
 
 A user’s entire User Handle as displayed by the system including the user-selected Handle Base and the system-selected Handle Suffix, separated by a “.” character.
@@ -142,9 +142,8 @@ See https://docs.ipfs.tech/ for more detail.
 ## Invulnerable Collator
 
 A collator that cannot be removed without governance action.
-<!--
 See [Collator Decentralization Roadmap](./Networks/Decentralization.md).
--->
+
 ## Key pair
 
 A matching public key and private key.
@@ -156,12 +155,10 @@ See [Identity Management](./Identity/index.md).
 A protocol related data item that is indexed by its Schema Id and block number.
 See [Messages](./Data/Messages.md).
 
-
 ## Message Batch
 
 A collection of Messages, possibly from many different Message Source Accounts (MSAs), that allows Providers to publish a single on-chain transaction that references large quantities of data off chain, thereby reducing the transaction fee.
 See [Batching](./Data/Batching.md).
-
 
 ## Message Source Account (MSA)
 
@@ -174,7 +171,6 @@ See [Message Source Accounts](./Identity/MessageSourceAccounts.md).
 
 The unique 64-bit unsigned integer identifier associated with an MSA.
 See [Message Source Accounts](./Identity/MessageSourceAccounts.md).
-
 
 ## On-Chain Message
 
@@ -225,14 +221,12 @@ See [Boosting](./Tokenomics/UserIncentives.md#boosting).
 
 See [Delegation Model](./Delegation/index.md).
 
-
 ## Schema
 
 Registered data structures for Messages and Stateful Storage items.
 Frequency Schemas define where Payloads are stored and how end users can parse the data within.
 See also On-Chain Message and Off-Chain Message.
 See [Schemas](./Data/Schemas.md).
-
 
 ## Schema Id
 
@@ -273,7 +267,6 @@ See [Thaw Period](./Tokenomics/ProviderIncentives.md).
 
 An Account that is secured with FRQCY.
 See [Visibility](./Tokenomics/UserIncentives.md#visibility).
-
 
 ## Unstaking
 
