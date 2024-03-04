@@ -83,7 +83,6 @@ a > .hljs {
 }
 
 @media only screen and (max-width: 420px) {
-
   #menu-bar i,
   #menu-bar .icon-button {
     padding: 0 5px;
@@ -142,6 +141,8 @@ a > .hljs {
 .mobile-nav-chapters,
 .mobile-nav-chapters:visited,
 .menu-bar .icon-button,
+.menu-bar a:link,
+.menu-bar a:visited {
   color: var(--page-nav-fg);
 }
 
@@ -245,7 +246,7 @@ a > .hljs {
     display: none;
   }
 
-  #sidebar-toggle-anchor:checked~.page-wrapper .nav-wrapper {
+  #sidebar-toggle-anchor:checked ~ .page-wrapper .nav-wrapper {
     display: block;
   }
 }
@@ -649,8 +650,7 @@ ul#searchresults span.teaser em {
   background-color: var(--sidebar-spacer);
 }
 
-@media (-moz-touch-enabled: 1),
-(pointer: coarse) {
+@media (-moz-touch-enabled: 1), (pointer: coarse) {
   .chapter li a {
     padding: 5px 0;
   }
