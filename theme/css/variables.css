@@ -2,9 +2,13 @@
 
 :root {
   --sidebar-width: 300px;
+  --sidebar-resize-indicator-width: 8px;
+  --sidebar-resize-indicator-space: 2px;
   --page-padding: 15px;
   --content-max-width: 950px;
   --menu-bar-height: 50px;
+  --mono-font: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
+  --code-font-size: 0.875em /* please adjust the ace font size accordingly in editor.js */;
 }
 
 /* Themes */
@@ -15,10 +19,8 @@
   --headers: #fefaf3;
 
   --sidebar-bg: #19455e;
-  /* Also change toggle background svg stroke */
   --sidebar-fg: #f0f0f0;
   --sidebar-non-existant: var(--sidebar-fg);
-  /* Also change toggle background svg stroke */
   --sidebar-active: #4ba0a5;
   --sidebar-spacer: #0b1e28;
 
@@ -28,6 +30,7 @@
   --icons-hover: #4ba0a5;
 
   --links: var(--sidebar-active);
+
   --inline-code-color: #c5c8c6;
 
   --theme-popup-bg: var(--sidebar-bg);
@@ -36,6 +39,8 @@
 
   --quote-bg: hsl(234, 21%, 18%);
   --quote-border: hsl(234, 21%, 23%);
+
+  --warning-border: #ff8e00;
 
   --table-border-color: var(--sidebar-bg);
   --table-header-bg: var(--sidebar-bg);
@@ -49,6 +54,8 @@
   --searchresults-border-color: var(--headers);
   --searchresults-li-bg: #2b2b2f;
   --search-mark-bg: #355c7d;
+
+  --color-scheme: dark;
 
   --page-nav-fg: var(--headers);
   --page-nav-bg: var(--sidebar-bg);
@@ -85,6 +92,8 @@
   --quote-bg: hsl(197, 37%, 96%);
   --quote-border: hsl(197, 37%, 91%);
 
+  --warning-border: #ff8e00;
+
   --table-border-color: var(--sidebar-bg);
   --table-header-bg: var(--sidebar-bg);
   --table-alternate-bg: var(--sidebar-bg);
@@ -97,6 +106,8 @@
   --searchresults-border-color: var(--headers);
   --searchresults-li-bg: #e4f2fe;
   --search-mark-bg: #a2cff5;
+
+  --color-scheme: light;
 
   --page-nav-fg: var(--headers);
   --page-nav-bg: var(--sidebar-bg);
@@ -113,10 +124,8 @@
     --headers: #fefaf3;
 
     --sidebar-bg: #19455e;
-    /* Also change toggle background svg stroke */
     --sidebar-fg: #f0f0f0;
     --sidebar-non-existant: var(--sidebar-fg);
-    /* Also change toggle background svg stroke */
     --sidebar-active: #4ba0a5;
     --sidebar-spacer: #0b1e28;
 
@@ -126,6 +135,7 @@
     --icons-hover: #4ba0a5;
 
     --links: var(--sidebar-active);
+
     --inline-code-color: #c5c8c6;
 
     --theme-popup-bg: var(--sidebar-bg);
@@ -134,6 +144,8 @@
 
     --quote-bg: hsl(234, 21%, 18%);
     --quote-border: hsl(234, 21%, 23%);
+
+    --warning-border: #ff8e00;
 
     --table-border-color: var(--sidebar-bg);
     --table-header-bg: var(--sidebar-bg);
@@ -147,6 +159,8 @@
     --searchresults-border-color: var(--headers);
     --searchresults-li-bg: #2b2b2f;
     --search-mark-bg: #355c7d;
+
+    --color-scheme: dark;
 
     --page-nav-fg: var(--headers);
     --page-nav-bg: var(--sidebar-bg);
