@@ -25,6 +25,7 @@ exclude = [
   'github\.com/LibertyDSNP/frequency',
   'twitter\.com',
   'www\.frequency\.xyz',
+  'medium\.com/one-frequency',
 ]
 follow-web-links = true
 traverse-parent-directories = false
