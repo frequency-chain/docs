@@ -24,7 +24,7 @@ Collators generally follow the same expectations outlined in [Polkadot's referen
   - An NVMe SSD of 1 TB
   - In general, the latency is more important than the throughput.
 - **Memory**
-  - 16GB DDR4 ECC.
+  - 32GB DDR4 ECC.
 - **System**
   - Linux Kernel 5.16 or newer.
 - **Network**
@@ -35,16 +35,16 @@ Collators generally follow the same expectations outlined in [Polkadot's referen
 
 ### Reference Hardware
 
-For reproducibility, we use Amazon's [`c6id.2xlarge`](https://aws.amazon.com/ec2/instance-types/c6i/) instances to generate our benchmarks.
+For reproducibility, we use Amazon's [`c6i.4xlarge`](https://aws.amazon.com/ec2/instance-types/c6i/) instances to generate our benchmarks.
 
 - **CPU**
   - Intel Ice Lake (3rd Gen Xeon)
   - 3.5 GHz
-  - 8 vCPU
+  - 16 vCPU
 - **Storage**
   - NVMe SSD
 - **Memory**
-  - 16GB
+  - 32GB
 - **System**
   - Linux Kernel 5.16 or newer.
 
