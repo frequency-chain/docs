@@ -10,22 +10,22 @@ Frequency currently builds releases for the AMD64 architecture only.
 
 Production releases ONLY work with the one given network. (You may still provide the `--chain` argument if you wish.)
 
-| Network | Binary Name |
-| --- | --- |
-| Frequency |  `frequency.[arch]` |
+| Network          | Binary Name               |
+| ---------------- | ------------------------- |
+| Frequency        | `frequency.[arch]`        |
 | Frequency Rococo | `frequency.rococo.[arch]` |
 
 ### Docker Images
 
-| Network | Docker Image |
-| --- | --- |
-| Frequency | [`frequencychain/parachain-node-mainnet`](https://hub.docker.com/r/frequencychain/parachain-node-mainnet) |
-| Frequency Rococo | [`frequencychain/parachain-node-rococo`](https://hub.docker.com/r/frequencychain/parachain-node-rococo) |
+| Network          | Docker Image                                                                                              |
+| ---------------- | --------------------------------------------------------------------------------------------------------- |
+| Frequency        | [`frequencychain/parachain-node-mainnet`](https://hub.docker.com/r/frequencychain/parachain-node-mainnet) |
+| Frequency Rococo | [`frequencychain/parachain-node-rococo`](https://hub.docker.com/r/frequencychain/parachain-node-rococo)   |
 
 ## The Embedded Relay Chain Node
 
-The Frequency node has a built in relay chain node to support checking block validation.
-To configure the embedded relay chain node at the command line place a `--` between the Frequency node options and the relay chain node options: `frequency-binary [OPTIONS] [-- <RELAY_CHAIN_ARGS>...]`
+The Frequency Node has a built in relay chain node to support checking block validation.
+To configure the embedded relay chain node at the command line place a `--` between the Frequency node options and the relay chain node options: `frequency [OPTIONS] [-- <RELAY_CHAIN_ARGS>...]`
 
 ## Additional Resources
 
@@ -34,26 +34,26 @@ To configure the embedded relay chain node at the command line place a `--` betw
 
 ## High Volume Notice
 
-Running a node that will have a high volume from one or more servers requires altering the defaults.
+Running a node that will have a high volume of transactions or queries from one or more servers requires altering the defaults.
 Please read over not just the notes here, but also the details of all the command line parameters: `./frequency --help`
 
 ## Default Ports
 
 ### Frequency Node
 
-| Description | Port |
-| --- | --- |
-| P2P (TCP) | 30333 |
-| RPC/WebSocket | 9944 |
-| Prometheus | 9615 |
+| Description   | Port  |
+| ------------- | ----- |
+| P2P (TCP)     | 30333 |
+| RPC/WebSocket | 9944  |
+| Prometheus    | 9615  |
 
 ### Embedded Relay Chain Node
 
-| Description | Port |
-| --- | --- |
-| P2P (TCP) | 30334 |
-| RPC/WebSocket | 9945 |
-| Prometheus | 9616 |
+| Description   | Port  |
+| ------------- | ----- |
+| P2P (TCP)     | 30334 |
+| RPC/WebSocket | 9945  |
+| Prometheus    | 9616  |
 
 ## RPC Node
 
@@ -61,6 +61,7 @@ If you are running an RPC node there are several options to be aware of.
 These are NOT all the options (see `--help`), but are the important ones.
 
 See also:
+
 - https://docs.substrate.io/deploy/prepare-to-deploy/
 - https://docs.substrate.io/deploy/deployment-options/
 
@@ -69,7 +70,7 @@ See also:
 Each node also has a Relay Chain node as well and these options will often apply with different defaults to the Relay Chain.
 The docker images do not pass through the ports for the relay chain, but if you are running using the binary, the options are available.
 
-`frequency-binary <parachain-args> -- <relay-chain-args>`
+`frequency <parachain-args> -- <relay-chain-args>`
 
 See: `--help` and `-- --help` for more information.
 
@@ -89,8 +90,8 @@ Generally WebSockets are used to access the node, but there are both an RPC and 
 
 ### Archive vs State Pruning
 
-*Option*: `--state-pruning`
-*Default*: `--state-pruning 256`
+_Option_: `--state-pruning`
+_Default_: `--state-pruning 256`
 
 Archive nodes are useful for accessing historical states, but Frequency is designed to make that need rare.
 
@@ -116,19 +117,19 @@ See: https://docs.substrate.io/maintain/monitor/ for more information on monitor
 ### Other
 
 - Public address if different or behind a proxy: `--public-addr <Multiaddr address>`
-    - Example IP: `/ip4/55.66.77.88/tcp/30333`
-    - Example DNS: `/dns4/0.boot.frequency.xyz/tcp/30333`
+  - Example IP: `/ip4/55.66.77.88/tcp/30333`
+  - Example DNS: `/dns4/0.boot.frequency.xyz/tcp/30333`
 - Public name of the node: `--name <string>`
 - Base path for chain data storage: `--base-path <PATH>`
 
 ### Logging and Troubleshooting
 
 Logging is `--log <LOG_PATTERN>...` which is `<target>=<level>` for example: `-lsync=debug`.
-The list of possible targets is long, but some common ones are listed under [Node Troubleshooting](./Troubleshooting.md).
+The list of possible targets is long and requires reading the code of the specific library you are targeting, but some common ones are listed under [Node Troubleshooting](./Troubleshooting.md).
 
 ## Local Instant Sealing
 
-Used for local development on or against Frequency.
+Used for local development.
 This does not need any other servers or network and is completely self-contained.
 It will produce a block as soon as a transaction has entered the queue.
 
@@ -144,6 +145,7 @@ docker run --rm -p 9944:9944 frequencychain/standalone-node
 ```
 
 ### Force creation of an empty block
+
 ```
 curl http://localhost:9933 -H "Content-Type:application/json;charset=utf-8" -d '{ \
     "jsonrpc":"2.0", \

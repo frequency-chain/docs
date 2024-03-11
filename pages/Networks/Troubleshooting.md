@@ -3,7 +3,7 @@
 ## Short-term: Switch to a Different Node
 
 While not all nodes can support all situations, nodes are mostly interchangeable.
-Thus, for basic short-term fixes, even public nodes may be a fix.
+Thus, use of a public node may be short-term fix for some situations.
 
 ## Common Logs
 

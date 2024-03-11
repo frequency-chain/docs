@@ -1,6 +1,6 @@
 # Running a Collator
 
-Collator Node operators will need to meet technical and financial requirements to serve as a candidate chosen to form the next block.
+Collator Node operators will need to meet technical and financial requirements to serve as a candidate to be chosen to form the next block.
 
 Collator Nodes require sufficient hardware and bandwidth to service the network within the necessary block time.
 If a Collator lags or drops offline for more than the minimum time, they will be kicked out of the Collator candidate pool unless they are "invulnerable."
@@ -50,11 +50,11 @@ For reproducibility, we use Amazon's [`c6i.4xlarge`](https://aws.amazon.com/ec2/
 
 ## Key Types
 
-There are five keys that matter for a Collator node:
+There are five keys that matter for a Collator Node:
 
 1. **The Networking Key**
 
-   - Collator: Can be auto-generated
+   - Can be auto-generated for most nodes.
    - Can be set via CLI with `--node-key` or `--node-key-file`, usually for public bootnodes
      - Remember that `--node-key-file` reads the file bytes, so do not have trailing new lines or other whitespace.
    - Used by `libp2p` for secure node communications and is the public key at the end of the node multiaddr.
@@ -62,7 +62,7 @@ There are five keys that matter for a Collator node:
 2. **The Controller Account Key** (Sometimes referred to as the `Account ID`)
 
    - Account used to control the Collator
-   - When an invulnerable Collator, should be set as one of the "invulnerable keys"
+   - For an invulnerable Collator, this is the key that must be set by governance as "invulnerable".
 
 3. **The Invulnerable Address Key**
 
@@ -84,7 +84,7 @@ There are five keys that matter for a Collator node:
 
 1. Create a new full node and match or exceed the [collator requirements](#requirements).
 1. [Download the latest release](https://github.com/LibertyDSNP/frequency/releases) (or use [docker](https://hub.docker.com/u/frequencychain)).
-1. Remember that the Collator Node MUST be able to peer with others, but access to HTTP and WebSocket RPCs MUST be restricted.
+1. Remember that the Collator Node MUST be able to peer with others, but unauthorized access to HTTP and WebSocket RPCs MUST be restricted.
 
    - Required flags
      - `--collator` Telling your node to run as a collator
@@ -104,7 +104,7 @@ There are five keys that matter for a Collator node:
      ```
 
    - Additional flags are documented with `--help`
-   - Flags applied after a `--` are applied to built in Relay Chain node.
+   - Flags applied after a `--` are for the internal Relay Chain node.
 
      - Example:
 
@@ -115,7 +115,7 @@ There are five keys that matter for a Collator node:
 
 ### Controller & Session Key Setup
 
-1. Generate a new Controller Account aura key: `subkey generate`
+1. Generate a new Controller Account Aura Key: `subkey generate`
    - (Optional) Add password `subkey generate --password [password here]`
 1. Generate a new Session Key
    - Node Generated
@@ -129,11 +129,11 @@ There are five keys that matter for a Collator node:
      - keys: Address of the new Session Key in hex format
      - proof: `0x` (Yes, it is empty)
    - New session keys do not become active until the next session (approximately every 6 hours).
-   - While it is possible for your session key to match your Controller Account, but not recommended.
+   - Controller Keys should _not_ be used as Session Keys.
 1. Wait until the Relay Chain and parachain are up to date and synced.
 
 ### Onboarding the Collator
 
-See [Decentralization](./Decentralization.md) for more details on how to currently become an active Collator Node.
+See [Decentralization](./Decentralization.md) for current details on how to currently become an active Collator Node.
 
 See [Troubleshooting](./Troubleshooting.md) for help when things go wrong.
