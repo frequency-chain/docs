@@ -136,4 +136,4 @@ There are five keys that matter for a Collator Node:
 
 See [Decentralization](./Decentralization.md) for current details on how to currently become an active Collator Node.
 
-See [Troubleshooting](./Troubleshooting.md) for help when things go wrong.
+See [Troubleshooting](./Troubleshooting.md) for help if things go wrong.

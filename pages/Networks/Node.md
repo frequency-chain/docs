@@ -6,21 +6,22 @@
 
 Releases are maintained on Frequency's [GitHub Repository](https://github.com/LibertyDSNP/frequency/releases).
 
-Frequency currently builds releases for the AMD64 architecture only.
-
-Production releases ONLY work with the one given network. (You may still provide the `--chain` argument if you wish.)
-
-| Network          | Binary Name               |
-| ---------------- | ------------------------- |
-| Frequency        | `frequency.[arch]`        |
-| Frequency Rococo | `frequency.rococo.[arch]` |
+| Network           | Binary Name                | Supported Chain(s)                                          |
+| ----------------- | -------------------------- | ----------------------------------------------------------- |
+| Mainnet           | `frequency.[arch]`         | `frequency`                                                 |
+| Testnet           | `frequency-testnet.[arch]` | `frequency-paseo` (Default), `frequency-rococo`             |
+| Local Parachain   | `frequency-local.[arch]`   | `frequency-paseo-local` (Default), `frequency-rococo-local` |
+| Local Development | `frequency-dev.[arch]`     | `frequency-dev`                                             |
 
 ### Docker Images
 
-| Network          | Docker Image                                                                                              |
-| ---------------- | --------------------------------------------------------------------------------------------------------- |
-| Frequency        | [`frequencychain/parachain-node-mainnet`](https://hub.docker.com/r/frequencychain/parachain-node-mainnet) |
-| Frequency Rococo | [`frequencychain/parachain-node-rococo`](https://hub.docker.com/r/frequencychain/parachain-node-rococo)   |
+| Network               | Docker Image                                                                                              |
+| --------------------- | --------------------------------------------------------------------------------------------------------- |
+| Frequency Mainnet     | [`frequencychain/parachain-node-mainnet`](https://hub.docker.com/r/frequencychain/parachain-node-mainnet) |
+| Frequency Testnet     | [`frequencychain/parachain-node-testnet`](https://hub.docker.com/r/frequencychain/parachain-node-testnet) |
+| Frequency Development | [`frequencychain/standalone-node`](https://hub.docker.com/r/frequencychain/standalone-node)               |
+
+[Additional Docker images](https://hub.docker.com/u/frequencychain) may be available.
 
 ## The Embedded Relay Chain Node
 
