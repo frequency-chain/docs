@@ -25,8 +25,8 @@ Releases are maintained on Frequency's [GitHub Repository](https://github.com/Li
 
 ## The Embedded Relay Chain Node
 
-The Frequency Node has a built in relay chain node to support checking block validation.
-To configure the embedded relay chain node at the command line place a `--` between the Frequency node options and the relay chain node options: `frequency [OPTIONS] [-- <RELAY_CHAIN_ARGS>...]`
+The Frequency Node has a built in Relay Chain node to support checking block validation.
+To configure the embedded Relay Chain node at the command line place a `--` between the Frequency node options and the Relay Chain node options: `frequency [OPTIONS] [-- <RELAY_CHAIN_ARGS>...]`
 
 ## Additional Resources
 
@@ -59,7 +59,7 @@ Please read over not just the notes here, but also the details of all the comman
 ## RPC Node
 
 If you are running an RPC node there are several options to be aware of.
-These are NOT all the options (see `--help`), but are the important ones.
+These are NOT the only options (see `--help`), but are the important ones.
 
 See also:
 
@@ -68,8 +68,8 @@ See also:
 
 ### Relay Chain Options
 
-Each node also has a Relay Chain node as well and these options will often apply with different defaults to the Relay Chain.
-The docker images do not pass through the ports for the relay chain, but if you are running using the binary, the options are available.
+Each node also has a Relay Chain node and these options will often apply with different defaults to the Relay Chain.
+The docker images do not pass through the ports for the Relay Chain, but if you are running using the binary, the options are available.
 
 `frequency <parachain-args> -- <relay-chain-args>`
 

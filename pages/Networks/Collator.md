@@ -14,21 +14,19 @@ Collators generally follow the same expectations outlined in [Polkadot's referen
 ### Suggested Minimums
 
 - **CPU**
-  - AMD64/x86-64 compatible;
-    - Intel Ice Lake, or newer (Xeon or Core series); AMD Zen3, or newer (EPYC or Ryzen);
-    - 4 physical cores @ 3.4GHz;
-    - Simultaneous multithreading disabled (Hyper-Threading on Intel, SMT on AMD);
-  - ARM64 compatible
-    - ARM64 binaries are available, we do not yet have specific CPU suggestions.
+  - AMD64/x86-64 compatible
+    - Intel Ice Lake, or newer (Xeon or Core series); AMD Zen3, or newer (EPYC or Ryzen)
+    - 4 physical cores @ 3.4GHz.
+    - Simultaneous multithreading disabled (Hyper-Threading on Intel, SMT on AMD)
 - **Storage**
-  - An NVMe SSD of 1 TB
+  - NVMe SSD of 1 TB
   - In general, the latency is more important than the throughput.
 - **Memory**
-  - 32GB DDR4 ECC.
+  - 32GB DDR4 ECC
 - **System**
-  - Linux Kernel 5.16 or newer.
+  - Linux Kernel 5.16 or newer
 - **Network**
-  - The minimum symmetric networking speed is set to 500 Mbit/s (= 62.5 MB/s).
+  - The minimum symmetric networking speed is set to 500 Mbit/s (= 62.5 MB/s)
 - **Clock Synchronization**
   - The system clock must be within a margin of the other collators.
   - It is suggested to use [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) or another similar method of maintaining clock synchronization.
@@ -46,7 +44,7 @@ For reproducibility, we use Amazon's [`c6i.4xlarge`](https://aws.amazon.com/ec2/
 - **Memory**
   - 32GB
 - **System**
-  - Linux Kernel 5.16 or newer.
+  - Linux Kernel 5.16 or newer
 
 ## Key Types
 
@@ -55,47 +53,50 @@ There are five keys that matter for a Collator Node:
 1. **The Networking Key**
 
    - Can be auto-generated for most nodes.
-   - Can be set via CLI with `--node-key` or `--node-key-file`, usually for public bootnodes
+   - Can be set via CLI with `--node-key` or `--node-key-file`, usually for public bootnodes.
      - Remember that `--node-key-file` reads the file bytes, so do not have trailing new lines or other whitespace.
    - Used by `libp2p` for secure node communications and is the public key at the end of the node multiaddr.
 
 2. **The Controller Account Key** (Sometimes referred to as the `Account ID`)
 
-   - Account used to control the Collator
+   - Account used to control the Collator.
    - For an invulnerable Collator, this is the key that must be set by governance as "invulnerable".
 
 3. **The Invulnerable Address Key**
 
-   - The address of the controller account
+   - The address of the controller account.
    - Must be added to the invulnerables using `collatorSelection.setInvulnerables`.
 
 4. **The Stash Account Key** (Sometimes referred to as the `Validator ID`)
 
-   - Not used with Collator selection
-   - Should be the same as the controller account
+   - Not used with Collator selection.
+   - Should be the same as the controller account.
 
 5. **The Session Aura Key**
 
-   - "Owned" by the controller account
-   - Does the actual work of signing blocks
+   - "Owned" by the controller account.
+   - Does the actual work of signing blocks.
    - Can be rotated by generating a new key on the node with `author_rotateKey`, then calling `session.setKeys` from the controller account.
 
 ## Collator Setup
 
+<div class="warning">
+  Unauthorized access to Collator Node HTTP and WebSocket RPCs MUST be restricted for security.
+</div>
+
 1. Create a new full node and match or exceed the [collator requirements](#requirements).
 1. [Download the latest release](https://github.com/LibertyDSNP/frequency/releases) (or use [docker](https://hub.docker.com/u/frequencychain)).
-1. Remember that the Collator Node MUST be able to peer with others, but unauthorized access to HTTP and WebSocket RPCs MUST be restricted.
 
    - Required flags
-     - `--collator` Telling your node to run as a collator
+     - `--collator` Telling your node to run as a collator.
    - Suggested Flags
-     - `--base-path` Change where the data is stored
-     - `--name` Name your node for easy discovery on https://telemetry.polkadot.io and https://telemetry.frequency.xyz
+     - `--base-path` Change where the data is stored.
+     - `--name` Name your node for easy discovery on https://telemetry.polkadot.io and https://telemetry.frequency.xyz.
    - Situational Flags
-     - Need to run `author_rotateKeys` or other protected calls, but have no access to call from localhost? **Remember: RPC Port MUST be protected from the public internet!**
-       - `--rpc-external` External RPC calls accepted
-       - `--rpc-methods=Unsafe` System commands like `author_rotateKeys` accepted externally
-       - `--rpc-port=9944` RPC port, 9944 is default
+     - Need to run `author_rotateKeys` or other protected calls, but have no access to call from localhost? Remember: RPC Port MUST be protected from the public internet.
+       - `--rpc-external` External RPC calls accepted.
+       - `--rpc-methods=Unsafe` System commands like `author_rotateKeys` accepted externally.
+       - `--rpc-port=9944` RPC port, 9944 is default.
    - Example:
 
      ```
@@ -115,14 +116,14 @@ There are five keys that matter for a Collator Node:
 
 ### Controller & Session Key Setup
 
-1. Generate a new Controller Account Aura Key: `subkey generate`
-   - (Optional) Add password `subkey generate --password [password here]`
-1. Generate a new Session Key
+1. Generate a new Controller Account Aura Key: `subkey generate`.
+   - (Optional) Add password `subkey generate --password [password here]`.
+1. Generate a new Session Key.
    - Node Generated
-     - Use `author_rotateKey` (localhost or "unsafe" RPC required)
-     - Returns the new public key
-   - Manually Generated via `subkey generate`
-     - Add to the node with `author_insertKey` (localhost or "unsafe" RPC required)
+     - Use `author_rotateKey` (localhost or "unsafe" RPC required).
+     - Returns the new public key.
+   - Manually Generated via `subkey generate`.
+     - Add to the node with `author_insertKey` (localhost or "unsafe" RPC required).
 1. Register a Session Key
    - Submit the Extrinsic: `session.setKeys`
      - Sender: The Controller Account

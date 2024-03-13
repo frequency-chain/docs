@@ -25,5 +25,5 @@ This phase will test the incentivization as Frequency progresses to fully public
 
 ## Public Collators
 
-- Collators are selected based on bond, governance support, and uptime that will be developed.
+- Collators are selected based on bond, governance support, and uptime that will be developed in the future.
 - Progression into this phase depends on the safety and security of the network.
