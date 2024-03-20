@@ -16,7 +16,7 @@ Collators generally follow the same expectations outlined in [Polkadot's referen
 - **CPU**
   - AMD64/x86-64 compatible
     - Intel Ice Lake, or newer (Xeon or Core series); AMD Zen3, or newer (EPYC or Ryzen)
-    - 4 physical cores @ 3.4GHz.
+    - 4 physical cores @ 3.4GHz
     - Simultaneous multithreading disabled (Hyper-Threading on Intel, SMT on AMD)
 - **Storage**
   - NVMe SSD of 1 TB
@@ -116,14 +116,14 @@ There are five keys that matter for a Collator Node:
 
 ### Controller & Session Key Setup
 
-1. Generate a new Controller Account Aura Key: `subkey generate`.
-   - (Optional) Add password `subkey generate --password [password here]`.
-1. Generate a new Session Key.
+1. Generate a new Controller Account Aura Key: `subkey generate`
+   - (Optional) Add password `subkey generate --password [password here]`
+1. Generate a new Session Key
    - Node Generated
-     - Use `author_rotateKey` (localhost or "unsafe" RPC required).
-     - Returns the new public key.
-   - Manually Generated via `subkey generate`.
-     - Add to the node with `author_insertKey` (localhost or "unsafe" RPC required).
+     - Use `author_rotateKey` (localhost or "unsafe" RPC required)
+     - Returns the new public key
+   - Manually Generated via `subkey generate`
+     - Add to the node with `author_insertKey` (localhost or "unsafe" RPC required)
 1. Register a Session Key
    - Submit the Extrinsic: `session.setKeys`
      - Sender: The Controller Account

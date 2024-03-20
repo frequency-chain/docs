@@ -94,8 +94,6 @@ Generally WebSockets are used to access the node, but there are both an RPC and 
 _Option_: `--state-pruning`
 _Default_: `--state-pruning 256`
 
-Archive nodes are useful for accessing historical states, but Frequency is designed to make that need rare.
-
 - `archive` will store all the historical states for the network, but will require more storage.
 - `[number]` will store only the last `n` states.
 
