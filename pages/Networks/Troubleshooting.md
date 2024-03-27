@@ -7,8 +7,9 @@ Thus, use of a public node may be a short-term fix for some situations.
 
 ## Common Logs
 
-- `-lcumulus-collator=trace` Trouble with collating and forming blocks
-- `-lsync=trace` Trouble with syncing and peers
+- `-ltxpool=trace` Trouble with the transaction pool or transactions going into the pool.
+- `-lcumulus-collator=trace` Trouble with collating and forming blocks.
+- `-lsync=trace` Trouble with syncing and peers.
 
 ## Key Generation
 
