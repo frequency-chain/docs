@@ -10,19 +10,19 @@ command = "node preprocessor.mjs"
 
 [output.html]
 no-section-label = true
-copy-fonts = false                                                                   # Switched to custom fonts
+copy-fonts = false                                                             # Switched to custom fonts
 site-url = "/pages/"
-git-repository-url = "https://github.com/LibertyDSNP/frequency-docs"
-edit-url-template = "https://github.com/LibertyDSNP/frequency-docs/blob/main/{path}"
+git-repository-url = "https://github.com/frequency-chain/docs"
+edit-url-template = "https://github.com/frequency-chain/docs/blob/main/{path}"
 preferred-dark-theme = "coal"
 additional-css = ["css/extended.css"]
 
 # https://github.com/Michael-F-Bryan/mdbook-linkcheck
 [output.linkcheck]
 exclude = [
-  'github\.com/LibertyDSNP/frequency-docs',
-  'github\.com/LibertyDSNP/frequency/releases',
-  'github\.com/LibertyDSNP/frequency',
+  'github\.com/frequency-chain/docs',
+  'github\.com/frequency-chain/frequency/releases',
+  'github\.com/frequency-chain/frequency',
   'twitter\.com',
   'www\.frequency\.xyz',
   'medium\.com/one-frequency',

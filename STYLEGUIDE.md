@@ -3,7 +3,7 @@
 Style guide defining wording, spelling, and other details regarding how Frequency terms are referenced.
 
 For more information about Frequency, visit [frequency.xyz](https://www.frequency.xyz)
-or [Frequency on GitHub](https://github.com/LibertyDSNP/frequency)
+or [Frequency on GitHub](https://github.com/frequency-chain/frequency)
 
 ## Activity Content Types
 
