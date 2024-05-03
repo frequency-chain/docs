@@ -3,10 +3,10 @@
 Technical documentation for the Frequency parachain.
 The current documentation can be viewed in its compiled form at https://docs.frequency.xyz.
 Alternatively, the latest iteration of the docs [can be viewed
-non-formatted here](https://github.com/LibertyDSNP/frequency-docs/tree/main/pages).
+non-formatted here](https://github.com/frequency-chain/docs/tree/main/pages).
 
 For more information about Frequency, visit [frequency.xyz](https://www.frequency.xyz)
-or [Frequency on GitHub](https://github.com/LibertyDSNP/frequency)
+or [Frequency on GitHub](https://github.com/frequency-chain/frequency)
 
 ## Install
 
@@ -14,11 +14,12 @@ To build the generator locally, install [mdBook](https://github.com/rust-lang/md
 and [link checker](https://github.com/Michael-F-Bryan/mdbook-linkcheck). The link checker will run during build process and throw warnings for any broken internal
 or external links.
 
-``` bash
+```bash
 cargo install mdbook
 cargo install mdbook-linkcheck
 npm install
 ```
+
 ## Run
 
 ### (Option 1) Active Build and Serve via HTTP
@@ -26,7 +27,7 @@ npm install
 To run the doc generator locally, actively build after each change and serve them
 via HTTP use the following command:
 
-``` bash
+```bash
 npm run serve
 ```
 
@@ -35,9 +36,10 @@ in the browser at <http://localhost:3000>. Note, it will not automatically refre
 browser page after each change.
 
 ### (Option 2) Manual Build
+
 To run the doc generator locally and preview the formatted docs from local files, use the following:
 
-``` bash
+```bash
 npm run build
 ```
 
@@ -53,4 +55,4 @@ The CI will automatically deploy what's merged into `main`.
 
 ## Tools and Frameworks
 
-* [mdBook](https://rust-lang.github.io/mdBook/) — create books with Markdown
+- [mdBook](https://rust-lang.github.io/mdBook/) — create books with Markdown
