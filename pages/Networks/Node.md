@@ -9,8 +9,8 @@ Releases are maintained on Frequency's [GitHub Repository](https://github.com/Li
 | Network           | Binary Name                | Supported Chain(s)                                          |
 | ----------------- | -------------------------- | ----------------------------------------------------------- |
 | Mainnet           | `frequency.[arch]`         | `frequency`                                                 |
-| Testnet           | `frequency-testnet.[arch]` | `frequency-paseo` (Default), `frequency-rococo`             |
-| Local Parachain   | `frequency-local.[arch]`   | `frequency-paseo-local` (Default), `frequency-rococo-local` |
+| Testnet           | `frequency-testnet.[arch]` | `frequency-paseo`                                           |
+| Local Parachain   | `frequency-local.[arch]`   | `frequency-paseo-local`                                     |
 | Local Development | `frequency-dev.[arch]`     | `frequency-dev`                                             |
 
 ### Docker Images

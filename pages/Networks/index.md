@@ -15,20 +15,9 @@ Frequency Paseo is a testnet for those building new applications on Frequency.
 
 |                 |                                                                                                         |
 | --------------- | ------------------------------------------------------------------------------------------------------- |
-| Relay Chain     | [Paseo](https://wiki.polkadot.network/docs/build-pdk#rococo-testnet)                                    |
+| Relay Chain     | [Paseo](https://github.com/paseo-network/)                                                              |
 | ParaId          | 4000                                                                                                    |
 | Public RPC Node | `wss://0.rpc.testnet.amplica.io`                                                                        |
 | Bootnodes       | `/dns4/0.boot.testnet.amplica.io/tcp/30333/ws/p2p/12D3KooWArmKDbY8Y6XXHGodosWAjRWWxSw5YxWEjSZTBNjJXVSC` |
-
-## Frequency Rococo Testnet
-
-Frequency Rococo is a testnet for those building new applications on Frequency.
-
-|                 |                                                                                                           |
-| --------------- | --------------------------------------------------------------------------------------------------------- |
-| Relay Chain     | [Rococo](https://wiki.polkadot.network/docs/build-pdk#rococo-testnet)                                     |
-| ParaId          | 4044                                                                                                      |
-| Public RPC Node | `wss://rpc.rococo.frequency.xyz`                                                                          |
-| Bootnodes       | `/dns4/0.boot.rococo.frequency.xyz/tcp/30333/ws/p2p/12D3KooWArmKDbY8Y6XXHGodosWAjRWWxSw5YxWEjSZTBNjJXVSC` |
 
 {{#button-links}}
