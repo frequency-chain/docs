@@ -30,7 +30,7 @@ To configure the embedded Relay Chain node at the command line place a `--` betw
 
 ## Additional Resources
 
-- [Substrate Docs: Deployment](https://docs.substrate.io/deploy/) - Great starter place to understand node deployments
+- [Substrate Docs: Deployment](https://docs.substrate.io/deploy/) - A starting place to understand node deployments
 - [Substrate DevOps Guide](https://paritytech.github.io/devops-guide/) - Great for DevOps teams running nodes
 
 ## High Volume Notice
@@ -59,7 +59,7 @@ Please read over not just the notes here, but also the details of all the comman
 ## RPC Node
 
 If you are running an RPC node there are several options to be aware of.
-These are NOT the only options (see `--help`), but are the important ones.
+The options described below are the most important.  For more, see `--help`.
 
 See also:
 
@@ -123,7 +123,7 @@ See: https://docs.substrate.io/maintain/monitor/ for more information on monitor
 
 ### Logging and Troubleshooting
 
-Logging is `--log <LOG_PATTERN>...` which is `<target>=<level>` for example: `-lsync=debug`.
+For logging, use `--log <target>=<level>`.  For example: `-lsync=debug`.
 The list of possible targets is long and requires reading the code of the specific library you are targeting, but some common ones are listed under [Node Troubleshooting](./Troubleshooting.md).
 
 ## Local Instant Sealing
@@ -137,7 +137,7 @@ It will produce a block as soon as a transaction has entered the queue.
 
 ### Easy Docker Start
 
-If on macOS, you currently need to add `--platform=linux/amd64`
+If on macOS, add `--platform=linux/amd64`
 
 ```
 docker run --rm -p 9944:9944 frequencychain/standalone-node
