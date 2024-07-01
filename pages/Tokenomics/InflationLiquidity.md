@@ -36,5 +36,5 @@ Decreases in circulating supply are triggered primarily by increased staking act
 Both Capacity Staking and Provider Boosting lower overall token circulation levels as staked tokens increase.
 However, staking levels don't decrease Providers’ ability to pay transactions fees for certain transaction types, given that both types of staking generate Capacity.
 Generally, staking models require derivatives like "liquid staking" or they risk decreasing network transactions due to a smaller circulating supply of tokens available to pay transaction fees, which can reduce the value of the network.
-Frequency is less susceptible to that correlation, since Capacity generated from staking can actually be spent on  transaction fees.
+Frequency is less susceptible to that correlation, since Capacity generated from staking can actually be spent on transaction fees.
 This means that a lower circulating supply of FRQCY does not necessarily result in a lower transaction volume on chain due to Capacity-related transactions.

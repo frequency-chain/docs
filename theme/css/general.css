@@ -37,6 +37,7 @@ main {
 /* make wide tables scroll if they overflow */
 .table-wrapper {
   overflow-x: auto;
+  margin-block-end: 2em;
 }
 
 /* Don't change font size in headers. */
@@ -230,6 +231,9 @@ blockquote {
   margin: 20px;
   padding: 0 20px;
   border-inline-start: 2px solid var(--warning-border);
+  /* Increase the strength of the warning */
+  font-weight: bold;
+  border-bottom: 2px solid var(--warning-border);
 }
 
 .warning:before {

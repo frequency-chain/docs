@@ -11,6 +11,4 @@ This architecture enables nodes on Frequency to focus on the functionality neede
 To ensure high availability, multiple organizations run Frequency Collator Nodes.
 In order to operate as a Frequency Collator, the node must meet additional criteria, as described in [Collator Incentives](../Tokenomics/CollatorIncentives.md).
 
-<!--
-Learn more about [how to run a Collator](Networks/Collator.md).
--->
+Learn more about [how to run a Collator](../Networks/Collator.md).

@@ -7,5 +7,4 @@ In addition to tokens, Frequency also utilizes a system of impermanent Capacity,
 This section covers the design of the Frequency Incentive Model and key cryptoeconomic elements such as token distribution and the inflation system.
 The Frequency Incentive Model focuses on the three core actors: Collator Incentives, Provider Incentives, and User Incentives.
 
-
 {{#button-links}}
