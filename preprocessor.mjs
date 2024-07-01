@@ -19,7 +19,7 @@ function replaceButtonLinks(chapter) {
 
   if (chapter.sub_items) {
     chapter.sub_items.forEach((section) => {
-      replaceButtonLinks(section.Chapter);
+      section.Chapter && replaceButtonLinks(section.Chapter);
     });
   }
 }
@@ -27,7 +27,7 @@ function replaceButtonLinks(chapter) {
 // Function to perform the preprocessing
 function preprocessMdBook([_context, book]) {
   book.sections.forEach((section) => {
-    replaceButtonLinks(section.Chapter);
+    section.Chapter && replaceButtonLinks(section.Chapter);
   });
 
   // Output the processed content in mdbook preprocessor format
