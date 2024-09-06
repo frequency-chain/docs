@@ -22,7 +22,7 @@
   --sidebar-fg: #f0f0f0;
   --sidebar-non-existant: var(--sidebar-fg);
   --sidebar-active: #4ba0a5;
-  --sidebar-spacer: #0b1e28;
+  --sidebar-spacer: var(--sidebar-bg);
 
   --scrollbar: var(--sidebar-fg);
 
@@ -74,7 +74,7 @@
   --sidebar-fg: #000;
   --sidebar-non-existant: var(--sidebar-fg);
   --sidebar-active: #4ba0a5;
-  --sidebar-spacer: #19455e;
+  --sidebar-spacer: var(--sidebar-bg);
 
   --scrollbar: var(--sidebar-fg);
 
