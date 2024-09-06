@@ -640,13 +640,15 @@ ul#searchresults span.teaser em {
   transform: rotate(90deg);
 }
 
-.spacer {
+.spacer,
+.chapter .spacer {
   width: 100%;
   height: 1px;
   margin: 5px 0px;
 }
 
-.chapter .spacer {
+.chapter .spacer,
+.chapter li.spacer {
   background-color: var(--sidebar-spacer);
 }
 

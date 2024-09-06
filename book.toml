@@ -10,12 +10,16 @@ command = "node preprocessor.mjs"
 
 [output.html]
 no-section-label = true
-copy-fonts = false                                                             # Switched to custom fonts
+copy-fonts = false # Switched to custom fonts
 site-url = "/pages/"
 git-repository-url = "https://github.com/frequency-chain/docs"
 edit-url-template = "https://github.com/frequency-chain/docs/blob/main/{path}"
 preferred-dark-theme = "coal"
-additional-css = ["css/extended.css"]
+additional-css = [
+  "css/extended.css",
+  "css/highlight.css",
+  "css/highlight-dark.css",
+]
 
 # https://github.com/Michael-F-Bryan/mdbook-linkcheck
 [output.linkcheck]

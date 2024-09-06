@@ -40,9 +40,8 @@
         {{/if}}
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="{{ path_to_root }}highlight.css">
-        <link rel="stylesheet" href="{{ path_to_root }}tomorrow-night.css">
-        <link rel="stylesheet" href="{{ path_to_root }}ayu-highlight.css">
+        <link rel="stylesheet" href="{{ path_to_root }}css/highlight.css">
+        <link rel="stylesheet" href="{{ path_to_root }}css/highlight-dark.css">
 
         <!-- Custom theme stylesheets -->
         {{#each additional_css}}
@@ -275,26 +274,6 @@
                 socket.close();
             }
         </script>
-        {{/if}}
-
-        {{#if playground_line_numbers}}
-        <script type="text/javascript">
-            window.playground_line_numbers = true;
-        </script>
-        {{/if}}
-
-        {{#if playground_copyable}}
-        <script type="text/javascript">
-            window.playground_copyable = true;
-        </script>
-        {{/if}}
-
-        {{#if playground_js}}
-        <script src="{{ path_to_root }}ace.js" type="text/javascript" charset="utf-8"></script>
-        <script src="{{ path_to_root }}editor.js" type="text/javascript" charset="utf-8"></script>
-        <script src="{{ path_to_root }}mode-rust.js" type="text/javascript" charset="utf-8"></script>
-        <script src="{{ path_to_root }}theme-dawn.js" type="text/javascript" charset="utf-8"></script>
-        <script src="{{ path_to_root }}theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
         {{/if}}
 
         {{#if search_js}}
