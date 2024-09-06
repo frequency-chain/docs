@@ -89,10 +89,6 @@ All lowercase
 
 Uppercase C
 
-## Collator incentives
-
-Do not use
-
 ## Collator Nodes
 
 Uppercase C and N

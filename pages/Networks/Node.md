@@ -1,0 +1,155 @@
+# Running a Node
+
+## Releases
+
+### Binaries
+
+Releases are maintained on Frequency's [GitHub Repository](https://github.com/LibertyDSNP/frequency/releases).
+
+| Network           | Binary Name                | Supported Chain(s)                                          |
+| ----------------- | -------------------------- | ----------------------------------------------------------- |
+| Mainnet           | `frequency.[arch]`         | `frequency`                                                 |
+| Testnet           | `frequency-testnet.[arch]` | `frequency-paseo`                                           |
+| Local Parachain   | `frequency-local.[arch]`   | `frequency-paseo-local`                                     |
+| Local Development | `frequency-dev.[arch]`     | `frequency-dev`                                             |
+
+### Docker Images
+
+| Network               | Docker Image                                                                                              |
+| --------------------- | --------------------------------------------------------------------------------------------------------- |
+| Frequency Mainnet     | [`frequencychain/parachain-node-mainnet`](https://hub.docker.com/r/frequencychain/parachain-node-mainnet) |
+| Frequency Testnet     | [`frequencychain/parachain-node-testnet`](https://hub.docker.com/r/frequencychain/parachain-node-testnet) |
+| Frequency Development | [`frequencychain/standalone-node`](https://hub.docker.com/r/frequencychain/standalone-node)               |
+
+[Additional Docker images](https://hub.docker.com/u/frequencychain) may be available.
+
+## The Embedded Relay Chain Node
+
+The Frequency Node has a built in Relay Chain node to support checking block validation.
+To configure the embedded Relay Chain node at the command line place a `--` between the Frequency node options and the Relay Chain node options: `frequency [OPTIONS] [-- <RELAY_CHAIN_ARGS>...]`
+
+## Additional Resources
+
+- [Substrate Docs: Deployment](https://docs.substrate.io/deploy/) - A starting place to understand node deployments
+- [Substrate DevOps Guide](https://paritytech.github.io/devops-guide/) - Great for DevOps teams running nodes
+
+## High Volume Notice
+
+Running a node that will have a high volume of transactions or queries from one or more servers requires altering the defaults.
+Please read over not just the notes here, but also the details of all the command line parameters: `./frequency --help`
+
+## Default Ports
+
+### Frequency Node
+
+| Description   | Port  |
+| ------------- | ----- |
+| P2P (TCP)     | 30333 |
+| RPC/WebSocket | 9944  |
+| Prometheus    | 9615  |
+
+### Embedded Relay Chain Node
+
+| Description   | Port  |
+| ------------- | ----- |
+| P2P (TCP)     | 30334 |
+| RPC/WebSocket | 9945  |
+| Prometheus    | 9616  |
+
+## RPC Node
+
+If you are running an RPC node there are several options to be aware of.
+The options described below are the most important.  For more, see `--help`.
+
+See also:
+
+- https://docs.substrate.io/deploy/prepare-to-deploy/
+- https://docs.substrate.io/deploy/deployment-options/
+
+### Relay Chain Options
+
+Each node also has a Relay Chain node and these options will often apply with different defaults to the Relay Chain.
+The docker images do not pass through the ports for the Relay Chain, but if you are running using the binary, the options are available.
+
+`frequency <parachain-args> -- <relay-chain-args>`
+
+See: `--help` and `-- --help` for more information.
+
+### RPC Access Control
+
+The node offers NO generalized options for access control.
+If you need access control, you should proxy through a service that provides that security.
+
+### RPC and WebSocket
+
+Generally WebSockets are used to access the node, but there are both an RPC and WebSocket interfaces.
+
+- External RPC/WebSocket Access: `--rpc-external` (default is local only)
+- RPC/WebSocket CORS: `--rpc-cors <ORIGINS>` (use `all` to disable)
+- RPC/WebSocket Connection Limit: `--rpc-max-connections 250`
+- RPC/WebSocket Subscription Limit: `--rpc-max-subscriptions-per-connection 1024`
+
+### Archive vs State Pruning
+
+_Option_: `--state-pruning`
+_Default_: `--state-pruning 256`
+
+- `archive` will store all the historical states for the network, but will require more storage.
+- `[number]` will store only the last `n` states.
+
+### Ports
+
+Frequency and the embedded relay node uses various ports (with Frequency defaults):
+
+- RPC/WebSocket: `--rpc-port 9944`
+- Gossip Protocol: `--port 30333`
+
+### Monitoring
+
+Frequency and the embedded relay node have a Prometheus exporter enabled by default.
+
+- Prometheus Port: `--prometheus-port 9615`
+- Disable Prometheus: `--no-prometheus`
+
+See: https://docs.substrate.io/maintain/monitor/ for more information on monitoring options.
+
+### Other
+
+- Public address if different or behind a proxy: `--public-addr <Multiaddr address>`
+  - Example IP: `/ip4/55.66.77.88/tcp/30333`
+  - Example DNS: `/dns4/0.boot.frequency.xyz/tcp/30333`
+- Public name of the node: `--name <string>`
+- Base path for chain data storage: `--base-path <PATH>`
+
+### Logging and Troubleshooting
+
+For logging, use `--log <target>=<level>`.  For example: `-lsync=debug`.
+The list of possible targets is long and requires reading the code of the specific library you are targeting, but some common ones are listed under [Node Troubleshooting](./Troubleshooting.md).
+
+## Local Instant Sealing
+
+Used for local development.
+This does not need any other servers or network and is completely self-contained.
+It will produce a block as soon as a transaction has entered the queue.
+
+- Binaries: `frequency-local.[arch]`
+- Docker: [`frequencychain/instant-seal-node`](https://hub.docker.com/r/frequencychain/instant-seal-node)
+
+### Easy Docker Start
+
+If on macOS, add `--platform=linux/amd64`
+
+```
+docker run --rm -p 9944:9944 frequencychain/standalone-node
+```
+
+### Force creation of an empty block
+
+```
+curl http://localhost:9933 -H "Content-Type:application/json;charset=utf-8" -d '{ \
+    "jsonrpc":"2.0", \
+    "id":1, \
+    "method":"engine_createBlock", \
+    "params": [true, true] \
+}'
+```

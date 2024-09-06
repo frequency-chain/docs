@@ -27,8 +27,10 @@ exclude = [
   'github\.com/frequency-chain/docs',
   'github\.com/frequency-chain/frequency/releases',
   'github\.com/frequency-chain/frequency',
+  'github\.com/paseo-network',
   'twitter\.com',
   'www\.frequency\.xyz',
+  'medium\.com/one-frequency',
 ]
 follow-web-links = true
 traverse-parent-directories = false
