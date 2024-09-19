@@ -124,6 +124,7 @@ struct
 subkey
 substrings
 [Ss]udo
+svg-embed
 TargetLedger
 [Tt]estnet
 timestamps

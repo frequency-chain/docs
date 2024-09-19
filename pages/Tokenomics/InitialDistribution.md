@@ -11,4 +11,4 @@ One billion FRQCY were created at Genesis and allocated as follows:
    - Team: 14.5%
    - Treasury: 3.5%
 
-![Initial Allocation](../images/token-allocation.png)
+{{#svg-embed pages/images/TokenAllocation.svg Initial Allocation}}
