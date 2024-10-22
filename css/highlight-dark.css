@@ -101,3 +101,10 @@ pre .hljs {
 .hljs-deletion {
   color: #c82829;
 }
+
+.svg-embed-light {
+  display: none;
+}
+.svg-embed-coal {
+  display: block;
+}
