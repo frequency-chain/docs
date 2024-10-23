@@ -24,6 +24,7 @@ additional-css = [
 # https://github.com/Michael-F-Bryan/mdbook-linkcheck
 [output.linkcheck]
 exclude = [
+  'github\.com/paseo-network',
   'github\.com/frequency-chain/docs',
   'github\.com/frequency-chain/frequency/releases',
   'github\.com/frequency-chain/frequency',

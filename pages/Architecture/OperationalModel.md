@@ -18,7 +18,7 @@ Each node also runs a copy of the current Relay Chain Runtime WASM, for coordina
 
 Like many blockchains, there are multiple deployments of Frequency.
 The production system, referred to as Mainnet, uses the validators of the production Polkadot Relay Chain.
-A separate system for testing and development known as Testnet uses validators on the Polkadot Rococo Testnet Relay Chain.
+A separate system for testing and development known as Testnet uses validators on the [Paseo Relay Chain](https://github.com/paseo-network) for testnets.
 Data and state on Frequency Mainnet is considered canonical, while data and state on Frequency Testnet is for testing purposes only.
 
 Changes to the Frequency Runtime are typically deployed to Testnet before being submitted to Frequency Governance as upgrade proposals for Mainnet.
