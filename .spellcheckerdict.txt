@@ -126,7 +126,7 @@ substrings
 [Ss]udo
 svg-embed
 TargetLedger
-[Tt]estnet
+[Tt]estnet(s?)
 timestamps
 TODO
 [Tt]okenomics
