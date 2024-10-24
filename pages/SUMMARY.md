@@ -1,6 +1,10 @@
 # Summary
 
 - [Overview](index.md)
+- [Become a Provider](Guides/BecomeAProvider.md)
+- [Gateway](Guides/Gateway.md)
+- [Add Single Sign-On to your App](Guides/SSO.md)
+- [Lightpaper](Lightpaper.md)
     - [Architecture](Architecture/index.md)
         - [Operational Model](Architecture/OperationalModel.md)
         - [Interaction Model](Architecture/InteractionModel.md)
@@ -27,4 +31,4 @@
         - [Initial Token Distribution](Tokenomics/InitialDistribution.md)
         - [Inflation & Liquidity](Tokenomics/InflationLiquidity.md)
     - [Governance](Governance/index.md)
-- [Glossary](Glossary.md)
+    - [Glossary](Glossary.md)
