@@ -57,6 +57,7 @@ IPFS
 ipfs
 JS
 jsonrpc
+[Ll]ightpaper
 localhost
 LockIdentifier
 macOS
