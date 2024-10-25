@@ -108,3 +108,10 @@ pre .hljs {
 .svg-embed-coal {
   display: block;
 }
+
+.no-js .svg-embed-light {
+  display: block;
+}
+.no-js .svg-embed-coal {
+  display: none;
+}
