@@ -32,6 +32,7 @@ De-registration
 DevOps
 disintermediate
 DNS
+dropdown
 DSNP
 EC2
 ECC
@@ -57,6 +58,7 @@ IPFS
 ipfs
 JS
 jsonrpc
+lifecycle
 [Ll]ightpaper
 localhost
 LockIdentifier
@@ -69,6 +71,7 @@ mempool
 Merkle
 MeWe
 mFRQCY
+[Mm]icroservice(s?)
 Milli
 MinimumStakingAmount
 MSA(s|'s)?
@@ -110,11 +113,13 @@ RPC(s?)
 Ryzen
 scalability
 scalable
+SDK(s?)
 [Ss]chemaI[Dd]
 [Ss]chemas
 Screenshots
 secp256k1
 SignedExtension
+SIWF
 SMT
 SR25519
 SSD
@@ -148,6 +153,7 @@ validator(s?)
 vCPU
 vs
 [Ww]asm
+Web2
 web3
 WebSocket(s?)
 whitespace
@@ -167,6 +173,7 @@ trackable
 Amplica
 algorithmically
 optionality
+OpenAPI
 annum
 incentivize
 Paseo
@@ -199,3 +206,5 @@ blockspace
 permissionless
 TBD
 precalculated
+unfollowing
+[Ww]ebhook(s?)
