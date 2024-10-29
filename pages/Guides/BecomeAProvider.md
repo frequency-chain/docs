@@ -39,7 +39,7 @@ Taking the account generated in Step 1, visit the Frequency Testnet Faucet [Test
 - On the Provider Dashboard, you will be asked to select which network you would like to join from the dropdown.  You may select among the available networks: Mainnet, Testnet on Paseo, Localhost, or Custom. Select Testnet on Paseo.
 - Select your account ID from the dropdown. (This is the Application Account you created in Step 1.)
 - Select Create an MSA and approve the transaction popups.
-- Enter a Provider name.  (In this text field, you must enter a name other than your MSA Id.)
+- Enter a Provider name. You should enter the name you wish register under as a Provider (typically a company or application name).
 
 NOTE: Once registered, your provider status remains permanent in order to maintain transaction verification integrity.
 

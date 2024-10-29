@@ -2,13 +2,13 @@
 
 ## Why Frequency Gateway?
 
-Frequency Gateway provides a Simple Blockchain Integration for Your Applications–bridging the gap between your app and the decentralized web.
+[Gateway](https://projectlibertylabs.github.io/gateway/) provides a Simple Blockchain Integration for Your Applications–bridging the gap between your app and the decentralized web.
 
-Frequency Gateway offers a suite of tools and services that make it easy to connect your applications to the Frequency blockchain. This allows your development team to focus on building outstanding user experiences without managing the complexity of blockchain interactions.
+Gateway offers a suite of tools and services that make it easy to connect your applications to the Frequency blockchain. This allows your development team to focus on building outstanding user experiences without managing the complexity of blockchain interactions.
 
 ## What is Frequency Gateway?
 
-The **Frequency Gateway** provides a simple API to interact with the Frequency social layers (including identity, Universal Social Graph, content, and more). It includes a suite of tools you can select to build the best applications for your users.
+**Gateway** provides a simple API to interact with the Frequency social layers (including identity, Universal Social Graph, content, and more). It includes a suite of tools you can select to build the best applications for your users.
 
 ### Key Features:
 
@@ -27,7 +27,7 @@ The **Frequency Gateway** provides a simple API to interact with the Frequency s
 
 ## How Can I Integrate Frequency Gateway?
 
-Frequency Gateway is composed of independent, standalone microservices, allowing you to use only those components you need. These microservices provide simple APIs for interacting with various aspects of the Frequency network.
+Gateway is composed of independent, standalone microservices, allowing you to use only those components you need. These microservices provide simple APIs for interacting with various aspects of the Frequency network.
 
 ### Key Microservices:
 
@@ -83,4 +83,4 @@ The Content Watcher Service enables client applications to process content found
 - **Filterable Webhooks:** Receive notifications based on specific content filters.
 - **Scanning Control:** Manage how and when the service scans for new content.
 
-**[Start Using Frequency Gateway](https://projectlibertylabs.github.io/gateway/)**
+**[Start Using Gateway](https://projectlibertylabs.github.io/gateway/)**
