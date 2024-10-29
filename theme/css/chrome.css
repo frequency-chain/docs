@@ -16,7 +16,7 @@ html {
 
 .content h2 a:link
 {
-  color: var(--warning-border)
+  color: var(--links-hover)
 }
 
 
