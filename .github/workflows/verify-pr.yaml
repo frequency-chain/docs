@@ -2,9 +2,6 @@ name: Verify PR
 
 on:
   pull_request:
-    branches:
-      - main
-
 jobs:
   verify:
     runs-on: ubuntu-latest
