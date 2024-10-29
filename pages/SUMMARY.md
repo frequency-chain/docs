@@ -4,7 +4,7 @@
 - [Become a Provider](Guides/BecomeAProvider.md)
 - [Gateway](Guides/Gateway.md)
 - [Add Single Sign-On to your App](Guides/SSO.md)
-- [Lightpaper](Lightpaper.md)
+- [Core](Core.md)
     - [Architecture](Architecture/index.md)
         - [Operational Model](Architecture/OperationalModel.md)
         - [Interaction Model](Architecture/InteractionModel.md)

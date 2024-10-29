@@ -1,4 +1,4 @@
-# Frequency Lightpaper
+# Frequency Core
 
 Frequency is a purpose-built Layer 1 public blockchain designed to fulfill the promise of the [Decentralized Social Networking Protocol (DSNP)](https://www.dsnp.org).
 Frequency delivers essential infrastructure to create the next generation of social networking apps that give individuals more control over their data and agency to participate in the evolving digital economy.
