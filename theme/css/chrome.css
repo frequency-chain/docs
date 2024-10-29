@@ -14,9 +14,13 @@ html {
   scrollbar-color: var(--scrollbar) var(--bg);
 }
 
+.content h2 a:link
+{
+  color: var(--warning-border)
+}
+
+
 #searchresults a,
-.content a:link,
-a:visited,
 a > .hljs {
   color: var(--links);
 }
@@ -138,8 +142,6 @@ a > .hljs {
 .menu-bar:visited,
 .nav-chapters,
 .nav-chapters:visited,
-.mobile-nav-chapters,
-.mobile-nav-chapters:visited,
 .menu-bar .icon-button,
 .menu-bar a:link,
 .menu-bar a:visited {
@@ -198,6 +200,15 @@ a > .hljs {
   padding: 10px 20px;
   border-radius: 5px;
   background-color: var(--page-nav-bg);
+  color: var(--links);
+}
+
+.mobile-nav-chapters:hover {
+  color: var(--links-hover);
+}
+
+.mobile-nav-chapters:active {
+  color: var(--links);
 }
 
 /* Only Firefox supports flow-relative values */

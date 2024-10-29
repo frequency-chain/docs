@@ -170,9 +170,11 @@ h6:target::before {
 }
 .content a {
   text-decoration: none;
+  color: var(--links)
 }
 .content a:hover {
   text-decoration: underline;
+  color: var(--links-hover);
 }
 .content img,
 .content video {
