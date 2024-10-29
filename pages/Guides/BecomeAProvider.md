@@ -16,15 +16,46 @@ Providers handle transactions, manage user delegations, and facilitate various o
 
 ## How to Become a Provider
 
-Before you become a provider, you will need to make sure you have a wallet and Testnet Token.
+Before you become a provider on Testnet, you will need to make sure you have a wallet and Testnet Token.
 To set up your digital wallet and obtain testnet tokens go to [https://faucet.testnet.frequency.xyz/](https://faucet.testnet.frequency.xyz/) and follow these directions for setting a wallet and getting tokens.
 
-Next you will need to follow a few simple steps to register as a Provider:
+## Step 1: Generate Your Keys
 
-1. Visit the [Provider Dashboard](https://provider.frequency.xyz/) to set up your official Provider account on the testnet.
-2. On the Provider Dashboard, you will be asked to select which network you would like to join from the dropdown.  You may select among the [available networks](https://provider.frequency.xyz/faq): Mainnet, Testnet on Paseo, Localhost, or Custom.
-3. Select your account from the dropdown.
-4. Enter a Provider name. Note this is a text field where you must enter a name other than your MSA Id.
-5. NOTE: Once registered, your provider status remains permanent in order to maintain transaction verification integrity.
+There are various wallets that can generate and secure Frequency compatible keys, including:
+
+- [Polkadot Extension](https://polkadot.js.org/extension/)
+- [Talisman](https://www.talisman.xyz)
+- [See more](https://polkadot.com/get-started/wallets)
+
+This onboarding process will guide you through the creation of an account and the creation of a Provider Control Key which will be required for many different transactions.
+
+## Step 2: Acquire Testnet Tokens
+
+Taking the account generated in Step 1, visit the Frequency Testnet Faucet [Testnet Faucet](https://faucet.testnet.frequency.xyz/), and follow the prompts to get tokens.
+
+## Step 3: Create a Testnet Provider
+
+- Visit the [Provider Dashboard](https://provider.frequency.xyz/) to set up your official Provider account on the Frequency Testnet.
+- On the Provider Dashboard, you will be asked to select which network you would like to join from the dropdown.  You may select among the available networks: Mainnet, Testnet on Paseo, Localhost, or Custom. Select Testnet on Paseo.
+- Select your account ID from the dropdown. (This is the Application Account you created in Step 1.)
+- Select Create an MSA and approve the transaction popups.
+- Enter a Provider name.  (In this text field, you must enter a name other than your MSA Id.)
+
+NOTE: Once registered, your provider status remains permanent in order to maintain transaction verification integrity.
+
+## Step 4: Gain Capacity
+
+[Capacity](../Tokenomics/ProviderIncentives.md#capacity-model) is the ability to perform some transactions without token cost.
+All interactions with the chain that an application does on behalf of a user can be done with Capacity.
+
+Login to the [Provider Dashboard](https://provider.frequency.xyz/), select Stake to Provider, and stake 100 XRQCY Tokens.
+This will give you enough Capacity for testing.
+
+## Step 5: Done!
+
+You are now registered as a Provider on Testnet and have Capacity to do things like support users with [Single Sign On](./SSO.md).
+You can also use the [Provider Dashboard](https://provider.frequency.xyz/) to add additional Control Keys for safety.
+
+Ready to move to production? [Become a Provider on Mainnet](https://projectlibertylabs.github.io/gateway/GettingStarted/BecomeProvider.html#mainnet).
 
 **[Become a Provider Today](https://provider.frequency.xyz/)**
