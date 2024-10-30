@@ -1,4 +1,128 @@
-{{!-- Put your head HTML text here --}}
-<link rel="icon" href="{{ path_to_root }}favicon.ico" sizes="any" />
-<link rel="apple-touch-icon" href="{{ path_to_root }}images/apple-touch-icon.png" />
-<link rel="manifest" href="{{ path_to_root }}images/manifest.webmanifest" />
+<head>
+    <link rel="icon" href="{{ path_to_root }}favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="{{ path_to_root }}images/apple-touch-icon.png" />
+    <link rel="manifest" href="{{ path_to_root }}images/manifest.webmanifest" />
+    <style>
+        .nav {
+            font-family: "Newake", serif;
+            text-transform: uppercase;
+        }
+
+        .nav a {
+            text-decoration: none;
+        }
+
+        .menu-toggle {
+            cursor: pointer;
+        }
+
+        .header-nav {
+            display: none;
+            gap: 20px;
+            color: #19455e;
+        }
+
+        /* Hide mobile nav by default */
+        .header-nav-mobile {
+            display: none;
+            flex-direction: column;
+            box-sizing: border-box;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 100vw;
+            gap: 24px;
+            overflow-y: scroll;
+            background-color: #0b1e28;
+            padding: 50px 12%;
+            transition: all;
+            animation-duration: 1s;
+            height: 0;
+            font-size: 34px;
+        }
+
+        .header-nav-mobile a {
+            color: #fff !important;
+        }
+
+        /* Show mobile nav when isOpen class is added */
+        .header-nav-mobile.isOpen {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Media query for larger screens */
+        @media (min-width: 768px) {
+            .header-nav {
+                display: flex;
+            }
+            .menu-toggle,
+            .header-nav-mobile {
+                display: none;
+            }
+        }
+
+        .menu-toggle.isOpen {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .underline-on-hover:hover::after,
+        .underline-on-hover:focus::after {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<header class="page-header nav">
+    <a class="header-logo" href="https://www.frequency.xyz/" target="_blank">
+        <svg height="auto" width="auto" viewBox="0 0 200 29.605094" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+            <path d="..." fill="currentcolor" />
+        </svg>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="header-nav">
+        <a href="" class="underline-on-hover">About.</a>
+        <a href="" class="underline-on-hover">Dev Docs.</a>
+        <a href="" class="underline-on-hover">Newsroom.</a>
+        <a href="" class="underline-on-hover">Contact.</a>
+    </nav>
+
+    <!-- Mobile Menu Toggle Button -->
+    <div class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMobileMenu()">
+        <svg height="33" width="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 20H25.625M2 11H25.625M2 2H25.625" stroke="#55B1AB" stroke-width="3.375" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="header-nav-mobile" id="mobile-menu">
+        <a href="" class="underline-on-hover">About.</a>
+        <a href="" class="underline-on-hover">Dev Docs.</a>
+        <a href="" class="underline-on-hover">Newsroom.</a>
+        <a href="" class="underline-on-hover">Contact.</a>
+    </nav>
+</header>
+
+<script>
+    let isOpen = false;
+
+    function toggleMobileMenu() {
+        isOpen = !isOpen;
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuToggle = document.querySelector('.menu-toggle');
+
+        // Toggle isOpen class based on current state
+        if (isOpen) {
+            mobileMenu.classList.add('isOpen');
+            menuToggle.classList.add('isOpen');
+            menuToggle.setAttribute('aria-expanded', 'true');
+        } else {
+            mobileMenu.classList.remove('isOpen');
+            menuToggle.classList.remove('isOpen');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        }
+    }
+</script>
