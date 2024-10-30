@@ -1,0 +1,82 @@
+:root {
+  --icon-provider: url("../images/icons/icon-provider.svg");
+  --icon-gateway: url("../images/icons/icon-gateway.svg");
+  --icon-sso: url("../images/icons/icon-sso.svg");
+  --icon-core: url("../images/icons/icon-core.svg");
+}
+
+/* Light theme */
+.light {
+  --icon-provider: url("../images/icons/icon-provider.svg");
+  --icon-gateway: url("../images/icons/icon-gateway.svg");
+  --icon-sso: url("../images/icons/icon-sso.svg");
+  --icon-core: url("../images/icons/icon-core.svg");
+}
+
+/* Dark theme */
+.coal {
+  --icon-provider: url("../images/icons/icon-provider-dark.svg");
+  --icon-gateway: url("../images/icons/icon-gateway-dark.svg");
+  --icon-sso: url("../images/icons/icon-sso-dark.svg");
+  --icon-core: url("../images/icons/icon-core-dark.svg");
+}
+
+/* Dark mode preference */
+@media (prefers-color-scheme: dark) {
+  .light.no-js {
+    /* Override light theme variables if needed */
+    --icon-provider: url("../images/icons/icon-provider-dark.svg");
+    --icon-gateway: url("../images/icons/icon-gateway-dark.svg");
+    --icon-sso: url("../images/icons/icon-sso-dark.svg");
+    --icon-core: url("../images/icons/icon-core-dark.svg");
+  }
+}
+
+/* Basic icon styling for all chapter items */
+#toc > .chapter > li.chapter-item > a:first-of-type::before {
+  content: "";
+  display: block;
+  flex: 0 0 45px;
+  width: 45px;
+  height: 45px;
+  margin-inline-end: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Individual icons for specific items (1 indexed) */
+#toc > .chapter li.chapter-item:nth-child(2) > a:first-of-type::before {
+  background-image: var(--icon-provider);
+}
+
+#toc > .chapter li.chapter-item:nth-child(3) > a:first-of-type::before {
+  background-image: var(--icon-gateway);
+}
+
+#toc > .chapter li.chapter-item:nth-child(4) > a:first-of-type::before {
+  background-image: var(--icon-sso);
+}
+
+#toc > .chapter li.chapter-item:nth-child(5) > a:first-of-type::before {
+  background-image: var(--icon-core);
+}
+
+#toc > .chapter li {
+  display: flex;
+  align-items: center;
+}
+
+#toc > .chapter li.chapter-item > a:first-of-type {
+  padding-inline-start: 0;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.chapter li > a.toggle {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  padding: 0px;
+}

@@ -106,18 +106,9 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <a id="logo" href="https://www.frequency.xyz/">
-                    <svg
-                    viewBox="0 0 200 29.605094"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:svg="http://www.w3.org/2000/svg">
-                    <path
-                        d="M 0,0.60622111 V 28.999203 h 4.998688 v -8.836292 l 9.998244,-4.313402 -0.13402,-5.087168 -9.864222,4.200634 V 5.3386031 H 17.718996 V 0.60622111 Z M 24.230082,5.3386031 h 6.700628 c 2.158222,0 3.937358,1.097758 3.937358,3.445082 0,2.3091559 -1.77827,3.4828159 -3.937358,3.4828159 H 24.230082 Z M 19.23313,0.60622111 V 28.999203 h 4.996952 v -6.965634 l 15.63494,7.003366 v -5.48923 L 24.684628,16.998447 h 6.132446 c 4.846018,0 9.047948,-3.104172 9.047948,-8.2147619 0,-5.11059 -4.20193,-8.17746399 -9.047948,-8.17746399 z m 22.146028,0 V 28.999203 h 17.717264 v -4.731948 h -12.72031 v -7.117436 h 12.72031 V 12.417871 H 46.376112 V 5.3386031 h 12.72031 V 0.60622111 Z m 65.341202,0 V 20.027155 c 0,2.915068 -2.12007,4.921484 -4.99739,4.921484 -2.877329,0 -4.996959,-2.006416 -4.996959,-4.921484 V 0.60622111 h -4.99738 V 19.950385 c 0,5.716504 4.46738,9.653866 9.994339,9.653866 5.52696,0 9.99434,-3.937362 9.99434,-9.653866 V 0.60622111 Z m 6.51109,0 V 28.999203 h 17.71681 V 24.267255 H 118.2284 v -7.117436 h 12.71986 V 12.417871 H 118.2284 V 5.3386031 h 12.71986 V 0.60622111 Z m 35.05545,0 V 19.762147 L 137.87746,0.60622111 h -5.41504 V 28.999203 h 4.92148 V 9.8814451 l 10.44844,19.1177579 h 5.3782 V 0.60622111 Z m 46.37524,0 -3.93736,10.67615789 -4.16376,-10.67615789 h -5.5274 L 193.10984,28.999203 h 5.22422 L 193.29938,17.149819 200,0.60622111 Z M 65.342511,14.802929 a 10.088892,10.088892 0 1 1 20.17777,0 10.32961,10.32961 0 0 1 -1.32502,5.07459 l -11.24261,-6.929634 v 5.640602 l 7.91246,4.770982 a 10.29361,10.29361 0 0 1 -5.45151,1.55187 9.979159,9.979159 0 0 1 -10.07023,-10.105806 M 75.412741,7.411091e-4 A 14.802189,14.802189 0 1 0 85.179811,25.970497 l 5.03512,3.028706 v -5.451498 l -2.00642,-1.211394 A 15.110133,15.110133 0 0 0 90.214931,14.802929 14.679877,14.679877 0 0 0 75.412741,7.411091e-4 Z m 94.111959,0 A 14.802189,14.802189 0 1 0 181.41182,23.585439 L 177.929,20.102623 a 9.314692,9.314692 0 0 1 -8.4043,4.807848 c -5.7165,0 -10.03208,-4.391472 -10.03208,-10.105806 0,-5.7143359 4.31558,-10.1457099 10.03208,-10.1457099 a 9.34592,9.34592 0 0 1 8.4043,4.845582 l 3.48282,-3.482818 A 14.456509,14.456509 0 0 0 169.5247,7.411091e-4 Z"
-                        fill="currentcolor" />
-                    </svg>
-                </a>
-                {{#toc}}{{/toc}}
+                <div id="toc">
+                  {{#toc}}{{/toc}}
+                </div>
                 <div class="spacer"></div>
                 <ol class="chapter">
                     <li class="chapter-item">
@@ -125,11 +116,20 @@
                             Home
                         </a>
                     </li>
-                    <li class="chapter-item">
-                        <a href="https://github.com/frequency-chain/" class="nav-return">
-                            GitHub
+                    {{#if git_repository_url}}
+                      <li class="chapter-item">
+                        <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa {{git_repository_icon}}"></i> GitHub
                         </a>
-                    </li>
+                        </li>
+                    {{/if}}
+                    {{#if git_repository_edit_url}}
+                      <li class="chapter-item">
+                        <a href="{{git_repository_edit_url}}" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i> Edit this Page
+                        </a>
+                      </li>
+                    {{/if}}
                 </ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
@@ -191,17 +191,6 @@
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         {{/if}}
-                        {{#if git_repository_url}}
-                        <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
-                            <i id="git-repository-button" class="fa {{git_repository_icon}}"></i>
-                        </a>
-                        {{/if}}
-                        {{#if git_repository_edit_url}}
-                        <a href="{{git_repository_edit_url}}" title="Suggest an edit" aria-label="Suggest an edit">
-                            <i id="git-edit-button" class="fa fa-edit"></i>
-                        </a>
-                        {{/if}}
-
                     </div>
                 </div>
 

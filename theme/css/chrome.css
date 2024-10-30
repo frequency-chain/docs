@@ -14,11 +14,9 @@ html {
   scrollbar-color: var(--scrollbar) var(--bg);
 }
 
-.content h2 a:link
-{
-  color: var(--links-hover)
+.content h2 a:link {
+  color: var(--links-hover);
 }
-
 
 #searchresults a,
 a > .hljs {
@@ -607,13 +605,12 @@ ul#searchresults span.teaser em {
   margin-inline-start: auto;
   padding: 0 10px;
   user-select: none;
-  opacity: 0.68;
 }
 
 /* Switch to Chevron */
 .chapter li > a.toggle {
   background-color: var(--sidebar-fg);
-  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chevron"><polyline points="9 18 15 12 9 6"></polyline></svg>');
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="chevron"><polyline points="9 18 15 12 9 6"></polyline></svg>');
   background-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
