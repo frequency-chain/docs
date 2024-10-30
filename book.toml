@@ -5,8 +5,11 @@ multilingual = false
 src = "pages"
 title = "Frequency Documentation"
 
-[preprocessor.local]
-command = "node preprocessor.mjs"
+[preprocessor.button-links]
+command = "node preprocessors/button-links.mjs"
+
+[preprocessor.svg-embed]
+command = "node preprocessors/svg-embed.mjs"
 
 [output.html]
 no-section-label = true
