@@ -62,6 +62,26 @@
   background-image: var(--icon-core);
 }
 
+/* Nav Bar */
+
+#toc .chapter li.chapter-item:nth-child(1) {
+  /* Hide the "overview" page */
+  display: none;
+}
+
+#toc > .chapter > li.chapter-item {
+  margin-block-start: 4.5rem;
+}
+
+#toc > .chapter > li > a:first-of-type {
+  padding-inline-start: 1rem;
+  font-weight: bold;
+}
+
+#toc > .chapter > li > .section {
+  padding-inline-start: calc(45px + 2rem);
+}
+
 #toc > .chapter li {
   display: flex;
   align-items: center;
