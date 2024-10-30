@@ -120,7 +120,7 @@ a > .hljs {
 }
 
 .menu-title {
-  display: inline-block;
+  display: none;
   font-weight: 300;
   font-size: 2.4rem;
   line-height: var(--menu-bar-height);
@@ -641,7 +641,7 @@ ul#searchresults span.teaser em {
 
 .chapter li.chapter-item {
   line-height: 1.5em;
-  margin-block-start: 0.6em;
+  margin-block-start: 1em;
 }
 
 .chapter li.expanded > a.toggle div {

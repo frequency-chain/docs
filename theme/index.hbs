@@ -111,11 +111,6 @@
                 </div>
                 <div class="spacer"></div>
                 <ol class="chapter">
-                    <li class="chapter-item">
-                        <a href="https://www.frequency.xyz" class="nav-return">
-                            Home
-                        </a>
-                    </li>
                     {{#if git_repository_url}}
                       <li class="chapter-item">
                         <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
@@ -184,14 +179,6 @@
                     </div>
 
                     <h1 class="menu-title"></h1>
-
-                    <div class="right-buttons">
-                        {{#if print_enable}}
-                        <a href="{{ path_to_root }}print.html" title="Print this book" aria-label="Print this book">
-                            <i id="print-button" class="fa fa-print"></i>
-                        </a>
-                        {{/if}}
-                    </div>
                 </div>
 
                 {{#if search_enabled}}
