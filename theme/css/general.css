@@ -148,6 +148,12 @@ h6:target::before {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 900px) {
+  .page-header {
+    padding: 0 30px;
+  }
+}
+
 .header-logo {
   height: auto;
   width: 236px;
