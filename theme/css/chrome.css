@@ -62,7 +62,7 @@ a > .hljs {
 .js.sidebar-visible #menu-bar {
   position: -webkit-sticky;
   position: sticky;
-  top: 0 !important;
+  top: 80px !important;
 }
 
 #menu-bar-hover-placeholder {
@@ -742,4 +742,31 @@ ul#searchresults span.teaser em {
 
 .nav-return:hover {
   color: var(--sidebar-active);
+}
+
+/* Underline on hover animation */
+.underline-on-hover {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0.25rem 0;
+}
+
+.underline-on-hover::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.1em;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+  content: '';
+  transform: translate3d(-100%, 0, 0);
+}
+
+.underline-on-hover:hover::after,
+.underline-on-hover:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
