@@ -50,6 +50,7 @@
         {{/if}}
     </head>
     <body class="sidebar-visible no-js">
+    <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
@@ -85,8 +86,6 @@
             body.classList.remove('no-js')
             body.classList.add('js');
         </script>
-
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
@@ -231,7 +230,7 @@
         </div>
 
         <!-- Custom Footer Start -->
-        <footer id="frqcy-footer" class="">
+        <footer id="footer" class="frqcy-footer">
           <a id="frqcy-footer-logo" href="https://www.frequency.xyz" target="_blank">
             <svg viewBox="0 0 257 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path

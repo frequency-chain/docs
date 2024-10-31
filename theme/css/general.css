@@ -129,7 +129,6 @@ h6:target::before {
 .page-wrapper {
   box-sizing: border-box;
   background-color: var(--bg);
-  padding-top: 80px;
 }
 
 .page-header {
@@ -157,10 +156,6 @@ h6:target::before {
 .header-logo {
   height: auto;
   width: 236px;
-}
-
-.sidebar{
-  margin-top: 80px
 }
 
 .no-js .page-wrapper,
@@ -203,7 +198,7 @@ h6:target::before {
 }
 .content a {
   text-decoration: none;
-  color: var(--links)
+  color: var(--links);
 }
 .content a:hover {
   text-decoration: underline;

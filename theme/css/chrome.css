@@ -2,6 +2,33 @@
 
 @import "variables.css";
 
+/* GRID */
+#body-container {
+  display: grid;
+  justify-items: stretch;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer  footer";
+  grid-template-columns: 0 1fr;
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+#header {
+  grid-area: header;
+}
+
+#content {
+  grid-area: content;
+}
+
+#footer {
+  grid-area: footer;
+}
+
 ::-webkit-scrollbar {
   background: var(--bg);
 }
@@ -454,10 +481,6 @@ ul#searchresults span.teaser em {
 /* Sidebar */
 
 .sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
   width: var(--sidebar-width);
   font-size: 0.875em;
   box-sizing: border-box;
@@ -491,11 +514,7 @@ ul#searchresults span.teaser em {
 
 .sidebar .sidebar-scrollbox {
   overflow-y: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: sticky;
   padding: 10px 20px;
 }
 
@@ -514,7 +533,6 @@ ul#searchresults span.teaser em {
   width: 100%;
   height: 12px;
   background-color: var(--icons);
-  margin-inline-start: var(--sidebar-resize-indicator-space);
 }
 
 [dir="rtl"] .sidebar .sidebar-resize-handle {
@@ -545,19 +563,19 @@ ul#searchresults span.teaser em {
 }
 
 /* sidebar-visible */
-#sidebar-toggle-anchor:checked ~ .page-wrapper {
+#sidebar-toggle-anchor:checked ~ #body-container {
   transform: translateX(calc(var(--sidebar-width) + var(--sidebar-resize-indicator-width)));
 }
-[dir="rtl"] #sidebar-toggle-anchor:checked ~ .page-wrapper {
+[dir="rtl"] #sidebar-toggle-anchor:checked ~ #body-container {
   transform: translateX(calc(0px - var(--sidebar-width) - var(--sidebar-resize-indicator-width)));
 }
 
 @media only screen and (min-width: 620px) {
-  #sidebar-toggle-anchor:checked ~ .page-wrapper {
+  #sidebar-toggle-anchor:checked ~ #body-container {
     transform: none;
-    margin-inline-start: calc(var(--sidebar-width) + var(--sidebar-resize-indicator-width));
+    grid-template-columns: calc(var(--sidebar-width) + var(--sidebar-resize-indicator-width)) 1fr;
   }
-  [dir="rtl"] #sidebar-toggle-anchor:checked ~ .page-wrapper {
+  [dir="rtl"] #sidebar-toggle-anchor:checked ~ #body-container {
     transform: none;
   }
 }
@@ -757,8 +775,10 @@ ul#searchresults span.teaser em {
   height: 0.1em;
   width: 100%;
   opacity: 0;
-  transition: opacity 300ms, transform 300ms;
-  content: '';
+  transition:
+    opacity 300ms,
+    transform 300ms;
+  content: "";
   transform: translate3d(-100%, 0, 0);
 }
 
