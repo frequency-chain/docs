@@ -17,6 +17,7 @@ edit-url-template = "https://github.com/frequency-chain/docs/blob/main/{path}"
 preferred-dark-theme = "coal"
 additional-css = [
   "css/side-nav.css",
+  "css/header.css",
   "css/extended.css",
   "css/highlight.css",
   "css/highlight-dark.css",
