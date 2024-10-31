@@ -400,16 +400,6 @@ function playground_text(playground, hidden = true) {
   var sidebarToggleAnchor = document.getElementById("sidebar-toggle-anchor");
   var firstContact = null;
 
-  var sidebarAnchorToggles = document.querySelectorAll("#sidebar a.toggle");
-
-  function toggleSection(ev) {
-    ev.currentTarget.parentElement.classList.toggle("expanded");
-  }
-
-  Array.from(sidebarAnchorToggles).forEach(function (el) {
-    el.addEventListener("click", toggleSection);
-  });
-
   function showSidebar() {
     if (sidebarToggleAnchor.checked !== true) {
       sidebarToggleAnchor.checked = true;
@@ -428,6 +418,16 @@ function playground_text(playground, hidden = true) {
       localStorage.setItem("mdbook-sidebar", "visible");
     } catch (e) {}
   }
+
+  var sidebarAnchorToggles = document.querySelectorAll("#sidebar a.toggle");
+
+  function toggleSection(ev) {
+    ev.currentTarget.parentElement.classList.toggle("expanded");
+  }
+
+  Array.from(sidebarAnchorToggles).forEach(function (el) {
+    el.addEventListener("click", toggleSection);
+  });
 
   function hideSidebar() {
     if (sidebarToggleAnchor.checked !== false) {
