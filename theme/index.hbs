@@ -106,19 +106,25 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                {{#toc}}{{/toc}}
+                <div id="toc">
+                  {{#toc}}{{/toc}}
+                </div>
                 <div class="spacer"></div>
                 <ol class="chapter">
-                    <li class="chapter-item">
-                        <a href="https://www.frequency.xyz" class="nav-return">
-                            Home
+                    {{#if git_repository_url}}
+                      <li class="chapter-item">
+                        <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa {{git_repository_icon}}"></i> GitHub
                         </a>
-                    </li>
-                    <li class="chapter-item">
-                        <a href="https://github.com/frequency-chain/" class="nav-return">
-                            GitHub
+                        </li>
+                    {{/if}}
+                    {{#if git_repository_edit_url}}
+                      <li class="chapter-item">
+                        <a href="{{git_repository_edit_url}}" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i> Edit this Page
                         </a>
-                    </li>
+                      </li>
+                    {{/if}}
                 </ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
@@ -174,25 +180,6 @@
                     </div>
 
                     <h1 class="menu-title"></h1>
-
-                    <div class="right-buttons">
-                        {{#if print_enable}}
-                        <a href="{{ path_to_root }}print.html" title="Print this book" aria-label="Print this book">
-                            <i id="print-button" class="fa fa-print"></i>
-                        </a>
-                        {{/if}}
-                        {{#if git_repository_url}}
-                        <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
-                            <i id="git-repository-button" class="fa {{git_repository_icon}}"></i>
-                        </a>
-                        {{/if}}
-                        {{#if git_repository_edit_url}}
-                        <a href="{{git_repository_edit_url}}" title="Suggest an edit" aria-label="Suggest an edit">
-                            <i id="git-edit-button" class="fa fa-edit"></i>
-                        </a>
-                        {{/if}}
-
-                    </div>
                 </div>
 
                 {{#if search_enabled}}
