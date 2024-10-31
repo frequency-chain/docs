@@ -66,12 +66,13 @@
 }
 
 .light {
-  --bg: #fefaf3;
+  --bg: #fff;
   --fg: #000;
   --headers: #19455e;
+  --headers-alt: #f77c47;
 
-  --sidebar-bg: #f4ecde;
-  --sidebar-fg: #000;
+  --sidebar-bg: #19455E;
+  --sidebar-fg: #fff;
   --sidebar-non-existant: var(--sidebar-fg);
   --sidebar-active: #4ba0a5;
   --sidebar-spacer: var(--sidebar-bg);
@@ -82,6 +83,7 @@
   --icons-hover: #4ba0a5;
 
   --links: var(--sidebar-active);
+  --links-hover: var(--headers-alt);
 
   --inline-code-color: #301900;
 
