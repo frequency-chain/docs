@@ -1,7 +1,7 @@
 /* Globals */
 
 :root {
-  --sidebar-width: 300px;
+  --sidebar-width: 360px;
   --sidebar-resize-indicator-width: 8px;
   --sidebar-resize-indicator-space: 2px;
   --page-padding: 15px;
@@ -71,7 +71,7 @@
   --headers: #19455e;
   --headers-alt: #f77c47;
 
-  --sidebar-bg: #19455E;
+  --sidebar-bg: #19455e;
   --sidebar-fg: #fff;
   --sidebar-non-existant: var(--sidebar-fg);
   --sidebar-active: #4ba0a5;
