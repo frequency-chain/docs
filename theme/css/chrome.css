@@ -5,20 +5,32 @@
 /* GRID */
 #body-container {
   display: grid;
-  justify-items: stretch;
-  grid-template-areas:
-    "header header"
-    "sidebar content"
-    "footer  footer";
-  grid-template-columns: 0 1fr;
+  grid:
+    [row1-start] "header header header" auto [row1-end]
+    [row2-start] "sidebar sidebar-resize content" auto [row2-end]
+    [row3-start] "footer footer footer" auto [row3-end]
+    / 0 var(--sidebar-resize-indicator-width) 1fr;
+}
+
+.no-js #body-container {
+  display: grid;
+  grid:
+    [row1-start] "header header header" auto [row1-end]
+    [row2-start] "sidebar sidebar-resize content" auto [row2-end]
+    [row3-start] "footer footer footer" auto [row3-end]
+    / 0 0 1fr;
+}
+
+#header {
+  grid-area: header;
 }
 
 #sidebar {
   grid-area: sidebar;
 }
 
-#header {
-  grid-area: header;
+#sidebar-resize-handle {
+  grid-area: sidebar-resize;
 }
 
 #content {
@@ -481,18 +493,24 @@ ul#searchresults span.teaser em {
 /* Sidebar */
 
 .sidebar {
-  width: var(--sidebar-width);
   font-size: 0.875em;
   box-sizing: border-box;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior-y: contain;
   background-color: var(--sidebar-bg);
   color: var(--sidebar-fg);
+  position: relative;
 }
 
-[dir="rtl"] .sidebar {
-  left: unset;
-  right: 0;
+.sidebar .sidebar-scrollbox {
+  position: sticky;
+  top: 80px;
+  max-height: 100vh;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+}
+
+.sidebar .sidebar-contents {
+  padding: 10px 20px;
 }
 
 .sidebar-resizing {
@@ -504,54 +522,28 @@ ul#searchresults span.teaser em {
 
 .no-js .sidebar,
 .js:not(.sidebar-resizing) .sidebar {
-  transition: transform 0.3s;
-  /* Animation: slide away */
+  transition: grid-template-columns 0.3s;
+  /* TODO */
 }
 
 .sidebar code {
   line-height: 2em;
 }
 
-.sidebar .sidebar-scrollbox {
-  overflow-y: auto;
-  position: sticky;
-  padding: 10px 20px;
-}
-
-.sidebar .sidebar-resize-handle {
-  position: absolute;
+.sidebar-resize-handle {
   cursor: col-resize;
-  width: 0;
-  right: calc(var(--sidebar-resize-indicator-width) * -1);
-  top: 0;
-  bottom: 0;
   display: flex;
   align-items: center;
-}
-
-.sidebar-resize-handle .sidebar-resize-indicator {
-  width: 100%;
-  height: 12px;
-  background-color: var(--icons);
-}
-
-[dir="rtl"] .sidebar .sidebar-resize-handle {
-  left: calc(var(--sidebar-resize-indicator-width) * -1);
-  right: unset;
-}
-
-.js .sidebar .sidebar-resize-handle {
-  cursor: col-resize;
+  margin-left: var(--sidebar-resize-indicator-space);
   width: calc(var(--sidebar-resize-indicator-width) - var(--sidebar-resize-indicator-space));
 }
 
-/* sidebar-hidden */
-#sidebar-toggle-anchor:not(:checked) ~ .sidebar {
-  transform: translateX(calc(0px - var(--sidebar-width) - var(--sidebar-resize-indicator-width)));
-  z-index: -1;
-}
-[dir="rtl"] #sidebar-toggle-anchor:not(:checked) ~ .sidebar {
-  transform: translateX(calc(var(--sidebar-width) + var(--sidebar-resize-indicator-width)));
+.sidebar-resize-handle .sidebar-resize-indicator {
+  position: fixed;
+  top: 50%;
+  width: var(--sidebar-resize-indicator-width);
+  height: 12px;
+  background-color: var(--icons);
 }
 
 .sidebar::-webkit-scrollbar {
@@ -564,26 +556,26 @@ ul#searchresults span.teaser em {
 
 /* sidebar-visible */
 #sidebar-toggle-anchor:checked ~ #body-container {
-  transform: translateX(calc(var(--sidebar-width) + var(--sidebar-resize-indicator-width)));
-}
-[dir="rtl"] #sidebar-toggle-anchor:checked ~ #body-container {
-  transform: translateX(calc(0px - var(--sidebar-width) - var(--sidebar-resize-indicator-width)));
+  /* On Mobile, max the width of the sidebar, but always leave room for the menu button */
+  grid-template-columns:
+    minmax(min(var(--sidebar-width), calc(100vw - 50px)), 1fr) var(--sidebar-resize-indicator-width)
+    minmax(100vw, 1fr);
 }
 
+/* Desktop sidebar visible */
 @media only screen and (min-width: 620px) {
   #sidebar-toggle-anchor:checked ~ #body-container {
     transform: none;
-    grid-template-columns: calc(var(--sidebar-width) + var(--sidebar-resize-indicator-width)) 1fr;
-  }
-  [dir="rtl"] #sidebar-toggle-anchor:checked ~ #body-container {
-    transform: none;
+    grid-template-columns:
+      var(--sidebar-width) var(--sidebar-resize-indicator-width)
+      minmax(300px, 1fr);
   }
 }
 
 .chapter {
   list-style: none outside none;
   padding-inline-start: 0;
-  line-height: 2.2em;
+  line-height: 1;
 }
 
 .chapter ol {

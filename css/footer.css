@@ -8,6 +8,8 @@
 }
 
 .frqcy-footer {
+  background: var(--footer-color-primary-inverted);
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -73,6 +73,11 @@
   margin-block-start: 4.5rem;
 }
 
+/* n(1) is hidden, so we need to remove the margin from n(2) */
+#toc > .chapter li.chapter-item:nth-child(2) {
+  margin-block-start: 0;
+}
+
 #toc > .chapter > li > a:first-of-type {
   padding-inline-start: 1rem;
   font-weight: bold;
@@ -99,8 +104,4 @@
   width: 24px;
   height: 24px;
   padding: 0px;
-}
-
-.sidebar {
-  margin-top: 40px;
 }

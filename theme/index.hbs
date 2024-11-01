@@ -103,8 +103,11 @@
             body.classList.add("sidebar-" + sidebar);
         </script>
 
+        {{> header}}
+
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
+              <div class="sidebar-contents">
                 <div id="toc">
                   {{#toc}}{{/toc}}
                 </div>
@@ -125,11 +128,13 @@
                       </li>
                     {{/if}}
                 </ol>
-            </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
-                <div class="sidebar-resize-indicator"></div>
+              </div>
             </div>
         </nav>
+
+        <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+            <div class="sidebar-resize-indicator"></div>
+        </div>
 
         <!-- Track and set sidebar scroll position -->
         <script>
@@ -152,8 +157,6 @@
                 }
             }
         </script>
-
-        {{> header}}
 
         <div id="page-wrapper" class="page-wrapper">
 
