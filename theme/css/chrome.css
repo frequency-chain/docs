@@ -109,8 +109,6 @@ a > .hljs {
   transition: color 0.5s;
 }
 
-/* calc(0px - var(--page-padding)) */
-
 @media only screen and (max-width: 420px) {
   #menu-bar i,
   #menu-bar .icon-button {
@@ -482,12 +480,6 @@ ul#searchresults span.teaser em {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.no-js .sidebar,
-.js:not(.sidebar-resizing) .sidebar {
-  transition: grid-template-columns 0.3s;
-  /* TODO */
 }
 
 .sidebar code {
