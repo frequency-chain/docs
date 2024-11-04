@@ -22,6 +22,7 @@
   width: 100%;
   color: var(--footer-color-primary);
   margin-bottom: var(--footer-section-margin-bottom);
+  margin-top: var(--footer-section-margin-bottom);
 }
 
 #frqcy-footer-copyright {
@@ -54,9 +55,12 @@
   display: flex;
   flex-direction: row;
   margin-bottom: var(--footer-section-margin-bottom);
+  width: 100%;
+  justify-content: center;
 }
 
 .frqcy-footer .frqcy-footer-social-links a {
+  cursor: pointer;
   display: flex;
   margin: 1rem;
   padding: 0.5rem;

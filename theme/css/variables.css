@@ -2,7 +2,8 @@
 
 :root {
   --sidebar-width: 360px;
-  --sidebar-resize-indicator-width: 8px;
+  --sidebar-width-mobile: calc(100vw - 50px);
+  --sidebar-resize-indicator-width: 4px;
   --sidebar-resize-indicator-space: 2px;
   --page-padding: 15px;
   --content-max-width: 950px;
