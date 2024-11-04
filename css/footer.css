@@ -27,18 +27,20 @@
 
 #frqcy-footer-copyright {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
   width: 100%;
   line-height: 1;
-  margin-bottom: var(--footer-section-margin-bottom);
+  margin: 0 1rem var(--footer-section-margin-bottom) 1rem;
 }
 
 #frqcy-footer-copyright div.frqcy-footer-vbar {
-  width: 2px;
+  width: 10%;
+  height: 2px;
   background: var(--footer-color-primary);
   justify-self: stretch;
-  margin: 0 2rem;
+  margin: 1rem auto;
 }
 
 #frqcy-footer-copyright a {
@@ -62,6 +64,7 @@
 .frqcy-footer .frqcy-footer-social-links a {
   cursor: pointer;
   display: flex;
+  height: 100%;
   margin: 1rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -73,4 +76,17 @@
 .frqcy-footer .frqcy-footer-social-links a:hover,
 .frqcy-footer .frqcy-footer-social-links a:visited:hover {
   background: var(--footer-color-secondary);
+}
+
+/* Desktop */
+@media only screen and (min-width: 620px) {
+  #frqcy-footer-copyright {
+    flex-direction: row;
+  }
+
+  #frqcy-footer-copyright div.frqcy-footer-vbar {
+    width: 2px;
+    height: 100%;
+    margin: 0 2rem;
+  }
 }
