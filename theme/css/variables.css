@@ -10,6 +10,7 @@
   --menu-bar-height: 50px;
   --mono-font: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
   --code-font-size: 0.875em /* please adjust the ace font size accordingly in editor.js */;
+  --header-height: 80px;
 }
 
 /* Themes */
@@ -30,7 +31,8 @@
   --icons: #f1f1f1;
   --icons-hover: #4ba0a5;
 
-  --links: var(--sidebar-active);
+  --links: var(--sidebar-fg);
+  --links-hover: var(--sidebar-active);
 
   --inline-code-color: #c5c8c6;
 
@@ -70,7 +72,6 @@
   --bg: #fff;
   --fg: #000;
   --headers: #19455e;
-  --headers-alt: #f77c47;
 
   --sidebar-bg: #19455e;
   --sidebar-fg: #fff;
@@ -83,8 +84,8 @@
   --icons: #19455e;
   --icons-hover: #4ba0a5;
 
-  --links: var(--sidebar-active);
-  --links-hover: var(--headers-alt);
+  --links: var(--sidebar-fg);
+  --links-hover: var(--sidebar-active);
 
   --inline-code-color: #301900;
 

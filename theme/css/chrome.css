@@ -2,23 +2,27 @@
 
 @import "variables.css";
 
+:target {
+  scroll-margin-top: calc(var(--header-height) + 20px);
+}
+
 /* GRID */
 #body-container {
   display: grid;
   grid:
-    [row1-start] "header header header" auto [row1-end]
-    [row2-start] "sidebar sidebar-resize content" auto [row2-end]
-    [row3-start] "footer footer footer" auto [row3-end]
-    / 0 0 1fr;
+    [row1-start] "header header header header" auto [row1-end]
+    [row2-start] "sidebar sidebar-resize menu-bar content" auto [row2-end]
+    [row3-start] "footer footer footer footer" auto [row3-end]
+    / 0 0 auto 1fr;
 }
 
 .no-js #body-container {
   display: grid;
   grid:
     [row1-start] "header header header" auto [row1-end]
-    [row2-start] "sidebar sidebar-resize content" auto [row2-end]
+    [row2-start] "sidebar sidebar-resize menu-bar content" auto [row2-end]
     [row3-start] "footer footer footer" auto [row3-end]
-    / 0 0 1fr;
+    / 0 0 auto 1fr;
 }
 
 #header {
@@ -39,6 +43,10 @@
 
 #footer {
   grid-area: footer;
+}
+
+#menu-bar {
+  grid-area: menu-bar;
 }
 
 ::-webkit-scrollbar {
@@ -78,40 +86,17 @@ a > .hljs {
 
 /* Menu Bar */
 
-#menu-bar,
-#menu-bar-hover-placeholder {
-  z-index: 101;
-  margin: auto calc(0px - var(--page-padding));
-}
-
 #menu-bar {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
   background-color: var(--bg);
-  border-block-end-color: var(--bg);
-  border-block-end-width: 1px;
-  border-block-end-style: solid;
 }
 
-#menu-bar.sticky,
-.js #menu-bar-hover-placeholder:hover + #menu-bar,
-.js #menu-bar:hover,
-.js.sidebar-visible #menu-bar {
-  position: -webkit-sticky;
+.menu-bar-inner {
   position: sticky;
-  top: 80px !important;
-}
-
-#menu-bar-hover-placeholder {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  height: var(--menu-bar-height);
-}
-
-#menu-bar.bordered {
-  border-block-end-color: var(--table-border-color);
+  top: var(--header-height);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 #menu-bar i,
@@ -123,6 +108,8 @@ a > .hljs {
   cursor: pointer;
   transition: color 0.5s;
 }
+
+/* calc(0px - var(--page-padding)) */
 
 @media only screen and (max-width: 420px) {
   #menu-bar i,
@@ -142,38 +129,8 @@ a > .hljs {
   margin: 0;
 }
 
-.right-buttons {
-  margin: 0 15px;
-}
-
-.right-buttons a {
-  text-decoration: none;
-}
-
-.left-buttons {
-  display: flex;
-  margin: 0 5px;
-}
-
-.no-js .left-buttons button {
-  display: none;
-}
-
 .menu-title {
   display: none;
-  font-weight: 300;
-  font-size: 2.4rem;
-  line-height: var(--menu-bar-height);
-  text-align: center;
-  margin: 0;
-  flex: 1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.js .menu-title {
-  cursor: pointer;
 }
 
 .menu-bar,
@@ -395,6 +352,12 @@ pre > .result {
 
 /* Search */
 
+#search-wrapper {
+  position: sticky;
+  top: var(--header-height);
+  background-color: var(--bg);
+}
+
 #searchresults a {
   text-decoration: none;
 }
@@ -559,14 +522,14 @@ ul#searchresults span.teaser em {
 /* sidebar-visible */
 #sidebar-toggle-anchor:checked ~ #body-container {
   /* On Mobile, max the width of the sidebar, but always leave room for the menu button */
-  grid-template-columns: var(--sidebar-width-mobile) 0 minmax(300px, 1fr);
+  grid-template-columns: var(--sidebar-width-mobile) 0 auto minmax(300px, 1fr);
 }
 
 /* Desktop sidebar visible */
 @media only screen and (min-width: 620px) {
   #sidebar-toggle-anchor:checked ~ #body-container {
     grid-template-columns:
-      var(--sidebar-width) var(--sidebar-resize-indicator-width)
+      var(--sidebar-width) var(--sidebar-resize-indicator-width) auto
       minmax(300px, 1fr);
   }
 
@@ -695,11 +658,11 @@ ul#searchresults span.teaser em {
 .theme-popup {
   position: absolute;
   left: 10px;
-  top: var(--menu-bar-height);
+  top: 0;
   z-index: 1000;
   border-radius: 4px;
   font-size: 0.7em;
-  color: var(--fg);
+  color: var(--sidebar-fg);
   background: var(--theme-popup-bg);
   border: 1px solid var(--theme-popup-border);
   margin: 0;
