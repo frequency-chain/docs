@@ -14,15 +14,15 @@
   flex-direction: column;
   align-items: center;
   color: var(--footer-color-primary);
+  padding: var(--footer-section-margin-bottom) 1rem;
 }
 
 #frqcy-footer-logo {
-  display: flex;
+  display: block;
   max-width: 257px;
   width: 100%;
   color: var(--footer-color-primary);
   margin-bottom: var(--footer-section-margin-bottom);
-  margin-top: var(--footer-section-margin-bottom);
 }
 
 #frqcy-footer-copyright {
