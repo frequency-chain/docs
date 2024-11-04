@@ -18,6 +18,7 @@ preferred-dark-theme = "coal"
 additional-css = [
   "css/side-nav.css",
   "css/header.css",
+  "css/footer.css",
   "css/extended.css",
   "css/highlight.css",
   "css/highlight-dark.css",
