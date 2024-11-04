@@ -38,7 +38,7 @@
 
   --theme-popup-bg: var(--sidebar-bg);
   --theme-popup-border: var(--links);
-  --theme-hover: var(--links);
+  --theme-hover: var(--sidebar-active);
 
   --quote-bg: hsl(234, 21%, 18%);
   --quote-border: hsl(234, 21%, 23%);
@@ -91,7 +91,7 @@
 
   --theme-popup-bg: var(--sidebar-bg);
   --theme-popup-border: var(--links);
-  --theme-hover: var(--links);
+  --theme-hover: var(--sidebar-active);
 
   --quote-bg: hsl(197, 37%, 96%);
   --quote-border: hsl(197, 37%, 91%);
