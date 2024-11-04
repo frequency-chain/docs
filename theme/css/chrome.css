@@ -149,6 +149,11 @@ a > .hljs {
   color: var(--icons-hover);
 }
 
+.no-js #theme-toggle,
+.no-js #search-toggle {
+  display: none;
+}
+
 /* Nav Icons */
 
 .nav-chapters {
