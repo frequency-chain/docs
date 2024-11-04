@@ -1,3 +1,11 @@
+#body-container {
+  min-height: 100vh;
+  display: grid;
+  grid:
+    [row2-start] "content" 1fr [row2-end]
+    / auto;
+}
+
 #sidebar,
 #menu-bar,
 .nav-chapters,

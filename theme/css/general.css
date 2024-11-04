@@ -121,15 +121,9 @@ h6:target::before {
   scroll-margin-top: calc(var(--menu-bar-height));
 }
 
-.page {
-  outline: 0;
-  padding: 0 var(--page-padding);
-  margin-block-start: calc(0px - var(--menu-bar-height)); /* Compensate for the #menu-bar-hover-placeholder */
-}
 .page-wrapper {
   box-sizing: border-box;
   background-color: var(--bg);
-  padding-top: 80px;
 }
 
 .page-header {
@@ -157,22 +151,6 @@ h6:target::before {
 .header-logo {
   height: auto;
   width: 236px;
-}
-
-.sidebar{
-  margin-top: 80px
-}
-
-.no-js .page-wrapper,
-.js:not(.sidebar-resizing) .page-wrapper {
-  transition:
-    margin-left 0.3s ease,
-    transform 0.3s ease; /* Animation: slide away */
-}
-[dir="rtl"] .js:not(.sidebar-resizing) .page-wrapper {
-  transition:
-    margin-right 0.3s ease,
-    transform 0.3s ease; /* Animation: slide away */
 }
 
 .content {
@@ -203,7 +181,7 @@ h6:target::before {
 }
 .content a {
   text-decoration: none;
-  color: var(--links)
+  color: var(--links);
 }
 .content a:hover {
   text-decoration: underline;

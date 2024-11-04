@@ -2,6 +2,54 @@
 
 @import "variables.css";
 
+:target {
+  scroll-margin-top: calc(var(--header-height) + 20px);
+}
+
+/* GRID */
+#body-container {
+  min-height: 100vh;
+  display: grid;
+  grid:
+    [row1-start] "header header header header" auto [row1-end]
+    [row2-start] "sidebar sidebar-resize menu-bar content" 1fr [row2-end]
+    [row3-start] "footer footer footer footer" auto [row3-end]
+    / 0 0 auto 1fr;
+}
+
+.no-js #body-container {
+  display: grid;
+  grid:
+    [row1-start] "header header header" auto [row1-end]
+    [row2-start] "sidebar sidebar-resize menu-bar content" auto [row2-end]
+    [row3-start] "footer footer footer" auto [row3-end]
+    / 0 0 auto 1fr;
+}
+
+#header {
+  grid-area: header;
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+#sidebar-resize-handle {
+  grid-area: sidebar-resize;
+}
+
+#content {
+  grid-area: content;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+#menu-bar {
+  grid-area: menu-bar;
+}
+
 ::-webkit-scrollbar {
   background: var(--bg);
 }
@@ -34,44 +82,22 @@ a > .hljs {
         will want to reposition the viewport in a weird way.
     */
   overflow-x: clip;
+  transition: 200ms;
 }
 
 /* Menu Bar */
 
-#menu-bar,
-#menu-bar-hover-placeholder {
-  z-index: 101;
-  margin: auto calc(0px - var(--page-padding));
-}
-
 #menu-bar {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
   background-color: var(--bg);
-  border-block-end-color: var(--bg);
-  border-block-end-width: 1px;
-  border-block-end-style: solid;
 }
 
-#menu-bar.sticky,
-.js #menu-bar-hover-placeholder:hover + #menu-bar,
-.js #menu-bar:hover,
-.js.sidebar-visible #menu-bar {
-  position: -webkit-sticky;
+.menu-bar-inner {
   position: sticky;
-  top: 80px !important;
-}
-
-#menu-bar-hover-placeholder {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  height: var(--menu-bar-height);
-}
-
-#menu-bar.bordered {
-  border-block-end-color: var(--table-border-color);
+  top: var(--header-height);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 #menu-bar i,
@@ -102,38 +128,8 @@ a > .hljs {
   margin: 0;
 }
 
-.right-buttons {
-  margin: 0 15px;
-}
-
-.right-buttons a {
-  text-decoration: none;
-}
-
-.left-buttons {
-  display: flex;
-  margin: 0 5px;
-}
-
-.no-js .left-buttons button {
-  display: none;
-}
-
 .menu-title {
   display: none;
-  font-weight: 300;
-  font-size: 2.4rem;
-  line-height: var(--menu-bar-height);
-  text-align: center;
-  margin: 0;
-  flex: 1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.js .menu-title {
-  cursor: pointer;
 }
 
 .menu-bar,
@@ -151,6 +147,11 @@ a > .hljs {
 .nav-chapters:hover,
 .mobile-nav-chapters i:hover {
   color: var(--icons-hover);
+}
+
+.no-js #theme-toggle,
+.no-js #search-toggle {
+  display: none;
 }
 
 /* Nav Icons */
@@ -355,6 +356,12 @@ pre > .result {
 
 /* Search */
 
+#search-wrapper {
+  position: sticky;
+  top: var(--header-height);
+  background-color: var(--bg);
+}
+
 #searchresults a {
   text-decoration: none;
 }
@@ -454,22 +461,24 @@ ul#searchresults span.teaser em {
 /* Sidebar */
 
 .sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: var(--sidebar-width);
   font-size: 0.875em;
   box-sizing: border-box;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior-y: contain;
   background-color: var(--sidebar-bg);
   color: var(--sidebar-fg);
+  position: relative;
 }
 
-[dir="rtl"] .sidebar {
-  left: unset;
-  right: 0;
+.sidebar .sidebar-scrollbox {
+  position: sticky;
+  top: 80px;
+  max-height: 100vh;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+}
+
+.sidebar .sidebar-contents {
+  padding: 10px 20px;
 }
 
 .sidebar-resizing {
@@ -479,61 +488,25 @@ ul#searchresults span.teaser em {
   user-select: none;
 }
 
-.no-js .sidebar,
-.js:not(.sidebar-resizing) .sidebar {
-  transition: transform 0.3s;
-  /* Animation: slide away */
-}
-
 .sidebar code {
   line-height: 2em;
 }
 
-.sidebar .sidebar-scrollbox {
-  overflow-y: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px 20px;
-}
-
-.sidebar .sidebar-resize-handle {
-  position: absolute;
+.sidebar-resize-handle {
   cursor: col-resize;
-  width: 0;
-  right: calc(var(--sidebar-resize-indicator-width) * -1);
-  top: 0;
-  bottom: 0;
   display: flex;
   align-items: center;
+  margin-left: var(--sidebar-resize-indicator-space);
+  width: var(--sidebar-resize-indicator-width);
 }
 
 .sidebar-resize-handle .sidebar-resize-indicator {
-  width: 100%;
+  display: none;
+  position: fixed;
+  top: 50%;
+  width: var(--sidebar-resize-indicator-width);
   height: 12px;
   background-color: var(--icons);
-  margin-inline-start: var(--sidebar-resize-indicator-space);
-}
-
-[dir="rtl"] .sidebar .sidebar-resize-handle {
-  left: calc(var(--sidebar-resize-indicator-width) * -1);
-  right: unset;
-}
-
-.js .sidebar .sidebar-resize-handle {
-  cursor: col-resize;
-  width: calc(var(--sidebar-resize-indicator-width) - var(--sidebar-resize-indicator-space));
-}
-
-/* sidebar-hidden */
-#sidebar-toggle-anchor:not(:checked) ~ .sidebar {
-  transform: translateX(calc(0px - var(--sidebar-width) - var(--sidebar-resize-indicator-width)));
-  z-index: -1;
-}
-[dir="rtl"] #sidebar-toggle-anchor:not(:checked) ~ .sidebar {
-  transform: translateX(calc(var(--sidebar-width) + var(--sidebar-resize-indicator-width)));
 }
 
 .sidebar::-webkit-scrollbar {
@@ -545,27 +518,28 @@ ul#searchresults span.teaser em {
 }
 
 /* sidebar-visible */
-#sidebar-toggle-anchor:checked ~ .page-wrapper {
-  transform: translateX(calc(var(--sidebar-width) + var(--sidebar-resize-indicator-width)));
-}
-[dir="rtl"] #sidebar-toggle-anchor:checked ~ .page-wrapper {
-  transform: translateX(calc(0px - var(--sidebar-width) - var(--sidebar-resize-indicator-width)));
+#sidebar-toggle-anchor:checked ~ #body-container {
+  /* On Mobile, max the width of the sidebar, but always leave room for the menu button */
+  grid-template-columns: var(--sidebar-width-mobile) 0 auto minmax(300px, 1fr);
 }
 
+/* Desktop sidebar visible */
 @media only screen and (min-width: 620px) {
-  #sidebar-toggle-anchor:checked ~ .page-wrapper {
-    transform: none;
-    margin-inline-start: calc(var(--sidebar-width) + var(--sidebar-resize-indicator-width));
+  #sidebar-toggle-anchor:checked ~ #body-container {
+    grid-template-columns:
+      var(--sidebar-width) var(--sidebar-resize-indicator-width) auto
+      minmax(300px, 1fr);
   }
-  [dir="rtl"] #sidebar-toggle-anchor:checked ~ .page-wrapper {
-    transform: none;
+
+  .sidebar-resize-handle .sidebar-resize-indicator {
+    display: inherit;
   }
 }
 
 .chapter {
   list-style: none outside none;
   padding-inline-start: 0;
-  line-height: 2.2em;
+  line-height: 1;
 }
 
 .chapter ol {
@@ -682,11 +656,11 @@ ul#searchresults span.teaser em {
 .theme-popup {
   position: absolute;
   left: 10px;
-  top: var(--menu-bar-height);
+  top: 0;
   z-index: 1000;
   border-radius: 4px;
   font-size: 0.7em;
-  color: var(--fg);
+  color: var(--sidebar-fg);
   background: var(--theme-popup-bg);
   border: 1px solid var(--theme-popup-border);
   margin: 0;
@@ -757,8 +731,10 @@ ul#searchresults span.teaser em {
   height: 0.1em;
   width: 100%;
   opacity: 0;
-  transition: opacity 300ms, transform 300ms;
-  content: '';
+  transition:
+    opacity 300ms,
+    transform 300ms;
+  content: "";
   transform: translate3d(-100%, 0, 0);
 }
 

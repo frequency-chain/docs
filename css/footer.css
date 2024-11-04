@@ -1,0 +1,92 @@
+/* Custom CSS for the Footer Component */
+
+:root {
+  --footer-color-primary: #000;
+  --footer-color-primary-inverted: #fff;
+  --footer-color-secondary: #19455e;
+  --footer-section-margin-bottom: 3rem;
+}
+
+.frqcy-footer {
+  background: var(--footer-color-primary-inverted);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--footer-color-primary);
+  padding: var(--footer-section-margin-bottom) 1rem;
+}
+
+#frqcy-footer-logo {
+  display: block;
+  max-width: 257px;
+  width: 100%;
+  color: var(--footer-color-primary);
+  margin-bottom: var(--footer-section-margin-bottom);
+}
+
+#frqcy-footer-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  line-height: 1;
+  margin: 0 1rem var(--footer-section-margin-bottom) 1rem;
+}
+
+#frqcy-footer-copyright div.frqcy-footer-vbar {
+  width: 10%;
+  height: 2px;
+  background: var(--footer-color-primary);
+  justify-self: stretch;
+  margin: 1rem auto;
+}
+
+#frqcy-footer-copyright a {
+  color: var(--footer-color-primary);
+  padding: 0;
+}
+
+#frqcy-footer-copyright a:hover,
+#frqcy-footer-copyright a:visited:hover {
+  color: var(--footer-color-secondary);
+}
+
+.frqcy-footer .frqcy-footer-social-links {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: var(--footer-section-margin-bottom);
+  width: 100%;
+  justify-content: center;
+}
+
+.frqcy-footer .frqcy-footer-social-links a {
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  flex: 0 0 32px;
+  background: var(--footer-color-primary);
+  color: var(--footer-color-primary-inverted);
+}
+
+.frqcy-footer .frqcy-footer-social-links a:hover,
+.frqcy-footer .frqcy-footer-social-links a:visited:hover {
+  background: var(--footer-color-secondary);
+}
+
+/* Desktop */
+@media only screen and (min-width: 620px) {
+  #frqcy-footer-copyright {
+    flex-direction: row;
+  }
+
+  #frqcy-footer-copyright div.frqcy-footer-vbar {
+    width: 2px;
+    height: 100%;
+    margin: 0 2rem;
+  }
+}
