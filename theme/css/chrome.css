@@ -8,10 +8,11 @@
 
 /* GRID */
 #body-container {
+  min-height: 100vh;
   display: grid;
   grid:
     [row1-start] "header header header header" auto [row1-end]
-    [row2-start] "sidebar sidebar-resize menu-bar content" auto [row2-end]
+    [row2-start] "sidebar sidebar-resize menu-bar content" 1fr [row2-end]
     [row3-start] "footer footer footer footer" auto [row3-end]
     / 0 0 auto 1fr;
 }
