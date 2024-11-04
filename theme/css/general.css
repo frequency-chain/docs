@@ -153,18 +153,6 @@ h6:target::before {
   width: 236px;
 }
 
-.no-js .page-wrapper,
-.js:not(.sidebar-resizing) .page-wrapper {
-  transition:
-    margin-left 0.3s ease,
-    transform 0.3s ease; /* Animation: slide away */
-}
-[dir="rtl"] .js:not(.sidebar-resizing) .page-wrapper {
-  transition:
-    margin-right 0.3s ease,
-    transform 0.3s ease; /* Animation: slide away */
-}
-
 .content {
   overflow-y: auto;
   padding: 0 15px;
