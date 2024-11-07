@@ -39,7 +39,7 @@
   flex: 0 0 45px;
   width: 45px;
   height: 45px;
-  margin-inline-end: 1rem;
+  margin-inline-end: 10px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -70,7 +70,7 @@
 }
 
 #toc > .chapter > li.chapter-item {
-  margin-block-start: 4.5rem;
+  margin-block-start: 45px;
 }
 
 /* n(1) is hidden, so we need to remove the margin from n(2) */
@@ -79,12 +79,12 @@
 }
 
 #toc > .chapter > li > a:first-of-type {
-  padding-inline-start: 1rem;
+  padding-inline-start: 10px;
   font-weight: bold;
 }
 
 #toc > .chapter > li > .section {
-  padding-inline-start: calc(45px + 2rem);
+  padding-inline-start: calc(45px + 20px);
 }
 
 #toc > .chapter li {

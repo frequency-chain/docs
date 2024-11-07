@@ -3,8 +3,8 @@
 @import "variables.css";
 
 :root {
-  /* Browser default font-size is 16px, this way 1 rem = 10px */
-  font-size: 62.5%;
+  /* Browser default font-size is 16px */
+  font-size: 100%;
   color-scheme: var(--color-scheme);
 }
 
@@ -19,7 +19,7 @@ html {
 
 body {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 18px;
   overflow-x: hidden;
 }
 
@@ -251,15 +251,15 @@ blockquote {
 
 .warning:before {
   position: absolute;
-  width: 3rem;
-  height: 3rem;
-  margin-inline-start: calc(-1.5rem - 21px);
+  width: 30px;
+  height: 30px;
+  margin-inline-start: calc(-15px - 21px);
   content: "ⓘ";
   text-align: center;
   background-color: var(--bg);
   color: var(--warning-border);
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 20px;
 }
 
 blockquote .warning:before {
