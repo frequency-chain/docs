@@ -3,3 +3,4 @@
 node_modules/
 book
 .DS_Store
+css/tailwind.css

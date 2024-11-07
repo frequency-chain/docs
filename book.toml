@@ -11,6 +11,10 @@ command = "node preprocessors/button-links.mjs"
 [preprocessor.svg-embed]
 command = "node preprocessors/svg-embed.mjs"
 
+[preprocessor.tailwind]
+renderers = ["html"]
+command = 'node preprocessors/noop-npx.mjs "npx -y tailwindcss -i ./theme/css/tailwind.css -o ./css/tailwind.css"'
+
 [output.html]
 no-section-label = true
 copy-fonts = false # Switched to custom fonts
@@ -19,6 +23,7 @@ git-repository-url = "https://github.com/frequency-chain/docs"
 edit-url-template = "https://github.com/frequency-chain/docs/blob/main/{path}"
 preferred-dark-theme = "coal"
 additional-css = [
+  "css/tailwind.css",
   "css/side-nav.css",
   "css/header.css",
   "css/footer.css",

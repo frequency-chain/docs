@@ -328,7 +328,7 @@ pre > .buttons button {
 @media (pointer: coarse) {
   pre > .buttons button {
     /* On mobile, make it easier to tap buttons. */
-    padding: 0.3rem 1rem;
+    padding: 3px 10px;
   }
 
   .sidebar-resize-indicator {
@@ -338,7 +338,7 @@ pre > .buttons button {
 }
 pre > code {
   display: block;
-  padding: 1rem;
+  padding: 10px;
 }
 
 /* FIXME: ACE editors overlap their buttons because ACE does absolute
@@ -721,7 +721,7 @@ ul#searchresults span.teaser em {
   display: block;
   cursor: pointer;
   overflow: hidden;
-  padding: 0.25rem 0;
+  padding: 2.5px 0;
 }
 
 .underline-on-hover::after {

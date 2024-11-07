@@ -1,0 +1,120 @@
+@import "variables.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Underline on hover animation */
+.underline-on-nav-hover,
+.underline-on-nav {
+  @apply relative block cursor-pointer overflow-hidden;
+}
+
+.underline-on-nav-hover::after,
+.underline-on-nav::after {
+  @apply absolute bottom-0 left-0 h-[13px] w-full bg-teal opacity-0 transition-opacity content-[''];
+  transition:
+    opacity 300ms,
+    transform 300ms;
+  transform: translate3d(0, 200%, 0);
+}
+
+.underline-on-nav-hover:hover::after,
+.underline-on-nav-hover:focus::after,
+.underline-on-nav::after {
+  @apply opacity-100;
+  transform: translate3d(0, 0, 0);
+}
+
+@layer components {
+  .lg {
+    @apply text-lg leading-lg;
+  }
+
+  .md {
+    @apply text-md leading-md;
+  }
+
+  .normal {
+    @apply text-normal leading-normal;
+  }
+
+  .md {
+    @apply text-md leading-md;
+  }
+
+  .sm {
+    @apply text-sm leading-sm;
+  }
+
+  .xs {
+    @apply text-xs leading-xs;
+  }
+
+  /* Underline on hover animation */
+  .underline-on-hover {
+    @apply relative block cursor-pointer overflow-hidden px-0 py-1;
+  }
+
+  .underline-on-hover::after {
+    @apply absolute bottom-0 left-0 h-[0.1em] w-full opacity-0 transition-opacity content-[''];
+    transition:
+      opacity 300ms,
+      transform 300ms;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  .underline-on-hover:hover::after,
+  .underline-on-hover:focus::after {
+    @apply opacity-100;
+    transform: translate3d(0, 0, 0);
+  }
+
+  /*  Form common styles*/
+  .form-item-label {
+    @apply sm w-full max-w-[388px] py-[5px] font-bold;
+  }
+
+  .form-item-description {
+    @apply sm text-gray2;
+  }
+
+  .form-error {
+    @apply sm font-bold text-error;
+  }
+  .card-shadow {
+    box-shadow: 4px 4px 10px 0 rgb(0 0 0 / 25%);
+  }
+}
+
+@layer base {
+  h1,
+  .h1 {
+    @apply text-h1 leading-h1;
+  }
+
+  h2,
+  .h2 {
+    @apply text-h2 leading-h2;
+  }
+
+  h3,
+  .h3 {
+    @apply text-h3 leading-h3;
+  }
+
+  h4,
+  .h4 {
+    @apply text-h4 leading-h4;
+  }
+
+  h5,
+  .h5 {
+    @apply text-h5 leading-h5;
+  }
+
+  h6,
+  .h6 {
+    @apply text-h6 leading-h6;
+  }
+}
