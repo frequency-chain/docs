@@ -5,8 +5,8 @@
 }
 
 #logo {
-  letter-spacing: -0.1rem;
-  font-size: 4.2rem;
+  letter-spacing: -1px;
+  font-size: 42px;
   font-weight: 300;
   line-height: 0;
 }
@@ -55,7 +55,7 @@
   padding: 20px 10%;
   margin: 10px;
   display: flex;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 400;
   flex: 0.5;
   transition-property: border, color;
