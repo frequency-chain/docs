@@ -4,6 +4,8 @@
 
 Sign-in With Frequency (SIWF) allows you to enhance Your app with secure, decentralized Identity by integrating seamless and secure user authentication. With (SIWF), you can provide your users with a decentralized identity solution that puts them in control of their data, thus enhancing trust and security within your app while embracing the future of user authentication.
 
+<img src="../images/Single_Sign_On@3x 1.svg">
+
 ## What is Sign-In with Frequency?
 
 Sign-In with Frequency (SIWF) provides comprehensive documentation and tools to integrate with Frequency Access, an easy-to-use single sign-on identity solution for users on Frequency. SIWF simplifies the authentication process, allowing users to access the entire Frequency ecosystem effortlessly while maintaining control over their personal data.
