@@ -2,6 +2,7 @@
   "files": [
     "**/*.md",
     "!STYLEGUIDE.md",
+    "!preprocessors/README.md",
     "!LICENSE.md",
     "**/.github/**/*.md"
   ],
