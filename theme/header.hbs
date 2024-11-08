@@ -1,68 +1,94 @@
-<header id="header" class="frqcy-header">
-    <a class="header-logo" href="https://www.frequency.xyz/" target="_blank">
-      <svg viewBox="0 0 257 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M0 .737v34.526h6.409V24.508l12.875-5.217-.17-6.17-12.652 5.112V6.486h16.336V.737H0Zm31.163 5.744h8.587c2.788 0 5.073 1.318 5.073 4.165 0 2.846-2.285 4.214-5.073 4.214h-8.587V6.481ZM24.696.737v34.526h6.467v-8.485l20.068 8.485v-6.64L31.72 20.664h7.861c6.245 0 11.651-3.794 11.651-9.963 0-6.17-5.406-9.964-11.65-9.964H24.696Zm28.486 0v34.526h22.745v-5.798H59.591v-8.646h16.336v-5.743H59.591v-8.59h16.336V.737H53.182Zm84.011 0v23.616c0 3.533-2.73 5.954-6.408 5.954-3.679 0-6.409-2.426-6.409-5.954V.737h-6.409v23.51c0 6.957 5.741 11.753 12.823 11.753 7.082 0 12.822-4.796 12.822-11.753V.737h-6.419Zm8.365 0v34.526h22.745v-5.798h-16.337v-8.646h16.337v-5.743h-16.337v-8.59h16.337V.737h-22.745Zm45.045 0v23.3L177.224.737h-6.97v34.526h6.297V12.02l13.437 23.244h6.912V.737h-6.297Zm59.596 0-5.073 12.966L239.773.737h-7.082l15.499 34.526h6.69l-6.467-14.388L257 .793h-6.801V.737ZM84.011 17.977c0-6.745 5.8-12.283 12.992-12.283 7.193 0 12.992 5.483 12.992 12.284 0 2.16-.556 4.27-1.728 6.17l-14.439-8.435v6.85l10.146 5.8c-2.121 1.212-4.517 1.899-7.024 1.899-7.082.055-12.875-5.323-12.934-12.019v-.265M96.945 0C86.465.056 77.937 8.12 77.99 18.028 78.048 27.936 86.577 36 97.056 35.95c4.569 0 8.974-1.584 12.43-4.426l6.467 3.69v-6.591l-2.565-1.474a17.821 17.821 0 0 0 2.565-9.171C116.07 8.12 107.652.056 97.226 0h-.281Zm120.978 0c-10.479 0-19.067 8.013-19.067 17.972 0 9.958 8.476 18.027 19.009 18.027 6.074 0 11.762-2.686 15.329-7.327l-4.457-4.215c-2.174 3.689-6.356 5.954-10.814 5.849-7.357 0-12.875-5.323-12.875-12.284s5.576-12.334 12.875-12.334c4.458-.105 8.64 2.16 10.814 5.904l4.457-4.215C229.627 2.636 223.939-.05 217.923 0Z"
-          fill="currentColor"
-        />
-      </svg>
-    </a>
+<header id="header" class="bg-white header-shadow flex h-[85px] font-title sticky left-0 top-0 w-full z-10">
+	<div class="m-auto flex h-[85px] w-full max-w-screen-lg items-stretch justify-around sm:px-f20 md:px-f32">
+		<a href="https://www.frequency.xyz/" target="_blank" class="flex w-[146px] items-center text-teal md:w-[200px]">
+			<svg viewBox="0 0 257 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0 .737v34.526h6.409V24.508l12.875-5.217-.17-6.17-12.652 5.112V6.486h16.336V.737H0Zm31.163 5.744h8.587c2.788 0 5.073 1.318 5.073 4.165 0 2.846-2.285 4.214-5.073 4.214h-8.587V6.481ZM24.696.737v34.526h6.467v-8.485l20.068 8.485v-6.64L31.72 20.664h7.861c6.245 0 11.651-3.794 11.651-9.963 0-6.17-5.406-9.964-11.65-9.964H24.696Zm28.486 0v34.526h22.745v-5.798H59.591v-8.646h16.336v-5.743H59.591v-8.59h16.336V.737H53.182Zm84.011 0v23.616c0 3.533-2.73 5.954-6.408 5.954-3.679 0-6.409-2.426-6.409-5.954V.737h-6.409v23.51c0 6.957 5.741 11.753 12.823 11.753 7.082 0 12.822-4.796 12.822-11.753V.737h-6.419Zm8.365 0v34.526h22.745v-5.798h-16.337v-8.646h16.337v-5.743h-16.337v-8.59h16.337V.737h-22.745Zm45.045 0v23.3L177.224.737h-6.97v34.526h6.297V12.02l13.437 23.244h6.912V.737h-6.297Zm59.596 0-5.073 12.966L239.773.737h-7.082l15.499 34.526h6.69l-6.467-14.388L257 .793h-6.801V.737ZM84.011 17.977c0-6.745 5.8-12.283 12.992-12.283 7.193 0 12.992 5.483 12.992 12.284 0 2.16-.556 4.27-1.728 6.17l-14.439-8.435v6.85l10.146 5.8c-2.121 1.212-4.517 1.899-7.024 1.899-7.082.055-12.875-5.323-12.934-12.019v-.265M96.945 0C86.465.056 77.937 8.12 77.99 18.028 78.048 27.936 86.577 36 97.056 35.95c4.569 0 8.974-1.584 12.43-4.426l6.467 3.69v-6.591l-2.565-1.474a17.821 17.821 0 0 0 2.565-9.171C116.07 8.12 107.652.056 97.226 0h-.281Zm120.978 0c-10.479 0-19.067 8.013-19.067 17.972 0 9.958 8.476 18.027 19.009 18.027 6.074 0 11.762-2.686 15.329-7.327l-4.457-4.215c-2.174 3.689-6.356 5.954-10.814 5.849-7.357 0-12.875-5.323-12.875-12.284s5.576-12.334 12.875-12.334c4.458-.105 8.64 2.16 10.814 5.904l4.457-4.215C229.627 2.636 223.939-.05 217.923 0Z"
+					fill="currentColor"
+				/>
+			</svg>
+		</a>
+		<nav class="hidden items-stretch gap-f40 md:flex">
+			<a href="https://www.frequency.xyz/#mission" target="_blank" class="h6 underline-on-nav-hover border-color hidden content-center px-2 text-navy transition-all duration-1000 after:bg-teal lg:block">
+			 Mission
+			</a>
+			<a href="https://www.frequency.xyz/#about" target="_blank" class="h6 underline-on-nav-hover border-color hidden content-center px-2 text-navy transition-all duration-1000 after:bg-teal lg:block">
+			 About
+			</a>
+			<a href="https://www.frequency.xyz/#user" target="_blank" class="h6 underline-on-nav-hover border-color hidden content-center px-2 text-navy transition-all duration-1000 after:bg-teal lg:block">
+			 User
+			</a>
+			<a href="https://www.frequency.xyz/#developers" target="_blank" class="h6 underline-on-nav-hover border-color hidden content-center px-2 text-navy transition-all duration-1000 after:bg-teal lg:block">
+			 Developers
+			</a>
+			<a href="https://www.frequency.xyz/#contact" target="_blank" class="h6 underline-on-nav-hover border-color hidden content-center px-2 text-navy transition-all duration-1000 after:bg-teal lg:block">
+			 Contact
+			</a>
+			<div class="content-center">
+				<a target="_self" href="/" class="pointer-events-auto block">
+					<button class="rounded-full px-f24 py-f8 text-center transition-all bg-teal text-navy hover:bg-tealDark hover:text-black hover:shadow-md w-auto">
+						<div class="font-bold flex items-center justify-center gap-f8 font-sans">Developer Portal</div>
+					</button>
+				</a>
+			</div>
+		</nav>
+		<input type="checkbox" class="peer hidden" id="mobile-menu-toggle" />
+		<label
+			for="mobile-menu-toggle"
+			aria-label="Open main navigation"
+			aria-controls="mobile-navigation"
+			class="group z-50 cursor-pointer text-navy peer-checked:hover:text-teal hover:text-teal peer-checked:text-white flex self-center lg:hidden"
+		>
+			<svg class="h-[40px] w-[40px]" role="none">
+				<line
+					x1="5%"
+					y1="50%"
+					x2="95%"
+					y2="50%"
+					stroke="currentColor"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="origin-left translate-y-[25%] stroke-[10%] transition-all duration-[0.3s] peer-checked:group-[]:translate-x-[8px] peer-checked:group-[]:translate-y-[35%] peer-checked:group-[]:-rotate-45"
+				></line>
+				<line stroke="currentColor" x1="5%" y1="50%" x2="95%" y2="50%" stroke-linecap="round" stroke-linejoin="round" class="origin-center stroke-[10%] transition-all duration-[0.3s] peer-checked:group-[]:scale-x-0"></line>
+				<line
+					x1="5%"
+					y1="50%"
+					x2="95%"
+					y2="50%"
+					stroke="currentColor"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="origin-left translate-y-[-25%] stroke-[10%] transition-all duration-[0.3s] peer-checked:group-[]:translate-x-[8px] peer-checked:group-[]:translate-y-[-35%] peer-checked:group-[]:rotate-45"
+				></line>
+			</svg>
+		</label>
 
-    <!-- Desktop Navigation -->
-    <nav class="header-nav">
-            <a href="https://www.frequency.xyz" class="underline-on-hover">About.</a>
-            <a href="https://www.frequency.xyz/docs" class="underline-on-hover">Dev Docs.</a>
-            <a href="https://medium.com/one-frequency" class="underline-on-hover">Newsroom.</a>
-            <a href="mailto:info@frequency.xyz" class="underline-on-hover">Contact.</a>
-    </nav>
-
-    <!-- Mobile Menu Toggle Button -->
-    <div class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMobileMenu()">
-        <svg class="hamburger-icon" height="33" width="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 20H25.625M2 11H25.625M2 2H25.625" stroke="currentColor" stroke-width="3.375" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        <svg class="exit-icon hidden" height="25" width="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                    d="M2.525 24L0.125 21.6L9.725 12L0.125 2.4L2.525 0L12.125 9.6L21.725 0L24.125 2.4L14.525 12L24.125 21.6L21.725 24L12.125 14.4L2.525 24Z"
-                    fill="currentColor"
-            />
-        </svg>
-    </div>
-
-    <!-- Mobile Navigation -->
-    <nav class="header-nav-mobile" id="mobile-menu">
-        <div class="nav-items-mobile">
-            <a href="https://www.frequency.xyz/" class="underline-on-hover">About.</a>
-            <a href="https://www.frequency.xyz/docs" class="underline-on-hover">Dev Docs.</a>
-            <a href="https://medium.com/one-frequency" class="underline-on-hover">Newsroom.</a>
-            <a href="mailto:info@frequency.xyz" class="underline-on-hover">Contact.</a>
-        </div>
-    </nav>
+		<!-- Mobile Navigation -->
+		<div id="mobile-menu" class="z-1 fixed right-0 top-0 z-10 flex h-0 w-[100vw] flex-col justify-between gap-f24 overflow-y-scroll bg-navy px-[12%] transition-[height] duration-[1s] peer-checked:h-[100vh] lg:hidden" aria-expanded="false">
+			<nav id="mobile-navigation" aria-label="Main" class="mb-f20 mt-[85px] flex flex-col gap-f24 text-white">
+				<a href="https://www.frequency.xyz/#mission" target="_blank" class="h4 underline-on-hover font-bold after:bg-white">Mission</a>
+				<a href="https://www.frequency.xyz/#about" target="_blank" class="h4 underline-on-hover font-bold after:bg-white">About</a>
+				<a href="https://www.frequency.xyz/#user" target="_blank" class="h4 underline-on-hover font-bold after:bg-white">User</a>
+				<a href="https://www.frequency.xyz/#developers" target="_blank" class="h4 underline-on-hover font-bold after:bg-white">Developers</a>
+				<a href="https://www.frequency.xyz/#contact" target="_blank" class="h4 underline-on-hover font-bold after:bg-white">Contact</a>
+				<a class="pointer-events-auto block" target="_self" href="/">
+					<button class="rounded-full px-f24 py-f8 text-center transition-all bg-teal text-navy hover:bg-tealDark hover:text-black hover:shadow-md w-full mt-f24 max-w-[360px] md:hidden" target="_self">
+						<div class="font-bold flex items-center justify-center gap-f8 font-sans">Developer Portal</div>
+					</button>
+				</a>
+			</nav>
+		</div>
+	</div>
 </header>
 
 <script>
-    let isOpen = false;
-
-    function toggleMobileMenu() {
-        isOpen = !isOpen;
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuToggle = document.querySelector('.menu-toggle');
-        const hamburgerIcon = document.querySelector('.hamburger-icon');
-        const exitIcon = document.querySelector('.exit-icon');
-
-        // Toggle isOpen class based on current state
-        if (isOpen) {
-            mobileMenu.classList.add('isOpen');
-            menuToggle.classList.add('isOpen');
-            menuToggle.setAttribute('aria-expanded', 'true');
-            hamburgerIcon.classList.add('hidden');
-            exitIcon.classList.remove('hidden');
-        } else {
-            mobileMenu.classList.remove('isOpen');
-            menuToggle.classList.remove('isOpen');
-            menuToggle.setAttribute('aria-expanded', 'false');
-            hamburgerIcon.classList.remove('hidden');
-            exitIcon.classList.add('hidden');
-        }
+  document.getElementById('mobile-menu-toggle').addEventListener("change", (event) => {
+    // Toggle aria based on checkbox state
+    if (event.target.checked) {
+      document.getElementById('mobile-menu').setAttribute('aria-expanded', 'true');
+    } else {
+      document.getElementById('mobile-menu').setAttribute('aria-expanded', 'false');
     }
+  });
 </script>
