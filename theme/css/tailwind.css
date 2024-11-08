@@ -143,8 +143,8 @@
   }
 }
 
-/* Reset the margins for the headers in the contents */
+/* Reset the margins for the first header in the contents */
 
-.content h1:first-of-type() {
+.content h1:first-of-type {
   margin-top: 0;
 }
