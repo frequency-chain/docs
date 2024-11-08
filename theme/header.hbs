@@ -83,10 +83,9 @@
 </header>
 
 <script>
-  document.getElementById('mobile-menu-toggle').addEventListener("change", (el) => {
+  document.getElementById('mobile-menu-toggle').addEventListener("change", (event) => {
     // Toggle aria based on checkbox state
-    console.log("TODO", event.target);
-    if (event.target.isChecked) {
+    if (event.target.checked) {
       document.getElementById('mobile-menu').setAttribute('aria-expanded', 'true');
     } else {
       document.getElementById('mobile-menu').setAttribute('aria-expanded', 'false');
