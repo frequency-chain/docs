@@ -45,6 +45,7 @@
 .button-links > p a,
 .button-links a:link,
 .button-links > p a:link {
+  text-decoration: none;
   box-sizing: content-box;
   font-weight: 300;
   color: var(--button-nav-fg);

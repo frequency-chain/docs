@@ -191,23 +191,23 @@ a > .hljs {
   margin-block-start: 50px;
 }
 
-.mobile-nav-chapters {
+.content .mobile-nav-chapters {
   display: block;
   font-size: 1em;
   text-align: center;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: var(--page-nav-bg);
-  color: var(--links);
+  background-color: var(--button-nav-bg);
+  color: var(--button-nav-fg);
 }
 
 .mobile-nav-chapters:hover {
-  color: var(--links-hover);
+  color: var(--button-nav-hover);
 }
 
 .mobile-nav-chapters:active {
-  color: var(--links);
+  color: var(--button-nav-hover);
 }
 
 /* Only Firefox supports flow-relative values */
@@ -471,6 +471,7 @@ ul#searchresults span.teaser em {
 .sidebar .sidebar-scrollbox {
   position: sticky;
   top: 80px;
+  padding: 30px 0;
   max-height: 100vh;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
