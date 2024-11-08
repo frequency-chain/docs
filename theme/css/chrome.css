@@ -462,7 +462,6 @@ ul#searchresults span.teaser em {
 
 .sidebar {
   font-size: 0.875em;
-  padding: 30px 0;
   box-sizing: border-box;
   background-color: var(--sidebar-bg);
   color: var(--sidebar-fg);
@@ -472,6 +471,7 @@ ul#searchresults span.teaser em {
 .sidebar .sidebar-scrollbox {
   position: sticky;
   top: 80px;
+  padding: 30px 0;
   max-height: 100vh;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
