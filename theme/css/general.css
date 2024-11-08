@@ -63,7 +63,7 @@ h6 code {
   display: none;
 }
 .hidden {
-  display: none !important;
+  display: none;
 }
 
 h1,
@@ -155,8 +155,9 @@ h6:target::before {
 
 .content {
   overflow-y: auto;
-  padding: 0 15px;
+  padding: 30px 15px;
   padding-bottom: 50px;
+  min-height: 75vh;
 }
 
 @media screen and (max-width: 400px) {
@@ -180,7 +181,7 @@ h6:target::before {
   line-height: 1.45em;
 }
 .content a {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--links);
 }
 .content a:hover {

@@ -6,21 +6,21 @@
   --sidebar-resize-indicator-width: 4px;
   --sidebar-resize-indicator-space: 2px;
   --page-padding: 15px;
-  --content-max-width: 950px;
+  --content-max-width: 1080px;
   --menu-bar-height: 50px;
   --mono-font: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
   --code-font-size: 0.875em /* please adjust the ace font size accordingly in editor.js */;
-  --header-height: 80px;
+  --header-height: 85px;
 }
 
 /* Themes */
 
 .coal {
-  --bg: #0b1e28;
-  --fg: #f5f6f7;
-  --headers: #fefaf3;
+  --bg: #14313f;
+  --fg: #f0f0f0;
+  --headers: #f0f0f0;
 
-  --sidebar-bg: #19455e;
+  --sidebar-bg: #0b1e28;
   --sidebar-fg: #f0f0f0;
   --sidebar-non-existant: var(--sidebar-fg);
   --sidebar-active: #4ba0a5;
@@ -31,8 +31,8 @@
   --icons: #f1f1f1;
   --icons-hover: #4ba0a5;
 
-  --links: var(--sidebar-fg);
-  --links-hover: var(--sidebar-active);
+  --links: #55b1ab;
+  --links-hover: #f0f0f0;
 
   --inline-code-color: #c5c8c6;
 
@@ -63,7 +63,7 @@
   --page-nav-fg: var(--headers);
   --page-nav-bg: var(--sidebar-bg);
 
-  --button-nav-bg: #3e6f8c;
+  --button-nav-bg: #0b1e28;
   --button-nav-fg: var(--headers);
   --button-nav-hover: var(--headers);
 }
@@ -71,9 +71,9 @@
 .light {
   --bg: #fff;
   --fg: #000;
-  --headers: #19455e;
+  --headers: #14313f;
 
-  --sidebar-bg: #19455e;
+  --sidebar-bg: #14313f;
   --sidebar-fg: #fff;
   --sidebar-non-existant: var(--sidebar-fg);
   --sidebar-active: #4ba0a5;
@@ -81,10 +81,10 @@
 
   --scrollbar: var(--sidebar-fg);
 
-  --icons: #19455e;
+  --icons: #14313f;
   --icons-hover: #4ba0a5;
 
-  --links: var(--sidebar-fg);
+  --links: #18465e;
   --links-hover: var(--sidebar-active);
 
   --inline-code-color: #301900;
@@ -116,7 +116,7 @@
   --page-nav-fg: var(--headers);
   --page-nav-bg: var(--sidebar-bg);
 
-  --button-nav-bg: #3e6f8c;
+  --button-nav-bg: #14313f;
   --button-nav-fg: var(--bg);
   --button-nav-hover: var(--headers);
 }
@@ -127,7 +127,7 @@
     --fg: #f5f6f7;
     --headers: #fefaf3;
 
-    --sidebar-bg: #19455e;
+    --sidebar-bg: #14313f;
     --sidebar-fg: #f0f0f0;
     --sidebar-non-existant: var(--sidebar-fg);
     --sidebar-active: #4ba0a5;
@@ -169,7 +169,7 @@
     --page-nav-fg: var(--headers);
     --page-nav-bg: var(--sidebar-bg);
 
-    --button-nav-bg: #3e6f8c;
+    --button-nav-bg: #14313f;
     --button-nav-fg: var(--headers);
     --button-nav-hover: var(--headers);
   }
