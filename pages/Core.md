@@ -9,4 +9,6 @@ The native coin for Frequency is named [FRQCY](./Glossary.md#frqcy).
 
 This section provides a detailed description of Frequency, the core data structures and operational primitives it supports, and the different ways that users and applications can interact with and transact with the system.
 
+{{#svg-embed pages/images/Core.svg Diagram of the parts of Frequency}}
+
 {{#button-links}}

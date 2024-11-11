@@ -1,34 +1,34 @@
 :root {
-  --icon-provider: url("../images/icons/icon-provider.svg");
-  --icon-gateway: url("../images/icons/icon-gateway.svg");
-  --icon-sso: url("../images/icons/icon-sso.svg");
-  --icon-core: url("../images/icons/icon-core.svg");
+  --icon-provider: url("../images/icons/lock-Dark.svg");
+  --icon-gateway: url("../images/icons/bridge-Dark.svg");
+  --icon-sso: url("../images/icons/key-Dark.svg");
+  --icon-core: url("../images/icons/house-Dark.svg");
 }
 
 /* Light theme */
 .light {
-  --icon-provider: url("../images/icons/icon-provider.svg");
-  --icon-gateway: url("../images/icons/icon-gateway.svg");
-  --icon-sso: url("../images/icons/icon-sso.svg");
-  --icon-core: url("../images/icons/icon-core.svg");
+  --icon-provider: url("../images/icons/lock-Dark.svg");
+  --icon-gateway: url("../images/icons/bridge-Dark.svg");
+  --icon-sso: url("../images/icons/key-Dark.svg");
+  --icon-core: url("../images/icons/house-Dark.svg");
 }
 
 /* Dark theme */
 .coal {
-  --icon-provider: url("../images/icons/icon-provider-dark.svg");
-  --icon-gateway: url("../images/icons/icon-gateway-dark.svg");
-  --icon-sso: url("../images/icons/icon-sso-dark.svg");
-  --icon-core: url("../images/icons/icon-core-dark.svg");
+  --icon-provider: url("../images/icons/lock-Dark.svg");
+  --icon-gateway: url("../images/icons/bridge-Dark.svg");
+  --icon-sso: url("../images/icons/key-Dark.svg");
+  --icon-core: url("../images/icons/house-Dark.svg");
 }
 
 /* Dark mode preference */
 @media (prefers-color-scheme: dark) {
   .light.no-js {
     /* Override light theme variables if needed */
-    --icon-provider: url("../images/icons/icon-provider-dark.svg");
-    --icon-gateway: url("../images/icons/icon-gateway-dark.svg");
-    --icon-sso: url("../images/icons/icon-sso-dark.svg");
-    --icon-core: url("../images/icons/icon-core-dark.svg");
+    --icon-provider: url("../images/icons/lock-Dark.svg");
+    --icon-gateway: url("../images/icons/bridge-Dark.svg");
+    --icon-sso: url("../images/icons/key-Dark.svg");
+    --icon-core: url("../images/icons/house-Dark.svg");
   }
 }
 
