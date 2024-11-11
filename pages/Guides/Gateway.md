@@ -4,6 +4,8 @@
 
 [Gateway](https://projectlibertylabs.github.io/gateway/) provides a Simple Blockchain Integration for Your Applications–bridging the gap between your app and the decentralized web.
 
+{{#svg-embed pages/images/Gateway.svg Gateway Diagram}}
+
 Gateway offers a suite of tools and services that make it easy to connect your applications to the Frequency blockchain. This allows your development team to focus on building outstanding user experiences without managing the complexity of blockchain interactions.
 
 ## What is Frequency Gateway?
