@@ -5,7 +5,7 @@
 In the Frequency ecosystem, a **Provider** is an entity (often an application or service) that interacts directly with the Frequency blockchain on behalf of users.
 Providers handle transactions, manage user delegations, and facilitate various operations within the network.
 
-<img src="../images/Become_Provider@3x1.svg"/>
+{{#svg-embed pages/images/Become_Provider.svg Become a Provider}}
 
 ### From a developer's perspective, Providers:
 

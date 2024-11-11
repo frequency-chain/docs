@@ -4,6 +4,8 @@ Deep Dive into the Technology Behind Frequency
 
 Expand your expertise and master the Frequency blockchain. Whether you're a beginner or an experienced developer, our resources will guide you through the intricacies of the network. Gain the skills you need to innovate and build the next generation of decentralized applications.
 
+{{#svg-embed pages/images/Core.svg Diagram of the parts of Frequency}}
+
 <div class="button-links">
 
 [Become a Provider](./Guides/BecomeAProvider.md)
