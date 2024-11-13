@@ -202,21 +202,21 @@
                 });
             </script>
 
-            <div id="content" class="content">
+            <div id="content" class="content pt-8 pb-32 pl-[6px] pr-[45px]">
                 <main>
                     {{{ content }}}
                 </main>
 
-                <nav class="nav-wrapper" aria-label="Page navigation">
+                <nav class="nav-wrapper p-6" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
                     {{#previous}}
-                        <a rel="prev" href="{{ path_to_root }}{{link}}" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter: {{title}}" aria-keyshortcuts="Left">
+                        <a rel="prev" href="{{ path_to_root }}{{link}}" class="mobile-nav-chapters previous mb-6 w-full md:w-auto" title="Previous chapter" aria-label="Previous chapter: {{title}}" aria-keyshortcuts="Left">
                             <i class="fa fa-angle-left"></i> {{title}}
                         </a>
                     {{/previous}}
 
                     {{#next}}
-                        <a rel="next" href="{{ path_to_root }}{{link}}" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter: {{title}}" aria-keyshortcuts="Right">
+                        <a rel="next" href="{{ path_to_root }}{{link}}" class="mobile-nav-chapters next mb-6 w-full md:w-auto" title="Next chapter" aria-label="Next chapter: {{title}}" aria-keyshortcuts="Right">
                             {{title}} <i class="fa fa-angle-right"></i>
                         </a>
                     {{/next}}
@@ -227,7 +227,7 @@
         </div>
 
         <!-- Custom Footer Start -->
-        <footer id="footer" class="bg-white px-6 md:px-[10%] max-w-[100vw]">
+        <footer id="footer" class="bg-white mt-6 px-6 md:px-[10%] max-w-[100vw]">
           <div class="sm md:md flex flex-col items-center gap-f16 border-t-[2px] border-current text-black py-f48 md:gap-f48">
             <a class="w-[146px] md:w-[257px]" href="https://www.frequency.xyz" target="_blank">
                 <svg viewBox="0 0 257 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -237,7 +237,7 @@
                   />
                 </svg>
               </a>
-              <aside class="flex flex-col items-center space-y-4 leading-none md:flex-row md:space-x-4 md:space-y-0">
+              <aside class="flex flex-col items-center text-center space-y-4 leading-none md:flex-row md:space-x-4 md:space-y-0">
                 <div>
                   © 2024 Frequency Network Foundation. <span class="md:hidden">All Rights Reserved</span>
                 </div>
