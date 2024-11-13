@@ -69,22 +69,6 @@
     @apply opacity-100;
     transform: translate3d(0, 0, 0);
   }
-
-  /*  Form common styles*/
-  .form-item-label {
-    @apply sm w-full max-w-[388px] py-[5px] font-bold;
-  }
-
-  .form-item-description {
-    @apply sm text-gray2;
-  }
-
-  .form-error {
-    @apply sm font-bold text-error;
-  }
-  .card-shadow {
-    box-shadow: 4px 4px 10px 0 rgb(0 0 0 / 25%);
-  }
 }
 
 @layer base {
@@ -95,6 +79,11 @@
 
   .content h1 {
     margin: 0.67em 0;
+  }
+
+  /* Reset the margins for the first header in the contents */
+  .content h1:first-of-type {
+    margin-top: 0;
   }
 
   h2,
@@ -141,10 +130,4 @@
   .content h6 {
     margin: 2.33em 0;
   }
-}
-
-/* Reset the margins for the first header in the contents */
-
-.content h1:first-of-type {
-  margin-top: 0;
 }
