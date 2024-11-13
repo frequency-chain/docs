@@ -1,3 +1,5 @@
+{{#title-image .03 pages/images/icons/key.svg "Sign-In With Frequency (Single Sign On)"}}
+
 # Sign-In With Frequency (Single Sign On)
 
 ## Why Sign-In With Frequency?

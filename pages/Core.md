@@ -1,3 +1,5 @@
+{{#title-image .04 pages/images/icons/house.svg "Frequency Core"}}
+
 # Frequency Core
 
 Frequency is a purpose-built Layer 1 public blockchain designed to fulfill the promise of the [Decentralized Social Networking Protocol (DSNP)](https://www.dsnp.org).
