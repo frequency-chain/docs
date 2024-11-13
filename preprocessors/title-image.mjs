@@ -15,7 +15,7 @@ function titleImage(chapter) {
 
     // Embed both the SVG and the number in the output HTML
     const replaceWith =[
-        `<div>`,
+        `<div class="title-embed">`,
           `<div class="title-embed-light">${svgOutputLight}</div>`,
           `<div class="title-embed-coal">${svgOutputDark}</div>`,
           `<span class="embed-number">${number}</span>`,
