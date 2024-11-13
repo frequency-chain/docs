@@ -1,3 +1,5 @@
+{{#title-image .01 pages/images/icons/lock.svg "Become a Provider"}}
+
 # Become a Provider
 
 ## What is a Provider?
@@ -7,7 +9,7 @@ Providers handle transactions, manage user delegations, and facilitate various o
 
 {{#svg-embed pages/images/Become_Provider.svg Become a Provider}}
 
-### From a developer's perspective, Providers:
+### From a developer's perspective, Providers
 
 - **Create and Update User Content with Permission:** Providers publish new content or modify existing content on behalf of users, such as posts, comments, and other social interactions, after obtaining the user's consent.
 - **Maintain the User's Social Graph:** Providers manage and update users' social connections, such as following or unfollowing other users, and maintaining friend lists, ensuring that the user's relationships are accurately represented on the blockchain.
@@ -53,7 +55,7 @@ All interactions with the chain that an application does on behalf of a user can
 Login to the [Provider Dashboard](https://provider.frequency.xyz/), select Stake to Provider, and stake 100 XRQCY Tokens.
 This will give you enough Capacity for testing.
 
-## Step 5: Done!
+## Step 5: Done
 
 You are now registered as a Provider on Testnet and have Capacity to do things like support users with [Single Sign On](./SSO.md).
 You can also use the [Provider Dashboard](https://provider.frequency.xyz/) to add additional Control Keys for safety.

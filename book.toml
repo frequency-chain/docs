@@ -11,6 +11,9 @@ command = "node preprocessors/button-links.mjs"
 [preprocessor.svg-embed]
 command = "node preprocessors/svg-embed.mjs"
 
+[preprocessor.title-image]
+command = "node preprocessors/title-image.mjs"
+
 [preprocessor.tailwind]
 renderers = ["html"]
 command = 'node preprocessors/noop-npx.mjs "npx -y tailwindcss -i ./theme/css/tailwind.css -o ./css/tailwind.css"'
