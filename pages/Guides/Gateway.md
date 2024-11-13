@@ -1,3 +1,5 @@
+{{#title-image .02 pages/images/icons/bridge.svg "Frequency Gateway"}}
+
 # Frequency Gateway
 
 ## Why Frequency Gateway?
