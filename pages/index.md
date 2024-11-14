@@ -9,7 +9,7 @@ Expand your expertise and master the Frequency blockchain. Whether you're a begi
 <div class="button-links">
 
 [Become a Provider](./Guides/BecomeAProvider.md)
-[Gateway](./Guides/Gateway.md)
+[Frequency Developer Gateway](./Guides/Gateway.md)
 [Single Sign-on](./Guides/SSO.md)
 [Frequency Core](./Core.md)
 
