@@ -28,7 +28,7 @@ There are various wallets that can generate and secure Frequency compatible keys
 - [Talisman](https://www.talisman.xyz)
 - [See more](https://polkadot.com/get-started/wallets)
 
-This onboarding process will guide you through the creation of an account and the creation of a Provider Control Key which will be required for many different transactions.
+This onboarding process will guide you through the creation of an account and the creation of a Provider Account which will be required for many different transactions.
 
 ## Step 2: Acquire Testnet Tokens
 
@@ -55,7 +55,7 @@ Login to the [Provider Dashboard](https://provider.frequency.xyz/), select Stake
 
 You are now registered as a Provider on Testnet and have Capacity to do things like support users with [Single Sign On](./SSO.md).
 
-You can also use the [Provider Dashboard](https://provider.frequency.xyz/) to add additional [Control Keys](../Identity/ControlKeys.md) for safety.
+You can also use the [Provider Dashboard](https://provider.frequency.xyz/) to add additional Provider Account [Control Keys](../Identity/ControlKeys.md) for safety.
 
 Ready to move to production? [Become a Provider on Mainnet](https://projectlibertylabs.github.io/gateway/GettingStarted/BecomeProvider.html#mainnet).
 

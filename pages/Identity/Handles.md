@@ -5,7 +5,7 @@ Each User Handle is unique and is mapped one-to-one with a MSA.
 Handles are optional, and no aspects of Frequency usage require a handle; Users may choose but are not required to create handles for their MSAs.
 
 Frequency's User Handle system was designed to make it easy to use and integrate handles with existing user interfaces and wallet systems while remaining fully decentralized.
-User Handles also provide an important usability affordance, allowing users to interact with MSAs without relying on the need to recognize a Control Key or MSA Id digits.
+User Handles also provide an important usability affordance, allowing users to interact with MSAs without relying on the need to recognize an address or MSA Id digits.
 
 ## Handle Creation
 
