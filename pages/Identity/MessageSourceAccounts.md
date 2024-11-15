@@ -7,7 +7,7 @@ A user does not need a blockchain account that holds FRQCY to be able to have an
 In addition, MSAs enable users to broadcast Messages through delegation to a Provider without needing tokens.
 
 MSAs represent what most users of internet applications like social networking would think of as their account.
-While the cryptographic keys, called Control Keys, might change over time, the account itself, and the data it has generated, remain available.
+While the User's Account, the cryptographic keys called Control Keys, might change over time, the account itself, and the data it has generated, remain available.
 
 An MSA's identifier, or MSA Id, is simply a unique number permanently assigned to the MSA at creation time.
 
