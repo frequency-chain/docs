@@ -28,6 +28,7 @@ preferred-dark-theme = "coal"
 additional-css = [
   "css/tailwind.css",
   "css/side-nav.css",
+  "css/button-links.css",
   "css/header.css",
   "css/extended.css",
   "css/highlight.css",

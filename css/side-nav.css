@@ -46,25 +46,25 @@
 }
 
 /* Individual icons for specific items (1 indexed) */
-#toc > .chapter li.chapter-item:nth-child(2) > a:first-of-type::before {
+#toc > .chapter > li.chapter-item:nth-child(2) > a:first-of-type::before {
   background-image: var(--icon-provider);
 }
 
-#toc > .chapter li.chapter-item:nth-child(3) > a:first-of-type::before {
+#toc > .chapter > li.chapter-item:nth-child(3) > a:first-of-type::before {
   background-image: var(--icon-gateway);
 }
 
-#toc > .chapter li.chapter-item:nth-child(4) > a:first-of-type::before {
+#toc > .chapter > li.chapter-item:nth-child(4) > a:first-of-type::before {
   background-image: var(--icon-sso);
 }
 
-#toc > .chapter li.chapter-item:nth-child(5) > a:first-of-type::before {
+#toc > .chapter > li.chapter-item:nth-child(5) > a:first-of-type::before {
   background-image: var(--icon-core);
 }
 
 /* Nav Bar */
 
-#toc .chapter li.chapter-item:nth-child(1) {
+#toc .chapter > li.chapter-item:nth-child(1) {
   /* Hide the "overview" page */
   display: none;
 }
@@ -74,7 +74,7 @@
 }
 
 /* n(1) is hidden, so we need to remove the margin from n(2) */
-#toc > .chapter li.chapter-item:nth-child(2) {
+#toc > .chapter > li.chapter-item:nth-child(2) {
   margin-block-start: 0;
 }
 
@@ -84,19 +84,23 @@
 }
 
 #toc > .chapter > li > .section {
-  padding-inline-start: calc(45px + 20px);
+  padding-inline-start: calc(45px + 10px);
 }
 
-#toc > .chapter li {
+#toc > .chapter > li {
   display: flex;
   align-items: center;
 }
 
-#toc > .chapter li.chapter-item > a:first-of-type {
+#toc > .chapter > li.chapter-item > a:first-of-type {
   padding-inline-start: 0;
   display: flex;
   align-items: center;
   flex: 1;
+}
+
+#toc > .chapter > li > .section > li.chapter-item:first-of-type {
+  margin-top: 10px;
 }
 
 .chapter li > a.toggle {
