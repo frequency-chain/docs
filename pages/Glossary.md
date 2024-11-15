@@ -49,7 +49,7 @@ See [Capacity Staking](./Tokenomics/ProviderIncentives.md#capacity-staking).
 ## Coinless User
 
 An end user who doesn’t use tokens to interact with Frequency.
-While coinless users maintain Control Keys that enable them to directly control their authentication and authorization data on chain, they delegate transaction handling to a Provider who will in turn manage data transactions (such as sending Messages) on their behalf.
+While coinless users maintain User Accounts that enable them to directly control their authentication and authorization data on chain, they delegate transaction handling to a Provider who will in turn manage data transactions (such as sending Messages) on their behalf.
 See [Benefits of Delegation](./Delegation/Benefits.md).
 
 ## Collator
@@ -75,7 +75,7 @@ See [Schema Payload Location](./Data/Schemas.md#payload-location).
 
 ## Control Key
 
-The public key used to control an MSA.
+The public key of the User's Account used to identify the control an MSA.
 See [Identity Management](./Identity/ControlKeys.md).
 
 ## Delegation Model
@@ -285,6 +285,11 @@ See [Unstaking](./Tokenomics/ProviderIncentives.md#capacity-unstaking).
 
 Any entity with an Account on Frequency.
 See [Identity Management](./Identity/index.md).
+
+## User Account
+
+The cryptographic keys that the user uses as Control Keys to control an MSA.
+See [Identity Management](./Identity/ControlKeys.md).
 
 ## User Handle
 
