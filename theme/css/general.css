@@ -106,8 +106,7 @@ h5:target::before,
 h6:target::before {
   display: inline-block;
   content: "#";
-  margin-inline-start: -20px;
-  width: 20px;
+  width: 40px;
   position: relative;
   color: var(--headers);
 }
