@@ -1,16 +1,16 @@
-{{#title-image .02 pages/images/icons/bridge.svg "Frequency Gateway"}}
+{{#title-image .02 pages/images/icons/bridge.svg "Frequency Developer Gateway"}}
 
-# Frequency Gateway
+# Frequency Developer Gateway
 
-## Why Frequency Gateway?
+## Why Frequency Developer Gateway?
 
-[Gateway](https://projectlibertylabs.github.io/gateway/) provides a Simple Blockchain Integration for Your Applications–bridging the gap between your app and the decentralized web.
+[Frequency Developer Gateway](https://projectlibertylabs.github.io/gateway/) provides a Simple Blockchain Integration for Your Applications–bridging the gap between your app and the decentralized web.
 
 {{#svg-embed pages/images/Gateway.svg Gateway Diagram}}
 
 Gateway offers a suite of tools and services that make it easy to connect your applications to the Frequency blockchain. This allows your development team to focus on building outstanding user experiences without managing the complexity of blockchain interactions.
 
-## What is Frequency Gateway?
+## What is Frequency Developer Gateway?
 
 **Gateway** provides a simple API to interact with the Frequency social layers (including identity, Universal Social Graph, content, and more). It includes a suite of tools you can select to build the best applications for your users.
 
@@ -29,7 +29,7 @@ Gateway offers a suite of tools and services that make it easy to connect your a
 - **Connect Your Users with Their Universal Social Graph:** Access and manage user relationships across the decentralized network.
 - **Read, Write, and Interact with Social Media Content:** Enable rich social interactions within your application.
 
-## How Can I Integrate Frequency Gateway?
+## How Can I Integrate Frequency Developer Gateway?
 
 Gateway is composed of independent, standalone microservices, allowing you to use only those components you need. These microservices provide simple APIs for interacting with various aspects of the Frequency network.
 

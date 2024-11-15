@@ -2,7 +2,7 @@
 
 - [Overview](index.md)
 - [Become a Provider](Guides/BecomeAProvider.md)
-- [Gateway](Guides/Gateway.md)
+- [Frequency Developer Gateway](Guides/Gateway.md)
 - [Add Single Sign-On to your App](Guides/SSO.md)
 - [Core](Core.md)
     - [Architecture](Architecture/index.md)
