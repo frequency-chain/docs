@@ -194,20 +194,29 @@ a > .hljs {
 .content .mobile-nav-chapters {
   display: block;
   font-size: 1em;
+  font-weight: 700;
   text-align: center;
   text-decoration: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 9999px;
   background-color: var(--button-nav-bg);
   color: var(--button-nav-fg);
+  border: 2px solid transparent;
+  transition-property: border, color;
+  transition-duration: 0.5s;
 }
 
-.mobile-nav-chapters:hover {
-  color: var(--button-nav-hover);
+a.mobile-nav-chapters:hover {
+  color: var(--button-nav-hover-fg);
+  background: var(--button-nav-hover-bg);
+  text-decoration: none;
+  border: 2px solid var(--button-nav-hover-border);
 }
 
-.mobile-nav-chapters:active {
-  color: var(--button-nav-hover);
+a.mobile-nav-chapters:active {
+  color: var(--button-nav-hover-fg);
+  background: var(--button-nav-hover-bg);
+  border: 2px solid var(--button-nav-hover-border);
 }
 
 /* Only Firefox supports flow-relative values */
@@ -376,6 +385,7 @@ mark {
   margin-block-end: -1px;
   margin-inline-start: -3px;
   margin-inline-end: -3px;
+  color: var(--fg);
   background-color: var(--search-mark-bg);
   transition: background-color 300ms linear;
   cursor: pointer;

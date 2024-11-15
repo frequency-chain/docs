@@ -11,28 +11,57 @@
   --mono-font: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
   --code-font-size: 0.875em /* please adjust the ace font size accordingly in editor.js */;
   --header-height: 85px;
+
+  /* Colors from Style Guide */
+  --navy: #14313f;
+  /* Primary is usually used for headers, nav, etc... */
+  --primary: #18465e;
+  --teal: #55b1ab;
+  /* Neutral Colors */
+  --black: #000000;
+  --gray1: #4f4f4f;
+  --gray2: #828282;
+  --gray3: #c8cdd0;
+  --white: #ffffff;
+  --shadow: #00000040;
+  /* Supporting Colors */
+  --tealDark: #339b94;
+  --tealBright: #00b6af;
+  --brightBlue: #5e69ff;
+  --dustyRose: #a06b87;
+  --orange: #f77c47;
+  --yellow: #ffd647;
+  /* State tailwindColors */
+  --error: #eb5757;
+  --warning: #f99a2a;
+  --success: #27ae60;
+  --info: #2f80ed;
+
+  /* Extra Colors */
+  --whiteDark: #f0f0f0;
+  --navyDark: #0b1e28;
 }
 
 /* Themes */
 
 .coal {
-  --bg: #14313f;
-  --fg: #f0f0f0;
-  --headers: #f0f0f0;
+  --bg: var(--navy);
+  --fg: var(--whiteDark);
+  --headers: var(--whiteDark);
 
-  --sidebar-bg: #0b1e28;
-  --sidebar-fg: #f0f0f0;
+  --sidebar-bg: var(--navyDark);
+  --sidebar-fg: var(--whiteDark);
   --sidebar-non-existant: var(--sidebar-fg);
-  --sidebar-active: #4ba0a5;
+  --sidebar-active: var(--teal);
   --sidebar-spacer: var(--sidebar-bg);
 
   --scrollbar: var(--sidebar-fg);
 
-  --icons: #f1f1f1;
-  --icons-hover: #4ba0a5;
+  --icons: var(--whiteDark);
+  --icons-hover: var(--teal);
 
-  --links: #55b1ab;
-  --links-hover: #f0f0f0;
+  --links: var(--teal);
+  --links-hover: var(--whiteDark);
 
   --inline-code-color: #c5c8c6;
 
@@ -43,7 +72,7 @@
   --quote-bg: hsl(234, 21%, 18%);
   --quote-border: hsl(234, 21%, 23%);
 
-  --warning-border: #ff8e00;
+  --warning-border: var(--warning);
 
   --table-border-color: var(--sidebar-bg);
   --table-header-bg: var(--sidebar-bg);
@@ -55,36 +84,38 @@
   --searchbar-shadow-color: #aaa;
   --searchresults-header-fg: var(--headers);
   --searchresults-border-color: var(--headers);
-  --searchresults-li-bg: #2b2b2f;
-  --search-mark-bg: #355c7d;
+  --searchresults-li-bg: var(--shadow);
+  --search-mark-bg: var(--shadow);
 
   --color-scheme: dark;
 
   --page-nav-fg: var(--headers);
   --page-nav-bg: var(--sidebar-bg);
 
-  --button-nav-bg: #0b1e28;
+  --button-nav-bg: var(--navyDark);
   --button-nav-fg: var(--headers);
-  --button-nav-hover: var(--headers);
+  --button-nav-hover-fg: var(--headers);
+  --button-nav-hover-bg: var(--navyDark);
+  --button-nav-hover-border: var(--headers);
 }
 
 .light {
   --bg: #fff;
   --fg: #000;
-  --headers: #18465e;
+  --headers: var(--primary);
 
-  --sidebar-bg: #14313f;
+  --sidebar-bg: var(--navy);
   --sidebar-fg: #fff;
   --sidebar-non-existant: var(--sidebar-fg);
-  --sidebar-active: #4ba0a5;
+  --sidebar-active: var(--teal);
   --sidebar-spacer: var(--sidebar-bg);
 
   --scrollbar: var(--sidebar-fg);
 
-  --icons: #14313f;
-  --icons-hover: #4ba0a5;
+  --icons: var(--navy);
+  --icons-hover: var(--teal);
 
-  --links: #18465e;
+  --links: var(--primary);
   --links-hover: var(--sidebar-active);
 
   --inline-code-color: #301900;
@@ -96,7 +127,7 @@
   --quote-bg: hsl(197, 37%, 96%);
   --quote-border: hsl(197, 37%, 91%);
 
-  --warning-border: #ff8e00;
+  --warning-border: var(--warning);
 
   --table-border-color: var(--sidebar-bg);
   --table-header-bg: var(--sidebar-bg);
@@ -108,37 +139,39 @@
   --searchbar-shadow-color: #aaa;
   --searchresults-header-fg: var(--headers);
   --searchresults-border-color: var(--headers);
-  --searchresults-li-bg: #e4f2fe;
-  --search-mark-bg: #a2cff5;
+  --searchresults-li-bg: var(--shadow);
+  --search-mark-bg: var(--shadow);
 
   --color-scheme: light;
 
   --page-nav-fg: var(--headers);
   --page-nav-bg: var(--sidebar-bg);
 
-  --button-nav-bg: #14313f;
-  --button-nav-fg: var(--bg);
-  --button-nav-hover: var(--headers);
+  --button-nav-bg: var(--teal);
+  --button-nav-fg: var(--black);
+  --button-nav-hover-fg: var(--black);
+  --button-nav-hover-bg: var(--tealDark);
+  --button-nav-hover-border: var(--tealDark);
 }
 
 @media (prefers-color-scheme: dark) {
   .light.no-js {
-    --bg: #14313f;
-    --fg: #f0f0f0;
-    --headers: #f0f0f0;
+    --bg: var(--navy);
+    --fg: var(--whiteDark);
+    --headers: var(--whiteDark);
 
-    --sidebar-bg: #0b1e28;
-    --sidebar-fg: #f0f0f0;
+    --sidebar-bg: var(--navyDark);
+    --sidebar-fg: var(--whiteDark);
     --sidebar-non-existant: var(--sidebar-fg);
-    --sidebar-active: #4ba0a5;
+    --sidebar-active: var(--teal);
     --sidebar-spacer: var(--sidebar-bg);
 
     --scrollbar: var(--sidebar-fg);
 
-    --icons: #f1f1f1;
-    --icons-hover: #4ba0a5;
+    --icons: var(--whiteDark);
+    --icons-hover: var(--teal);
 
-    --links: #55b1ab;
+    --links: var(--teal);
     --links-hover: #f0f0f0;
 
     --inline-code-color: #c5c8c6;
@@ -150,7 +183,7 @@
     --quote-bg: hsl(234, 21%, 18%);
     --quote-border: hsl(234, 21%, 23%);
 
-    --warning-border: #ff8e00;
+    --warning-border: var(--warning);
 
     --table-border-color: var(--sidebar-bg);
     --table-header-bg: var(--sidebar-bg);
@@ -162,16 +195,18 @@
     --searchbar-shadow-color: #aaa;
     --searchresults-header-fg: var(--headers);
     --searchresults-border-color: var(--headers);
-    --searchresults-li-bg: #2b2b2f;
-    --search-mark-bg: #355c7d;
+    --searchresults-li-bg: var(--shadow);
+    --search-mark-bg: var(--shadow);
 
     --color-scheme: dark;
 
     --page-nav-fg: var(--headers);
     --page-nav-bg: var(--sidebar-bg);
 
-    --button-nav-bg: #0b1e28;
+    --button-nav-bg: var(--navyDark);
     --button-nav-fg: var(--headers);
-    --button-nav-hover: var(--headers);
+    --button-nav-hover-fg: var(--headers);
+    --button-nav-hover-bg: var(--navyDark);
+    --button-nav-hover-border: var(--headers);
   }
 }
