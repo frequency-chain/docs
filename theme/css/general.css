@@ -100,7 +100,14 @@ h6:target {
 }
 
 h2:target::before,
-h3:target::before,
+h3:target::before {
+  display: inline-block;
+  content: "#";
+  width: 50px;
+  position: relative;
+  color: var(--headers);
+}
+
 h4:target::before,
 h5:target::before,
 h6:target::before {

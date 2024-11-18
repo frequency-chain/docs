@@ -74,7 +74,7 @@
 @layer base {
   h1,
   .h1 {
-    @apply text-h1 leading-h1;
+    @apply font-title text-[48px] leading-[1] tracking-wide md:text-[56px] lg:text-[70px];
   }
 
   .content h1 {
@@ -88,7 +88,7 @@
 
   h2,
   .h2 {
-    @apply text-h2 leading-h2;
+    @apply font-title text-[40px] leading-[1] tracking-wider md:text-[48px] lg:text-[56px];
   }
 
   .content h2 {
@@ -97,7 +97,7 @@
 
   h3,
   .h3 {
-    @apply text-h3 leading-h3;
+    @apply font-title text-[30px] leading-[1] tracking-wider sm:text-[36px] md:text-[40px] lg:text-[44px];
   }
 
   .content h3 {
@@ -106,7 +106,7 @@
 
   h4,
   .h4 {
-    @apply text-h4 leading-h4;
+    @apply font-title text-[24px] leading-[1] tracking-wider sm:text-[28px] md:text-[20px] lg:text-[36px];
   }
 
   .content h4 {
@@ -115,7 +115,7 @@
 
   h5,
   .h5 {
-    @apply text-h5 leading-h5;
+    @apply font-title text-[18px] leading-[1] tracking-wider sm:text-[20px] md:text-[22px] lg:text-[26px];
   }
 
   .content h5 {
@@ -124,10 +124,30 @@
 
   h6,
   .h6 {
-    @apply text-h6 leading-h6;
+    @apply font-title text-[18px] leading-[1] tracking-wider sm:text-[20px] md:text-[22px] lg:text-[22px];
   }
 
   .content h6 {
     margin: 2.33em 0;
+  }
+
+  .content ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin: 8px 0;
+  }
+
+  .content ul {
+    list-style: disc;
+    list-style-position: inside;
+    margin: 12px 0;
+  }
+
+  .content li {
+    margin: 12px 16px;
+  }
+
+  .content strong {
+    font-weight: 600;
   }
 }
