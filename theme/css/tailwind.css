@@ -74,7 +74,7 @@
 @layer base {
   h1,
   .h1 {
-    @apply font-title text-[40px] leading-[1] tracking-wide md:text-[55px] lg:text-[70px];
+    @apply font-title text-[48px] leading-[1] tracking-wide md:text-[56px] lg:text-[70px];
   }
 
   .content h1 {
@@ -88,7 +88,7 @@
 
   h2,
   .h2 {
-    @apply font-title text-[50px] leading-[1] tracking-wider md:text-[60px] lg:text-[64px];
+    @apply font-title text-[40px] leading-[1] tracking-wider md:text-[48px] lg:text-[56px];
   }
 
   .content h2 {
