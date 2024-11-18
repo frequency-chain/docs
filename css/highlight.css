@@ -176,7 +176,6 @@ pre .hljs {
   display: none;
 }
 
-
 .title-embed {
   display: flex;
   align-items: last baseline;
@@ -186,20 +185,20 @@ pre .hljs {
 
 .title-embed-light {
   display: flex;
-  width: 50px;
-  height: 50px;
+  width: 64px;
+  height: 64px;
   margin-right: 8px;
 }
 
 .title-embed-coal {
   display: none;
-  width: 50px;
-  height: 50px;
+  width: 64px;
+  height: 64px;
   margin-right: 8px;
 }
 
 .embed-number {
-  font-size: 44px;
+  font-size: 60px;
   font-weight: bold;
   color: #f77c47;
 }
