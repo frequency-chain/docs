@@ -18,29 +18,29 @@ Additionally, developers benefit by receiving verified emails, enhancing securit
 
 ### Key Features
 
-Easy Integration:
+#### Easy Integration:
 
 - Utilize developer-friendly documentation and tools to quickly add SIWF to your applications.
 - SIWF streamlines the setup process, allowing Providers to integrate authentication and identity management with minimal effort.
 
 
-Secure Authentication:
+#### Secure Authentication:
 
 - SIWF works with Frequency Access to verify users and manages the signing of requested payloads, ensuring a secure authentication process.
 - Developers can receive emails that Frequency Access has previously verified to enhance communication and security within their applications.
 
 
-Universal Identity and Authentication:
+#### Universal Identity and Authentication:
 
 - Offers users a familiar and standardized sign-in experience with a consistent sign-in button.
 - Allows users to effortlessly claim their user handle and establish their unique identity across the Frequency ecosystem.
 
-User Control:
+#### User Control:
 
 - Ensures users maintain control over their own data as they grant specific delegations and credentials to providers.
 - Provides transparency and trust between applications and their users.
 
-Reduced Onboarding Friction:
+#### Reduced Onboarding Friction:
 
 - Offers a familiar sign-in process that allows users to effortlessly take control of their accounts.
 - Reduces barriers to entry, encouraging more users to engage with your application.
