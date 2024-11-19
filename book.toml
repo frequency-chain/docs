@@ -21,7 +21,7 @@ command = 'node preprocessors/noop-npx.mjs "npx -y tailwindcss -i ./theme/css/ta
 [output.html]
 no-section-label = true
 copy-fonts = false # Switched to custom fonts
-site-url = "/pages/"
+site-url = "/"
 git-repository-url = "https://github.com/frequency-chain/docs"
 edit-url-template = "https://github.com/frequency-chain/docs/blob/main/{path}"
 preferred-dark-theme = "coal"
