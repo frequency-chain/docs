@@ -462,6 +462,9 @@ function playground_text(playground, hidden = true) {
     }
   });
 
+  // Don't animate until we have loaded so we don't get flash
+  document.getElementById("body-container").style.transition = "all 300ms";
+
   sidebarResizeHandle.addEventListener("mousedown", initResize, false);
 
   function initResize(e) {

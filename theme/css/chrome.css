@@ -82,7 +82,6 @@ a > .hljs {
         will want to reposition the viewport in a weird way.
     */
   overflow-x: clip;
-  transition: 200ms;
 }
 
 /* Menu Bar */
