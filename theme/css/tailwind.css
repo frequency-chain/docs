@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.header-shadow {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
 /* Underline on hover animation */
 .underline-on-nav-hover,
 .underline-on-nav {
@@ -71,6 +75,7 @@
   }
 }
 
+/* Lots adding back in defaults that tailwind removes */
 @layer base {
   h1,
   .h1 {
@@ -149,5 +154,13 @@
 
   .content strong {
     font-weight: 600;
+  }
+
+  .content p {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
