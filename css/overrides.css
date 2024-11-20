@@ -4,13 +4,9 @@
   font-size: 100% !important;
 }
 
-/* :target {
+:target {
   scroll-margin-top: calc(var(--header-height) + 20px);
-} */
-/*
-html {
-  scroll-margin-top: 0;
-} */
+}
 
 body {
   font-size: 18px;
