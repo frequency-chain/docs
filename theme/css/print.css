@@ -18,7 +18,7 @@
   display: grid;
   grid:
     [row2-start] "content" 1fr [row2-end]
-    / auto;
+    / 100% !important;
 }
 
 #sidebar,

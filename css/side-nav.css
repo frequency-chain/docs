@@ -102,10 +102,3 @@
 #toc > .chapter > li > .section > li.chapter-item:first-of-type {
   margin-top: 10px;
 }
-
-.chapter li > a.toggle {
-  flex: 0 0 24px;
-  width: 24px;
-  height: 24px;
-  padding: 0px;
-}

@@ -1,17 +1,6 @@
 /* Globals */
 
 :root {
-  --sidebar-width: 360px;
-  --sidebar-width-mobile: calc(100vw - 50px);
-  --sidebar-resize-indicator-width: 4px;
-  --sidebar-resize-indicator-space: 2px;
-  --page-padding: 15px;
-  --content-max-width: 1080px;
-  --menu-bar-height: 50px;
-  --mono-font: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
-  --code-font-size: 0.875em /* please adjust the ace font size accordingly in editor.js */;
-  --header-height: 85px;
-
   /* Colors from Style Guide */
   --navy: #14313f;
   /* Primary is usually used for headers, nav, etc... */
@@ -40,6 +29,20 @@
   /* Extra Colors */
   --whiteDark: #f0f0f0;
   --navyDark: #0b1e28;
+
+  /* Extra Variables */
+  --sidebar-width-mobile: calc(100vw - 50px);
+  --header-height: 85px;
+
+  /* Original Variables */
+  --sidebar-width: 360px;
+  --sidebar-resize-indicator-width: 4px;
+  --sidebar-resize-indicator-space: 2px;
+  --page-padding: 15px;
+  --content-max-width: 1080px;
+  --menu-bar-height: 50px;
+  --mono-font: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
+  --code-font-size: 0.875em /* please adjust the ace font size accordingly in editor.js */;
 }
 
 /* Themes */
@@ -63,8 +66,9 @@
   --links: var(--teal);
   --links-hover: var(--whiteDark);
 
-  --inline-code-color: #c5c8c6;
+  --inline-code-color: var(--gray3);
 
+  --theme-popup-fg: var(--sidebar-fg);
   --theme-popup-bg: var(--sidebar-bg);
   --theme-popup-border: var(--links);
   --theme-hover: var(--sidebar-active);
@@ -79,8 +83,8 @@
   --table-alternate-bg: var(--sidebar-bg);
 
   --searchbar-border-color: #aaa;
-  --searchbar-bg: var(--headers);
-  --searchbar-fg: #000;
+  --searchbar-bg: var(--white);
+  --searchbar-fg: var(--navyDark);
   --searchbar-shadow-color: #aaa;
   --searchresults-header-fg: var(--headers);
   --searchresults-border-color: var(--headers);
@@ -97,9 +101,15 @@
   --button-nav-hover-fg: var(--headers);
   --button-nav-hover-bg: var(--navyDark);
   --button-nav-hover-border: var(--headers);
+
+  /* Same as `--icons` */
+  --copy-button-filter: invert(26%) sepia(8%) saturate(575%) hue-rotate(169deg) brightness(87%) contrast(82%);
+  /* Same as `--sidebar-active` */
+  --copy-button-filter-hover: invert(36%) sepia(70%) saturate(503%) hue-rotate(167deg) brightness(98%) contrast(89%);
 }
 
-.light {
+.light,
+html:not(.js) {
   --bg: #fff;
   --fg: #000;
   --headers: var(--primary);
@@ -120,6 +130,7 @@
 
   --inline-code-color: #301900;
 
+  --theme-popup-fg: var(--sidebar-fg);
   --theme-popup-bg: var(--sidebar-bg);
   --theme-popup-border: var(--links);
   --theme-hover: var(--sidebar-active);
@@ -134,8 +145,8 @@
   --table-alternate-bg: var(--sidebar-bg);
 
   --searchbar-border-color: #aaa;
-  --searchbar-bg: #fafafa;
-  --searchbar-fg: #000;
+  --searchbar-bg: var(--white);
+  --searchbar-fg: var(--navyDark);
   --searchbar-shadow-color: #aaa;
   --searchresults-header-fg: var(--headers);
   --searchresults-border-color: var(--headers);
@@ -152,10 +163,15 @@
   --button-nav-hover-fg: var(--black);
   --button-nav-hover-bg: var(--tealDark);
   --button-nav-hover-border: var(--tealDark);
+
+  /* Same as `--icons` */
+  --copy-button-filter: invert(45.49%);
+  /* Same as `--sidebar-active` */
+  --copy-button-filter-hover: invert(14%) sepia(93%) saturate(4250%) hue-rotate(243deg) brightness(99%) contrast(130%);
 }
 
 @media (prefers-color-scheme: dark) {
-  .light.no-js {
+  html:not(.js) {
     --bg: var(--navy);
     --fg: var(--whiteDark);
     --headers: var(--whiteDark);
@@ -176,6 +192,7 @@
 
     --inline-code-color: #c5c8c6;
 
+    --theme-popup-fg: var(--sidebar-fg);
     --theme-popup-bg: var(--sidebar-bg);
     --theme-popup-border: var(--links);
     --theme-hover: var(--sidebar-active);
@@ -190,8 +207,8 @@
     --table-alternate-bg: var(--sidebar-bg);
 
     --searchbar-border-color: #aaa;
-    --searchbar-bg: var(--headers);
-    --searchbar-fg: #000;
+    --searchbar-bg: var(--white);
+    --searchbar-fg: var(--navyDark);
     --searchbar-shadow-color: #aaa;
     --searchresults-header-fg: var(--headers);
     --searchresults-border-color: var(--headers);
@@ -208,5 +225,10 @@
     --button-nav-hover-fg: var(--headers);
     --button-nav-hover-bg: var(--navyDark);
     --button-nav-hover-border: var(--headers);
+
+    /* Same as `--icons` */
+    --copy-button-filter: invert(26%) sepia(8%) saturate(575%) hue-rotate(169deg) brightness(87%) contrast(82%);
+    /* Same as `--sidebar-active` */
+    --copy-button-filter-hover: invert(36%) sepia(70%) saturate(503%) hue-rotate(167deg) brightness(98%) contrast(89%);
   }
 }
