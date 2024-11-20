@@ -102,7 +102,6 @@
   --button-nav-hover-bg: var(--navyDark);
   --button-nav-hover-border: var(--headers);
 
-  /* WW: TODO update these correctly */
   /* Same as `--icons` */
   --copy-button-filter: invert(26%) sepia(8%) saturate(575%) hue-rotate(169deg) brightness(87%) contrast(82%);
   /* Same as `--sidebar-active` */
