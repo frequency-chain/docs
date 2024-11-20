@@ -78,7 +78,7 @@
 
   --warning-border: var(--warning);
 
-  --table-border-color: var(--sidebar-bg);
+  --table-border-color: var(--gray1);
   --table-header-bg: var(--sidebar-bg);
   --table-alternate-bg: var(--sidebar-bg);
 
@@ -141,8 +141,8 @@ html:not(.js) {
   --warning-border: var(--warning);
 
   --table-border-color: var(--sidebar-bg);
-  --table-header-bg: var(--sidebar-bg);
-  --table-alternate-bg: var(--sidebar-bg);
+  --table-header-bg: var(--gray2);
+  --table-alternate-bg: var(--gray3);
 
   --searchbar-border-color: #aaa;
   --searchbar-bg: var(--white);
@@ -202,7 +202,7 @@ html:not(.js) {
 
     --warning-border: var(--warning);
 
-    --table-border-color: var(--sidebar-bg);
+    --table-border-color: var(--gray1);
     --table-header-bg: var(--sidebar-bg);
     --table-alternate-bg: var(--sidebar-bg);
 
