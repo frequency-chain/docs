@@ -1,6 +1,6 @@
 # Governance
 
-Frequency Governance currently uses [Polkadot Governance V1](https://wiki.polkadot.network/docs/learn/learn-governance): a tricameral governance structure which includes coordinated governance by three institutions: the [Frequency Council](https://dotapps-io.ipns.dweb.link?rpc=wss%3A%2F%2F1.rpc.frequency.xyz#/council), analogous to the Council in Polkadot Governance V1, the [Technical Committee](https://dotapps-io.ipns.dweb.link?rpc=wss%3A%2F%2F1.rpc.frequency.xyz#/techcomm), analogous to the Technical Committee in Polkadot Governance V1, and token holder voting, analogous to the Public in Polkadot Governance V1.
+Frequency Governance currently uses [Polkadot Governance V1](https://wiki.polkadot.network/learn/archive/learn-governance/): a tricameral governance structure which includes coordinated governance by three institutions: the [Frequency Council](https://dotapps-io.ipns.dweb.link?rpc=wss%3A%2F%2F1.rpc.frequency.xyz#/council), analogous to the Council in Polkadot Governance V1, the [Technical Committee](https://dotapps-io.ipns.dweb.link?rpc=wss%3A%2F%2F1.rpc.frequency.xyz#/techcomm), analogous to the Technical Committee in Polkadot Governance V1, and token holder voting, analogous to the Public in Polkadot Governance V1.
 
 ## Governance Parameters
 

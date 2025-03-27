@@ -15,7 +15,7 @@ and [link checker](https://github.com/Michael-F-Bryan/mdbook-linkcheck). The lin
 or external links.
 
 ```bash
-cargo install mdbook@v0.4.42
+cargo install mdbook@v0.4.47
 cargo install mdbook-linkcheck
 npm install
 ```
