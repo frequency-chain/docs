@@ -208,3 +208,4 @@ TBD
 precalculated
 unfollowing
 [Ww]ebhook(s?)
+[Ww]hitepaper

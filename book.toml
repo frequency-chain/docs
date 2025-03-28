@@ -34,6 +34,9 @@ additional-css = [
   "css/highlight-dark.css",
 ]
 
+[output.html.redirect]
+"/Core.html" = "/Whitepaper.html"
+
 # https://github.com/Michael-F-Bryan/mdbook-linkcheck
 # [output.linkcheck]
 # exclude = [
