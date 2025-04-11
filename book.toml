@@ -1,7 +1,6 @@
 [book]
 authors = ["Frequency"]
 language = "en"
-multilingual = false
 src = "pages"
 title = "Frequency Documentation"
 
