@@ -14,6 +14,6 @@ Whether you're a beginner or an experienced developer, our resources will guide 
 [Become a Provider](./Guides/BecomeAProvider.md)
 [Frequency Developer Gateway](./Guides/Gateway.md)
 [Single Sign-on](./Guides/SSO.md)
-[Frequency Core](./Core.md)
+[Frequency Whitepaper](./Whitepaper.md)
 
 </div>
