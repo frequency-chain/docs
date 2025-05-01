@@ -43,11 +43,11 @@ Capacity Staking has a Capacity Epoch, which is defined as a fixed number of blo
 The number of tokens staked by a given Provider determines that Provider's Capacity Allocation, which may be increased by [Provider Boosting](./UserIncentives.md).
 Providers can spend up to their full Capacity Allocation on transaction fees each Capacity Epoch.
 At the beginning of each Capacity Epoch, the Provider's Capacity Allocation is renewed, allowing the same amount of Capacity to be spent again in the next Capacity Epoch.
-The initial Capacity Epoch for Frequency is 7,200 blocks (a duration of approximately 24 hours, given Frequency's 12-second block time target).
+The initial Capacity Epoch for Frequency is 14,400 blocks (a duration of approximately 24 hours, given Frequency's 6-second block time target).
 Capacity incentivizes sending Messages by reducing transaction costs.
 In a social networking context, the utility of the network increases as users communicate more, so Capacity acts to increase overall network utility over time by reducing the transaction cost of Message publishing.
 
-To illustrate the utility of staking for a Provider, given the initial Capacity Epoch length of 7,200 blocks, and the initial 50:1 Frequency to Capacity Staking Ratio, consider two Providers with 50 FRQCY, Provider 1 staking their tokens, and spending 1 Capacity on transaction fees each Capacity Epoch, and Provider 2 spending 1 FRQCY on transaction fees each Capacity Epoch.
+To illustrate the utility of staking for a Provider, given the initial Capacity Epoch length of 14,400 blocks, and the initial 50:1 Frequency to Capacity Staking Ratio, consider two Providers with 50 FRQCY, Provider 1 staking their tokens, and spending 1 Capacity on transaction fees each Capacity Epoch, and Provider 2 spending 1 FRQCY on transaction fees each Capacity Epoch.
 After approximately 50 days, Provider 2 would be at fund exhaustion, while Provider 1 could continue to spend 1 Capacity each Capacity Epoch indefinitely, preserving the optionality to unstake all staked tokens at some time in the future.
 
 Unused Capacity does not roll over to the next Capacity Epoch.
