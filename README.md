@@ -10,15 +10,18 @@ or [Frequency on GitHub](https://github.com/frequency-chain/frequency)
 
 ## Install
 
-To build the generator locally, install [mdBook](https://github.com/rust-lang/mdBook.git)
-and [link checker](https://github.com/Michael-F-Bryan/mdbook-linkcheck). The link checker will run during build process and throw warnings for any broken internal
-or external links.
+To build the generator locally, install [mdBook](https://github.com/rust-lang/mdBook.git).
 
 ```bash
-cargo install mdbook@v0.4.47
-cargo install mdbook-linkcheck
+cargo install mdbook@0.4.49
 npm install
 ```
+
+### Local Link Checking
+
+Use [mdbook linkcheck](https://github.com/Michael-F-Bryan/mdbook-linkcheck).
+The link checker will run during build process and throw warnings for any broken internal or external links.
+Not run in CI due to a high number of false negatives.
 
 ## Run
 
