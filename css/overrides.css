@@ -190,6 +190,11 @@ body {
   margin-inline-start: 0;
 }
 
+.sidebar-resize-handle .sidebar-resize-indicator::after,
+.sidebar-resize-handle .sidebar-resize-indicator::before {
+  border-left: none !important;
+}
+
 @media only screen and (min-width: 620px) {
   .sidebar-resize-handle .sidebar-resize-indicator {
     display: inherit;
@@ -265,6 +270,7 @@ body {
   transition-property: border, color;
   transition-duration: 0.5s;
   margin-bottom: 24px;
+  width: auto;
 }
 
 #content .mobile-nav-chapters:hover {

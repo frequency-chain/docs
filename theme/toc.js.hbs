@@ -8,6 +8,7 @@ class MDBookSidebarScrollbox extends HTMLElement {
         super();
     }
     connectedCallback() {
+        // MOD: Update innerHTML to have the correct contents
         this.innerHTML = `
         <div class="sidebar-contents">
           <div id="toc">
@@ -32,7 +33,7 @@ class MDBookSidebarScrollbox extends HTMLElement {
           </ol>
         </div>`;
         // Set the current, active page, and reveal it if it's hidden
-        let current_page = document.location.href.toString();
+        let current_page = document.location.href.toString().split("#")[0].split("?")[0];
         if (current_page.endsWith("/")) {
             current_page += "index.html";
         }

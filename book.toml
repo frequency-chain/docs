@@ -15,7 +15,7 @@ command = "node preprocessors/title-image.mjs"
 
 [preprocessor.tailwind]
 renderers = ["html"]
-command = 'node preprocessors/noop-npx.mjs "npx -y @tailwindcss/cli -i ./theme/css/tailwind.css -o ./css/tailwind.css"'
+command = 'node preprocessors/noop-npx.mjs "npx -y @tailwindcss/cli -i ./theme/tailwind.css -o ./css/tailwind.css"'
 
 [output.html]
 no-section-label = true
