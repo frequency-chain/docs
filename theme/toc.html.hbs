@@ -37,28 +37,30 @@
         {{/each}}
     </head>
     <!-- MOD: Update to have the correct contents of the body -->
-    <body class="sidebar-iframe-inner">
+    <body id="sidebar">
       <div class="sidebar-contents">
-        <div id="toc">
-          {{#toc}}{{/toc}}
-        </div>
-        <div class="spacer"></div>
-        <ol class="chapter pt-2">
-            {{#if git_repository_url}}
-              <li class="chapter-item">
-                <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
-                    <i id="git-repository-button" class="fa {{git_repository_icon}}"></i> GitHub
-                </a>
+        <div class="sidebar-iframe-inner">
+          <div id="toc">
+            {{#toc}}{{/toc}}
+          </div>
+          <div class="spacer"></div>
+          <ol class="chapter pt-2">
+              {{#if git_repository_url}}
+                <li class="chapter-item">
+                  <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
+                      <i id="git-repository-button" class="fa {{git_repository_icon}}"></i> GitHub
+                  </a>
+                  </li>
+              {{/if}}
+              {{#if git_repository_edit_url}}
+                <li class="chapter-item">
+                  <a href="{{git_repository_edit_url}}" title="Suggest an edit" aria-label="Suggest an edit">
+                      <i id="git-edit-button" class="fa fa-edit"></i> Edit this Page
+                  </a>
                 </li>
-            {{/if}}
-            {{#if git_repository_edit_url}}
-              <li class="chapter-item">
-                <a href="{{git_repository_edit_url}}" title="Suggest an edit" aria-label="Suggest an edit">
-                    <i id="git-edit-button" class="fa fa-edit"></i> Edit this Page
-                </a>
-              </li>
-            {{/if}}
-        </ol>
+              {{/if}}
+          </ol>
+        </div>
       </div>
     </body>
 </html>

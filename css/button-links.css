@@ -15,7 +15,9 @@
 .button-links a,
 .button-links > p a,
 .button-links a:link,
-.button-links > p a:link {
+.button-links > p a:link,
+.button-links a:visited,
+.button-links > p a:visited {
   text-decoration: none;
   box-sizing: content-box;
   font-weight: 700;

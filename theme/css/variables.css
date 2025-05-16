@@ -5,7 +5,7 @@
  */
 
 :root {
-  /* Colors from Style Guide */
+  /* COPY the colors from Style Guide */
   --color-primary: #790e70;
   --color-purple25: #9a4a94;
   --color-purple50: #bc86b7;
@@ -67,7 +67,7 @@
   --icons: var(--color-cream);
   --icons-hover: var(--color-purple75);
 
-  --links: var(--color-white);
+  --links: var(--color-purple75);
   --links-hover: var(--color-purple75);
 
   --inline-code-color: var(--color-gray3);
@@ -120,18 +120,18 @@ html:not(.js) {
   --fg: #000;
   --headers: var(--color-darkPurple);
 
-  --sidebar-bg: var(--color-primary);
+  --sidebar-bg: var(--color-darkPurple);
   --sidebar-fg: #fff;
   --sidebar-non-existant: var(--sidebar-fg);
-  --sidebar-active: var(--color-white);
+  --sidebar-active: var(--color-purple75);
   --sidebar-spacer: var(--sidebar-bg);
 
   --scrollbar: var(--sidebar-fg);
 
-  --icons: var(--color-primary);
-  --icons-hover: var(--color-darkPurple);
+  --icons: var(--color-darkPurple);
+  --icons-hover: var(--color-primary);
 
-  --links: var(--color-darkPurple);
+  --links: var(--color-primary);
   --links-hover: var(--sidebar-active);
 
   --inline-code-color: #301900;
@@ -139,7 +139,7 @@ html:not(.js) {
   --theme-popup-fg: var(--sidebar-fg);
   --theme-popup-bg: var(--sidebar-bg);
   --theme-popup-border: var(--links);
-  --theme-hover: var(--color-darkPurple);
+  --theme-hover: var(--color-primary);
 
   --quote-bg: hsl(197, 37%, 96%);
   --quote-border: hsl(197, 37%, 91%);
@@ -164,10 +164,10 @@ html:not(.js) {
   --page-nav-fg: var(--headers);
   --page-nav-bg: var(--sidebar-bg);
 
-  --button-nav-bg: var(--color-primary);
+  --button-nav-bg: var(--color-darkPurple);
   --button-nav-fg: var(--color-cream);
   --button-nav-hover-fg: var(--color-cream);
-  --button-nav-hover-bg: var(--color-darkPurple);
+  --button-nav-hover-bg: var(--color-primary);
   --button-nav-hover-border: var(--color-primary);
 
   /* Same as `--icons` */
@@ -195,7 +195,7 @@ html:not(.js) {
     --icons: var(--color-cream);
     --icons-hover: var(--color-purple75);
 
-    --links: var(--color-white);
+    --links: var(--color-purple75);
     --links-hover: var(--color-purple75);
 
     --inline-code-color: var(--color-gray3);

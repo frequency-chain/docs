@@ -99,11 +99,30 @@ body {
   background: var(--sidebar-bg);
 }
 
+/* No-JS Sidebar */
+body#sidebar {
+  width: 100%;
+}
+
 .sidebar-iframe-outer {
   position: relative;
-  width: auto;
+  width: 100%;
   height: 100vh;
 }
+
+.sidebar-iframe-inner {
+  font-size: inherit;
+}
+
+.sidebar-iframe-inner .chapter li:not(.expanded) + li > ol {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-iframe-inner .chapter li > a.toggle {
+  transform: rotate(90deg);
+}
+/* END No-JS Sidebar */
 
 #sidebar::-webkit-scrollbar {
   background: var(--sidebar-bg);
