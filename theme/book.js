@@ -1,14 +1,16 @@
 "use strict";
 
+/* global default_theme, default_dark_theme, default_light_theme, hljs, ClipboardJS */
+
 // Fix back button cache problem
 window.onunload = function () {};
 
 // Global variable, shared between modules
 function playground_text(playground, hidden = true) {
-  let code_block = playground.querySelector("code");
+  const code_block = playground.querySelector("code");
 
   if (window.ace && code_block.classList.contains("editable")) {
-    let editor = window.ace.edit(code_block);
+    const editor = window.ace.edit(code_block);
     return editor.getValue();
   } else if (hidden) {
     return code_block.textContent;
@@ -25,7 +27,7 @@ function playground_text(playground, hidden = true) {
     ]);
   }
 
-  var playgrounds = Array.from(document.querySelectorAll(".playground"));
+  const playgrounds = Array.from(document.querySelectorAll(".playground"));
   if (playgrounds.length > 0) {
     fetch_with_timeout("https://play.rust-lang.org/meta/crates", {
       headers: {
@@ -37,7 +39,7 @@ function playground_text(playground, hidden = true) {
       .then((response) => response.json())
       .then((response) => {
         // get list of crates available in the rust playground
-        let playground_crates = response.crates.map((item) => item["id"]);
+        const playground_crates = response.crates.map((item) => item["id"]);
         playgrounds.forEach((block) => handle_crate_list_update(block, playground_crates));
       });
   }
@@ -48,10 +50,10 @@ function playground_text(playground, hidden = true) {
 
     // and install on change listener to dynamically update ACE editors
     if (window.ace) {
-      let code_block = playground_block.querySelector("code");
+      const code_block = playground_block.querySelector("code");
       if (code_block.classList.contains("editable")) {
-        let editor = window.ace.edit(code_block);
-        editor.addEventListener("change", function (e) {
+        const editor = window.ace.edit(code_block);
+        editor.addEventListener("change", () => {
           update_play_button(playground_block, playground_crates);
         });
         // add Ctrl-Enter command to execute rust code
@@ -70,7 +72,7 @@ function playground_text(playground, hidden = true) {
   // updates the visibility of play button based on `no_run` class and
   // used crates vs ones available on https://play.rust-lang.org
   function update_play_button(pre_block, playground_crates) {
-    var play_button = pre_block.querySelector(".play-button");
+    const play_button = pre_block.querySelector(".play-button");
 
     // skip if code is `no_run`
     if (pre_block.querySelector("code").classList.contains("no_run")) {
@@ -79,16 +81,17 @@ function playground_text(playground, hidden = true) {
     }
 
     // get list of `extern crate`'s from snippet
-    var txt = playground_text(pre_block);
-    var re = /extern\s+crate\s+([a-zA-Z_0-9]+)\s*;/g;
-    var snippet_crates = [];
-    var item;
+    const txt = playground_text(pre_block);
+    const re = /extern\s+crate\s+([a-zA-Z_0-9]+)\s*;/g;
+    const snippet_crates = [];
+    let item;
+    // eslint-disable-next-line no-cond-assign
     while ((item = re.exec(txt))) {
       snippet_crates.push(item[1]);
     }
 
     // check if all used crates are available on play.rust-lang.org
-    var all_available = snippet_crates.every(function (elem) {
+    const all_available = snippet_crates.every(function (elem) {
       return playground_crates.indexOf(elem) > -1;
     });
 
@@ -100,7 +103,7 @@ function playground_text(playground, hidden = true) {
   }
 
   function run_rust_code(code_block) {
-    var result_block = code_block.querySelector(".result");
+    let result_block = code_block.querySelector(".result");
     if (!result_block) {
       result_block = document.createElement("code");
       result_block.className = "result hljs language-bash";
@@ -108,15 +111,15 @@ function playground_text(playground, hidden = true) {
       code_block.append(result_block);
     }
 
-    let text = playground_text(code_block);
-    let classes = code_block.querySelector("code").classList;
+    const text = playground_text(code_block);
+    const classes = code_block.querySelector("code").classList;
     let edition = "2015";
-    if (classes.contains("edition2018")) {
-      edition = "2018";
-    } else if (classes.contains("edition2021")) {
-      edition = "2021";
-    }
-    var params = {
+    classes.forEach((className) => {
+      if (className.startsWith("edition")) {
+        edition = className.slice(7);
+      }
+    });
+    const params = {
       version: "stable",
       optimize: "0",
       code: text,
@@ -156,7 +159,7 @@ function playground_text(playground, hidden = true) {
     languages: [], // Languages used for auto-detection
   });
 
-  let code_nodes = Array.from(document.querySelectorAll("code"))
+  const code_nodes = Array.from(document.querySelectorAll("code"))
     // Don't highlight `inline code` blocks in headers.
     .filter(function (node) {
       return !node.parentElement.classList.contains("header");
@@ -193,19 +196,21 @@ function playground_text(playground, hidden = true) {
   });
 
   Array.from(document.querySelectorAll("code.hljs")).forEach(function (block) {
-    var lines = Array.from(block.querySelectorAll(".boring"));
+    const lines = Array.from(block.querySelectorAll(".boring"));
     // If no lines were hidden, return
     if (!lines.length) {
       return;
     }
     block.classList.add("hide-boring");
 
-    var buttons = document.createElement("div");
+    const buttons = document.createElement("div");
     buttons.className = "buttons";
-    buttons.innerHTML = '<button class="fa fa-eye" title="Show hidden lines" aria-label="Show hidden lines"></button>';
+    buttons.innerHTML =
+      '<button class="fa fa-eye" title="Show hidden lines" \
+aria-label="Show hidden lines"></button>';
 
     // add expand button
-    var pre_block = block.parentNode;
+    const pre_block = block.parentNode;
     pre_block.insertBefore(buttons, pre_block.firstChild);
 
     pre_block.querySelector(".buttons").addEventListener("click", function (e) {
@@ -229,16 +234,16 @@ function playground_text(playground, hidden = true) {
 
   if (window.playground_copyable) {
     Array.from(document.querySelectorAll("pre code")).forEach(function (block) {
-      var pre_block = block.parentNode;
+      const pre_block = block.parentNode;
       if (!pre_block.classList.contains("playground")) {
-        var buttons = pre_block.querySelector(".buttons");
+        let buttons = pre_block.querySelector(".buttons");
         if (!buttons) {
           buttons = document.createElement("div");
           buttons.className = "buttons";
           pre_block.insertBefore(buttons, pre_block.firstChild);
         }
 
-        var clipButton = document.createElement("button");
+        const clipButton = document.createElement("button");
         clipButton.className = "clip-button";
         clipButton.title = "Copy to clipboard";
         clipButton.setAttribute("aria-label", clipButton.title);
@@ -252,26 +257,26 @@ function playground_text(playground, hidden = true) {
   // Process playground code blocks
   Array.from(document.querySelectorAll(".playground")).forEach(function (pre_block) {
     // Add play button
-    var buttons = pre_block.querySelector(".buttons");
+    let buttons = pre_block.querySelector(".buttons");
     if (!buttons) {
       buttons = document.createElement("div");
       buttons.className = "buttons";
       pre_block.insertBefore(buttons, pre_block.firstChild);
     }
 
-    var runCodeButton = document.createElement("button");
+    const runCodeButton = document.createElement("button");
     runCodeButton.className = "fa fa-play play-button";
     runCodeButton.hidden = true;
     runCodeButton.title = "Run this code";
     runCodeButton.setAttribute("aria-label", runCodeButton.title);
 
     buttons.insertBefore(runCodeButton, buttons.firstChild);
-    runCodeButton.addEventListener("click", function (e) {
+    runCodeButton.addEventListener("click", () => {
       run_rust_code(pre_block);
     });
 
     if (window.playground_copyable) {
-      var copyCodeClipboardButton = document.createElement("button");
+      const copyCodeClipboardButton = document.createElement("button");
       copyCodeClipboardButton.className = "clip-button";
       copyCodeClipboardButton.innerHTML = '<i class="tooltiptext"></i>';
       copyCodeClipboardButton.title = "Copy to clipboard";
@@ -280,9 +285,9 @@ function playground_text(playground, hidden = true) {
       buttons.insertBefore(copyCodeClipboardButton, buttons.firstChild);
     }
 
-    let code_block = pre_block.querySelector("code");
+    const code_block = pre_block.querySelector("code");
     if (window.ace && code_block.classList.contains("editable")) {
-      var undoChangesButton = document.createElement("button");
+      const undoChangesButton = document.createElement("button");
       undoChangesButton.className = "fa fa-history reset-button";
       undoChangesButton.title = "Undo changes";
       undoChangesButton.setAttribute("aria-label", undoChangesButton.title);
@@ -290,7 +295,7 @@ function playground_text(playground, hidden = true) {
       buttons.insertBefore(undoChangesButton, buttons.firstChild);
 
       undoChangesButton.addEventListener("click", function () {
-        let editor = window.ace.edit(code_block);
+        const editor = window.ace.edit(code_block);
         editor.setValue(editor.originalCode);
         editor.clearSelection();
       });
@@ -299,15 +304,15 @@ function playground_text(playground, hidden = true) {
 })();
 
 (function themes() {
-  var html = document.querySelector("html");
-  var themeToggleButton = document.getElementById("theme-toggle");
-  var themePopup = document.getElementById("theme-list");
-  var themeColorMetaTag = document.querySelector('meta[name="theme-color"]');
-  var themeIds = [];
+  const html = document.querySelector("html");
+  const themeToggleButton = document.getElementById("theme-toggle");
+  const themePopup = document.getElementById("theme-list");
+  const themeColorMetaTag = document.querySelector('meta[name="theme-color"]');
+  const themeIds = [];
   themePopup.querySelectorAll("button.theme").forEach(function (el) {
     themeIds.push(el.id);
   });
-  var stylesheets = {
+  const stylesheets = {
     // MOD: Different stylesheets
     // ayuHighlight: document.querySelector("[href$='ayu-highlight.css']"),
     // tomorrowNight: document.querySelector("[href$='tomorrow-night.css']"),
@@ -325,7 +330,13 @@ function playground_text(playground, hidden = true) {
     themePopup.querySelectorAll(".theme-selected").forEach(function (el) {
       el.classList.remove("theme-selected");
     });
-    themePopup.querySelector("button#" + get_theme()).classList.add("theme-selected");
+    const selected = get_saved_theme() ?? "default_theme";
+    let element = themePopup.querySelector("button#" + selected);
+    if (element === null) {
+      // Fall back in case there is no "Default" item.
+      element = themePopup.querySelector("button#" + get_theme());
+    }
+    element.classList.add("theme-selected");
   }
 
   function hideThemes() {
@@ -334,18 +345,35 @@ function playground_text(playground, hidden = true) {
     themeToggleButton.focus();
   }
 
-  function get_theme() {
-    var theme;
+  function get_saved_theme() {
+    let theme = null;
     try {
       theme = localStorage.getItem("mdbook-theme");
-    } catch (e) {}
+    } catch (e) {
+      // ignore error.
+    }
+    return theme;
+  }
+
+  function delete_saved_theme() {
+    localStorage.removeItem("mdbook-theme");
+  }
+
+  function get_theme() {
+    const theme = get_saved_theme();
     if (theme === null || theme === undefined || !themeIds.includes(theme)) {
-      return default_theme;
+      if (typeof default_dark_theme === "undefined") {
+        // A customized index.hbs might not define this, so fall back to
+        // old behavior of determining the default on page load.
+        return default_theme;
+      }
+      return window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
     } else {
       return theme;
     }
   }
 
+  let previousTheme = default_theme;
   function set_theme(theme, store = true) {
     let ace_theme;
 
@@ -371,23 +399,27 @@ function playground_text(playground, hidden = true) {
       });
     }
 
-    var previousTheme = get_theme();
-
     if (store) {
       try {
         localStorage.setItem("mdbook-theme", theme);
-      } catch (e) {}
+      } catch (e) {
+        // ignore error.
+      }
     }
 
     html.classList.remove(previousTheme);
     html.classList.add(theme);
+    previousTheme = theme;
     updateThemeSelected();
   }
 
-  // Set theme
-  var theme = get_theme();
+  const query = window.matchMedia("(prefers-color-scheme: dark)");
+  query.onchange = function () {
+    set_theme(get_theme(), false);
+  };
 
-  set_theme(theme, false);
+  // Set theme.
+  set_theme(get_theme(), false);
 
   themeToggleButton.addEventListener("click", function () {
     if (themePopup.style.display === "block") {
@@ -398,7 +430,7 @@ function playground_text(playground, hidden = true) {
   });
 
   themePopup.addEventListener("click", function (e) {
-    var theme;
+    let theme;
     if (e.target.className === "theme") {
       theme = e.target.id;
     } else if (e.target.parentElement.className === "theme") {
@@ -406,7 +438,12 @@ function playground_text(playground, hidden = true) {
     } else {
       return;
     }
-    set_theme(theme);
+    if (theme === "default_theme" || theme === null) {
+      delete_saved_theme();
+      set_theme(get_theme(), false);
+    } else {
+      set_theme(theme);
+    }
   });
 
   themePopup.addEventListener("focusout", function (e) {
@@ -416,7 +453,8 @@ function playground_text(playground, hidden = true) {
     }
   });
 
-  // Should not be needed, but it works around an issue on macOS & iOS: https://github.com/rust-lang/mdBook/issues/628
+  // Should not be needed, but it works around an issue on macOS & iOS:
+  // https://github.com/rust-lang/mdBook/issues/628
   document.addEventListener("click", function (e) {
     if (
       themePopup.style.display === "block" &&
@@ -435,6 +473,7 @@ function playground_text(playground, hidden = true) {
       return;
     }
 
+    let li;
     switch (e.key) {
       case "Escape":
         e.preventDefault();
@@ -442,14 +481,14 @@ function playground_text(playground, hidden = true) {
         break;
       case "ArrowUp":
         e.preventDefault();
-        var li = document.activeElement.parentElement;
+        li = document.activeElement.parentElement;
         if (li && li.previousElementSibling) {
           li.previousElementSibling.querySelector("button").focus();
         }
         break;
       case "ArrowDown":
         e.preventDefault();
-        var li = document.activeElement.parentElement;
+        li = document.activeElement.parentElement;
         if (li && li.nextElementSibling) {
           li.nextElementSibling.querySelector("button").focus();
         }
@@ -468,13 +507,13 @@ function playground_text(playground, hidden = true) {
 
 // MOD: Sidebar is now dependent on the checkbox, so had to adjust how the js responds
 (function sidebar() {
-  var body = document.querySelector("body");
-  var sidebar = document.getElementById("sidebar");
-  var sidebarLinks = document.querySelectorAll("#sidebar a");
-  var sidebarToggleButton = document.getElementById("sidebar-toggle");
-  var sidebarResizeHandle = document.getElementById("sidebar-resize-handle");
-  var sidebarToggleAnchor = document.getElementById("sidebar-toggle-anchor");
-  var firstContact = null;
+  const body = document.querySelector("body");
+  const sidebar = document.getElementById("sidebar");
+  const sidebarLinks = document.querySelectorAll("#sidebar a");
+  const sidebarToggleButton = document.getElementById("sidebar-toggle");
+  const sidebarToggleAnchor = document.getElementById("sidebar-toggle-anchor");
+  const sidebarResizeHandle = document.getElementById("sidebar-resize-handle");
+  let firstContact = null;
 
   function showSidebar() {
     if (sidebarToggleAnchor.checked !== true) {
@@ -540,7 +579,7 @@ function playground_text(playground, hidden = true) {
     body.classList.add("sidebar-resizing");
   }
   function resize(e) {
-    var pos = e.clientX - sidebar.offsetLeft;
+    let pos = e.clientX - sidebar.offsetLeft;
     if (pos < 20) {
       hideSidebar();
     } else {
@@ -550,7 +589,7 @@ function playground_text(playground, hidden = true) {
     }
   }
   //on mouseup remove windows functions mousemove & mouseup
-  function stopResize(e) {
+  function stopResize() {
     body.classList.remove("sidebar-resizing");
     window.removeEventListener("mousemove", resize, false);
     window.removeEventListener("mouseup", stopResize, false);
@@ -572,8 +611,8 @@ function playground_text(playground, hidden = true) {
     function (e) {
       if (!firstContact) return;
 
-      var curX = e.touches[0].clientX;
-      var xDiff = curX - firstContact.x,
+      const curX = e.touches[0].clientX;
+      const xDiff = curX - firstContact.x,
         tDiff = Date.now() - firstContact.time;
 
       if (tDiff < 250 && Math.abs(xDiff) >= 150) {
@@ -595,16 +634,16 @@ function playground_text(playground, hidden = true) {
     if (window.search && window.search.hasFocus()) {
       return;
     }
-    var html = document.querySelector("html");
+    const html = document.querySelector("html");
 
     function next() {
-      var nextButton = document.querySelector(".nav-chapters.next");
+      const nextButton = document.querySelector(".nav-chapters.next");
       if (nextButton) {
         window.location.href = nextButton.href;
       }
     }
     function prev() {
-      var previousButton = document.querySelector(".nav-chapters.previous");
+      const previousButton = document.querySelector(".nav-chapters.previous");
       if (previousButton) {
         window.location.href = previousButton.href;
       }
@@ -612,7 +651,7 @@ function playground_text(playground, hidden = true) {
     switch (e.key) {
       case "ArrowRight":
         e.preventDefault();
-        if (html.dir == "rtl") {
+        if (html.dir === "rtl") {
           prev();
         } else {
           next();
@@ -620,7 +659,7 @@ function playground_text(playground, hidden = true) {
         break;
       case "ArrowLeft":
         e.preventDefault();
-        if (html.dir == "rtl") {
+        if (html.dir === "rtl") {
           next();
         } else {
           prev();
@@ -631,7 +670,7 @@ function playground_text(playground, hidden = true) {
 })();
 
 (function clipboard() {
-  var clipButtons = document.querySelectorAll(".clip-button");
+  const clipButtons = document.querySelectorAll(".clip-button");
 
   function hideTooltip(elem) {
     elem.firstChild.innerText = "";
@@ -643,10 +682,10 @@ function playground_text(playground, hidden = true) {
     elem.className = "clip-button tooltipped";
   }
 
-  var clipboardSnippets = new ClipboardJS(".clip-button", {
+  const clipboardSnippets = new ClipboardJS(".clip-button", {
     text: function (trigger) {
       hideTooltip(trigger);
-      let playground = trigger.closest("pre");
+      const playground = trigger.closest("pre");
       return playground_text(playground, false);
     },
   });
@@ -668,7 +707,7 @@ function playground_text(playground, hidden = true) {
 })();
 
 (function scrollToTop() {
-  var menuTitle = document.querySelector(".menu-title");
+  const menuTitle = document.querySelector(".menu-title");
 
   menuTitle.addEventListener("click", function () {
     document.scrollingElement.scrollTo({ top: 0, behavior: "smooth" });
