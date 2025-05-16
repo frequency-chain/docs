@@ -16,6 +16,3 @@ runs:
     - name: Show mdbook version
       shell: bash
       run: mdbook --version
-    - name: Show linkchecker version
-      shell: bash
-      run: mdbook-linkcheck --version
