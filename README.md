@@ -19,7 +19,7 @@ npm install
 
 ### Local Link Checking
 
-Use [mdbook linkcheck](https://github.com/Michael-F-Bryan/mdbook-linkcheck).
+Use [`mdbook linkcheck`](https://github.com/Michael-F-Bryan/mdbook-linkcheck).
 The link checker will run during build process and throw warnings for any broken internal or external links.
 Not run in CI due to a high number of false negatives.
 
