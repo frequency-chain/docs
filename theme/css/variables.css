@@ -2,38 +2,10 @@
 /*
  * MOD: We have to modify this fairly heavily.
  * To update, just make sure that we have all the new variables.
+ * See @frequency-chain/style-guide for the style variables
  */
 
 :root {
-  /* COPY the colors from Style Guide */
-  --color-primary: #790e70;
-  --color-purple25: #9a4a94;
-  --color-purple50: #bc86b7;
-  --color-purple75: #ddc3db;
-  --color-darkPurple: #331e49;
-  --color-secondary: #ff9a02;
-
-  /* State Colors */
-  --color-error: #eb5757;
-  --color-warning: #f99a2a;
-  --color-success: #27ae60;
-  --color-info: #2f80ed;
-
-  /* Neutrals */
-  --color-black: #242527;
-  --color-gray1: #717171;
-  --color-gray2: #8b8b8b;
-  --color-gray3: #dbdbdb;
-  --color-white: #ffffff;
-  --color-cream: #fcf3e4;
-
-  /* Gradients */
-  --gradient-primary: -90deg, #311e48 0%, #790e70 50%, #aa40a1 100%;
-  --gradient-secondary: -90deg, #ff5b2f 0%, #ff9a02 50%, #ffcf2c 100%;
-
-  /* Extra Colors */
-  --color-cream: #f0f0f0;
-
   /* Extra Variables */
   --sidebar-width-mobile: calc(100vw - 50px);
   --header-height: 85px;
