@@ -15,20 +15,20 @@
 
 /* Dark theme */
 .coal {
-  --icon-provider: url("../images/icons/lock-Dark.svg");
-  --icon-gateway: url("../images/icons/bridge-Dark.svg");
-  --icon-sso: url("../images/icons/key-Dark.svg");
-  --icon-core: url("../images/icons/house-Dark.svg");
+  --icon-provider: url("../images/icons/lock.svg");
+  --icon-gateway: url("../images/icons/bridge.svg");
+  --icon-sso: url("../images/icons/key.svg");
+  --icon-core: url("../images/icons/house.svg");
 }
 
 /* Dark mode preference */
 @media (prefers-color-scheme: dark) {
   .light.no-js {
     /* Override light theme variables if needed */
-    --icon-provider: url("../images/icons/lock-Dark.svg");
-    --icon-gateway: url("../images/icons/bridge-Dark.svg");
-    --icon-sso: url("../images/icons/key-Dark.svg");
-    --icon-core: url("../images/icons/house-Dark.svg");
+    --icon-provider: url("../images/icons/lock.svg");
+    --icon-gateway: url("../images/icons/bridge.svg");
+    --icon-sso: url("../images/icons/key.svg");
+    --icon-core: url("../images/icons/house.svg");
   }
 }
 

@@ -28,10 +28,10 @@
   --fg: var(--color-cream);
   --headers: var(--color-cream);
 
-  --sidebar-bg: var(--color-darkPurple);
-  --sidebar-fg: var(--color-cream);
+  --sidebar-bg: var(--color-cream);
+  --sidebar-fg: var(--color-darkPurple);
   --sidebar-non-existant: var(--sidebar-fg);
-  --sidebar-active: var(--color-purple75);
+  --sidebar-active: var(--color-primary);
   --sidebar-spacer: var(--sidebar-bg);
 
   --scrollbar: var(--sidebar-fg);
@@ -92,7 +92,7 @@ html:not(.js) {
   --fg: #000;
   --headers: var(--color-darkPurple);
 
-  --sidebar-bg: var(--color-darkPurple);
+  --sidebar-bg: var(--color-black);
   --sidebar-fg: #fff;
   --sidebar-non-existant: var(--sidebar-fg);
   --sidebar-active: var(--color-purple75);
