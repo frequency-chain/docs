@@ -285,9 +285,7 @@ body#sidebar {
   border-radius: 9999px;
   background-color: var(--button-nav-bg);
   color: var(--button-nav-fg);
-  border: 2px solid transparent;
-  transition-property: border, color;
-  transition-duration: 0.5s;
+  transition: none;
   margin-bottom: 24px;
   width: auto;
 }
@@ -296,13 +294,11 @@ body#sidebar {
   color: var(--button-nav-hover-fg);
   background: var(--button-nav-hover-bg);
   text-decoration: none;
-  border: 2px solid var(--button-nav-hover-border);
 }
 
 #content .mobile-nav-chapters:active {
   color: var(--button-nav-hover-fg);
   background: var(--button-nav-hover-bg);
-  border: 2px solid var(--button-nav-hover-border);
 }
 
 /* General content related overrides */

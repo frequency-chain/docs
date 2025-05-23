@@ -72,11 +72,10 @@
   --page-nav-fg: var(--headers);
   --page-nav-bg: var(--sidebar-bg);
 
-  --button-nav-bg: var(--color-darkPurple);
-  --button-nav-fg: var(--headers);
-  --button-nav-hover-fg: var(--headers);
-  --button-nav-hover-bg: var(--color-darkPurple);
-  --button-nav-hover-border: var(--headers);
+  --button-nav-bg: var(--color-cream);
+  --button-nav-fg: var(--color-black);
+  --button-nav-hover-fg: var(--white);
+  --button-nav-hover-bg: var(--color-purple50);
 
   /* Same as `--icons` */
   --copy-button-filter: invert(26%) sepia(8%) saturate(575%) hue-rotate(169deg) brightness(87%) contrast(82%);
@@ -136,11 +135,10 @@ html:not(.js) {
   --page-nav-fg: var(--headers);
   --page-nav-bg: var(--sidebar-bg);
 
-  --button-nav-bg: var(--color-darkPurple);
-  --button-nav-fg: var(--color-cream);
-  --button-nav-hover-fg: var(--color-cream);
+  --button-nav-bg: var(--color-black);
+  --button-nav-fg: var(--color-white);
+  --button-nav-hover-fg: var(--color-white);
   --button-nav-hover-bg: var(--color-primary);
-  --button-nav-hover-border: var(--color-primary);
 
   /* Same as `--icons` */
   --copy-button-filter: invert(45.49%);
@@ -200,11 +198,10 @@ html:not(.js) {
     --page-nav-fg: var(--headers);
     --page-nav-bg: var(--sidebar-bg);
 
-    --button-nav-bg: var(--color-darkPurple);
-    --button-nav-fg: var(--headers);
-    --button-nav-hover-fg: var(--headers);
-    --button-nav-hover-bg: var(--color-darkPurple);
-    --button-nav-hover-border: var(--headers);
+    --button-nav-bg: var(--color-cream);
+    --button-nav-fg: var(--color-black);
+    --button-nav-hover-fg: var(--white);
+    --button-nav-hover-bg: var(--color-purple50);
 
     /* Same as `--icons` */
     --copy-button-filter: invert(26%) sepia(8%) saturate(575%) hue-rotate(169deg) brightness(87%) contrast(82%);
