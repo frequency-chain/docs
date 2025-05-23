@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 function titleImage(chapter) {
   const regex = /{{#title-image\s(\S+)\s(\S+)\s(.+?)}}/g;
   const matches = [...chapter.content.matchAll(regex)];
-  
+
   matches.forEach((match) => {
     const number = match[1];
     const svgFileLight = match[2];
@@ -14,14 +14,14 @@ function titleImage(chapter) {
     const svgOutputDark = readFileSync(svgFileDark, "utf8");
 
     // Embed both the SVG and the number in the output HTML
-    const replaceWith =[
-        `<div class="title-embed">`,
-          `<div class="title-embed-light">${svgOutputLight}</div>`,
-          `<div class="title-embed-coal">${svgOutputDark}</div>`,
-          `<span class="embed-number">${number}</span>`,
-        `</div>`
+    const replaceWith = [
+      `<div class="title-embed">`,
+      `<div class="title-embed-light">${svgOutputLight}</div>`,
+      `<div class="title-embed-coal">${svgOutputDark}</div>`,
+      `<span class="embed-number">${number}</span>`,
+      `</div>`,
     ].join("\n");
-    
+
     // Replace the markdown placeholder with the generated HTML
     chapter.content = chapter.content.replace(match[0], replaceWith);
   });

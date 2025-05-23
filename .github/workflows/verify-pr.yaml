@@ -15,7 +15,7 @@ jobs:
           node-version: 20
 
       - name: Install Node Modules 💾
-        run: npm ci
+        run: npm i
 
       - name: Lint and Spellcheck 🧶
         run: npm run lint
