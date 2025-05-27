@@ -8,17 +8,11 @@ runs:
   using: "composite"
   steps:
     - name: Setup mdBook 📚
-      uses: jontze/action-mdbook@0765bef0c7c5792f93bf3ed3d487a0ca32c9da33
+      uses: jontze/action-mdbook@6c0be56d14c4bf16861b00af61f50ff7400ce502
       with:
         token: ${{ inputs.token }}
-        mdbook-version: "0.4.47" # Use a semver compatible string
-        # Optional Plugins have to be enabled
-        use-linkcheck: true
-        linkcheck-version: "~0.7.7"
+        mdbook-version: "0.4.49" # Use a semver compatible string
 
     - name: Show mdbook version
       shell: bash
       run: mdbook --version
-    - name: Show linkchecker version
-      shell: bash
-      run: mdbook-linkcheck --version
