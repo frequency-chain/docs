@@ -43,7 +43,7 @@ Capacity Staking generates more Capacity per token staked than Provider Boosting
 See [Capacity Staking](./Tokenomics/CapacityStaking.md).
 
 ## Capacity Staking Ratio
-The ratio of the number of FRQCY that must be staked per unit of Capacity generated each Capacity Epoch.
+The ratio of the number of FRQCY tokens that must be staked per unit of Capacity generated each Capacity Epoch from Capacity Staking.
 See [Capacity Staking](./Tokenomics/CapacityStaking.md).
 
 ## Coinless User
@@ -209,6 +209,10 @@ Provider Boosting allows users to stake FRQCY they hold to support specific Prov
 Providers who are "boosted" by end users receive additional Capacity, while Users who "boost" Providers receive a reward (in the form of additional FRQCY).
 
 See [Boosting](./Tokenomics/ProviderBoosting.md).
+
+## Provider Boosting Ratio
+
+The ratio of the number of FRQCY tokens that must be staked per unit of Capacity generated each Capacity Epoch from Provider Boosting.
 
 ## Public Collator
 
