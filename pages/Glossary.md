@@ -208,7 +208,7 @@ See [Providers](./Delegation/Providers.md).
 Provider Boosting allows users to stake FRQCY they hold to support specific Providers.
 Providers who are "boosted" by end users receive additional Capacity, while Users who "boost" Providers receive a reward (in the form of additional FRQCY).
 
-See [Boosting](./Tokenomics/ProviderBoosting.md#boosting).
+See [Boosting](./Tokenomics/ProviderBoosting.md).
 
 ## Public Collator
 
@@ -219,7 +219,7 @@ See [Collator Incentives](./Tokenomics/CollatorRewards.md).
 ## Reward Epoch
 
 The number of blocks between distributions of Provider Boosting rewards.
-See [Boosting](./Tokenomics/ProviderBoosting.md#boosting).
+See [Boosting](./Tokenomics/ProviderBoosting.md).
 
 ## Revocation
 
