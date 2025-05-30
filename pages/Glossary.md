@@ -23,28 +23,28 @@ See [Message Batch](#message-batch).
 An alternate payment mechanism for certain classes of transactions that allows Messages to be sent and on-chain work to occur over time.
 Capacity allows Providers a rate-limited continuous stream of transactions and provides an alternative to using tokens to perform individual transactions.
 Capacity is generated via Capacity Staking and Provider Boosting.
-See [Capacity Model](./Tokenomics/CapacityStaking.md#capacity-model).
+See [Capacity Staking](./Tokenomics/CapacityStaking.md).
 
 ## Capacity Allocation
 
 The amount of Capacity generated for a Provider per Capacity Epoch.
-See [Capacity Renewal](./Tokenomics/CapacityStaking.md#capacity-renewal).
+See [Capacity Renewal](./Tokenomics/CapacityStaking.md#renewal).
 
 ## Capacity Epoch
 
 The number of blocks before Capacity refills.
 In other words, it is the number of blocks before a Provider may reuse their Capacity Allocation.
-See [Capacity Renewal](./Tokenomics/CapacityStaking.md#capacity-renewal).
+See [Capacity Renewal](./Tokenomics/CapacityStaking.md#renewal).
 
 ## Capacity Staking
 
 A form of staking that allows Providers to use FRQCY as efficiently as possible, optimizing their generated Capacity for serving end users.
 Capacity Staking generates more Capacity per token staked than Provider Boosting.
-See [Capacity Staking](./Tokenomics/CapacityStaking.md#capacity-staking).
+See [Capacity Staking](./Tokenomics/CapacityStaking.md).
 
 ## Capacity Staking Ratio
 The ratio of the number of FRQCY that must be staked per unit of Capacity generated each Capacity Epoch.
-See [Capacity Staking](./Tokenomics/CapacityStaking.md#capacity-staking).
+See [Capacity Staking](./Tokenomics/CapacityStaking.md).
 
 ## Coinless User
 
@@ -279,7 +279,7 @@ See [Visibility](./Tokenomics/ProviderBoosting.md#visibility).
 
 The process of allowing tokens that have been staked to be made available again.
 When a user unstakes their FRQCY, there is a Thaw Period before the tokens are unlocked.
-See [Unstaking](./Tokenomics/CapacityStaking.md#capacity-unstaking).
+See [Unstaking](./Tokenomics/CapacityStaking.md#unstaking).
 
 ## User
 
