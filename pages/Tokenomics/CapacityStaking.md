@@ -1,18 +1,21 @@
-# Provider Incentives
+# Capacity Staking
 
-The Capacity model incentivizes participants that are interested in publishing protocol-related data on the blockchain to hold FRQCY.
+Staking FRQCY to generate Capacity incentivizes participants that are interested in publishing protocol-related data on the blockchain to hold FRQCY.
 The principal use case for Capacity is [Providers](../Delegation/Providers.md) acting on behalf of coinless users who have [delegated](../Delegation/index.md) certain permissions to the Providers to act on the users' behalf.
 
+In the context of Frequency’s initial primary use case of enabling the next generation of self-sovereign social networking, it is expected that the majority of Provider activities will be "funded" through the use of Capacity, a temporary resource generated exclusively through staking FRQCY.
+This creates a powerful incentive for Providers to accumulate as much FRQCY as they can to support a growing level of user activity over time (see Staking section below for more detail).
+
 Capacity balances two core goals related to scalability.
-The first goal is providing a low transaction cost mechanism for Message publishing.
-Given the volume of Messages generated in social networks, Providers must be extremely cost-conscious about Message publishing costs.
+The first goal is providing a low transaction cost mechanism for Message publishing and Stateful Storage.
+Given the volume of protocol-related data generated in social networks, Providers must be extremely cost-conscious about publishing costs.
 The second goal is minimizing spam in a system designed to minimize Message publishing costs.
 As the cost of Message publishing decreases, the viability of spam Messages increases proportionally.
-The design of Capacity attempts to balance these two goals.
+The design of Capacity attempts to balance these two goals while minimizing excessive churn of the native token itself.
 
-## Capacity Model
+<!-- TODO: Add diagram -->
 
-While all transaction fees on Frequency can be paid for with FRQCY, certain types of transactions can use Capacity which strikes a balance between Message publishing cost and spam prevention using three core mechanisms: staking, renewal, and unstaking.
+While all transaction fees on Frequency can be paid for with FRQCY, certain types of transaction fees can instead use an equivalent amount of Capacity, which strikes a balance between Message publishing and Stateful Storage cost on one hand, and spam prevention on the other, using three core mechanisms: staking, renewal, and unstaking.
 
 ### Capacity Staking
 
@@ -40,7 +43,7 @@ Capacity renews on a periodic basis.
 Despite the staking ratio for Capacity requiring multiple FRQCY to be staked for each unit of Capacity generated, any Provider with recurring Capacity-eligible transactions will quickly find using Capacity more economically efficient than spending tokens.
 
 Capacity Staking has a Capacity Epoch, which is defined as a fixed number of blocks.
-The number of tokens staked by a given Provider determines that Provider's Capacity Allocation, which may be increased by [Provider Boosting](./UserIncentives.md).
+The number of tokens staked by a given Provider determines that Provider's Capacity Allocation, which may be increased by [Provider Boosting](./ProviderBoosting.md).
 Providers can spend up to their full Capacity Allocation on transaction fees each Capacity Epoch.
 At the beginning of each Capacity Epoch, the Provider's Capacity Allocation is renewed, allowing the same amount of Capacity to be spent again in the next Capacity Epoch.
 The initial Capacity Epoch for Frequency is 14,400 blocks (a duration of approximately 24 hours, given Frequency's 6-second block time target).

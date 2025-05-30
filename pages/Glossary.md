@@ -23,28 +23,28 @@ See [Message Batch](#message-batch).
 An alternate payment mechanism for certain classes of transactions that allows Messages to be sent and on-chain work to occur over time.
 Capacity allows Providers a rate-limited continuous stream of transactions and provides an alternative to using tokens to perform individual transactions.
 Capacity is generated via Capacity Staking and Provider Boosting.
-See [Capacity Model](./Tokenomics/ProviderIncentives.md#capacity-model).
+See [Capacity Model](./Tokenomics/CapacityStaking.md#capacity-model).
 
 ## Capacity Allocation
 
 The amount of Capacity generated for a Provider per Capacity Epoch.
-See [Capacity Renewal](./Tokenomics/ProviderIncentives.md#capacity-renewal).
+See [Capacity Renewal](./Tokenomics/CapacityStaking.md#capacity-renewal).
 
 ## Capacity Epoch
 
 The number of blocks before Capacity refills.
 In other words, it is the number of blocks before a Provider may reuse their Capacity Allocation.
-See [Capacity Renewal](./Tokenomics/ProviderIncentives.md#capacity-renewal).
+See [Capacity Renewal](./Tokenomics/CapacityStaking.md#capacity-renewal).
 
 ## Capacity Staking
 
 A form of staking that allows Providers to use FRQCY as efficiently as possible, optimizing their generated Capacity for serving end users.
 Capacity Staking generates more Capacity per token staked than Provider Boosting.
-See [Capacity Staking](./Tokenomics/ProviderIncentives.md#capacity-staking).
+See [Capacity Staking](./Tokenomics/CapacityStaking.md#capacity-staking).
 
 ## Capacity Staking Ratio
 The ratio of the number of FRQCY that must be staked per unit of Capacity generated each Capacity Epoch.
-See [Capacity Staking](./Tokenomics/ProviderIncentives.md#capacity-staking).
+See [Capacity Staking](./Tokenomics/CapacityStaking.md#capacity-staking).
 
 ## Coinless User
 
@@ -66,7 +66,7 @@ See [Operational Model](./Architecture/OperationalModel.md).
 ## Collator Rewards
 
 FRQCY awarded to Frequency-specific Public Collators for staking to the Frequency Network and participating in block formation activities.
-See [Collator Incentives](./Tokenomics/CollatorIncentives.md).
+See [Collator Incentives](./Tokenomics/CollatorRewards.md).
 
 ## Content Identifier (CID)
 
@@ -126,7 +126,7 @@ See [Handle Creation](./Identity/Handles.md#handle-creation).
 
 ## Handle Display
 
-A user’s entire User Handle as displayed by the system including the user-selected Handle Base and the system-selected Handle Suffix, separated by a “.” character.
+A user’s entire User Handle as displayed by the system including the user-selected Handle Base and the system-selected Handle Suffix, separated by a "." character.
 See [Handle Creation](./Identity/Handles.md#handle-creation).
 
 ## Handle Suffix
@@ -208,18 +208,18 @@ See [Providers](./Delegation/Providers.md).
 Provider Boosting allows users to stake FRQCY they hold to support specific Providers.
 Providers who are "boosted" by end users receive additional Capacity, while Users who "boost" Providers receive a reward (in the form of additional FRQCY).
 
-See [Boosting](./Tokenomics/UserIncentives.md#boosting).
+See [Boosting](./Tokenomics/ProviderBoosting.md#boosting).
 
 ## Public Collator
 
 A Collator who bonds FRQCY in order to participate in block formation, and receives rewards for participation.
 Public Collators who behave improperly risk losing their position and their bond.
-See [Collator Incentives](./Tokenomics/CollatorIncentives.md).
+See [Collator Incentives](./Tokenomics/CollatorRewards.md).
 
 ## Reward Epoch
 
 The number of blocks between distributions of Provider Boosting rewards.
-See [Boosting](./Tokenomics/UserIncentives.md#boosting).
+See [Boosting](./Tokenomics/ProviderBoosting.md#boosting).
 
 ## Revocation
 
@@ -267,19 +267,19 @@ See [Stateful Storage](./Data/StatefulStorage.md).
 ## Thaw Period
 
 The period of time between token unstaking and token liquidity during which those tokens cannot be used, transferred or sold.
-See [Thaw Period](./Tokenomics/ProviderIncentives.md).
+See [Thaw Period](./Tokenomics/CapacityStaking.md).
 
 ## Token Account
 
 An Account that is secured with FRQCY.
-See [Visibility](./Tokenomics/UserIncentives.md#visibility).
+See [Visibility](./Tokenomics/ProviderBoosting.md#visibility).
 
 
 ## Unstaking
 
 The process of allowing tokens that have been staked to be made available again.
 When a user unstakes their FRQCY, there is a Thaw Period before the tokens are unlocked.
-See [Unstaking](./Tokenomics/ProviderIncentives.md#capacity-unstaking).
+See [Unstaking](./Tokenomics/CapacityStaking.md#capacity-unstaking).
 
 ## User
 

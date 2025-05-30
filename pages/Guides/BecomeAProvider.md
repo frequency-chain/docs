@@ -46,7 +46,7 @@ NOTE: Once registered as a Provider, your Provider MSA Id can not be removed fro
 
 ## Step 4: Gain Capacity
 
-[Capacity](../Tokenomics/ProviderIncentives.md#capacity-model) is the ability to perform some transactions on Frequency without token cost.
+[Capacity](../Tokenomics/CapacityStaking.md#capacity-model) is the ability to perform some transactions on Frequency without token cost.
 All interactions with the chain that an application does on behalf of a user can be done with Capacity.
 
 Login to the [Provider Dashboard](https://provider.frequency.xyz/), select Stake to Provider, select Stake to Provider, and stake ~100 XRQCY Tokens.

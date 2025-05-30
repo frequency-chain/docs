@@ -35,6 +35,9 @@ additional-css = [
 
 [output.html.redirect]
 "/Core.html" = "/Whitepaper.html"
+"/Tokenomics/CollatorIncentives.html" = "/Tokenomics/CollatorRewards.html"
+"/Tokenomics/UserIncentives.html" = "/Tokenomics/ProviderBoosting.html"
+"/Tokenomics/ProviderIncentives.html" = "/Tokenomics/CapacityStaking.html"
 
 [output.html.fold]
 enable = true
