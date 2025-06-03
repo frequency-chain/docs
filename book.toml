@@ -15,7 +15,7 @@ command = "node preprocessors/title-image.mjs"
 
 [preprocessor.tailwind]
 renderers = ["html"]
-command = 'node preprocessors/noop-npx.mjs "npx -y tailwindcss -i ./theme/css/tailwind.css -o ./css/tailwind.css"'
+command = 'node preprocessors/noop-npx.mjs "npx -y @tailwindcss/cli -i ./theme/tailwind.css -o ./css/tailwind.css"'
 
 [output.html]
 no-section-label = true
@@ -35,19 +35,6 @@ additional-css = [
 
 [output.html.redirect]
 "/Core.html" = "/Whitepaper.html"
-
-# https://github.com/Michael-F-Bryan/mdbook-linkcheck
-# [output.linkcheck]
-# exclude = [
-#   'github\.com/paseo-network',
-#   'github\.com/frequency-chain/docs',
-#   'github\.com/frequency-chain/frequency/releases',
-#   'github\.com/frequency-chain/frequency',
-#   'twitter\.com',
-#   'www\.frequency\.xyz',
-# ]
-# follow-web-links = true
-# traverse-parent-directories = false
 
 [output.html.fold]
 enable = true

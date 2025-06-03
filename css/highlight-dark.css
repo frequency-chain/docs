@@ -140,5 +140,5 @@ pre .hljs {
 .embed-number {
   font-size: 60px;
   font-weight: bold;
-  color: #f77c47;
+  color: var(--color-secondary);
 }
