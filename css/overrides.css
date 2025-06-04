@@ -135,7 +135,7 @@ body#sidebar {
 #sidebar .sidebar-scrollbox {
   display: block;
   position: sticky;
-  top: 80px;
+  top: calc(var(--header-height) - 5px);
   box-sizing: padding-box;
   padding: 0;
   max-height: 100vh;
@@ -337,6 +337,11 @@ h6:target::before {
 .content .header:hover,
 .content .header:visited:hover {
   color: var(--headers);
+}
+
+#mdbook-help-popup kbd {
+  color: var(--bg);
+  background-color: var(--fg);
 }
 
 /* Replace Font-Awesome */

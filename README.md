@@ -13,7 +13,7 @@ or [Frequency on GitHub](https://github.com/frequency-chain/frequency)
 To build the generator locally, install [mdBook](https://github.com/rust-lang/mdBook.git).
 
 ```bash
-cargo install mdbook@0.4.49
+cargo install mdbook@0.4.51
 npm install
 ```
 

@@ -83,6 +83,8 @@
   --copy-button-filter-hover: invert(36%) sepia(70%) saturate(503%) hue-rotate(167deg) brightness(98%) contrast(89%);
 
   --footnote-highlight: var(--links);
+
+  --overlay-bg: rgba(33, 40, 48, 0.4);
 }
 
 .light,
@@ -146,6 +148,8 @@ html:not(.js) {
   --copy-button-filter-hover: invert(14%) sepia(93%) saturate(4250%) hue-rotate(243deg) brightness(99%) contrast(130%);
 
   --footnote-highlight: var(--links);
+
+  --overlay-bg: rgba(200, 200, 205, 0.4);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -209,5 +213,7 @@ html:not(.js) {
     --copy-button-filter-hover: invert(36%) sepia(70%) saturate(503%) hue-rotate(167deg) brightness(98%) contrast(89%);
 
     --footnote-highlight: var(--links);
+
+    --overlay-bg: rgba(33, 40, 48, 0.4);
   }
 }
