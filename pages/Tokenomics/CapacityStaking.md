@@ -13,7 +13,7 @@ The second goal is minimizing spam in a system designed to minimize Message publ
 As the cost of Message publishing decreases, the viability of spam Messages increases proportionally.
 The design of Capacity attempts to balance these two goals while minimizing excessive churn of the native token itself.
 
-<!-- TODO: Add diagram -->
+{{#svg-embed pages/images/CapacitySimple.svg Capacity Staking Diagram}}
 
 While all transaction fees on Frequency can be paid for with FRQCY, certain types of transaction fees can instead use an equivalent amount of Capacity, which strikes a balance between Message publishing and Stateful Storage cost on one hand, and spam prevention on the other, using three core mechanisms: staking, renewal, and unstaking.
 

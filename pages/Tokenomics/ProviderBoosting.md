@@ -4,7 +4,7 @@ Frequency incorporates a second form of staking called Provider Boosting.
 While Capacity Staking solely produces Capacity and is designed to help Providers maximize economic utility for publishing Messages and managing Stateful Storage, Provider Boosting gives users a mechanism to provide support for, or withdraw support from, Providers by staking FRQCY.
 Provider Boosting also gives individual users a mechanism to receive FRQCY rewards directly and benefit from the value accrual potential of the broader cryptoeconomic system.
 
-<!-- TODO: Insert diagram here -->
+{{#svg-embed pages/images/ProviderBoosting.svg Provider Boosting Diagram}}
 
 Like Capacity Staking, Provider Boosting also generates Capacity and therefore requires a Provider to be designated as part of the staking process.
 In this scenario, a different ratio of FRQCY to Capacity (the Provider Boosting Ratio) is used, which is always less token-efficient than the Capacity Staking Ratio in order to generate an equivalent amount of Capacity.
