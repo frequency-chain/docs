@@ -15,7 +15,7 @@ The reward is distributed at the end of each Reward Epoch, a number of blocks se
 
 Users must maintain their full stake throughout the entirety of the Reward Epoch in order to qualify for a reward.
 Each Reward Epoch has a fixed number of tokens that can be minted to reward Provider Boosting participants, and those rewards are paid based on the ratio of the user's Provider Boosting stake to all user Provider Boosting stakes across all Providers.
-Token for rewards are not minted during, or at the end of, the Reward Epoch.
+Tokens for rewards are not minted during, or at the end of, the Reward Epoch.
 Instead, tokens are minted at the time they are claimed by the Token Account holder, sometime after the end of the applicable Reward Epoch.
 However, all rewards are capped at a maximum Annual Rewards Rate set by governance.
 Given that the reward is paid via new token minting, the reward for Provider Boosting contributes to FRQCY inflation.
