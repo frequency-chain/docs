@@ -135,7 +135,7 @@ body#sidebar {
 #sidebar .sidebar-scrollbox {
   display: block;
   position: sticky;
-  top: 80px;
+  top: calc(var(--header-height) - 5px);
   box-sizing: padding-box;
   padding: 0;
   max-height: 100vh;
@@ -309,6 +309,7 @@ mark {
 
 h1:target::before {
   display: none;
+  margin-inline-start: 0;
 }
 
 h2:target::before,
@@ -318,6 +319,7 @@ h3:target::before {
   width: 50px;
   position: relative;
   color: var(--headers);
+  margin-inline-start: 0;
 }
 
 h4:target::before,
@@ -328,6 +330,7 @@ h6:target::before {
   width: 40px;
   position: relative;
   color: var(--headers);
+  margin-inline-start: 0;
 }
 
 /* Override some colors */
@@ -337,6 +340,33 @@ h6:target::before {
 .content .header:hover,
 .content .header:visited:hover {
   color: var(--headers);
+}
+
+#mdbook-help-popup kbd {
+  color: var(--bg);
+  background-color: var(--fg);
+}
+
+.warning {
+  padding-left: 30px;
+}
+.warning:before {
+  margin-inline-start: calc(-1.5rem - 30px);
+}
+
+/* Table settings */
+
+table thead {
+  background: var(--table-header-bg);
+  color: var(--table-header-fg);
+}
+table thead th {
+  border: 1px var(--table-header-fg) solid;
+}
+/* Alternate background colors for rows */
+table tbody tr:nth-child(2n) {
+  background: var(--table-alternate-bg);
+  color: var(--table-alternate-fg);
 }
 
 /* Replace Font-Awesome */

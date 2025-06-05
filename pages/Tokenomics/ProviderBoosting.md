@@ -4,7 +4,7 @@ Frequency incorporates a second form of staking called Provider Boosting.
 While Capacity Staking solely produces Capacity and is designed to help Providers maximize economic utility for publishing Messages and managing Stateful Storage, Provider Boosting gives users a mechanism to provide support for, or withdraw support from, Providers by staking FRQCY.
 Provider Boosting also gives individual users a mechanism to receive FRQCY rewards directly and benefit from the value accrual potential of the broader cryptoeconomic system.
 
-<!-- TODO: Insert diagram here -->
+{{#svg-embed pages/images/ProviderBoosting.svg Provider Boosting Diagram}}
 
 Like Capacity Staking, Provider Boosting also generates Capacity and therefore requires a Provider to be designated as part of the staking process.
 In this scenario, a different ratio of FRQCY to Capacity (the Provider Boosting Ratio) is used, which is always less token-efficient than the Capacity Staking Ratio in order to generate an equivalent amount of Capacity.
@@ -15,7 +15,7 @@ The reward is distributed at the end of each Reward Epoch, a number of blocks se
 
 Users must maintain their full stake throughout the entirety of the Reward Epoch in order to qualify for a reward.
 Each Reward Epoch has a fixed number of tokens that can be minted to reward Provider Boosting participants, and those rewards are paid based on the ratio of the user's Provider Boosting stake to all user Provider Boosting stakes across all Providers.
-Token for rewards are not minted during, or at the end of, the Reward Epoch.
+Tokens for rewards are not minted during, or at the end of, the Reward Epoch.
 Instead, tokens are minted at the time they are claimed by the Token Account holder, sometime after the end of the applicable Reward Epoch.
 However, all rewards are capped at a maximum Annual Rewards Rate set by governance.
 Given that the reward is paid via new token minting, the reward for Provider Boosting contributes to FRQCY inflation.
