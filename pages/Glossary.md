@@ -2,89 +2,89 @@
 
 <!-- General rule of thumb: Glossary links OUT, nothing really links INTO the Glossary -->
 
-## Account
+#### Account
 
 An account on the blockchain, represented by a public key.
 Accounts may hold a token balance, transfer tokens, and pay transaction fees.
 Not to be confused with Message Source Accounts, which are unique to Frequency and ensure that user-generated data has verifiable authorship.
 See [Identity Management](./Identity/index.md).
 
-## Autonomous User
+#### Autonomous User
 
 An end user who spends tokens to perform transactions directly on Frequency, in contrast to a coinless user, who delegates to Providers in order to pay transaction fees.
 See [Autonomous Users](./Delegation/Benefits.md#autonomous-users).
 
-## Batch
+#### Batch
 
 See [Message Batch](#message-batch).
 
-## Capacity
+#### Capacity
 
 An alternate payment mechanism for certain classes of transactions that allows Messages to be sent and on-chain work to occur over time.
 Capacity allows Providers a rate-limited continuous stream of transactions and provides an alternative to using tokens to perform individual transactions.
 Capacity is generated via Capacity Staking and Provider Boosting.
 See [Capacity Staking](./Tokenomics/CapacityStaking.md).
 
-## Capacity Allocation
+#### Capacity Allocation
 
 The amount of Capacity generated for a Provider per Capacity Epoch.
 See [Capacity Renewal](./Tokenomics/CapacityStaking.md#renewal).
 
-## Capacity Epoch
+#### Capacity Epoch
 
 The number of blocks before Capacity refills.
 In other words, it is the number of blocks before a Provider may reuse their Capacity Allocation.
 See [Capacity Renewal](./Tokenomics/CapacityStaking.md#renewal).
 
-## Capacity Staking
+#### Capacity Staking
 
 A form of staking that allows Providers to use FRQCY as efficiently as possible, optimizing their generated Capacity for serving end users.
 Capacity Staking generates more Capacity per token staked than Provider Boosting.
 See [Capacity Staking](./Tokenomics/CapacityStaking.md).
 
-## Capacity Staking Ratio
+#### Capacity Staking Ratio
 The ratio of the number of FRQCY tokens that must be staked per unit of Capacity generated each Capacity Epoch from Capacity Staking.
 See [Capacity Staking](./Tokenomics/CapacityStaking.md).
 
-## Coinless User
+#### Coinless User
 
 An end user who doesn’t use tokens to interact with Frequency.
 While coinless users maintain User Accounts that enable them to directly control their authentication and authorization data on chain, they delegate transaction handling to a Provider who will in turn manage data transactions (such as sending Messages) on their behalf.
 See [Benefits of Delegation](./Delegation/Benefits.md).
 
-## Collator
+#### Collator
 
 A Frequency Node that generates blocks and submits them to the Relay Chain.
 Frequency currently operates using Invulnerable Collators, but intends to transition to Public Collators in the future.
 See [Collator](./Architecture/Collators.md).
 
-## Collator Nodes
+#### Collator Nodes
 
 Servers that participate in the Frequency Network and are configured to form blocks.
 See [Operational Model](./Architecture/OperationalModel.md).
 
-## Collator Rewards
+#### Collator Rewards
 
 FRQCY awarded to Frequency-specific Public Collators for staking to the Frequency Network and participating in block formation activities.
 See [Collator Incentives](./Tokenomics/CollatorRewards.md).
 
-## Content Identifier (CID)
+#### Content Identifier (CID)
 
 A unique identifier used with IPFS derived from the content of a file.
 See [Schema Payload Location](./Data/Schemas.md#payload-location).
 
-## Control Key
+#### Control Key
 
 The public key of the User's Account used to identify the control an MSA.
 See [Identity Management](./Identity/ControlKeys.md).
 
-## Delegation Model
+#### Delegation Model
 
 The mechanism whereby end users can grant permission to perform tasks that require significant blockchain knowledge or token ownership to Providers, reducing friction and enabling Message Batching to improve scalability. Also includes the concept of Revocation, where a user can revoke permission to perform those tasks from a Provider.
 Revocation does not have any on-chain transaction fees associated with the transaction, ensuring that [Coinless Users](#coinless-users) can invoke it without Provider permission.
 See [Delegation Model](./Delegation/index.md).
 
-## End User
+#### End User
 
 A user who owns an MSA but is not acting as a Provider.
 An end user may choose to own tokens to participate in Provider Boosting to support services and participate in on-chain governance with Capacity.
@@ -92,145 +92,145 @@ See [Delegation Model](./Delegation/index.md)
 However, end users typically delegate other tasks to Providers who perform actions on the user's behalf.
 See [Coinless Users](#coinless-users) and [Delegation](#delegation-model).
 
-## Existential Deposit
+#### Existential Deposit
 
 The minimum token amount an Account that is not associated with an MSA may have and still be considered alive.
 See [Message Source Accounts](./Identity/MessageSourceAccounts.md).
 
-## Frequency Council
+#### Frequency Council
 
 The set of Frequency accounts that are responsible for certain governance actions, including Provider approval.
 See [Governance](./Governance/index.md).
 
-## Frequency Node
+#### Frequency Node
 
 A server that participates in the Frequency network.
 See [Interaction Model](Architecture/InteractionModel.md).
 
-## FRQCY
+#### FRQCY
 
 The native coin on Frequency Mainnet, which can be used to pay any Frequency transaction fees, or staked for Capacity.
 Sometimes referred to as "FRQCY Token" or simply "tokens".
 Holders of FRQCY are often referred to as token holders.
 See [Tokenomics](./Tokenomics/index.md).
 
-## Handle
+#### Handle
 
 See [User Handle](#user-handle).
 
-## Handle Base
+#### Handle Base
 
 The user-selected portion of the Handle Display.
 See [Handle Creation](./Identity/Handles.md#handle-creation).
 
 
-## Handle Display
+#### Handle Display
 
 A user’s entire User Handle as displayed by the system including the user-selected Handle Base and the system-selected Handle Suffix, separated by a "." character.
 See [Handle Creation](./Identity/Handles.md#handle-creation).
 
-## Handle Suffix
+#### Handle Suffix
 
 The system-selected numeric portion of the Handle Display.
 See [Handle Creation](./Identity/Handles.md#handle-creation).
 
-## InterPlanetary File System (IPFS)
+#### InterPlanetary File System (IPFS)
 
 A decentralized content-addressed file system protocol.
 See https://docs.ipfs.tech/ for more detail.
 
-## Invulnerable Collator
+#### Invulnerable Collator
 
 A collator that cannot be removed without governance action.
 <!--
 See [Collator Decentralization Roadmap](./Networks/Decentralization.md).
 -->
-## Key pair
+#### Key pair
 
 A matching public key and private key.
 The private key can be used to generate cryptographic signatures which third parties may verify with the public key.
 See [Identity Management](./Identity/index.md).
 
-## Message
+#### Message
 
 A protocol related data item that is indexed by its Schema Id and block number.
 See [Messages](./Data/Messages.md).
 
 
-## Message Batch
+#### Message Batch
 
 A collection of Messages, possibly from many different Message Source Accounts (MSAs), that allows Providers to publish a single on-chain transaction that references large quantities of data off chain, thereby reducing the transaction fee.
 See [Batching](./Data/Batching.md).
 
 
-## Message Source Account (MSA)
+#### Message Source Account (MSA)
 
 Message Source Accounts (MSAs) are distinct from Token Accounts and unique to Frequency.
 They ensure protocol related data items have verifiable authorship.
 End users with MSAs are not required to have FRQCY or Capacity to interact with Frequency, but may instead choose to delegate tasks that require Capacity to Providers.
 See [Message Source Accounts](./Identity/MessageSourceAccounts.md).
 
-## MSA Id
+#### MSA Id
 
 The unique 64-bit unsigned integer identifier associated with an MSA.
 See [Message Source Accounts](./Identity/MessageSourceAccounts.md).
 
 
-## On-Chain Message
+#### On-Chain Message
 
 A Message that has its payload stored on the Frequency blockchain.
 See [Payload Location](./Data/Schemas.md#payload-location).
 
-## Off-Chain Message
+#### Off-Chain Message
 
 A Message that has its payload stored on IPFS.
 See [Payload Location](./Data/Schemas.md).
 
-## Payload
+#### Payload
 
 The data within a protocol related data item.
 The format of the payload is defined by the corresponding Schema Model.
 See [Schemas](./Data/Schemas.md).
 
-## Payload Location
+#### Payload Location
 
 The attribute of a Frequency Schema that specifies how and where data will be stored.
 See [Schema Models](./Data/Schemas.md#schema-models).
 
-## Provider
+#### Provider
 
 The holder of an MSA that can allow others to delegate to it such as applications and services that use the Capacity economic system.
 Providers utilize Capacity to serve the end users that delegate to them.
 See [Providers](./Delegation/Providers.md).
 
-## Provider Boosting
+#### Provider Boosting
 
 Provider Boosting allows users to stake FRQCY they hold to support specific Providers.
 Providers who are "boosted" by end users receive additional Capacity, while Users who "boost" Providers receive a reward (in the form of additional FRQCY).
 
 See [Boosting](./Tokenomics/ProviderBoosting.md).
 
-## Provider Boosting Ratio
+#### Provider Boosting Ratio
 
 The ratio of the number of FRQCY tokens that must be staked per unit of Capacity generated each Capacity Epoch from Provider Boosting.
 
-## Public Collator
+#### Public Collator
 
 A Collator who bonds FRQCY in order to participate in block formation, and receives rewards for participation.
 Public Collators who behave improperly risk losing their position and their bond.
 See [Collator Incentives](./Tokenomics/CollatorRewards.md).
 
-## Reward Epoch
+#### Reward Epoch
 
 The number of blocks between distributions of Provider Boosting rewards.
 See [Boosting](./Tokenomics/ProviderBoosting.md).
 
-## Revocation
+#### Revocation
 
 See [Delegation Model](./Delegation/index.md).
 
 
-## Schema
+#### Schema
 
 Registered data structures for Messages and Stateful Storage items.
 Frequency Schemas define where Payloads are stored and how end users can parse the data within.
@@ -238,69 +238,69 @@ See also On-Chain Message and Off-Chain Message.
 See [Schemas](./Data/Schemas.md).
 
 
-## Schema Id
+#### Schema Id
 
 The unique identifier of a Schema on Frequency.
 See [Schemas](./Data/Schemas.md).
 
-## Schema Model
+#### Schema Model
 
 Metadata about a Frequency Schema that defines the format and structure of the Schema itself, from which applications can determine how to serialize and deserialize data using the Schema.
 Frequency supports two model types for data: Parquet and Avro.
 See [Schema Models](./Data/Schemas.md#schema-models).
 
-## Schema Registry
+#### Schema Registry
 
 The Schema Registry is the on-chain repository for Frequency Schemas.
 See [Schemas](./Data/Schemas.md).
 
-## Staking
+#### Staking
 
 Staking refers to the process of temporarily locking tokens in order to accomplish a specific action.
 FRQCY can be staked for specific purposes, including serving as [Public Collators](#public-collator), [Capacity Staking](#capacity-staking) and [Provider Boosting](#provider-boosting).
 
-## Staking Ratio
+#### Staking Ratio
 
 See [Capacity Staking Ratio](#capacity-staking-ratio).
 
-## Stateful Storage
+#### Stateful Storage
 
 A mode of storing on-chain protocol related data items so that they can be easily retrieved, modified, and removed, indexed by the data controller's MSA and a Schema Id.
 See [Stateful Storage](./Data/StatefulStorage.md).
 
-## Thaw Period
+#### Thaw Period
 
 The period of time between token unstaking and token liquidity during which those tokens cannot be used, transferred or sold.
 See [Thaw Period](./Tokenomics/CapacityStaking.md).
 
-## Token Account
+#### Token Account
 
 An Account that is secured with FRQCY.
 See [Visibility](./Tokenomics/ProviderBoosting.md#visibility).
 
 
-## Unstaking
+#### Unstaking
 
 The process of allowing tokens that have been staked to be made available again.
 When a user unstakes their FRQCY, there is a Thaw Period before the tokens are unlocked.
 See [Unstaking](./Tokenomics/CapacityStaking.md#unstaking).
 
-## User
+#### User
 
 Any entity with an Account on Frequency.
 See [Identity Management](./Identity/index.md).
 
-## User Account
+#### User Account
 
 The cryptographic keys that the user uses as Control Keys to control an MSA.
 See [Identity Management](./Identity/ControlKeys.md).
 
-## User Handle
+#### User Handle
 
 A unique identifier for users on Frequency, consisting of a user-selected Handle Base and a chain-selected Handle Suffix.
 See [User Handles](./Identity/Handles.md).
 
-## XRQCY
+#### XRQCY
 
 The Frequency Testnet Token.
 This token is only for testing and holds no value.

@@ -20,7 +20,7 @@ Providers handle transactions, manage user delegations, and facilitate various o
 
 ## How You Can Become a Provider
 
-## Step 1: Generate Your Keys
+### Step 1: Generate Your Keys
 
 There are various wallets that can generate and secure Frequency compatible keys, including:
 
@@ -30,11 +30,11 @@ There are various wallets that can generate and secure Frequency compatible keys
 
 This onboarding process will guide you through the creation of an account and the creation of a Provider Account which will be required for many different transactions.
 
-## Step 2: Acquire Testnet Tokens
+### Step 2: Acquire Testnet Tokens
 
 Taking the account generated in Step 1, visit the [Frequency Testnet Faucet](https://faucet.testnet.frequency.xyz/), and follow the prompts to get Testnet tokens (called XRQCY tokens).
 
-## Step 3: Create a Testnet Provider
+### Step 3: Create a Testnet Provider
 
 - Visit the [Provider Dashboard](https://provider.frequency.xyz/) to set up your official Provider account on the Frequency Testnet.
 - On the Provider Dashboard, you will be asked to select which network you would like to join from the dropdown. You may select among the available networks: Mainnet, Testnet on Paseo, Localhost, or Custom. Select Testnet on Paseo.
@@ -44,14 +44,14 @@ Taking the account generated in Step 1, visit the [Frequency Testnet Faucet](htt
 
 NOTE: Once registered as a Provider, your Provider MSA Id can not be removed from the chain in order to maintain transaction verification integrity.
 
-## Step 4: Gain Capacity
+### Step 4: Gain Capacity
 
 [Capacity](../Tokenomics/CapacityStaking.md) is the ability to perform some transactions on Frequency without token cost.
 All interactions with the chain that an application does on behalf of a user can be done with Capacity.
 
 Login to the [Provider Dashboard](https://provider.frequency.xyz/), select Stake to Provider, select Stake to Provider, and stake ~100 XRQCY Tokens.
 
-## Step 5: Done
+### Step 5: Done
 
 You are now registered as a Provider on Testnet and have Capacity to do things like support users with [Single Sign On](./SSO.md).
 
