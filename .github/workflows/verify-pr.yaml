@@ -2,6 +2,11 @@ name: Verify PR
 
 on:
   pull_request:
+
+# Set default permissions as restrictive
+permissions:
+  contents: read
+
 jobs:
   verify:
     runs-on: ubuntu-latest
