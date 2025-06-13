@@ -2,6 +2,7 @@
 
 :root {
   font-size: 100% !important;
+  accent-color: var(--color-primary);
 }
 
 :target {
