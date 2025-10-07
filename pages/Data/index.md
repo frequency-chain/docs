@@ -5,5 +5,4 @@ This data can be stored directly on each node for critical and frequently access
 
 This section discusses the different types of data management provided by Frequency, and the tradeoffs of using each in terms of high availability, scalability, and throughput.
 
-
-{{#button-links}}
+{{#button-links-outlined}}

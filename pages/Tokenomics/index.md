@@ -10,4 +10,4 @@ In addition to tokens, Frequency also utilizes a renewing stake-based alternativ
 This section covers Frequency's incentive model and key cryptoeconomic elements such as token distribution and the inflation system.
 The incentive model focuses on the three core features: Collator Rewards, Capacity Staking, and Provider Boosting.
 
-{{#button-links}}
+{{#button-links-outlined}}

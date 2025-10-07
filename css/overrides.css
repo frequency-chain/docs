@@ -10,7 +10,7 @@
 }
 
 body {
-  font-size: 18px;
+  @apply docsBodyText;
   font-family: "Poppins", sans-serif;
 }
 
@@ -278,8 +278,8 @@ body#sidebar {
 }
 
 #content .mobile-nav-chapters {
+  @apply docsSubHeaderText;
   display: block;
-  font-size: 1em;
   font-weight: 700;
   text-align: center;
   text-decoration: none;

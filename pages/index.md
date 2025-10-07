@@ -9,7 +9,7 @@ Whether you're a beginner or an experienced developer, our resources will guide 
 
 ## Begin Your Learning Journey
 
-<div class="button-links">
+<div class="button-links-outlined">
 
 [Become a Provider](./Guides/BecomeAProvider.md)
 [Frequency Developer Gateway](./Guides/Gateway.md)

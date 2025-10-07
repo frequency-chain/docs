@@ -14,4 +14,4 @@ Users can also directly revoke delegated permissions, even if they are Coinless 
 
 MSAs allow users to delegate tasks to Providers on their behalf and ensure Messages and Stateful Storage (i.e. non-financial transactions) have verifiable chains of authorship, while maintaining the ability to revoke a delegation at any time without cost.
 
-{{#button-links}}
+{{#button-links-outlined}}
