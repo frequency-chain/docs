@@ -9,16 +9,16 @@ Providers handle transactions, manage user delegations, and facilitate various o
 
 {{#svg-embed pages/images/Become_Provider.svg Become a Provider}}
 
-### From a Developer's Perspective, Providers
+### **From a Developer's Perspective, Providers**
 
 - **Manage Delegated Tasks:** Users delegate specific permissions to Providers, allowing them to perform only those specified actions on the user's behalf in a secure and transparent manner.
-- **Create and Update User-Generated Content with Permission:**  Providers publish new content or modify existing content on behalf of users, such as posts, comments, and other social interactions, after obtaining the user's consent.
-- **Maintain the User's Social Graph:**  Providers manage and update users' social connections on Frequency, (based on a user’s direction and consent) such as following or unfollowing other users, and maintaining friend lists. These actions ensure that the user's relationships are accurately represented on the blockchain.
+- **Create and Update User-Generated Content with Permission:** Providers publish new content or modify existing content on behalf of users, such as posts, comments, and other social interactions, after obtaining the user's consent.
+- **Maintain the User's Social Graph:** Providers manage and update users' social connections on Frequency, (based on a user’s direction and consent) such as following or unfollowing other users, and maintaining friend lists. These actions ensure that the user's relationships are accurately represented on the blockchain.
 - **Store User-Generated Content and Write Links to It on Frequency:** Providers store user-generated content files (e.g., media files, documents) and publish links to the content on chain or batched metadata in The InterPlanetary File Service (IPFS). This enables decentralized access and verification. Providers have many options for user-generated content file storage including decentralized storage like IPFS.
 - **Simplify User Participation:** By handling transaction complexities and fees, Providers make blockchain applications more accessible to end-users who may not possess sufficient technical knowledge or hold tokens.
 - **Enhance User Experience:** Providers may offer intuitive user interfaces and seamless interactions, so users don’t need to experience or understand the underlying blockchain mechanics.
 
-## How You Can Become a Provider
+## **How You Can Become a Provider**
 
 ### Step 1: Generate Your Keys
 
@@ -59,4 +59,8 @@ You can also use the [Provider Dashboard](https://provider.frequency.xyz/) to ad
 
 Ready to move to production? [Become a Provider on Mainnet](https://projectlibertylabs.github.io/gateway/GettingStarted/BecomeProvider.html#mainnet).
 
-**[Become a Provider Today](https://provider.frequency.xyz/)**
+<div class="button-links-outlined">
+  <a href="https://provider.frequency.xyz/" target="_blank" rel="noopener noreferrer">
+    Become a Provider Today
+  </a>
+</div>

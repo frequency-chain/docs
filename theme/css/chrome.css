@@ -99,10 +99,8 @@ html:not(.js) .left-buttons button {
 }
 
 .menu-title {
+  @apply docsHeaderText;
   display: inline-block;
-  font-weight: 200;
-  font-size: 2.4rem;
-  line-height: var(--menu-bar-height);
   text-align: center;
   margin: 0;
   flex: 1;
@@ -135,7 +133,7 @@ html:not(.js) .left-buttons button {
 /* Nav Icons */
 
 .nav-chapters {
-  font-size: 2.5em;
+  @apply docsHeaderText;
   text-align: center;
   text-decoration: none;
 
@@ -151,17 +149,13 @@ html:not(.js) .left-buttons button {
   align-content: center;
   flex-direction: column;
 
-  transition:
-    color 0.5s,
-    background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s;
 }
 
 .nav-chapters:hover {
   text-decoration: none;
   background-color: var(--theme-hover);
-  transition:
-    background-color 0.15s,
-    color 0.15s;
+  transition: background-color 0.15s, color 0.15s;
 }
 
 .nav-wrapper {
@@ -170,7 +164,7 @@ html:not(.js) .left-buttons button {
 }
 
 .mobile-nav-chapters {
-  font-size: 2.5em;
+  @apply docsHeaderText;
   text-align: center;
   text-decoration: none;
   width: 90px;
@@ -248,9 +242,7 @@ pre > .buttons {
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
-  transition:
-    visibility 0.1s linear,
-    opacity 0.1s linear;
+  transition: visibility 0.1s linear, opacity 0.1s linear;
 }
 pre:hover > .buttons {
   visibility: visible;
@@ -268,7 +260,7 @@ pre > .buttons button {
   cursor: inherit;
   margin: 0px 5px;
   padding: 4px 4px 3px 5px;
-  font-size: 23px;
+  @apply docsBodyText;
 
   border-style: solid;
   border-width: 1px;
@@ -363,7 +355,7 @@ mark.fade-out {
 
 #searchbar {
   width: 100%;
-  margin-block-start: 5px;
+  margin-block-start: 16px;
   margin-block-end: 0;
   margin-inline-start: auto;
   margin-inline-end: auto;
@@ -381,7 +373,7 @@ mark.fade-out {
 
 .searchresults-header {
   font-weight: bold;
-  font-size: 1em;
+  @apply docsHeaderText;
   padding-block-start: 18px;
   padding-block-end: 0;
   padding-inline-start: 5px;
@@ -415,7 +407,7 @@ ul#searchresults span.teaser {
   margin-block-end: 0;
   margin-inline-start: 20px;
   margin-inline-end: 0;
-  font-size: 0.8em;
+  @apply docsBodyText;
 }
 ul#searchresults span.teaser em {
   font-weight: bold;
@@ -425,12 +417,12 @@ ul#searchresults span.teaser em {
 /* Sidebar */
 
 .sidebar {
+  @apply docsHeaderText;
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
   width: var(--sidebar-width);
-  font-size: 0.875em;
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-y: contain;
@@ -444,7 +436,7 @@ ul#searchresults span.teaser em {
   color: var(--sidebar-fg);
   padding: var(--padding);
   margin: 0;
-  font-size: 1.4rem;
+  @apply docsHeaderText;
   min-height: calc(100vh - var(--padding) * 2);
 }
 .sidebar-iframe-outer {
@@ -520,7 +512,10 @@ html:not(.sidebar-resizing) .sidebar {
 }
 .js .sidebar .sidebar-resize-handle {
   cursor: col-resize;
-  width: calc(var(--sidebar-resize-indicator-width) - var(--sidebar-resize-indicator-space));
+  width: calc(
+    var(--sidebar-resize-indicator-width) -
+      var(--sidebar-resize-indicator-space)
+  );
 }
 /* sidebar-hidden */
 /* #sidebar-toggle-anchor:not(:checked) ~ .sidebar {
@@ -639,12 +634,12 @@ END MOD: replaced with side-nav.css */
 /* Theme Menu Popup */
 
 .theme-popup {
+  @apply docsBodyText;
   position: absolute;
   left: 10px;
   top: var(--menu-bar-height);
   z-index: 1000;
   border-radius: 4px;
-  font-size: 0.7em;
   color: var(--fg);
   background: var(--theme-popup-bg);
   border: 1px solid var(--theme-popup-border);

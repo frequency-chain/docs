@@ -13,4 +13,4 @@ This section provides a detailed description of Frequency, the core data structu
 
 {{#svg-embed pages/images/Core.svg Diagram of the parts of Frequency}}
 
-{{#button-links}}
+{{#button-links-outlined}}

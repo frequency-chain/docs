@@ -13,5 +13,4 @@ However, to facilitate the goal of user communication for social networking appl
 
 This section describes these three concepts (Control Keys, Message Source Accounts, and User Handles) in more detail, and illustrates the relationships between them.
 
-
-{{#button-links}}
+{{#button-links-outlined}}
