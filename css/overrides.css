@@ -269,7 +269,7 @@ body#sidebar {
 #content {
   overflow-y: auto;
   min-height: 100vh;
-  padding: 32px 45px 128px 6px;
+  padding: 10px 45px 128px 6px;
 }
 
 #content .nav-wrapper {

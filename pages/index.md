@@ -7,13 +7,19 @@ Whether you're a beginner or an experienced developer, our resources will guide 
 
 {{#svg-embed pages/images/Core.svg Diagram of the parts of Frequency}}
 
-## Begin Your Learning Journey
+## **Begin Your Learning Journey**
 
 <div class="button-links-outlined">
-
-[Become a Provider](./Guides/BecomeAProvider.md)
-[Frequency Developer Gateway](./Guides/Gateway.md)
-[Single Sign-on](./Guides/SSO.md)
-[Frequency Whitepaper](./Whitepaper.md)
-
+  <a href="./Guides/BecomeAProvider.md">
+    Become a Provider
+  </a>
+    <a href="./Guides/Gateway.md">
+    Frequency Developer Gateway
+  </a>
+    <a href="./Guides/SSO.md">
+    Single Sign-on
+  </a>
+    <a href="./Whitepaper.m">
+    Frequency Whitepaper
+  </a>
 </div>

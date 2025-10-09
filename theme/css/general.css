@@ -144,8 +144,10 @@ END MOD: Replaced with side-nav.css */
   text-decoration: underline;
 }
 .content img,
-.content video {
-  max-width: 100%;
+.content video,
+.content svg {
+  max-width: 800px;
+  margin: 0 auto;
 }
 .content .header:link,
 .content .header:visited {
