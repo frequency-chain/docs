@@ -19,7 +19,7 @@ Whether you're a beginner or an experienced developer, our resources will guide 
     <a href="./Guides/SSO.md">
     Single Sign-on
   </a>
-    <a href="./Whitepaper.m">
+    <a href="./Whitepaper.md">
     Frequency Whitepaper
   </a>
 </div>
