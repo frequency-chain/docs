@@ -44,7 +44,7 @@ Additionally, developers benefit by receiving verified emails, enhancing securit
 - Reduces barriers to entry, encouraging more users to engage with your application.
 
 <div class="button-links-outlined">
-  <a href="https://projectlibertylabs.github.io/gateway/GettingStarted/SSO.html" target="_blank" rel="noopener noreferrer">
+  <a href="https://frequency-chain.github.io/gateway/GettingStarted/SSO.html" target="_blank" rel="noopener noreferrer">
     Integrate SIWF with Your App
   </a>
 </div>
