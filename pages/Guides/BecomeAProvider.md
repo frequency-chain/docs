@@ -57,7 +57,7 @@ You are now registered as a Provider on Testnet and have Capacity to do things l
 
 You can also use the [Provider Dashboard](https://provider.frequency.xyz/) to add additional Provider Account [Control Keys](../Identity/ControlKeys.md) for safety.
 
-Ready to move to production? [Become a Provider on Mainnet](https://projectlibertylabs.github.io/gateway/GettingStarted/BecomeProvider.html#mainnet).
+Ready to move to production? [Become a Provider on Mainnet](https://frequency-chain.github.io/gateway/GettingStarted/BecomeProvider.html#mainnet).
 
 <div class="button-links-outlined">
   <a href="https://provider.frequency.xyz/" target="_blank" rel="noopener noreferrer">

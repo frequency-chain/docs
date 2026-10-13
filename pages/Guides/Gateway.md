@@ -4,7 +4,7 @@
 
 ## Why Frequency Developer Gateway?
 
-[Frequency Developer Gateway](https://projectlibertylabs.github.io/gateway/) provides simple blockchain integration for your applications–bridging the gap between your app and the decentralized web.
+[Frequency Developer Gateway](https://frequency-chain.github.io/gateway/) provides simple blockchain integration for your applications–bridging the gap between your app and the decentralized web.
 
 {{#svg-embed pages/images/Gateway.svg Gateway Diagram}}
 
@@ -43,7 +43,7 @@ These microservices include simple APIs for interacting with various aspects of 
 The Account Service enables easy interaction with accounts on Frequency.
 Accounts are defined with an `msaId` (64-bit identifier) and can contain additional information such as a handle, keys, and more.
 
-[Account Service Docs](https://projectlibertylabs.github.io/gateway/Build/AccountService/AccountService.html)
+[Account Service Docs](https://frequency-chain.github.io/gateway/Build/AccountService/AccountService.html)
 
 Features:
 
@@ -57,7 +57,7 @@ Features:
 The Graph Service enables easy interaction with social graphs on Frequency.
 Each graph connection can be private or public and can be unidirectional (a follow) or bidirectional (mutually opted-in friend connection).
 
-[Social Graph Service Docs](https://projectlibertylabs.github.io/gateway/Build/GraphService/GraphService.html)
+[Social Graph Service Docs](https://frequency-chain.github.io/gateway/Build/GraphService/GraphService.html)
 
 Features:
 
@@ -71,7 +71,7 @@ The Content Publishing Service enables the creation of new content-related activ
 Content metadata is either published to Frequency or linked to content metadata in IPFS.
 User-generated content can be stored using IPFS or other systems.
 
-[Content Publishing Service Docs](https://projectlibertylabs.github.io/gateway/Build/ContentPublishing/ContentPublishing.html)
+[Content Publishing Service Docs](https://frequency-chain.github.io/gateway/Build/ContentPublishing/ContentPublishing.html)
 
 Features:
 
@@ -86,7 +86,7 @@ Features:
 
 The Content Watcher Service helps your application process content from the Frequency Ecosystem by registering webhooks that are triggered when relevant activity is found on Frequency.
 
-[Content Watcher Service Docs](https://projectlibertylabs.github.io/gateway/Build/ContentWatcher/ContentWatcher.html)
+[Content Watcher Service Docs](https://frequency-chain.github.io/gateway/Build/ContentWatcher/ContentWatcher.html)
 
 Features:
 
@@ -95,7 +95,7 @@ Features:
 - **Scanning Control:** Manage how and when the service scans Frequency.
 
 <div class="button-links-outlined">
-  <a href="https://projectlibertylabs.github.io/gateway/" target="_blank" rel="noopener noreferrer">
+  <a href="https://frequency-chain.github.io/gateway/" target="_blank" rel="noopener noreferrer">
     Start Using Frequency Developer Gateway
   </a>
 </div>
